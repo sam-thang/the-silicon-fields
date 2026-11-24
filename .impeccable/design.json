@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T12:00:00Z",
+  "title": "Design System: The Silicon Fields",
+  "extensions": {
+    "colorMeta": {
+      "space-navy": { "role": "neutral", "displayName": "Space Navy", "canonical": "#0B1426", "tonalRamp": ["oklch(15% 0.04 260)", "oklch(25% 0.05 260)", "oklch(35% 0.06 260)", "oklch(45% 0.06 260)", "oklch(55% 0.05 260)", "oklch(65% 0.04 260)", "oklch(80% 0.03 260)", "oklch(95% 0.01 260)"] },
+      "sheet-navy": { "role": "neutral", "displayName": "Sheet Navy", "canonical": "#0F1D36" },
+      "panel-navy": { "role": "neutral", "displayName": "Panel Navy", "canonical": "#0D1A32", "note": "Used translucent: 94% (hover card), 80% (side panel)." },
+      "tile-navy": { "role": "neutral", "displayName": "Tile Navy", "canonical": "#13264A" },
+      "ocean-light": { "role": "neutral", "displayName": "Ocean Light", "canonical": "#16294A", "note": "Globe radial gradient start (cx 40%, cy 35%)." },
+      "ocean-deep": { "role": "neutral", "displayName": "Ocean Deep", "canonical": "#0A1529", "note": "Globe radial gradient end." },
+      "line-subtle": { "role": "neutral", "displayName": "Line Subtle", "canonical": "#1E3157" },
+      "line-strong": { "role": "neutral", "displayName": "Line Strong", "canonical": "#2A4170" },
+      "status-construction": { "role": "primary", "displayName": "Survey Amber", "canonical": "#FFC233", "tonalRamp": ["oklch(25% 0.05 85)", "oklch(35% 0.08 85)", "oklch(45% 0.11 85)", "oklch(55% 0.14 85)", "oklch(65% 0.16 85)", "oklch(75% 0.17 85)", "oklch(85% 0.16 85)", "oklch(95% 0.06 85)"] },
+      "status-planned": { "role": "secondary", "displayName": "Planned Blue", "canonical": "#6FB4FF", "tonalRamp": ["oklch(20% 0.05 255)", "oklch(30% 0.08 255)", "oklch(40% 0.11 255)", "oklch(50% 0.13 255)", "oklch(60% 0.14 255)", "oklch(74% 0.13 255)", "oklch(85% 0.08 255)", "oklch(95% 0.03 255)"], "note": "Always translucent on columns: 35% body, 1.2px solid outline." },
+      "status-operational": { "role": "tertiary", "displayName": "Operational Frost", "canonical": "#DCE3EE", "tonalRamp": ["oklch(20% 0.015 255)", "oklch(30% 0.018 255)", "oklch(42% 0.02 255)", "oklch(54% 0.02 255)", "oklch(66% 0.02 255)", "oklch(78% 0.018 255)", "oklch(91% 0.015 255)", "oklch(97% 0.008 255)"] },
+      "status-paused": { "role": "tertiary", "displayName": "Paused Slate", "canonical": "#6B7280", "tonalRamp": ["oklch(20% 0.01 260)", "oklch(30% 0.015 260)", "oklch(40% 0.018 260)", "oklch(55% 0.02 260)", "oklch(65% 0.018 260)", "oklch(75% 0.014 260)", "oklch(87% 0.01 260)", "oklch(96% 0.005 260)"], "note": "Graphics only (3.8:1 on navy). Never text." },
+      "text-primary": { "role": "neutral", "displayName": "Text Primary", "canonical": "#F4F6FA" },
+      "text-body": { "role": "neutral", "displayName": "Text Body", "canonical": "#C9D3E6" },
+      "text-secondary": { "role": "neutral", "displayName": "Text Secondary", "canonical": "#B5C2DA", "note": "Absorbs the mockup's one-off #A9B7D1 stat-tile caption color." },
+      "text-muted": { "role": "neutral", "displayName": "Text Muted", "canonical": "#93A3C2" },
+      "text-faint": { "role": "neutral", "displayName": "Text Faint", "canonical": "#7F90B0", "note": "Lowest allowed text contrast: 5.7:1 on Space Navy." },
+      "marker-white": { "role": "neutral", "displayName": "Marker White", "canonical": "#FFFFFF", "note": "Before/after divider and handle only." }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home headline figure (desktop). Unit suffix at 44px, 0 tracking." },
+      "display-mobile": { "displayName": "Display Mobile", "purpose": "Home headline figure on phones." },
+      "numeral": { "displayName": "Numeral", "purpose": "Current timeline year." },
+      "headline": { "displayName": "Headline", "purpose": "Project name as h1 on the site card sheet." },
+      "title": { "displayName": "Title", "purpose": "Hover-card project name and stat-tile values." },
+      "wordmark": { "displayName": "Wordmark", "purpose": "THE SILICON FIELDS, all caps. 16px / 2px tracking on mobile." },
+      "body-lead": { "displayName": "Body Lead", "purpose": "Sentence under the headline number." },
+      "body": { "displayName": "Body", "purpose": "Nav, legend, list rows, search field." },
+      "body-small": { "displayName": "Body Small", "purpose": "Owner/location lines, card facts, inline links." },
+      "caption": { "displayName": "Caption", "purpose": "Tagline, year ticks, footnotes, list sub-lines." },
+      "label": { "displayName": "Label", "purpose": "All-caps status eyebrows, section headings, datelines, image date chips (11–13px, 1.5–2px tracking)." }
+    },
+    "shadows": [],
+    "effects": [
+      { "name": "column-glow", "value": "stroke-width 14px, round caps, status color at 80% (planned 45%), feGaussianBlur stdDeviation 5", "purpose": "Optional glow under columns. User setting, OFF by default." },
+      { "name": "globe-halo", "value": "circle r+18px, #13264A at 25% opacity", "purpose": "Faint atmosphere ring behind the globe." }
+    ],
+    "motion": [],
+    "breakpoints": [
+      { "name": "mobile-reference", "value": "390px", "note": "Mockup frame; real breakpoints to be resolved during implementation." },
+      { "name": "desktop-reference", "value": "1440px", "note": "Mockup frame." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Amber pill for the one main action in a view (e.g. Full dossier).",
+      "html": "<a href=\"#\" class=\"ds-btn-primary\">Full dossier</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; height: 48px; padding: 0 24px; border-radius: 999px; background: #FFC233; color: #0B1426; font: 600 15px Inter, sans-serif; text-decoration: none; transition: background 0.15s; } .ds-btn-primary:hover { background: #FFCF5C; } .ds-btn-primary:focus-visible { outline: 2px solid #F4F6FA; outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline pill for secondary actions (e.g. Share).",
+      "html": "<button class=\"ds-btn-secondary\">Share</button>",
+      "css": ".ds-btn-secondary { height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #2A4170; background: transparent; color: #F4F6FA; font: 600 15px Inter, sans-serif; cursor: pointer; transition: border-color 0.15s, background 0.15s; } .ds-btn-secondary:hover { border-color: #93A3C2; background: #0F1D36; } .ds-btn-secondary:focus-visible { outline: 2px solid #FFC233; outline-offset: 3px; }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Pill address search for Near me.",
+      "html": "<label class=\"ds-search\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"7\" cy=\"7\" r=\"5\" stroke=\"#93A3C2\" stroke-width=\"2\"/><path d=\"M11 11l3.5 3.5\" stroke=\"#93A3C2\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg><span class=\"ds-sr\">Find projects near you</span><input type=\"text\" placeholder=\"Find projects near your address\"></label>",
+      "css": ".ds-search { display: flex; align-items: center; gap: 10px; height: 44px; width: 320px; padding: 0 16px; box-sizing: border-box; border: 1px solid #2A4170; border-radius: 999px; background: #0F1D36; font: 14px Inter, sans-serif; color: #93A3C2; } .ds-search:focus-within { border-color: #6FB4FF; } .ds-search input { flex: 1; background: transparent; border: 0; color: #F4F6FA; font: inherit; outline: none; } .ds-search input::placeholder { color: #93A3C2; } .ds-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Top nav; active item underlined in amber.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Globe</a><a href=\"#\">List</a><a href=\"#\">Methodology</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 24px; font: 14px Inter, sans-serif; background: #0B1426; padding: 16px; } .ds-nav a { color: #93A3C2; text-decoration: none; padding-bottom: 4px; border-bottom: 2px solid transparent; } .ds-nav a:hover { color: #F4F6FA; } .ds-nav a[aria-current=page] { color: #F4F6FA; border-bottom-color: #FFC233; } .ds-nav a:focus-visible { outline: 2px solid #FFC233; outline-offset: 3px; }"
+    },
+    {
+      "name": "Globe Hover Card",
+      "kind": "card",
+      "refersTo": "card-hover",
+      "description": "Compact card anchored to a hovered column.",
+      "html": "<div class=\"ds-hovercard\"><span class=\"ds-eyebrow\">UNDER CONSTRUCTION</span><span class=\"ds-name\">Hyperion</span><span class=\"ds-meta\">Meta · Richland Parish, Louisiana</span><span class=\"ds-fact\">Up to 5 GW · Groundbroken Dec 2024</span><a href=\"#\">Open site card →</a></div>",
+      "css": ".ds-hovercard { width: 236px; display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: rgba(13,26,50,0.94); border: 1px solid #2A4170; border-radius: 12px; font-family: Inter, sans-serif; color: #F4F6FA; } .ds-hovercard .ds-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; color: #FFC233; } .ds-hovercard .ds-name { font: 700 20px 'Space Grotesk', sans-serif; } .ds-hovercard .ds-meta { font-size: 13px; color: #B5C2DA; } .ds-hovercard .ds-fact { font-size: 13px; font-variant-numeric: tabular-nums; } .ds-hovercard a { font-size: 13px; font-weight: 600; color: #F4F6FA; } .ds-hovercard a:hover { color: #FFFFFF; }"
+    },
+    {
+      "name": "Stat Tiles",
+      "kind": "custom",
+      "refersTo": "tile-stat",
+      "description": "Up to three key figures on the site card.",
+      "html": "<div class=\"ds-tiles\"><div class=\"ds-tile\"><span>1.2 GW</span>planned</div><div class=\"ds-tile\"><span>~1,100</span>acres</div><div class=\"ds-tile\"><span>8</span>buildings</div></div>",
+      "css": ".ds-tiles { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; width: 350px; padding: 16px; background: #0F1D36; } .ds-tile { background: #13264A; border-radius: 10px; padding: 10px; font: 11px Inter, sans-serif; color: #B5C2DA; } .ds-tile span { display: block; font: 700 20px 'Space Grotesk', sans-serif; color: #F4F6FA; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Status Legend",
+      "kind": "custom",
+      "refersTo": "legend",
+      "description": "Column-shaped swatches with totals, one row per status.",
+      "html": "<div class=\"ds-legend\"><div><i class=\"c\"></i><span>Under construction</span><b>61.1 GW</b></div><div><i class=\"p\"></i><span>Planned</span><b>9.7 GW</b></div><div><i class=\"o\"></i><span>Operational</span><b>1 GW</b></div><div><i class=\"x\"></i><span>Paused</span><b>17 GW</b></div></div>",
+      "css": ".ds-legend { display: flex; flex-direction: column; gap: 12px; width: 300px; padding: 16px; background: #0B1426; font: 14px Inter, sans-serif; color: #C9D3E6; } .ds-legend div { display: flex; align-items: center; gap: 12px; } .ds-legend span { flex: 1; } .ds-legend b { font: 700 14px 'Space Grotesk', sans-serif; color: #F4F6FA; font-variant-numeric: tabular-nums; } .ds-legend i { width: 10px; height: 22px; border-radius: 5px; box-sizing: border-box; } .ds-legend .c { background: #FFC233; } .ds-legend .p { background: rgba(111,180,255,0.35); border: 1.5px solid #6FB4FF; } .ds-legend .o { background: #DCE3EE; } .ds-legend .x { background: #6B7280; }"
+    },
+    {
+      "name": "Timeline Scrubber",
+      "kind": "custom",
+      "refersTo": "timeline-track",
+      "description": "Play button, amber-progress track, year ticks, current year.",
+      "html": "<div class=\"ds-timeline\"><button aria-label=\"Play timeline\"><svg width=\"16\" height=\"18\" viewBox=\"0 0 16 18\" aria-hidden=\"true\"><path d=\"M2 1.5l12 7.5-12 7.5z\" fill=\"#0B1426\"/></svg></button><div class=\"ds-track\"><div class=\"ds-fill\"></div><div class=\"ds-thumb\"></div></div><span class=\"ds-year\">2026</span></div>",
+      "css": ".ds-timeline { display: flex; align-items: center; gap: 24px; width: 560px; padding: 16px; background: #0B1426; } .ds-timeline button { width: 52px; height: 52px; border-radius: 999px; border: 0; background: #FFC233; display: flex; align-items: center; justify-content: center; cursor: pointer; } .ds-timeline button:focus-visible { outline: 2px solid #F4F6FA; outline-offset: 3px; } .ds-track { flex: 1; position: relative; height: 6px; border-radius: 3px; background: #1E3157; } .ds-fill { position: absolute; inset: 0 40% 0 0; border-radius: 3px; background: #FFC233; } .ds-thumb { position: absolute; left: 60%; top: -7px; width: 20px; height: 20px; margin-left: -10px; border-radius: 999px; background: #F4F6FA; } .ds-year { font: 700 28px 'Space Grotesk', sans-serif; color: #F4F6FA; font-variant-numeric: tabular-nums; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Survey",
+    "overview": "Earth seen from orbit at night, measured like a survey. The ground is a deep navy that is never pure black, and the globe is a muted, slightly cooler navy sphere. The only bright things on screen are the measurements: capacity columns rising from the surface, and the big numbers that sum them. Drama comes from how many columns there are and how tall they stand, not from effects. The interface is a set of quiet translucent navy panels, set at the edges so the globe stays central.\n\nDensity is low on the globe surfaces and rises in steps. The home page shows one headline number, a three-row legend, a five-row ranked list and a timeline. The site card adds three stat tiles and a before/after image. The dossier, the deepest layer, switches to a light editorial reading layout; its tokens are not designed yet (see Colors). Every number is set in Space Grotesk with tabular figures. All prose and labels are in Inter.\n\nThe system rejects sci-fi HUD language: no neon grid lines, no terminal styling, no glowing server-rack imagery, no gradient hero sections, no grids of identical stat cards, and nothing that reads as a data center company's marketing site. It also shares nothing with Landturned's look.",
+    "keyCharacteristics": [
+      "Deep navy space (#0B1426), never pure black; a cooler navy sphere for the globe.",
+      "Four status colors that differ in lightness as well as hue, so they work in greyscale.",
+      "Amber is the only warm color, and it means \"under construction\" and the primary action.",
+      "Big, confident Space Grotesk numerals with tabular figures; Inter for everything you read.",
+      "Translucent navy panels with hairline borders; no shadows, no glow by default.",
+      "Pill-shaped controls, softly rounded panels, and a 22px-radius bottom sheet on mobile."
+    ],
+    "rules": [
+      { "name": "The Lightness Ladder Rule", "body": "In order of lightness: Operational Frost (lightest), Survey Amber, Planned Blue (translucent), Paused Slate (darkest). A new status color, or any change to these, must keep each step distinct in greyscale.", "section": "colors" },
+      { "name": "The One Warm Note Rule", "body": "Amber is the only warm color in the system. It means \"under construction\" or \"the main thing to do next\". Never use it for decoration, emphasis or charts with another meaning.", "section": "colors" },
+      { "name": "The Slate Is a Swatch Rule", "body": "Paused Slate is never text. A paused status eyebrow uses Text Muted beside a slate swatch, and the status words carry the meaning.", "section": "colors" },
+      { "name": "The Tabular Figures Rule", "body": "Every figure that can change or be compared (GW, MW, counts, years, distances, acres) uses tabular figures (font-variant-numeric: tabular-nums), so the counter doesn't jitter while it animates.", "section": "typography" },
+      { "name": "The Numbers Speak Grotesk Rule", "body": "Figures are set in Space Grotesk 700 even inside Inter rows. Words never are, except the wordmark and names in headings.", "section": "typography" },
+      { "name": "The Globe Owns the Center Rule", "body": "Panels hug the edges and leave the globe's middle clear. A site card opens over the globe (a side card on desktop, a bottom sheet on mobile) and never sends the visitor to another page to see the basics.", "section": "layout" },
+      { "name": "The No-Glow Default Rule", "body": "Column glow (a 14px soft stroke under each column, blurred 5px) exists only as a user setting and is off by default. Nothing else glows: no text glow, no neon, no outer shadows.", "section": "elevation" },
+      { "name": "The Borders, Not Shadows Rule", "body": "When a surface needs separating from the globe, give it a 1px Line Subtle or Line Strong border and a translucent Panel Navy fill. Never use a drop shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep every status color distinct in lightness, in the order Operational Frost (#DCE3EE) > Survey Amber (#FFC233) > Planned Blue (#6FB4FF, translucent) > Paused Slate (#6B7280).",
+      "Do color a ranked-list figure or column by the project's actual status. A paused project like Project Matador takes Paused Slate, not amber. (The current desktop mockup shows Matador in amber; that is a mockup error, not the rule.)",
+      "Do set every figure in Space Grotesk 700 with tabular figures.",
+      "Do separate panels from the globe with translucent Panel Navy and a 1px border, never a shadow.",
+      "Do use amber for exactly one primary action per view.",
+      "Do keep text at Text Faint (#7F90B0) or lighter on any navy surface; every text color in this file passes WCAG AA on Space Navy, Panel Navy and Sheet Navy."
+    ],
+    "donts": [
+      "Don't use pure white (#FFFFFF) for operational columns or legend swatches. It belongs only to the before/after slider marker.",
+      "Don't turn column glow on by default, or add glow, neon or outer shadows anywhere else.",
+      "Don't use neon grid lines, sci-fi HUD overlays, terminal styling, glowing server-rack photos, gradient hero sections, or grids of identical stat cards.",
+      "Don't make anything look like a data center company's marketing site, or borrow anything from Landturned's visual identity.",
+      "Don't use pure black (#000000) for the background; space is Space Navy (#0B1426).",
+      "Don't use Paused Slate for text.",
+      "Don't invent the dossier's light-theme tokens outside /impeccable shape dossier."
+    ]
+  }
+}
