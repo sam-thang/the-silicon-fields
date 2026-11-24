@@ -1,0 +1,1743 @@
+[
+  {
+    "slug": "meta-hyperion",
+    "name": "Hyperion",
+    "owner": "Meta (JV with Blue Owl)",
+    "users": "Meta",
+    "country": "US",
+    "region": "Louisiana",
+    "locality": "Richland Parish",
+    "lat": 32.4,
+    "lon": -91.75,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 5000,
+      "high": 5000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Construction began Dec 2024; expansion to 5 GW announced Jul 2026",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 27000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "nmp",
+        "title": "Who is building the biggest AI data center?",
+        "publisher": "New Market Pitch",
+        "url": "https://newmarketpitch.com/blogs/news/ai-data-center-biggest-campus",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "sl",
+        "title": "Inside America's 5 Largest Data Center Megaprojects in 2026",
+        "publisher": "Smart Labor Management",
+        "url": "https://www.smarterlabor.com/blog/the-gigawatt-era-inside-the-5-largest-data-center-projects-in-america-in-2026",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "ec",
+        "title": "U.S. Data Center Tracker (2026)",
+        "publisher": "Electric Choice",
+        "url": "https://www.electricchoice.com/datacenters/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Investment: ~$27B JV per Smart Labor; Meta signalled far more over time.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "sb-energy-ports-piketon",
+    "name": "PORTS Technology Campus",
+    "owner": "SB Energy / SoftBank",
+    "users": "OpenAI (reported)",
+    "country": "US",
+    "region": "Ohio",
+    "locality": "Piketon",
+    "lat": 39.07,
+    "lon": -83.01,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 8000,
+      "high": 10000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Sources differ: 8 GW (New Market Pitch) vs up to 10 GW (Smart Labor)",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 67200000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "sl",
+        "title": "Inside America's 5 Largest Data Center Megaprojects in 2026",
+        "publisher": "Smart Labor Management",
+        "url": "https://www.smarterlabor.com/blog/the-gigawatt-era-inside-the-5-largest-data-center-projects-in-america-in-2026",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "nmp",
+        "title": "Who is building the biggest AI data center?",
+        "publisher": "New Market Pitch",
+        "url": "https://newmarketpitch.com/blogs/news/ai-data-center-biggest-campus",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Confirm status with a primary source (SB Energy / DOE PORTS site).",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "fermi-project-matador",
+    "name": "Project Matador",
+    "owner": "Fermi America",
+    "users": "No tenant secured (per Cleanview)",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Carson County (near Amarillo)",
+    "lat": 35.33,
+    "lon": -101.62,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 11000,
+      "high": 17000,
+      "type": "planned_campus"
+    },
+    "status": "paused",
+    "status_note": "Cleanview: construction largely stalled, no tenant, CEO/CFO departed Apr 2026",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "cv_fermi",
+        "title": "Fermi America (Project Matador) – behind-the-meter data centers",
+        "publisher": "Cleanview",
+        "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/fermi-america",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "nei_fermi",
+        "title": "Fermi America's Project Matador facing problems",
+        "publisher": "NEI Magazine",
+        "url": "https://www.neimagazine.com/?p=109108",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "ec",
+        "title": "U.S. Data Center Tracker (2026)",
+        "publisher": "Electric Choice",
+        "url": "https://www.electricchoice.com/datacenters/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Show as 'stalled' – do NOT present as active construction.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "creekstone-delta-gigasite",
+    "name": "Delta Gigasite",
+    "owner": "Creekstone Energy",
+    "users": "",
+    "country": "US",
+    "region": "Utah",
+    "locality": "Millard County (SE of Delta)",
+    "lat": 39.3,
+    "lon": -112.5,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 10000,
+      "type": "mixed"
+    },
+    "status": "under_construction",
+    "status_note": "Utah state: construction began late 2025, $17B commitment. Company cites >1 GW IT load across phases and a 10 GW headline",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 17000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "ut_gov",
+        "title": "Creekstone Energy, LLC Commits $17 Billion to Millard County Data Center Project",
+        "publisher": "Utah Governor's Office of Economic Opportunity",
+        "url": "https://business.utah.gov/?p=87333",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "ub_ck",
+        "title": "Creekstone Energy secures largest solar lease in Utah (press release)",
+        "publisher": "Utah Business",
+        "url": "https://www.utahbusiness.com/press-releases/2026/04/22/creekstone-energy-secures-largest-solar-lease-utah-millard-county-delta/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "bw_ck",
+        "title": "Creekstone Energy raises Series B to advance 10-GW AI Gigasite",
+        "publisher": "Business Wire",
+        "url": "https://www.businesswire.com/news/home/20251104790930/en",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "Show as range: >1 GW IT load (phased) up to 10 GW headline. Phase 1 is only ~220-300 MW.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "amazon-gw-ranch",
+    "name": "GW Ranch",
+    "owner": "Amazon (site); Pacifico Energy (power plant)",
+    "users": "Amazon",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Pecos County (17 mi N of Fort Stockton)",
+    "lat": 31.162,
+    "lon": -102.896,
+    "location_precision": "site",
+    "capacity_mw": {
+      "low": 5000,
+      "high": 7650,
+      "type": "power_generation"
+    },
+    "status": "under_construction",
+    "status_note": "Amazon confirmed it acquired the site (Aug 2026); Pacifico builds off-grid gas power, first power targeted H1 2027",
+    "expected_completion": "2027 (first power)",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "dck_gw",
+        "title": "Amazon Explores Grid Connection for 8,000-Acre AI Campus",
+        "publisher": "Data Center Knowledge",
+        "url": "https://www.datacenterknowledge.com/energy-power-supply/amazon-explores-grid-connection-for-8-000-acre-ai-campus",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "tceq_gw",
+        "title": "TCEQ public notice: GW Ranch Energy Center air permit",
+        "publisher": "Texas Commission on Environmental Quality",
+        "url": "https://www.tceq.texas.gov/downloads/permitting/air/bilingual/pending-permit-notices/181033-pls-english.pdf",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "et_gw",
+        "title": "Data Center-Focused GW Ranch Project Clears Texas Air Permitting Hurdle",
+        "publisher": "EnergyTech",
+        "url": "https://www.energytech.com/distributed-energy/article/55353756/data-center-focused-gw-ranch-project-clears-texas-air-permitting-hurdle",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "Capacity is POWER GENERATION (5 GW goal by 2031; 7.65 GW air permit), not data center IT load. Coordinates from TCEQ permit.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "google-project-tembo",
+    "name": "Project Tembo / Cheyenne campus",
+    "owner": "Google",
+    "users": "Google",
+    "country": "US",
+    "region": "Wyoming",
+    "locality": "Laramie County (near Cheyenne)",
+    "lat": 41.14,
+    "lon": -104.82,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 2700,
+      "high": 2700,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Google announced $17B for first Wyoming data center (Nov 6, 2026)",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 17000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "bb",
+        "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+        "publisher": "Blackridge Research",
+        "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "bx_wy",
+        "title": "Google to invest $17B in first Wyoming data center near Cheyenne",
+        "publisher": "Baxtel",
+        "url": "https://baxtel.com/data-center/weid5m",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-abilene",
+    "name": "Stargate Abilene (Lancium Clean Campus)",
+    "owner": "Oracle / Crusoe",
+    "users": "OpenAI",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Abilene",
+    "lat": 32.45,
+    "lon": -99.73,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 1200,
+      "high": 1200,
+      "type": "planned_campus"
+    },
+    "status": "partially_operational",
+    "status_note": "Epoch: ~0.3 GW operational; 1.2 GW projected Q4 2026",
+    "expected_completion": "2026-Q4",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "epsg",
+        "title": "OpenAI Stargate: where the US sites stand",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "sl",
+        "title": "Inside America's 5 Largest Data Center Megaprojects in 2026",
+        "publisher": "Smart Labor Management",
+        "url": "https://www.smarterlabor.com/blog/the-gigawatt-era-inside-the-5-largest-data-center-projects-in-america-in-2026",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-frontier-shackelford",
+    "name": "Stargate Frontier",
+    "owner": "Vantage Data Centers",
+    "users": "OpenAI / Oracle",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Shackelford County",
+    "lat": 32.72,
+    "lon": -99.33,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 1400,
+      "high": 1400,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "First building targeted 2H 2026",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 25000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "llm",
+        "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "fn",
+        "title": "Data center download: The biggest projects you missed",
+        "publisher": "Fierce Network",
+        "url": "https://www.fierce-network.com/cloud/data-center-download-biggest-projects-you-missed",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "bb",
+        "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+        "publisher": "Blackridge Research",
+        "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-milam-freebird",
+    "name": "Stargate Milam County (Project Freebird)",
+    "owner": "SB Energy",
+    "users": "OpenAI",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Milam County",
+    "lat": 30.85,
+    "lon": -96.98,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 1200,
+      "high": 1200,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Epoch projects completion Q4 2028",
+    "expected_completion": "2028-Q4",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "epsg",
+        "title": "OpenAI Stargate: where the US sites stand",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "bb",
+        "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+        "publisher": "Blackridge Research",
+        "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-michigan-barn",
+    "name": "Stargate Michigan ('The Barn')",
+    "owner": "Related Digital",
+    "users": "OpenAI / Oracle",
+    "country": "US",
+    "region": "Michigan",
+    "locality": "Saline Township",
+    "lat": 42.17,
+    "lon": -83.78,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 1400,
+      "high": 1400,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Epoch projects completion Q4 2028",
+    "expected_completion": "2028-Q4",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "epsg",
+        "title": "OpenAI Stargate: where the US sites stand",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "bb",
+        "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+        "publisher": "Blackridge Research",
+        "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-new-mexico",
+    "name": "Stargate New Mexico",
+    "owner": "Oracle / STACK Infrastructure",
+    "users": "OpenAI",
+    "country": "US",
+    "region": "New Mexico",
+    "locality": "Doña Ana County (Santa Teresa)",
+    "lat": 31.86,
+    "lon": -106.68,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Epoch: construction advanced significantly since Feb 2026; capacity stated as 1 GW+",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "epnm",
+        "title": "OpenAI Stargate New Mexico – satellite explorer",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-new-mexico/satellite-explorer?date=2026-01-02",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "fn",
+        "title": "Data center download: The biggest projects you missed",
+        "publisher": "Fierce Network",
+        "url": "https://www.fierce-network.com/cloud/data-center-download-biggest-projects-you-missed",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "llmsg",
+        "title": "OpenAI Stargate Data Centers: Every US Site, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/stargate-data-centers/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Fierce Network cites $165B – verify before showing any investment figure.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-lordstown",
+    "name": "Stargate Lordstown",
+    "owner": "SoftBank",
+    "users": "OpenAI",
+    "country": "US",
+    "region": "Ohio",
+    "locality": "Lordstown",
+    "lat": 41.17,
+    "lon": -80.86,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 214,
+      "high": 214,
+      "type": "it_load_estimate"
+    },
+    "status": "under_construction",
+    "status_note": "~214 MW IT is an Epoch estimate",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "llm",
+        "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "llmsg",
+        "title": "OpenAI Stargate Data Centers: Every US Site, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/stargate-data-centers/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Capacity is an IT-load estimate, not comparable with campus GW.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-port-washington",
+    "name": "Stargate Port Washington ('Lighthouse')",
+    "owner": "Vantage Data Centers",
+    "users": "OpenAI / Oracle",
+    "country": "US",
+    "region": "Wisconsin",
+    "locality": "Port Washington",
+    "lat": 43.39,
+    "lon": -87.88,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": null,
+      "high": null,
+      "type": "unknown"
+    },
+    "status": "announced",
+    "status_note": "Midwest anchor site of Stargate expansion",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "llmsg",
+        "title": "OpenAI Stargate Data Centers: Every US Site, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/stargate-data-centers/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "dcf_q1",
+        "title": "Land and Expand: Early 2026 Megaprojects Reflect a Power-First Ethos",
+        "publisher": "Data Center Frontier",
+        "url": "https://www.datacenterfrontier.com/site-selection/article/55360277/land-and-expand-early-2026-megaprojects-reflect-a-power-first-ethos",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Capacity missing – research before publishing.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "meta-lebanon-indiana",
+    "name": "Meta Lebanon",
+    "owner": "Meta",
+    "users": "Meta",
+    "country": "US",
+    "region": "Indiana",
+    "locality": "Lebanon",
+    "lat": 40.05,
+    "lon": -86.47,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Groundbreaking reported by Data Center Frontier",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 10000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "llm",
+        "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "dcf_meta",
+        "title": "AI's New Land Grab: Meta's Indiana Megaproject",
+        "publisher": "Data Center Frontier",
+        "url": "https://datacenterfrontier.com/machine-learning/article/55357508/ais-new-land-grab-metas-indiana-megaproject-and-the-rise-of-europes-neocloud-challengers",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "meta-el-paso",
+    "name": "Meta El Paso",
+    "owner": "Meta",
+    "users": "Meta",
+    "country": "US",
+    "region": "Texas",
+    "locality": "El Paso",
+    "lat": 31.87,
+    "lon": -106.4,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Online 2028",
+    "expected_completion": "2028",
+    "investment_usd": {
+      "value": 10000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "llm",
+        "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Confirm exact site location.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "meta-bowling-green",
+    "name": "Meta Bowling Green",
+    "owner": "Meta",
+    "users": "Meta",
+    "country": "US",
+    "region": "Ohio",
+    "locality": "Wood County",
+    "lat": 41.37,
+    "lon": -83.65,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 422,
+      "high": 422,
+      "type": "it_load_estimate"
+    },
+    "status": "under_construction",
+    "status_note": "~422 MW IT is an Epoch estimate",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "llm",
+        "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "meta-prometheus",
+    "name": "Prometheus",
+    "owner": "Meta",
+    "users": "Meta",
+    "country": "US",
+    "region": "Ohio",
+    "locality": "New Albany",
+    "lat": 40.08,
+    "lon": -82.81,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "operational",
+    "status_note": "Reported as running",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "llm",
+        "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+        "publisher": "LLM Pulse",
+        "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Confirm capacity with primary source.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "xai-colossus-2",
+    "name": "Colossus 2 (+ MACROHARDRR)",
+    "owner": "SpaceXAI (xAI)",
+    "users": "SpaceXAI, Anthropic, Cursor",
+    "country": "US",
+    "region": "Tennessee / Mississippi",
+    "locality": "Memphis, TN & Southaven, MS",
+    "lat": 35.02,
+    "lon": -90.03,
+    "location_precision": "site",
+    "capacity_mw": {
+      "low": 946,
+      "high": 2000,
+      "type": "mixed"
+    },
+    "status": "partially_operational",
+    "status_note": "Epoch: 946 MW IT operational; Cleanview: ~1.3 GW; expansion toward 2 GW",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 35800000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "ep_col2",
+        "title": "Colossus 2 – AI data center directory",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "cv_col",
+        "title": "Colossus 1 & 2 – behind-the-meter data centers",
+        "publisher": "Cleanview",
+        "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/colossus",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "dcf_xai",
+        "title": "xAI's AI Factories: From Colossus to MACROHARDRR",
+        "publisher": "Data Center Frontier",
+        "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Low = Epoch IT power; high = announced 2 GW expansion.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "microsoft-fairwater-wisconsin",
+    "name": "Fairwater Wisconsin",
+    "owner": "Microsoft",
+    "users": "OpenAI (likely), Microsoft",
+    "country": "US",
+    "region": "Wisconsin",
+    "locality": "Mount Pleasant",
+    "lat": 42.71,
+    "lon": -87.92,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 450,
+      "high": 450,
+      "type": "estimate"
+    },
+    "status": "operational",
+    "status_note": "Second datacenter of similar scale announced ($4B)",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 7000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "ms_wi",
+        "title": "Made in Wisconsin: The world's most powerful AI datacenter",
+        "publisher": "Microsoft",
+        "url": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "ep_fw",
+        "title": "Microsoft Fairwater Wisconsin – AI data center directory",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "gk_fw",
+        "title": "Fairwater (systems notes)",
+        "publisher": "Glenn K. Lockwood",
+        "url": "https://glennklockwood.com/garden/systems/fairwater",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "microsoft-fairwater-atlanta",
+    "name": "Fairwater Atlanta",
+    "owner": "Microsoft",
+    "users": "Microsoft",
+    "country": "US",
+    "region": "Georgia",
+    "locality": "Atlanta",
+    "lat": 33.75,
+    "lon": -84.39,
+    "location_precision": "city",
+    "capacity_mw": {
+      "low": null,
+      "high": null,
+      "type": "unknown"
+    },
+    "status": "operational",
+    "status_note": "Began operation Oct 2025",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "ms_atl",
+        "title": "From Wisconsin to Atlanta: Microsoft connects datacenters to build its first AI superfactory",
+        "publisher": "Microsoft",
+        "url": "https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-datacenters-to-build-its-first-ai-superfactory/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "Capacity and exact site missing.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "amazon-rainier-new-carlisle",
+    "name": "Project Rainier – New Carlisle",
+    "owner": "Amazon (AWS)",
+    "users": "Anthropic",
+    "country": "US",
+    "region": "Indiana",
+    "locality": "New Carlisle",
+    "lat": 41.7,
+    "lon": -86.51,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 2300,
+      "high": 2300,
+      "type": "facility_power_permit"
+    },
+    "status": "partially_operational",
+    "status_note": "18 buildings operating, 14 under construction; permits suggest 2.3 GW total",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 11000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "ep_nc",
+        "title": "Anthropic-Amazon New Carlisle – AI data center directory",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/data/ai-data-centers/directory/anthropic-amazon-new-carlisle",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "mai_nc",
+        "title": "AWS New Carlisle data center campus",
+        "publisher": "Measured AI",
+        "url": "https://measuredai.substack.com/p/aws-new-carlisle-data-center-campus",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "amazon-northern-indiana-2-4gw",
+    "name": "Northern Indiana expansion",
+    "owner": "Amazon (AWS)",
+    "users": "",
+    "country": "US",
+    "region": "Indiana",
+    "locality": "Northern Indiana (sites TBD)",
+    "lat": 41.5,
+    "lon": -86.2,
+    "location_precision": "region",
+    "capacity_mw": {
+      "low": 2400,
+      "high": 2400,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "$15B for new campuses adding 2.4 GW",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 15000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "amz_in",
+        "title": "Amazon plans to invest $15 billion in Northern Indiana",
+        "publisher": "Amazon",
+        "url": "https://aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "Location only regional – do not pin a precise point.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "aligned-project-phoenix",
+    "name": "Project Phoenix",
+    "owner": "Aligned Data Centers",
+    "users": "",
+    "country": "US",
+    "region": "Pennsylvania",
+    "locality": "Shippingport (former Bruce Mansfield plant)",
+    "lat": 40.63,
+    "lon": -80.43,
+    "location_precision": "site",
+    "capacity_mw": {
+      "low": 2000,
+      "high": 2000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Groundbreaking Sept 2026; state Notice of Commencement filed Oct 8, 2026; ~$10B",
+    "expected_completion": "2028-2029",
+    "investment_usd": {
+      "value": 10000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "pa_dgs",
+        "title": "State construction notice: Aligned Data Centers, Notice of Commencement (Oct 8, 2026)",
+        "publisher": "Pennsylvania Department of General Services",
+        "url": "https://www.pa.gov/dgs/state-construction-notices-directory/Wizard/ProjectDetail/2832",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "dcf_pa",
+        "title": "From Coal to Compute: How Pennsylvania Is Rebuilding Power for AI Data Centers",
+        "publisher": "Data Center Frontier",
+        "url": "https://www.datacenterfrontier.com/energy/article/55404954/from-coal-to-compute-how-pennsylvania-is-rebuilding-power-for-ai-data-centers",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "tract-tric",
+    "name": "Tract Reno parks (TRIC)",
+    "owner": "Tract (data center park developer)",
+    "users": "Multiple tenants (TBD)",
+    "country": "US",
+    "region": "Nevada",
+    "locality": "Tahoe-Reno Industrial Center, Storey County",
+    "lat": 39.53,
+    "lon": -119.45,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 810,
+      "high": 2000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Peru Shelf Technology Park (810 MW) under construction since 2024; 2 GW across the 2,200-acre TRIC holdings",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "dcd_tract",
+        "title": "Tract breaks ground on 810MW data center park in Reno, Nevada",
+        "publisher": "DatacenterDynamics",
+        "url": "https://datacenterdynamics.com/en/news/tract-breaks-ground-on-810mw-data-center-park-in-reno-nevada",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Tract sells powered land to other companies; it is a park, not one data center. Consider a park label.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "iren-sweetwater",
+    "name": "Sweetwater campus",
+    "owner": "IREN",
+    "users": "IREN AI cloud customers",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Sweetwater (West Texas)",
+    "lat": 32.47,
+    "lon": -100.41,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 2000,
+      "high": 2000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Sweetwater 1 (1.4 GW) energized May 1, 2026; power ramps as buildings are commissioned",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "iren_pr",
+        "title": "IREN Announces Successful Energization of Sweetwater 1",
+        "publisher": "IREN (GlobeNewswire)",
+        "url": "https://www.globenewswire.com/news-release/2026/05/01/3286213/0/en/index.html",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "iren_site",
+        "title": "Sweetwater data center overview",
+        "publisher": "IREN",
+        "url": "https://iren.com/data-centers/sweetwater",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "County differs between sources (Nolan vs Fisher) - check before pinning exact site.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "powerhouse-grand-prairie",
+    "name": "Grand Prairie campus",
+    "owner": "PowerHouse Data Centers / Provident Data Centers",
+    "users": "",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Grand Prairie (Ellis County, 881 Miller Rd)",
+    "lat": 32.5,
+    "lon": -97.03,
+    "location_precision": "site",
+    "capacity_mw": {
+      "low": 1800,
+      "high": 1800,
+      "type": "grid_switchyard"
+    },
+    "status": "under_construction",
+    "status_note": "1.8 GW switchyard; first 500 MW approved by ERCOT; first building slated to energize May 2026",
+    "expected_completion": "2028",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "di_ph",
+        "title": "Dallas' Provident Data Centers, Virginia's PowerHouse Partner on 'Hyperscale' North Texas Campus",
+        "publisher": "Dallas Innovates",
+        "url": "https://dallasinnovates.com/dallas-provident-data-centers-virginias-powerhouse-partner-on-hyperscale-north-texas-campus/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "dcd_ph",
+        "title": "PowerHouse and Provident to develop 1.8GW campus in DFW, Texas",
+        "publisher": "DatacenterDynamics",
+        "url": "https://datacenterdynamics.com/en/news/powerhouse-and-provident-to-develop-18gw-campus-in-dfw-texas",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "1.8 GW is switchyard capacity across 24 buildings in 3 phases.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "openai-project-camellia",
+    "name": "Project Camellia",
+    "owner": "OpenAI",
+    "users": "OpenAI",
+    "country": "US",
+    "region": "Georgia",
+    "locality": "Georgia (site TBD)",
+    "lat": 32.9,
+    "lon": -83.4,
+    "location_precision": "state",
+    "capacity_mw": {
+      "low": 3200,
+      "high": 3200,
+      "type": "planned_campus"
+    },
+    "status": "permitting",
+    "status_note": "Still in permitting; 3.2 GW power contract with Georgia Power",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "fl",
+        "title": "Largest Data Center Projects Breaking Ground in 2026 and 2027",
+        "publisher": "Finish Line",
+        "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Exact location unknown – show at state level or hide until known.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "microsoft-pecos",
+    "name": "Pecos AI Campus",
+    "owner": "Microsoft",
+    "users": "Microsoft",
+    "country": "US",
+    "region": "Texas",
+    "locality": "Pecos",
+    "lat": 31.42,
+    "lon": -103.49,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 2000,
+      "high": 2670,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "~2 GW, up to 2.67 GW dedicated generation",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "fl",
+        "title": "Largest Data Center Projects Breaking Ground in 2026 and 2027",
+        "publisher": "Finish Line",
+        "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "buckeye-tech-park",
+    "name": "Buckeye Technology Park",
+    "owner": "",
+    "users": "",
+    "country": "US",
+    "region": "Arizona",
+    "locality": "Buckeye",
+    "lat": 33.37,
+    "lon": -112.58,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 1800,
+      "high": 1800,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "Up to 1.8 GW across up to 40 buildings; ~$20B",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 20000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "fl",
+        "title": "Largest Data Center Projects Breaking Ground in 2026 and 2027",
+        "publisher": "Finish Line",
+        "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Developer name missing.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "lambda-project-red-clay",
+    "name": "Project Red Clay",
+    "owner": "Lambda",
+    "users": "Lambda",
+    "country": "US",
+    "region": "Alabama",
+    "locality": "Lowndes County",
+    "lat": 32.15,
+    "lon": -86.6,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "Announced Nov 4, 2026",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "bx_news",
+        "title": "Baxtel news (Nov 2026): Lambda Project Red Clay; Google Wyoming",
+        "publisher": "Baxtel",
+        "url": "https://baxtel.com/news/category/news?page=3",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Find Lambda's own announcement as primary source.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "aws-walla-walla",
+    "name": "Walla Walla County campus",
+    "owner": "Amazon (AWS)",
+    "users": "",
+    "country": "US",
+    "region": "Washington",
+    "locality": "Walla Walla County",
+    "lat": 46.07,
+    "lon": -118.34,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 300,
+      "high": 300,
+      "type": "planned_campus"
+    },
+    "status": "permitting",
+    "status_note": "Three-building campus on 134 acres per county documents",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "bx_aws",
+        "title": "AWS reveals 300MW data center campus plan in Walla Walla County",
+        "publisher": "Baxtel",
+        "url": "https://baxtel.com/data-center/50irly",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "meta-alberta",
+    "name": "Meta Alberta AI campus",
+    "owner": "Meta",
+    "users": "Meta",
+    "country": "CA",
+    "region": "Alberta",
+    "locality": "Sturgeon County",
+    "lat": 53.75,
+    "lon": -113.5,
+    "location_precision": "county",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "Meta's first Canadian data center, >$9B",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": 9000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "dck_aug",
+        "title": "New Data Center Developments: August 2026",
+        "publisher": "Data Center Knowledge",
+        "url": "https://datacenterknowledge.com/data-center-construction/new-data-center-developments-august-2026",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-uae",
+    "name": "Stargate UAE",
+    "owner": "G42 / Khazna",
+    "users": "OpenAI",
+    "country": "AE",
+    "region": "Abu Dhabi",
+    "locality": "UAE–US AI Campus",
+    "lat": 24.45,
+    "lon": 54.65,
+    "location_precision": "city",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "First 200 MW expected 2026 (Epoch: on track by Dec 2026); part of a 5 GW campus",
+    "expected_completion": "2026-12 (phase 1)",
+    "investment_usd": {
+      "value": 7600000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "oai_uae",
+        "title": "Introducing Stargate UAE",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/introducing-stargate-uae",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "ep_uae",
+        "title": "OpenAI Stargate UAE – AI data center directory",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-uae",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "tn_uae",
+        "title": "Stargate UAE's first phase to be completed in third quarter of 2026",
+        "publisher": "The National",
+        "url": "https://www.thenationalnews.com/business/2025/12/05/stargate-uaes-first-phase-to-be-completed-in-third-quarter-of-2026",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "Investment $7.6B is Epoch's estimate for phase 1.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "stargate-norway-narvik",
+    "name": "Stargate Norway (Narvik)",
+    "owner": "Nscale / Aker",
+    "users": "OpenAI; Epoch lists Microsoft as likely user",
+    "country": "NO",
+    "region": "Nordland",
+    "locality": "Kvandal, Narvik",
+    "lat": 68.43,
+    "lon": 17.43,
+    "location_precision": "town",
+    "capacity_mw": {
+      "low": 230,
+      "high": 290,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Epoch: buildings 1–2 expected operational end of 2026",
+    "expected_completion": "2026-H2",
+    "investment_usd": {
+      "value": 3500000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "tr_no",
+        "title": "Stargate Norway: OpenAI's First AI Data Center in Europe",
+        "publisher": "TechRepublic",
+        "url": "https://www.techrepublic.com/article/news-openai-stargate-norway-ai-data-center/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "ep_nar",
+        "title": "Microsoft Narvik Norway – AI data center directory",
+        "publisher": "Epoch AI",
+        "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-narvik-norway",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Tenant reporting differs (OpenAI vs Microsoft) – verify and explain on card.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "atnorth-haugaland",
+    "name": "atNorth Haugaland campus",
+    "owner": "atNorth",
+    "users": "",
+    "country": "NO",
+    "region": "Rogaland",
+    "locality": "Haugaland",
+    "lat": 59.41,
+    "lon": 5.27,
+    "location_precision": "region",
+    "capacity_mw": {
+      "low": 350,
+      "high": 350,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "Planned 350 MW campus",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "dcd_hau",
+        "title": "atNorth plans 350MW data center campus in Norway (tag: Haugaland)",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/tags/haugaland/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Find exact site and primary source.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "google-visakhapatnam",
+    "name": "Google India AI Hub",
+    "owner": "Google (with AdaniConneX, Nxtra by Airtel)",
+    "users": "Google",
+    "country": "IN",
+    "region": "Andhra Pradesh",
+    "locality": "Visakhapatnam",
+    "lat": 17.69,
+    "lon": 83.22,
+    "location_precision": "city",
+    "capacity_mw": {
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Groundbreaking Apr 28, 2026; three campuses",
+    "expected_completion": "2030",
+    "investment_usd": {
+      "value": 15000000000.0,
+      "est": true
+    },
+    "sources": [
+      {
+        "id": "g_viz",
+        "title": "Google Breaks Ground on India AI Hub",
+        "publisher": "Google Cloud Press Corner",
+        "url": "https://www.googlecloudpresscorner.com/2026-04-28-Google-Breaks-Ground-on-India-AI-Hub%2C-Launching-a-National-Industrial-Ecosystem-Alongside-Indias-Digital-Infrastructure-Milestone",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "reliance-vizag",
+    "name": "Reliance Vizag AI cluster",
+    "owner": "Reliance Industries",
+    "users": "",
+    "country": "IN",
+    "region": "Andhra Pradesh",
+    "locality": "Visakhapatnam",
+    "lat": 17.75,
+    "lon": 83.3,
+    "location_precision": "city",
+    "capacity_mw": {
+      "low": 1500,
+      "high": 1500,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "1.5 GW by 2030",
+    "expected_completion": "2030",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "fpj_rel",
+        "title": "After Google And Adani, Reliance Puts Vizag On World's AI Data Centre Map",
+        "publisher": "Free Press Journal",
+        "url": "https://www.freepressjournal.in/business/after-google-and-adani-reliance-puts-vizag-on-worlds-ai-data-centre-map",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "reliance-jamnagar",
+    "name": "Reliance Jamnagar AI campus",
+    "owner": "Reliance Industries",
+    "users": "",
+    "country": "IN",
+    "region": "Gujarat",
+    "locality": "Jamnagar",
+    "lat": 22.47,
+    "lon": 70.06,
+    "location_precision": "city",
+    "capacity_mw": {
+      "low": 3000,
+      "high": 3000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Capacity 'reportedly' 3 GW",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "ob_jam",
+        "title": "India's Data Centre Boom: Adani, Reliance, Bharti in Fast Lane",
+        "publisher": "Outlook Business",
+        "url": "https://www.outlookbusiness.com/explainers/indias-data-centre-boom-adani-reliance-bharti-in-fast-lane-in-a-crowded-field",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Capacity is reported, not confirmed.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "humain-datavolt-oxagon",
+    "name": "Oxagon AI campus (NEOM)",
+    "owner": "DataVolt / HUMAIN",
+    "users": "Nebius (anchor for 50 MW)",
+    "country": "SA",
+    "region": "Tabuk",
+    "locality": "Oxagon, NEOM",
+    "lat": 27.6,
+    "lon": 35.6,
+    "location_precision": "region",
+    "capacity_mw": {
+      "low": 360,
+      "high": 1500,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "100 MW of 360 MW phase 1 under construction; wider 1.5 GW campus; operational 2028",
+    "expected_completion": "2028",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "neom",
+        "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+        "publisher": "NEOM",
+        "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+        "accessed": "2026-11-23"
+      },
+      {
+        "id": "zaw_neom",
+        "title": "Saudi AI firms Humain, DataVolt partner for data center on kingdom's Red Sea coast",
+        "publisher": "Zawya / Reuters",
+        "url": "https://www.zawya.com/en/business/saudi-ai-firms-humain-datavolt-partner-for-data-center-on-kingdoms-red-sea-coast-472918",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "primary",
+    "review_notes": "",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "humain-riyadh-6gw",
+    "name": "HUMAIN Riyadh hyperscale campus",
+    "owner": "HUMAIN (PIF)",
+    "users": "",
+    "country": "SA",
+    "region": "Riyadh",
+    "locality": "Riyadh",
+    "lat": 24.71,
+    "lon": 46.68,
+    "location_precision": "city",
+    "capacity_mw": {
+      "low": 6000,
+      "high": 6000,
+      "type": "planned_campus"
+    },
+    "status": "under_construction",
+    "status_note": "Infrastructure contract awarded",
+    "expected_completion": null,
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "meed_ry",
+        "title": "Contractor wins 6GW data centre campus infrastructure",
+        "publisher": "MEED",
+        "url": "https://www.meed.com/contractor-wins-6gw-data-centre-campus-infrastructure",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Paywalled source; confirm status and site.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  },
+  {
+    "slug": "france-mgx-paris-campus",
+    "name": "Paris-region AI campus",
+    "owner": "MGX / Bpifrance / Nvidia / Mistral AI",
+    "users": "",
+    "country": "FR",
+    "region": "Île-de-France",
+    "locality": "Paris region",
+    "lat": 48.6,
+    "lon": 2.9,
+    "location_precision": "region",
+    "capacity_mw": {
+      "low": 1400,
+      "high": 1400,
+      "type": "planned_campus"
+    },
+    "status": "announced",
+    "status_note": "Construction expected to start H2 2026; operations 2028",
+    "expected_completion": "2028",
+    "investment_usd": {
+      "value": null,
+      "est": null
+    },
+    "sources": [
+      {
+        "id": "reg_fr",
+        "title": "Nvidia part of plans for mega 1.4 GW AI datacenter near Paris",
+        "publisher": "The Register",
+        "url": "https://www.theregister.com/2025/05/20/paris_dc_hub_1_point_4_gw/",
+        "accessed": "2026-11-23"
+      }
+    ],
+    "verification": "news",
+    "review_notes": "Confirm whether construction started; find exact site.",
+    "approved": true,
+    "last_verified": "2026-11-23"
+  }
+]

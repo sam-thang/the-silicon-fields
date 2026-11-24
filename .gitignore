@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Impeccable (local-only settings; runtime dirs ignore themselves)
+.impeccable/config.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
