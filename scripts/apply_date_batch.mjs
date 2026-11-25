@@ -29,6 +29,8 @@ for (const [slug, change] of Object.entries(batch.projects)) {
     }
   }
 
+  // Approved top-level overrides, e.g. capacity_mw or expected_completion.
+  for (const [k, v] of Object.entries(change.set ?? {})) p[k] = v;
   if (change.status) p.status = change.status;
   if (change.status_note) p.status_note = change.status_note;
   if (change.review_append) {

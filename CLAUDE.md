@@ -168,6 +168,7 @@ Keep in `data/factors.json`, each with source and date, shown on the methodology
 - **Data Center Index**, **Electric Choice US data center tracker**, **Baxtel**: discovery and cross-checking.
 - Company announcements, utility filings, county/municipal permits, local news: primary sources for each record.
 - Rule: a project needs at least one primary or reputable news source; trackers alone are not enough.
+- Exception (owner decision, Nov 2026): **Epoch AI satellite observation** counts as news-level evidence for status and construction dates. Cite it as "Epoch AI (satellite imagery, <date>)" with `kind: "satellite"`. Other trackers (Baxtel, Cleanview, Data Center Map, Electric Choice) still never count on their own.
 
 ### Imagery
 - Before/after: Sentinel-2 (Copernicus, free, ~10 m) works everywhere; use cloud-free composites per year.

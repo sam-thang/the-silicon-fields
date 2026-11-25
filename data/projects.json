@@ -696,6 +696,23 @@
     "status": "under_construction",
     "status_note": "Epoch projects completion Q4 2028",
     "expected_completion": "2028-Q4",
+    "dates": {
+      "announced": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "sb_5sites"
+        ]
+      },
+      "construction_start": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "epoch_milam_sat"
+        ],
+        "note": "Epoch satellite imagery: land clearing begins 27 Sep 2025; foundations Jan 2026; steel framing Mar 2026."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -714,12 +731,28 @@
         "publisher": "Blackridge Research",
         "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "sb_5sites",
+        "title": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+        "publisher": "SoftBank Group",
+        "url": "https://group.softbank/en/news/press/20250924",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "epoch_milam_sat",
+        "title": "OpenAI Stargate Milam – satellite explorer (land clearing 27 Sep 2025; updated 22 May 2026)",
+        "publisher": "Epoch AI (satellite imagery)",
+        "url": "https://epoch.ai/data/data-centers/satellite-explorer/OpenAIStargateMilam",
+        "kind": "satellite",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-michigan-barn",
@@ -740,6 +773,24 @@
     "status": "under_construction",
     "status_note": "Epoch projects completion Q4 2028",
     "expected_completion": "2028-Q4",
+    "dates": {
+      "announced": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "mpr_barn"
+        ]
+      },
+      "construction_start": {
+        "value": "2026",
+        "precision": "year",
+        "source_ids": [
+          "ccre_barn",
+          "dbiz_barn"
+        ],
+        "note": "Construction began in 2026; no exact groundbreaking date found."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -758,12 +809,36 @@
         "publisher": "Blackridge Research",
         "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "mpr_barn",
+        "title": "Massive data center project announced for Michigan",
+        "publisher": "Michigan Public",
+        "url": "https://www.michiganpublic.org/economy/2025-10-30/massive-data-center-project-announced-for-michigan",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "ccre_barn",
+        "title": "Oracle, OpenAI begin construction on Michigan data center campus",
+        "publisher": "ConnectCRE",
+        "url": "https://www.connectcre.com/stories/oracle-openai-begin-construction-on-michigan-data-center-campus/",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dbiz_barn",
+        "title": "Related Digital's $16B Saline Township Data Center is Walbridge's Largest Project Ever",
+        "publisher": "DBusiness",
+        "url": "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-new-mexico",
@@ -784,6 +859,24 @@
     "status": "under_construction",
     "status_note": "Epoch: construction advanced significantly since Feb 2026; capacity stated as 1 GW+",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "sb_5sites"
+        ],
+        "note": "Named as a Stargate site 23 Sep 2025 (local name: Project Jupiter)."
+      },
+      "construction_start": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "yahoo_jupiter"
+        ],
+        "note": "Construction reported to begin in September 2025 after the county approved the bond."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -809,12 +902,28 @@
         "publisher": "LLM Pulse",
         "url": "https://llmpulse.ai/blog/stargate-data-centers/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "sb_5sites",
+        "title": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+        "publisher": "SoftBank Group",
+        "url": "https://group.softbank/en/news/press/20250924",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "yahoo_jupiter",
+        "title": "Massive data center project in Doña Ana County facing one hurdle",
+        "publisher": "Yahoo News (local report)",
+        "url": "https://www.yahoo.com/news/articles/massive-data-center-project-ana-051803555.html",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Fierce Network cites $165B – verify before showing any investment figure.",
+    "review_notes": "Fierce Network cites $165B – verify before showing any investment figure. Dates batch 2: construction month comes from one news report; confirm.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-lordstown",
@@ -833,8 +942,25 @@
       "type": "it_load_estimate"
     },
     "status": "under_construction",
-    "status_note": "~214 MW IT is an Epoch estimate",
+    "status_note": "~214 MW IT is an Epoch estimate. Disputed: SoftBank says it broke ground (Sep 2025); the village mayor said a large AI data center is not planned, and Epoch describes the site as mainly an AI server factory.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "sb_5sites"
+        ]
+      },
+      "construction_start": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "sb_5sites"
+        ],
+        "note": "SoftBank: 'has broken ground on an advanced data center design'."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -853,12 +979,28 @@
         "publisher": "LLM Pulse",
         "url": "https://llmpulse.ai/blog/stargate-data-centers/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "sb_5sites",
+        "title": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+        "publisher": "SoftBank Group",
+        "url": "https://group.softbank/en/news/press/20250924",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "vindy_lordstown",
+        "title": "Lordstown chosen as one of five AI data center sites",
+        "publisher": "The Vindicator",
+        "url": "https://www.vindy.com/uncategorized/2025/09/lordstown-chosen-as-one-of-five-ai-data-center-sites/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Capacity is an IT-load estimate, not comparable with campus GW.",
+    "review_notes": "Capacity is an IT-load estimate, not comparable with campus GW. Dates batch 2: scope disputed; recheck whether a data center (vs. a server factory) is being built.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-port-washington",
@@ -872,13 +1014,30 @@
     "lon": -87.88,
     "location_precision": "town",
     "capacity_mw": {
-      "low": null,
-      "high": null,
-      "type": "unknown"
+      "low": 1000,
+      "high": 1000,
+      "type": "planned_campus",
+      "note": "Shown as 'up to 1 GW'; source wording: 'close to a gigawatt of AI capacity' (owner-approved 2026-11-25)."
     },
-    "status": "announced",
-    "status_note": "Midwest anchor site of Stargate expansion",
-    "expected_completion": null,
+    "status": "under_construction",
+    "status_note": "Groundbroken Dec 2025; second building topped out Jun 2026. Announcement: 'close to a gigawatt of AI capacity' across four data centers.",
+    "expected_completion": "2028",
+    "dates": {
+      "announced": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "dbrg_lighthouse"
+        ]
+      },
+      "construction_start": {
+        "value": "2025-12",
+        "precision": "month",
+        "source_ids": [
+          "dr_lighthouse"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -897,12 +1056,36 @@
         "publisher": "Data Center Frontier",
         "url": "https://www.datacenterfrontier.com/site-selection/article/55360277/land-and-expand-early-2026-megaprojects-reflect-a-power-first-ethos",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "dbrg_lighthouse",
+        "title": "OpenAI, Oracle and Vantage Data Centers Announce Stargate Data Center Site in Wisconsin",
+        "publisher": "DigitalBridge / Vantage Data Centers",
+        "url": "https://ir.digitalbridge.com/news-releases/news-release-details/openai-oracle-and-vantage-data-centers-announce-stargate-data",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dr_lighthouse",
+        "title": "$15 billion Vantage data center breaks ground in Port Washington",
+        "publisher": "The Daily Reporter",
+        "url": "https://dailyreporter.com/2025/12/18/15-billion-vantage-data-center-breaks-ground-in-port-washington/",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_lighthouse_topout",
+        "title": "Vantage tops out second building at OpenAI's Lighthouse campus in Wisconsin",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/vantage-tops-out-second-building-at-openais-lighthouse-campus-in-wisconsin",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Capacity missing – research before publishing.",
+    "review_notes": "Capacity missing – research before publishing. Dates batch 2: status updated to under_construction and capacity filled (up to 1 GW).",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "meta-lebanon-indiana",
@@ -922,7 +1105,24 @@
     },
     "status": "under_construction",
     "status_note": "Groundbreaking reported by Data Center Frontier",
-    "expected_completion": null,
+    "expected_completion": "2027-Q4 to 2028-Q1",
+    "dates": {
+      "announced": {
+        "value": "2026-02",
+        "precision": "month",
+        "source_ids": [
+          "meta_lebanon"
+        ]
+      },
+      "construction_start": {
+        "value": "2026-02",
+        "precision": "month",
+        "source_ids": [
+          "iedc_meta",
+          "meta_lebanon"
+        ]
+      }
+    },
     "investment_usd": {
       "value": 10000000000,
       "est": true
@@ -941,12 +1141,28 @@
         "publisher": "Data Center Frontier",
         "url": "https://datacenterfrontier.com/machine-learning/article/55357508/ais-new-land-grab-metas-indiana-megaproject-and-the-rise-of-europes-neocloud-challengers",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "meta_lebanon",
+        "title": "Meta's New Data Center in Lebanon, Indiana Marks a Milestone AI Investment",
+        "publisher": "Meta",
+        "url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "iedc_meta",
+        "title": "Gov. Braun breaks ground on $10B Meta data center campus at LEAP District",
+        "publisher": "Indiana Economic Development Corporation",
+        "url": "https://iedc.in.gov/events/news/details/2026/02/11/gov.-braun-breaks-ground-on-10b-meta-data-center-campus-at-leap-district",
+        "kind": "primary",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "meta-el-paso",
@@ -967,6 +1183,22 @@
     "status": "under_construction",
     "status_note": "Online 2028",
     "expected_completion": "2028",
+    "dates": {
+      "announced": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "meta_elpaso"
+        ]
+      },
+      "construction_start": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "meta_elpaso"
+        ]
+      }
+    },
     "investment_usd": {
       "value": 10000000000,
       "est": true
@@ -978,12 +1210,28 @@
         "publisher": "LLM Pulse",
         "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "meta_elpaso",
+        "title": "Breaking Ground on Our New AI-Optimized Data Center in El Paso",
+        "publisher": "Meta",
+        "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_elpaso_gas",
+        "title": "Meta to deploy 366MW of modular gas units to power 1GW data center in El Paso, Texas",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/meta-to-deploy-366mw-of-modular-gas-units-to-power-1gw-data-center-in-el-paso-texas/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "Confirm exact site location.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "meta-bowling-green",
@@ -1004,6 +1252,24 @@
     "status": "under_construction",
     "status_note": "~422 MW IT is an Epoch estimate",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-04",
+        "precision": "month",
+        "source_ids": [
+          "jobsohio_meta"
+        ]
+      },
+      "construction_start": {
+        "value": "2024-10",
+        "precision": "month",
+        "source_ids": [
+          "cv_meta_bg",
+          "jobsohio_meta"
+        ],
+        "note": "Month from Cleanview (tracker); JobsOhio confirms construction was under way by Apr 2025."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -1015,12 +1281,28 @@
         "publisher": "LLM Pulse",
         "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "jobsohio_meta",
+        "title": "Regional Growth Partnership and JobsOhio welcome Meta to Northwest Ohio with new $800 million data center announcement",
+        "publisher": "JobsOhio",
+        "url": "https://www.jobsohio.com/newsroom/news-press/regional-growth-partnership-and-jobsohio-welcome-meta-to-northwest-ohio-with-new-800-million-data-center-announcement",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "cv_meta_bg",
+        "title": "Meta Bowling Green",
+        "publisher": "Cleanview",
+        "url": "https://cleanview.co/data-centers/ohio/meta-bowling-green-243",
+        "kind": "tracker",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "",
+    "review_notes": "Dates batch 2: construction month is tracker-sourced; one tracker lists the campus as cancelled (unverified).",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "meta-prometheus",
