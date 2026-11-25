@@ -1,0 +1,29 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "createdAt": "2026-11-25T18:00:58.706Z",
+        "reason": "DESIGN.md typography (owner-agreed mockups, /impeccable document Nov 2026): Space Grotesk is the numbers face"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-25T18:00:58.751Z",
+        "reason": "DESIGN.md typography (owner-agreed mockups, /impeccable document Nov 2026): Inter is the text face"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "dist-prototypes/globe/maplibre.html"
+        ],
+        "createdAt": "2026-11-25T18:00:58.796Z",
+        "reason": "Build output: MapLibre library CSS (geolocate-control pulse), not used by the prototype"
+      }
+    ]
+  }
+}

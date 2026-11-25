@@ -8,6 +8,7 @@ colors:
   tile-navy: "#13264A"
   ocean-light: "#16294A"
   ocean-deep: "#0A1529"
+  land-dot: "#4A6290"
   line-subtle: "#1E3157"
   line-strong: "#2A4170"
   status-construction: "#FFC233"
@@ -206,6 +207,7 @@ A cold, dark navy world where status colors are the only saturated notes, and am
 - **Panel Navy** (#0D1A32): overlay panels and the globe hover card, used translucent (94% for the hover card, 80% for the side panel) so the globe shows faintly through.
 - **Tile Navy** (#13264A): stat tiles inside the site card; also the faint outer halo around the globe (25% opacity).
 - **Ocean Light → Ocean Deep** (#16294A → #0A1529): radial gradient on the globe sphere, lit from upper left. This is the one sanctioned gradient, and it is a surface, not a decoration.
+- **Land Dot** (#4A6290): the continents, drawn as an evenly spaced grid of small dots on the ocean (as in the desktop mockup), never as filled shapes or imagery. Graphics only, never text. Owner confirmed the dotted style 2026-11-25.
 - **Line Subtle** (#1E3157): list dividers, side-panel border, timeline track.
 - **Line Strong** (#2A4170): input and card borders, the globe edge, the bottom-sheet top border and drag handle, outline buttons.
 - **Text Primary** (#F4F6FA): headings, project names, figures, active nav and links.

@@ -5,7 +5,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 maplibregl.setWorkerUrl(workerUrl);
 import {
-  COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, land, heightFor, items, stageAt,
+  COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, landDots, heightFor, items, stageAt,
   mountChrome, mountTimeline, createCard, autoRotate, webglAvailable,
 } from "./shared.js";
 
@@ -61,14 +61,22 @@ const map = new maplibregl.Map({
     projection: { type: "globe" },
     sky: { "atmosphere-blend": 0 },
     sources: {
-      land: { type: "geojson", data: land },
+      land: { type: "geojson", data: { type: "Feature", properties: {}, geometry: { type: "MultiPoint", coordinates: landDots } } },
       cols: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
       dots: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
       approx: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
     },
     layers: [
       { id: "ocean", type: "background", paint: { "background-color": COLOR.ocean } },
-      { id: "land", type: "fill", source: "land", paint: { "fill-color": COLOR.land, "fill-antialias": false } },
+      {
+        id: "land", type: "circle", source: "land",
+        paint: {
+          "circle-color": COLOR.landDot,
+          "circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, 0.9, 2, 1.9, 5, 7],
+          "circle-pitch-alignment": "map",
+          "circle-pitch-scale": "map",
+        },
+      },
       { id: "approx", type: "fill", source: "approx", paint: { "fill-color": ["get", "color"], "fill-opacity": 0.16 } },
       { id: "dots", type: "circle", source: "dots", paint: { "circle-radius": 4, "circle-color": ["get", "color"], "circle-pitch-alignment": "map" } },
       {

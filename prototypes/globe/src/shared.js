@@ -5,8 +5,9 @@ import "@fontsource/inter/600.css";
 import "@fontsource/space-grotesk/700.css";
 import "./style.css";
 import raw from "../../../data/projects.geojson?raw";
-import { feature } from "topojson-client";
-import land50 from "world-atlas/land-50m.json";
+// Dotted land, as in the mockup (built by build-dots.mjs from Natural Earth 1:50m).
+import landDots from "./land-dots.json";
+export { landDots };
 
 export const params = new URLSearchParams(location.search);
 export const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -18,8 +19,9 @@ export const COLOR = {
   operational: "#DCE3EE",
   paused: "#6B7280",
   ocean: "#16294A",
-  land: "#1E3157",
+  landDot: "#4A6290", // mockups/desktop-globe-home.html land dots (not yet a DESIGN.md token)
 };
+export const LAND_DOT_RADIUS_M = 26000;
 export const STAGE_LABEL = {
   planned: "Planned",
   construction: "Under construction",
@@ -41,7 +43,6 @@ export function hexToRgb(hex) {
 }
 
 export const geojson = JSON.parse(raw);
-export const land = feature(land50, land50.objects.land);
 
 // Column height: linear in column_mw. The tallest project sets MAX_HEIGHT_M.
 export const MAX_MW = Math.max(...geojson.features.map((f) => f.properties.column_mw ?? 0));

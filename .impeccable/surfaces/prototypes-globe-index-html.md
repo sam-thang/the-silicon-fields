@@ -21,8 +21,8 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape globe`.
 5. Weight: JS + data transfer size, time to first globe.
 
 ## Surface
-- Navy land shapes on a darker ocean from Natural Earth (public domain) in both prototypes.
-- Screenshots of all three Earth styles for the owner: navy land, dimmed NASA Black Marble night lights, muted NASA Blue Marble satellite (licensing noted in `docs/imagery-licensing.md`).
+- **Dotted land, as in `mockups/desktop-globe-home.html`** (owner decision 2026-11-25, after seeing filled land shapes): an evenly spaced dot grid (~1.4°) on land from Natural Earth 1:50m, dots in Land Dot #4A6290 on the ocean navy. Built by `prototypes/globe/build-dots.mjs`.
+- Comparison screenshots of filled navy land, dimmed NASA night lights and muted NASA satellite were shown to the owner (`?earth=night|satellite` on the deck.gl page; NASA public-domain images via Wikimedia Commons).
 
 ## Delivery
 - `prototypes/globe/`: index (scorecard), maplibre, deckgl pages reading `data/projects.geojson`.

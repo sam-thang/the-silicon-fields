@@ -1,10 +1,10 @@
 // deck.gl prototype: GlobeView + ColumnLayer.
 import { Deck, _GlobeView as GlobeView, COORDINATE_SYSTEM } from "@deck.gl/core";
-import { ColumnLayer, GeoJsonLayer, ScatterplotLayer, BitmapLayer } from "@deck.gl/layers";
+import { ColumnLayer, ScatterplotLayer, BitmapLayer } from "@deck.gl/layers";
 import { SimpleMeshLayer } from "@deck.gl/mesh-layers";
 import { SphereGeometry } from "@luma.gl/engine";
 import {
-  COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, land, heightFor, items, stageAt, hexToRgb, params,
+  COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, LAND_DOT_RADIUS_M, landDots, heightFor, items, stageAt, hexToRgb, params,
   mountChrome, mountTimeline, createCard, autoRotate, webglAvailable,
 } from "./shared.js";
 
@@ -67,7 +67,10 @@ function layers() {
           desaturate: EARTH.desaturate,
           tintColor: EARTH.tint,
         })
-      : new GeoJsonLayer({ id: "land", data: land, stroked: false, filled: true, getFillColor: hexToRgb(COLOR.land) }),
+      : new ScatterplotLayer({
+          id: "land-dots", data: landDots, getPosition: (d) => d, getRadius: LAND_DOT_RADIUS_M,
+          radiusMinPixels: 0.6, getFillColor: hexToRgb(COLOR.landDot),
+        }),
     new ScatterplotLayer({
       id: "approx", data: approx, getPosition: common.getPosition, getRadius: APPROX_RADIUS_M,
       getFillColor: (v) => [...rgb[v.stage], 40], updateTriggers: { getFillColor: iso },
