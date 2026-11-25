@@ -1,0 +1,61 @@
+{
+  "slug": "meta-huntsville",
+  "name": "Huntsville data center (new buildings)",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Alabama",
+  "locality": "Huntsville",
+  "lat": 34.73,
+  "lon": -86.59,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 146,
+    "high": 146,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Buildings begun Dec 2021, operational by Jun 2026 (Epoch estimate, ~146 MW IT); supported by 377 MW of TVA solar.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-12",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_meta_huntsville"
+      ],
+      "note": "Epoch satellite: Building 1 land clearing begins 13 Dec 2021."
+    },
+    "operational": {
+      "value": "2026-03",
+      "precision": "month",
+      "source_ids": [
+        "ep_meta_huntsville"
+      ],
+      "note": "Epoch estimate: Building 1 operational ~4 Mar 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_meta_huntsville",
+      "title": "Meta Huntsville – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-huntsville",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "tva_meta_solar",
+      "title": "TVA announces largest Valley solar installations, built for Facebook",
+      "publisher": "TVA (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/tva-announces-largest-valley-solar-installations--built-for-facebook-300743255.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Meta announced Huntsville in 2018; included because these buildings started in Dec 2021. Operational dates are Epoch estimates. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

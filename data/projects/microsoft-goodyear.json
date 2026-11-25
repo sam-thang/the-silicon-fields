@@ -1,0 +1,61 @@
+{
+  "slug": "microsoft-goodyear",
+  "name": "Goodyear campus",
+  "owner": "Microsoft",
+  "tenant": "Microsoft (OpenAI likely)",
+  "country": "US",
+  "region": "Arizona",
+  "locality": "Goodyear, Maricopa County",
+  "lat": 33.44,
+  "lon": -112.36,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 202,
+    "high": 202,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Buildings 1–4 operational by Sep 2025 (Epoch, ~202 MW IT); Microsoft said MAI-Thinking-1 was trained here (May 2026); foundations for Buildings 5–6 under way.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-06",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_microsoft_goodyear"
+      ],
+      "note": "Epoch satellite: land clearing for Building 1 begins 21 Jun 2021."
+    },
+    "operational": {
+      "value": "2023-04",
+      "precision": "month",
+      "source_ids": [
+        "ep_microsoft_goodyear"
+      ],
+      "note": "Epoch: Building 1 operational ~24 Apr 2023 (interpolated from imagery)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_microsoft_goodyear",
+      "title": "Microsoft Goodyear – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-goodyear",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "semi_msft",
+      "title": "Microsoft's AI strategy deconstructed",
+      "publisher": "SemiAnalysis",
+      "url": "https://newsletter.semianalysis.com/p/microsofts-ai-strategy-deconstructed",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Add a Microsoft/news source for the site and the MAI training claim. Buildings 5–6 would add capacity. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

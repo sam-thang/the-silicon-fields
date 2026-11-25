@@ -1,0 +1,53 @@
+{
+  "slug": "alibaba-zhangbei",
+  "name": "Zhangbei AI buildings",
+  "owner": "Alibaba",
+  "tenant": "Alibaba",
+  "country": "CN",
+  "region": "Hebei",
+  "locality": "Zhangbei County, Zhangjiakou",
+  "lat": 41.16,
+  "lon": 114.72,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 169,
+    "high": 169,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Six buildings begun May 2024, all operational by Jan 2026 (Epoch, ~169 MW IT).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2024-05",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_alibaba_zhangbei"
+      ],
+      "note": "Epoch satellite: groundwork visible around Buildings 1–4, 1 May 2024."
+    },
+    "operational": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "ep_alibaba_zhangbei"
+      ],
+      "note": "Epoch: Buildings 1–3 expected operational 17 Sep 2025 (substation connected, chillers installed)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_alibaba_zhangbei",
+      "title": "Alibaba Zhangbei – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/alibaba-zhangbei",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch-only (satellite); Alibaba's older Zhangbei campus (2016) is excluded. Add a news source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

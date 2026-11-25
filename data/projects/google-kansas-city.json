@@ -1,0 +1,61 @@
+{
+  "slug": "google-kansas-city",
+  "name": "Kansas City campus (Hunt Midwest)",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Missouri",
+  "locality": "Kansas City (Hunt Midwest Business Center)",
+  "lat": 39.16,
+  "lon": -94.47,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 105,
+    "high": 105,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "$1B data center announced Mar 2024; four buildings in progress, Building 1 near completion (Apr 2026). Epoch's Aug 2026 'operational' is an estimate, not observed.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-03",
+      "precision": "month",
+      "source_ids": [
+        "hunt_midwest_google"
+      ],
+      "note": "Hunt Midwest: Google announces $1 billion data center, March 2024."
+    },
+    "construction_start": {
+      "value": "2023-12",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_kansas_city_east"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Dec 2023."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_kansas_city_east",
+      "title": "Google Kansas City East – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-kansas-city-east",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "hunt_midwest_google",
+      "title": "Google announces $1 billion data center at Hunt Midwest Business Center",
+      "publisher": "Hunt Midwest",
+      "url": "https://huntmidwest.com/2024/03/google-announces-1-billion-data-center-at-hunt-midwest-business-center/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "105 MW is Building 1 only (Epoch); four buildings planned, so the full campus is larger. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

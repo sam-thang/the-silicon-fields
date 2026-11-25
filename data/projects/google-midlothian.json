@@ -1,0 +1,53 @@
+{
+  "slug": "google-midlothian",
+  "name": "Midlothian campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Midlothian, Ellis County",
+  "lat": 32.48,
+  "lon": -96.99,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 69,
+    "high": 103,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Building 1 probably mostly operational (Apr 2026, ~69 MW IT), ~103 MW once the expanded cooling row is complete (Epoch); land development across the road.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-04",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_midlothian"
+      ],
+      "note": "Epoch satellite: land clearing for Building 1 begins 1 Apr 2023."
+    },
+    "operational": {
+      "value": "2026-04",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_midlothian"
+      ],
+      "note": "Epoch: Building 1 probably mostly operational, 19 Apr 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_midlothian",
+      "title": "Google Midlothian – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-midlothian",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Just above the 100 MW bar (Epoch estimate). Add a Google/news source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

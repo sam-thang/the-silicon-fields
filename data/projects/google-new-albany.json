@@ -1,0 +1,53 @@
+{
+  "slug": "google-new-albany",
+  "name": "New Albany campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "New Albany, Licking County",
+  "lat": 40.11,
+  "lon": -82.74,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 333,
+    "high": 333,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Buildings 1–4 operational by Oct 2025 (Epoch, ~333 MW IT); Building 5 nearly complete (May 2026).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-03",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_new_albany"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Mar 2021."
+    },
+    "operational": {
+      "value": "2024-04",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_new_albany"
+      ],
+      "note": "Epoch: Building 1 operational 20 Apr 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_new_albany",
+      "title": "Google New Albany – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-new-albany",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Only Epoch cites this site; add a Google/news source and announcement date. Building 5 would add capacity. Coordinates offset from Meta Prometheus and AWS New Albany for display; refine.",
+  "last_verified": "2026-11-25"
+}

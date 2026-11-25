@@ -1,0 +1,69 @@
+{
+  "slug": "vnet-ulanqab",
+  "name": "VNET Ulanqab Hyperscale 2.0 campus",
+  "owner": "VNET",
+  "tenant": "Not disclosed (Epoch: ByteDance, speculative)",
+  "country": "CN",
+  "region": "Inner Mongolia",
+  "locality": "Ulanqab",
+  "lat": 41.01,
+  "lon": 113.13,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 221,
+    "high": 700,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Signed with Ulanqab government Mar 2024; Buildings 1, 2, 4 and 5 operational by Dec 2025 (~221 MW IT); nine-building section projected late 2027 (~700 MW) (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-03",
+      "precision": "month",
+      "source_ids": [
+        "vnet_ulanqab"
+      ],
+      "note": "VNET signing ceremony with Ulanqab municipal government, Mar 2024."
+    },
+    "construction_start": {
+      "value": "2024-03",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_vnet_bayin_ulanqab"
+      ],
+      "note": "Epoch satellite: land clearing begins late Mar 2024."
+    },
+    "operational": {
+      "value": "2025-07",
+      "precision": "month",
+      "source_ids": [
+        "ep_vnet_bayin_ulanqab"
+      ],
+      "note": "Epoch: Building 1 operational 1 Jul 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_vnet_bayin_ulanqab",
+      "title": "VNET Bayin Ulanqab – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/vnet-bayin-ulanqab",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "vnet_ulanqab",
+      "title": "VNET announcement (archived)",
+      "publisher": "VNET",
+      "url": "https://web.archive.org/web/20250620154431/https://www.vnet.com/portal/article/index/cid/14/id/876.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Tenant speculative. Refine coordinates (two Ulanqab campuses in this batch).",
+  "last_verified": "2026-11-25"
+}

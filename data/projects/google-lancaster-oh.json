@@ -1,0 +1,69 @@
+{
+  "slug": "google-lancaster-oh",
+  "name": "Lancaster campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "Lancaster, Fairfield County",
+  "lat": 39.71,
+  "lon": -82.6,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 137,
+    "high": 137,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Two buildings, both operational by Oct 2025 (Epoch, ~137 MW IT); part of Google's $1.7B trio of central Ohio data centers (Aug 2023).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2023-08",
+      "precision": "month",
+      "source_ids": [
+        "ocj_google_ohio"
+      ],
+      "note": "Ohio Capital Journal, 29 Aug 2023: Google plans $1.7B for three central Ohio data centers."
+    },
+    "construction_start": {
+      "value": "2021-10",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_lancaster"
+      ],
+      "note": "Epoch satellite: land clearing in progress 1 Oct 2021."
+    },
+    "operational": {
+      "value": "2024-01",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_lancaster"
+      ],
+      "note": "Epoch estimate: Building 1 operational 1 Jan 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_lancaster",
+      "title": "Google Lancaster – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-lancaster",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ocj_google_ohio",
+      "title": "Google announces plans to invest $1.7 billion in a trio of central Ohio data centers",
+      "publisher": "Ohio Capital Journal",
+      "url": "https://ohiocapitaljournal.com/2023/08/29/google-announces-plans-to-invest-1-7-billion-in-a-trio-of-central-ohio-data-centers/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Site work predates the public announcement. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

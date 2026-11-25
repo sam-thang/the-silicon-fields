@@ -1,0 +1,61 @@
+{
+  "slug": "qts-hillsboro-2",
+  "name": "QTS Hillsboro 2",
+  "owner": "QTS (Blackstone)",
+  "tenant": "Meta (likely, per Epoch; QTS–Meta solar PPA)",
+  "country": "US",
+  "region": "Oregon",
+  "locality": "Hillsboro, Washington County",
+  "lat": 45.54,
+  "lon": -122.95,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 180,
+    "high": 180,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Four buildings, all operational by Apr 2025 (Epoch, ~180 MW IT).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-04",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_meta_qts_hillsboro_2"
+      ],
+      "note": "Epoch satellite: first land clearing 1 Apr 2021."
+    },
+    "operational": {
+      "value": "2023-08",
+      "precision": "month",
+      "source_ids": [
+        "ep_meta_qts_hillsboro_2"
+      ],
+      "note": "Epoch: Building 1 believed operational 2 Aug 2023."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_meta_qts_hillsboro_2",
+      "title": "Meta-QTS Hillsboro 2 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-qts-hillsboro-2",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "qts_hillsboro2",
+      "title": "Hillsboro 2 data center",
+      "publisher": "QTS",
+      "url": "https://q.com/data-centers/hillsboro-2/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Meta as tenant is Epoch's 'likely'. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "qts-richmond-campus",
+  "name": "QTS Richmond campus (Richmond 1–3)",
+  "owner": "QTS (Blackstone)",
+  "tenant": "Not disclosed",
+  "country": "US",
+  "region": "Virginia",
+  "locality": "Sandston, Henrico County",
+  "lat": 37.52,
+  "lon": -77.32,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 562,
+    "high": 658,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Three QTS sites side by side; buildings added since 2022: Richmond 1 expansion (~238 MW IT), Richmond 2 (~180 MW), Richmond 3 (~144 MW, ~240 MW by Q1 2027) (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2022-04",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_qts_richmond_2"
+      ],
+      "note": "Epoch satellite: Richmond 2 land clearing begins 1 Apr 2022."
+    },
+    "operational": {
+      "value": "2024-01",
+      "precision": "month",
+      "source_ids": [
+        "ep_qts_richmond_1"
+      ],
+      "note": "Epoch: retrofitted Richmond 1 Building 1 operational 29 Jan 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_qts_richmond_2",
+      "title": "QTS Richmond 2 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/qts-richmond-2",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ep_qts_richmond_1",
+      "title": "QTS Richmond 1 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/qts-richmond-1",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ep_qts_richmond_3",
+      "title": "QTS Richmond 3 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/qts-richmond-3",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "qts_richmond3",
+      "title": "Richmond 3 data center",
+      "publisher": "QTS",
+      "url": "https://q.com/data-centers/richmond-3/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Merged from three Epoch entries (Richmond 1 expansion counted from 2023). Richmond 1's original buildings (pre-2020) excluded. Tenants not disclosed. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

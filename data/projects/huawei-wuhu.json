@@ -1,0 +1,53 @@
+{
+  "slug": "huawei-wuhu",
+  "name": "Wuhu AI campus",
+  "owner": "Huawei",
+  "tenant": "Huawei",
+  "country": "CN",
+  "region": "Anhui",
+  "locality": "Wuhu",
+  "lat": 31.33,
+  "lon": 118.43,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 197,
+    "high": 453,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Three campuses begun from Dec 2022; five buildings operational by Nov 2026 (~197 MW IT), all eight AI buildings projected by end-2027 (~453 MW) (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2022-12",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_huawei_wuhu"
+      ],
+      "note": "Epoch satellite: land clearing begins at the east campus 1 Dec 2022."
+    },
+    "operational": {
+      "value": "2025-01",
+      "precision": "month",
+      "source_ids": [
+        "ep_huawei_wuhu"
+      ],
+      "note": "Epoch: first building operational 1 Jan 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_huawei_wuhu",
+      "title": "Huawei Wuhu – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/huawei-wuhu",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch-only (satellite); add a news source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

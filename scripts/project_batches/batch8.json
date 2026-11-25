@@ -1,0 +1,1470 @@
+{
+  "_note": "Batch 8 (owner pre-approved 2026-11-25): rest of the Epoch AI directory at 100 MW+, rule: announced/started/online since 2020. Older campuses count only for their post-2020 buildings (Pryor North, Council Bluffs East, The Dalles, Papillion, QTS Richmond 1). QTS Richmond 1–3 merged into one campus record. Excluded as pre-2020 starts: Microsoft Project Osmium (2018), Google Storey County (2019). Capacity = Epoch IT estimates unless noted; coordinates town-level unless noted.",
+  "accessed": "2026-11-25",
+  "projects": [
+    {
+      "slug": "google-pryor-north-expansion",
+      "name": "Pryor North expansion (Building 2)",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Oklahoma",
+      "locality": "Pryor, MidAmerica Industrial Park",
+      "lat": 36.31,
+      "lon": -95.32,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 315,
+        "high": 315,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Warehouse retrofitted into an AI building from 2025, operational Sep 2026 (Epoch drone confirmation); adds ~315 MW IT to Building 1 (53 MW, begun 2019, excluded as pre-2020).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2025-01",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_pryor_north"
+          ],
+          "note": "Epoch: Building 2 being retrofitted from a warehouse by 28 Jan 2025."
+        },
+        "operational": {
+          "value": "2026-09",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_pryor_north"
+          ],
+          "note": "Epoch: Building 2 operational, cooling fans confirmed spinning by RAAD drone imagery 8 Sep 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_pryor_north",
+          "title": "Google Pryor (North) – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-pryor-north",
+          "kind": "satellite"
+        },
+        {
+          "id": "google_ok_blog",
+          "title": "Google's investment in American innovation in Oklahoma",
+          "publisher": "Google",
+          "url": "https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Record covers only the post-2020 phase (Building 2); Pryor's older campus is excluded. Refine coordinates."
+    },
+    {
+      "slug": "google-columbus",
+      "name": "Columbus campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Ohio",
+      "locality": "Columbus, Franklin County",
+      "lat": 39.96,
+      "lon": -83,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 303,
+        "high": 386,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Buildings 1–4 operational (Epoch, ~303 MW IT); Building 5 projected for mid-2027 (~386 MW) per an AEP transmission notice.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-10",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_columbus"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Oct 2021."
+        },
+        "operational": {
+          "value": "2024-04",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_columbus"
+          ],
+          "note": "Epoch: Building 1 operational 1 Apr 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_columbus",
+          "title": "Google Columbus – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-columbus",
+          "kind": "satellite"
+        },
+        {
+          "id": "dcd_google_columbus",
+          "title": "Google breaks ground on Columbus, Ohio data center",
+          "publisher": "DatacenterDynamics",
+          "url": "https://www.datacenterdynamics.com/en/news/google-breaks-ground-on-columbus-ohio-data-center/",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Announcement date to add (DCD groundbreaking article). Refine coordinates."
+    },
+    {
+      "slug": "google-new-albany",
+      "name": "New Albany campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Ohio",
+      "locality": "New Albany, Licking County",
+      "lat": 40.11,
+      "lon": -82.74,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 333,
+        "high": 333,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Buildings 1–4 operational by Oct 2025 (Epoch, ~333 MW IT); Building 5 nearly complete (May 2026).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-03",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_new_albany"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Mar 2021."
+        },
+        "operational": {
+          "value": "2024-04",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_new_albany"
+          ],
+          "note": "Epoch: Building 1 operational 20 Apr 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_new_albany",
+          "title": "Google New Albany – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-new-albany",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Only Epoch cites this site; add a Google/news source and announcement date. Building 5 would add capacity. Coordinates offset from Meta Prometheus and AWS New Albany for display; refine."
+    },
+    {
+      "slug": "google-mesa",
+      "name": "Mesa campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Arizona",
+      "locality": "Mesa, Maricopa County",
+      "lat": 33.3545,
+      "lon": -111.6781,
+      "location_precision": "site",
+      "capacity_mw": {
+        "low": 90,
+        "high": 183,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Building 1 operational Jul 2025 (~90 MW IT); Building 2 estimated operational Aug 2026 (~183 MW); prep for Building 3 begun (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2023-08",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_mesa",
+            "dcd_google_mesa"
+          ],
+          "note": "Epoch satellite: land clearing for the whole site begins 1 Aug 2023."
+        },
+        "operational": {
+          "value": "2025-07",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_mesa"
+          ],
+          "note": "Epoch: Building 1 operational 1 Jul 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_mesa",
+          "title": "Google Mesa – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-mesa",
+          "kind": "satellite"
+        },
+        {
+          "id": "dcd_google_mesa",
+          "title": "Google breaks ground on Mesa data center campus in Arizona",
+          "publisher": "DatacenterDynamics",
+          "url": "https://www.datacenterdynamics.com/en/news/google-breaks-ground-on-mesa-data-center-campus-in-arizona/",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Coordinates from the Google Earth view Epoch links for Building 1 (site precision). Announcement date to add."
+    },
+    {
+      "slug": "google-council-bluffs-east",
+      "name": "Council Bluffs east buildings",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Iowa",
+      "locality": "Council Bluffs, Pottawattamie County",
+      "lat": 41.23,
+      "lon": -95.82,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 237,
+        "high": 237,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Three new east buildings since 2022, all operational by Jul 2026 (Epoch, ~237 MW IT). Google's older Council Bluffs buildings are excluded.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2022-09",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_council_bluffs_east"
+          ],
+          "note": "Epoch satellite: land clearing for east buildings begins 6 Sep 2022."
+        },
+        "operational": {
+          "value": "2024-11",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_council_bluffs_east"
+          ],
+          "note": "Epoch best guess: Building 1 operational mid-Nov 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_council_bluffs_east",
+          "title": "Google Council Bluffs (East) – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-council-bluffs-east",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Only Epoch (with Iowa DNR permits it cites); add a news source. Post-2020 phase only. Refine coordinates."
+    },
+    {
+      "slug": "qts-richmond-campus",
+      "name": "QTS Richmond campus (Richmond 1–3)",
+      "owner": "QTS (Blackstone)",
+      "tenant": "Not disclosed",
+      "country": "US",
+      "region": "Virginia",
+      "locality": "Sandston, Henrico County",
+      "lat": 37.52,
+      "lon": -77.32,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 562,
+        "high": 658,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Three QTS sites side by side; buildings added since 2022: Richmond 1 expansion (~238 MW IT), Richmond 2 (~180 MW), Richmond 3 (~144 MW, ~240 MW by Q1 2027) (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2022-04",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_qts_richmond_2"
+          ],
+          "note": "Epoch satellite: Richmond 2 land clearing begins 1 Apr 2022."
+        },
+        "operational": {
+          "value": "2024-01",
+          "precision": "month",
+          "source_ids": [
+            "ep_qts_richmond_1"
+          ],
+          "note": "Epoch: retrofitted Richmond 1 Building 1 operational 29 Jan 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_qts_richmond_2",
+          "title": "QTS Richmond 2 – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/qts-richmond-2",
+          "kind": "satellite"
+        },
+        {
+          "id": "ep_qts_richmond_1",
+          "title": "QTS Richmond 1 – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/qts-richmond-1",
+          "kind": "satellite"
+        },
+        {
+          "id": "ep_qts_richmond_3",
+          "title": "QTS Richmond 3 – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/qts-richmond-3",
+          "kind": "satellite"
+        },
+        {
+          "id": "qts_richmond3",
+          "title": "Richmond 3 data center",
+          "publisher": "QTS",
+          "url": "https://q.com/data-centers/richmond-3/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Merged from three Epoch entries (Richmond 1 expansion counted from 2023). Richmond 1's original buildings (pre-2020) excluded. Tenants not disclosed. Refine coordinates."
+    },
+    {
+      "slug": "google-bristow",
+      "name": "Bristow campus",
+      "owner": "Google",
+      "tenant": "Google (DeepMind per Epoch)",
+      "country": "US",
+      "region": "Virginia",
+      "locality": "Bristow, Prince William County",
+      "lat": 38.72,
+      "lon": -77.54,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 238,
+        "high": 238,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Three buildings, all operational by May 2026 (Epoch, ~238 MW IT).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-07",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_bristow"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Jul 2021."
+        },
+        "operational": {
+          "value": "2024-04",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_bristow"
+          ],
+          "note": "Epoch: Building 1 operational 29 Apr 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_bristow",
+          "title": "Google Bristow – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-bristow",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Epoch cites no external source for this site; add a Google/news source. Refine coordinates."
+    },
+    {
+      "slug": "microsoft-goodyear",
+      "name": "Goodyear campus",
+      "owner": "Microsoft",
+      "tenant": "Microsoft (OpenAI likely)",
+      "country": "US",
+      "region": "Arizona",
+      "locality": "Goodyear, Maricopa County",
+      "lat": 33.44,
+      "lon": -112.36,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 202,
+        "high": 202,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Buildings 1–4 operational by Sep 2025 (Epoch, ~202 MW IT); Microsoft said MAI-Thinking-1 was trained here (May 2026); foundations for Buildings 5–6 under way.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-06",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_microsoft_goodyear"
+          ],
+          "note": "Epoch satellite: land clearing for Building 1 begins 21 Jun 2021."
+        },
+        "operational": {
+          "value": "2023-04",
+          "precision": "month",
+          "source_ids": [
+            "ep_microsoft_goodyear"
+          ],
+          "note": "Epoch: Building 1 operational ~24 Apr 2023 (interpolated from imagery)."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_microsoft_goodyear",
+          "title": "Microsoft Goodyear – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-goodyear",
+          "kind": "satellite"
+        },
+        {
+          "id": "semi_msft",
+          "title": "Microsoft's AI strategy deconstructed",
+          "publisher": "SemiAnalysis",
+          "url": "https://newsletter.semianalysis.com/p/microsofts-ai-strategy-deconstructed",
+          "kind": "secondary"
+        }
+      ],
+      "review_notes": "Add a Microsoft/news source for the site and the MAI training claim. Buildings 5–6 would add capacity. Refine coordinates."
+    },
+    {
+      "slug": "google-kansas-city",
+      "name": "Kansas City campus (Hunt Midwest)",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Missouri",
+      "locality": "Kansas City (Hunt Midwest Business Center)",
+      "lat": 39.16,
+      "lon": -94.47,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 105,
+        "high": 105,
+        "type": "it_load_estimate"
+      },
+      "status": "under_construction",
+      "status_note": "$1B data center announced Mar 2024; four buildings in progress, Building 1 near completion (Apr 2026). Epoch's Aug 2026 'operational' is an estimate, not observed.",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2024-03",
+          "precision": "month",
+          "source_ids": [
+            "hunt_midwest_google"
+          ],
+          "note": "Hunt Midwest: Google announces $1 billion data center, March 2024."
+        },
+        "construction_start": {
+          "value": "2023-12",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_kansas_city_east"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Dec 2023."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_kansas_city_east",
+          "title": "Google Kansas City East – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-kansas-city-east",
+          "kind": "satellite"
+        },
+        {
+          "id": "hunt_midwest_google",
+          "title": "Google announces $1 billion data center at Hunt Midwest Business Center",
+          "publisher": "Hunt Midwest",
+          "url": "https://huntmidwest.com/2024/03/google-announces-1-billion-data-center-at-hunt-midwest-business-center/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "105 MW is Building 1 only (Epoch); four buildings planned, so the full campus is larger. Refine coordinates."
+    },
+    {
+      "slug": "aws-new-albany",
+      "name": "New Albany campus",
+      "owner": "Amazon (AWS)",
+      "tenant": "AWS",
+      "country": "US",
+      "region": "Ohio",
+      "locality": "New Albany, Licking County",
+      "lat": 40.06,
+      "lon": -82.86,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 213,
+        "high": 338,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "$3.5B AWS project (tax deal approved Sep 2023); eastern and middle buildings operational (Epoch counts ~213 MW IT, the AI share only), northern buildings due 2027 (~338 MW).",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2023-09",
+          "precision": "month",
+          "source_ids": [
+            "wosu_aws"
+          ],
+          "note": "New Albany city council approves tax break for $3.5B Amazon data center project, 20 Sep 2023."
+        },
+        "construction_start": {
+          "value": "2022-06",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_aws_new_albany"
+          ],
+          "note": "Epoch satellite: land clearing for Buildings 5–9 begins 1 Jun 2022."
+        },
+        "operational": {
+          "value": "2024-12",
+          "precision": "month",
+          "source_ids": [
+            "ep_aws_new_albany",
+            "na_cd_2024"
+          ],
+          "note": "Buildings 5–9 partly occupied per New Albany's Dec 2024 report."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_aws_new_albany",
+          "title": "AWS New Albany – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/aws-new-albany",
+          "kind": "satellite"
+        },
+        {
+          "id": "wosu_aws",
+          "title": "New Albany city council approves tax break deal for $3.5 billion Amazon data center project",
+          "publisher": "WOSU",
+          "url": "https://www.wosu.org/politics-government/2023-09-20/new-albany-city-council-approves-tax-break-deal-for-3-5-billion-amazon-data-center-project",
+          "kind": "news"
+        },
+        {
+          "id": "na_cd_2024",
+          "title": "Community Development Report, Dec 2024",
+          "publisher": "City of New Albany",
+          "url": "https://newalbanyohio.org/wp-content/uploads/2025/01/CD-2024-12.pdf",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Epoch counts only ~44% of campus IT power (the AI-chip share), so the full campus is larger. Construction began before the dated announcement. Coordinates offset from Meta Prometheus for display; refine."
+    },
+    {
+      "slug": "google-omaha",
+      "name": "Omaha campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Nebraska",
+      "locality": "Omaha, Douglas County",
+      "lat": 41.28,
+      "lon": -96.06,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 237,
+        "high": 395,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Buildings 1–3 operational by mid-2026 (Epoch, ~237 MW IT); Buildings 4–5 projected 2028 (~395 MW).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-11",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_omaha"
+          ],
+          "note": "Epoch satellite: land clearing begins 25 Nov 2021."
+        },
+        "operational": {
+          "value": "2024-04",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_omaha"
+          ],
+          "note": "Epoch estimate: Building 1 operational 8 Apr 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_omaha",
+          "title": "Google Omaha – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-omaha",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Only Epoch (with a draft air permit it cites); add a Google/news source and announcement date. Refine coordinates."
+    },
+    {
+      "slug": "google-lincoln",
+      "name": "Lincoln campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Nebraska",
+      "locality": "Lincoln, Lancaster County",
+      "lat": 40.81,
+      "lon": -96.7,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 141,
+        "high": 283,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Building 1 operational ~May 2026 (Epoch estimate, ~141 MW IT); Building 2 projected Q4 2027 (~283 MW).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2023-06",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_lincoln",
+            "dcd_google_lincoln"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Jun 2023."
+        },
+        "operational": {
+          "value": "2026-05",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_lincoln"
+          ],
+          "note": "Epoch estimate: Building 1 operational 12 May 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_lincoln",
+          "title": "Google Lincoln – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-lincoln",
+          "kind": "satellite"
+        },
+        {
+          "id": "dcd_google_lincoln",
+          "title": "Work on data center in Lincoln, Nebraska finally starting",
+          "publisher": "DatacenterDynamics",
+          "url": "https://www.datacenterdynamics.com/en/news/work-on-data-center-in-lincoln-nebraska-finally-starting/",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Operational date is Epoch's estimate. Refine coordinates."
+    },
+    {
+      "slug": "google-the-dalles-expansion",
+      "name": "The Dalles expansion (2023+)",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Oregon",
+      "locality": "The Dalles, Wasco County",
+      "lat": 45.61,
+      "lon": -121.2,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 154,
+        "high": 154,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Two new buildings begun in 2023, both operational by Apr 2026 (Epoch, ~154 MW IT). Google's original The Dalles campus (2006) is excluded.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2023-03",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_the_dalles"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Mar 2023."
+        },
+        "operational": {
+          "value": "2025-03",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_the_dalles"
+          ],
+          "note": "Epoch estimate: Building 1 operational 7 Mar 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_the_dalles",
+          "title": "Google The Dalles – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-the-dalles",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Post-2020 phase only. Add a news source. Refine coordinates."
+    },
+    {
+      "slug": "meta-montgomery",
+      "name": "Montgomery data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US",
+      "region": "Alabama",
+      "locality": "Montgomery",
+      "lat": 32.37,
+      "lon": -86.3,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 153,
+        "high": 358,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Buildings 1–2 estimated operational Jun 2026 (~153 MW IT); expansion announced Sep 2025 to ~1.3 million sq ft, Buildings 3–6 projected Q1 2027 (~358 MW) (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2024-05",
+          "precision": "month",
+          "source_ids": [
+            "meta_montgomery"
+          ],
+          "note": "Meta: 'Hello Montgomery', May 2024."
+        },
+        "construction_start": {
+          "value": "2024-03",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_meta_montgomery"
+          ],
+          "note": "Epoch satellite: land clearing begins 1 Mar 2024."
+        },
+        "operational": {
+          "value": "2026-06",
+          "precision": "month",
+          "source_ids": [
+            "ep_meta_montgomery"
+          ],
+          "note": "Epoch estimate: Buildings 1–2 operational 18 Jun 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_meta_montgomery",
+          "title": "Meta Montgomery – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/meta-montgomery",
+          "kind": "satellite"
+        },
+        {
+          "id": "meta_montgomery",
+          "title": "Hello Montgomery",
+          "publisher": "Meta",
+          "url": "https://datacenters.atmeta.com/2024/05/hello-montgomery/",
+          "kind": "primary"
+        },
+        {
+          "id": "meta_montgomery_exp",
+          "title": "Montgomery, we're growing",
+          "publisher": "Meta",
+          "url": "https://datacenters.atmeta.com/2025/09/montgomery-were-growing/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Operational date is Epoch's estimate. Refine coordinates."
+    },
+    {
+      "slug": "meta-huntsville",
+      "name": "Huntsville data center (new buildings)",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US",
+      "region": "Alabama",
+      "locality": "Huntsville",
+      "lat": 34.73,
+      "lon": -86.59,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 146,
+        "high": 146,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Buildings begun Dec 2021, operational by Jun 2026 (Epoch estimate, ~146 MW IT); supported by 377 MW of TVA solar.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-12",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_meta_huntsville"
+          ],
+          "note": "Epoch satellite: Building 1 land clearing begins 13 Dec 2021."
+        },
+        "operational": {
+          "value": "2026-03",
+          "precision": "month",
+          "source_ids": [
+            "ep_meta_huntsville"
+          ],
+          "note": "Epoch estimate: Building 1 operational ~4 Mar 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_meta_huntsville",
+          "title": "Meta Huntsville – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/meta-huntsville",
+          "kind": "satellite"
+        },
+        {
+          "id": "tva_meta_solar",
+          "title": "TVA announces largest Valley solar installations, built for Facebook",
+          "publisher": "TVA (PR Newswire)",
+          "url": "https://www.prnewswire.com/news-releases/tva-announces-largest-valley-solar-installations--built-for-facebook-300743255.html",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Meta announced Huntsville in 2018; included because these buildings started in Dec 2021. Operational dates are Epoch estimates. Refine coordinates."
+    },
+    {
+      "slug": "ytl-johor",
+      "name": "YTL Green Data Center Park",
+      "owner": "YTL Power International",
+      "tenant": "Not disclosed (Nvidia GB200 cluster)",
+      "country": "MY",
+      "region": "Johor",
+      "locality": "Kulai",
+      "lat": 1.66,
+      "lon": 103.6,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 113,
+        "high": 600,
+        "type": "mixed"
+      },
+      "status": "partially_operational",
+      "status_note": "Building 1 operational Nov 2025 with Nvidia GB200s; ~113 MW IT running (Epoch); YTL guides the park to 600 MW by end-2027 (Kenanga via The Star); Epoch projects 284 MW IT by 2028.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2023-11",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_ytl_johor"
+          ],
+          "note": "Epoch satellite: land clearing for Building 1 begins 1 Nov 2023."
+        },
+        "operational": {
+          "value": "2025-11",
+          "precision": "month",
+          "source_ids": [
+            "ep_ytl_johor"
+          ],
+          "note": "Epoch: Building 1 operational with GB200s, 3 Nov 2025 (per MIDA)."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_ytl_johor",
+          "title": "YTL Johor – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/ytl-johor",
+          "kind": "satellite"
+        },
+        {
+          "id": "ytl_gb200",
+          "title": "YTL creates one of the world's most advanced supercomputers powered by Nvidia Grace Blackwell-based DGX Cloud",
+          "publisher": "YTL Power International",
+          "url": "https://www.ytlpowerinternational.com/press-releases/ytl-creates-one-of-the-worlds-most-advanced-supercomputers-powered-by-nvidia-grace-blackwell-based-dgx-cloud/",
+          "kind": "primary"
+        },
+        {
+          "id": "star_ytl",
+          "title": "DC expansion to lift YTL Power",
+          "publisher": "The Star",
+          "url": "https://www.thestar.com.my/business/business-news/2026/06/24/dc-expansion-to-lift-ytl-power",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Range mixes Epoch's IT estimate (113 MW) and YTL's 600 MW park guidance. Refine coordinates."
+    },
+    {
+      "slug": "google-midlothian",
+      "name": "Midlothian campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Midlothian, Ellis County",
+      "lat": 32.48,
+      "lon": -96.99,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 69,
+        "high": 103,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Building 1 probably mostly operational (Apr 2026, ~69 MW IT), ~103 MW once the expanded cooling row is complete (Epoch); land development across the road.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2023-04",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_midlothian"
+          ],
+          "note": "Epoch satellite: land clearing for Building 1 begins 1 Apr 2023."
+        },
+        "operational": {
+          "value": "2026-04",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_midlothian"
+          ],
+          "note": "Epoch: Building 1 probably mostly operational, 19 Apr 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_midlothian",
+          "title": "Google Midlothian – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-midlothian",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Just above the 100 MW bar (Epoch estimate). Add a Google/news source. Refine coordinates."
+    },
+    {
+      "slug": "google-lancaster-oh",
+      "name": "Lancaster campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Ohio",
+      "locality": "Lancaster, Fairfield County",
+      "lat": 39.71,
+      "lon": -82.6,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 137,
+        "high": 137,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Two buildings, both operational by Oct 2025 (Epoch, ~137 MW IT); part of Google's $1.7B trio of central Ohio data centers (Aug 2023).",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2023-08",
+          "precision": "month",
+          "source_ids": [
+            "ocj_google_ohio"
+          ],
+          "note": "Ohio Capital Journal, 29 Aug 2023: Google plans $1.7B for three central Ohio data centers."
+        },
+        "construction_start": {
+          "value": "2021-10",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_lancaster"
+          ],
+          "note": "Epoch satellite: land clearing in progress 1 Oct 2021."
+        },
+        "operational": {
+          "value": "2024-01",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_lancaster"
+          ],
+          "note": "Epoch estimate: Building 1 operational 1 Jan 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_lancaster",
+          "title": "Google Lancaster – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-lancaster",
+          "kind": "satellite"
+        },
+        {
+          "id": "ocj_google_ohio",
+          "title": "Google announces plans to invest $1.7 billion in a trio of central Ohio data centers",
+          "publisher": "Ohio Capital Journal",
+          "url": "https://ohiocapitaljournal.com/2023/08/29/google-announces-plans-to-invest-1-7-billion-in-a-trio-of-central-ohio-data-centers/",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Site work predates the public announcement. Refine coordinates."
+    },
+    {
+      "slug": "qts-hillsboro-2",
+      "name": "QTS Hillsboro 2",
+      "owner": "QTS (Blackstone)",
+      "tenant": "Meta (likely, per Epoch; QTS–Meta solar PPA)",
+      "country": "US",
+      "region": "Oregon",
+      "locality": "Hillsboro, Washington County",
+      "lat": 45.54,
+      "lon": -122.95,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 180,
+        "high": 180,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Four buildings, all operational by Apr 2025 (Epoch, ~180 MW IT).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-04",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_meta_qts_hillsboro_2"
+          ],
+          "note": "Epoch satellite: first land clearing 1 Apr 2021."
+        },
+        "operational": {
+          "value": "2023-08",
+          "precision": "month",
+          "source_ids": [
+            "ep_meta_qts_hillsboro_2"
+          ],
+          "note": "Epoch: Building 1 believed operational 2 Aug 2023."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_meta_qts_hillsboro_2",
+          "title": "Meta-QTS Hillsboro 2 – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/meta-qts-hillsboro-2",
+          "kind": "satellite"
+        },
+        {
+          "id": "qts_hillsboro2",
+          "title": "Hillsboro 2 data center",
+          "publisher": "QTS",
+          "url": "https://q.com/data-centers/hillsboro-2/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Meta as tenant is Epoch's 'likely'. Refine coordinates."
+    },
+    {
+      "slug": "google-papillion-expansion",
+      "name": "Papillion expansion",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Nebraska",
+      "locality": "Papillion, Sarpy County",
+      "lat": 41.13,
+      "lon": -96.03,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 237,
+        "high": 237,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Expansion buildings 1–3 operational by Aug 2024 (Epoch, ~237 MW IT); Buildings 4–5 under construction (May 2026).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2020-03",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_google_papillion"
+          ],
+          "note": "Epoch satellite: land clearing for expansion Building 1 begins 4 Mar 2020."
+        },
+        "operational": {
+          "value": "2023-01",
+          "precision": "month",
+          "source_ids": [
+            "ep_google_papillion"
+          ],
+          "note": "Epoch: expansion Building 1 assumed operational 23 Jan 2023 (cooling-tower vapour)."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_google_papillion",
+          "title": "Google Papillion – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/google-papillion",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Only Epoch (with a draft air permit); add a Google/news source. Buildings 4–5 would add capacity. Refine coordinates."
+    },
+    {
+      "slug": "aws-berwick",
+      "name": "Susquehanna campus (Berwick)",
+      "owner": "Amazon (AWS)",
+      "tenant": "AWS (Project Rainier per NYT, speculative)",
+      "country": "US",
+      "region": "Pennsylvania",
+      "locality": "Salem Township near Berwick (Susquehanna nuclear plant)",
+      "lat": 41.09,
+      "lon": -76.15,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 108,
+        "high": 169,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Former Talen/Cumulus campus bought by AWS for $650M (Mar 2024) next to the Susquehanna nuclear plant; Buildings 1–3 online by Aug 2026 (~108 MW IT), Building 4 in 2027 (~169 MW) (Epoch); PA PUC filing describes 16 buildings.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2021-07",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "ep_aws_berwick"
+          ],
+          "note": "Talen: site-prep permits obtained and site work under way (Jul 2021)."
+        },
+        "operational": {
+          "value": "2025-09",
+          "precision": "month",
+          "source_ids": [
+            "ep_aws_berwick"
+          ],
+          "note": "Epoch estimate: Building 1 operational 9 Sep 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_aws_berwick",
+          "title": "AWS Berwick – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/aws-berwick",
+          "kind": "satellite"
+        },
+        {
+          "id": "talen_10q_2024",
+          "title": "Talen Energy 10-Q (Q2 2024): sale of Cumulus campus to AWS",
+          "publisher": "Talen Energy (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162828024036935/tln-20240630.htm",
+          "kind": "primary"
+        },
+        {
+          "id": "pa_puc_aws",
+          "title": "PA PUC filing on the planned AWS development",
+          "publisher": "Pennsylvania PUC",
+          "url": "https://www.puc.pa.gov/pcdocs/1861638.pdf",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Full 16-building plan would be far larger than Epoch's 169 MW; find a sourced campus figure. Refine coordinates."
+    },
+    {
+      "slug": "vnet-ulanqab",
+      "name": "VNET Ulanqab Hyperscale 2.0 campus",
+      "owner": "VNET",
+      "tenant": "Not disclosed (Epoch: ByteDance, speculative)",
+      "country": "CN",
+      "region": "Inner Mongolia",
+      "locality": "Ulanqab",
+      "lat": 41.01,
+      "lon": 113.13,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 221,
+        "high": 700,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Signed with Ulanqab government Mar 2024; Buildings 1, 2, 4 and 5 operational by Dec 2025 (~221 MW IT); nine-building section projected late 2027 (~700 MW) (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2024-03",
+          "precision": "month",
+          "source_ids": [
+            "vnet_ulanqab"
+          ],
+          "note": "VNET signing ceremony with Ulanqab municipal government, Mar 2024."
+        },
+        "construction_start": {
+          "value": "2024-03",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_vnet_bayin_ulanqab"
+          ],
+          "note": "Epoch satellite: land clearing begins late Mar 2024."
+        },
+        "operational": {
+          "value": "2025-07",
+          "precision": "month",
+          "source_ids": [
+            "ep_vnet_bayin_ulanqab"
+          ],
+          "note": "Epoch: Building 1 operational 1 Jul 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_vnet_bayin_ulanqab",
+          "title": "VNET Bayin Ulanqab – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/vnet-bayin-ulanqab",
+          "kind": "satellite"
+        },
+        {
+          "id": "vnet_ulanqab",
+          "title": "VNET announcement (archived)",
+          "publisher": "VNET",
+          "url": "https://web.archive.org/web/20250620154431/https://www.vnet.com/portal/article/index/cid/14/id/876.html",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Tenant speculative. Refine coordinates (two Ulanqab campuses in this batch)."
+    },
+    {
+      "slug": "huawei-horinger",
+      "name": "Horinger AI campus",
+      "owner": "Huawei",
+      "tenant": "Huawei",
+      "country": "CN",
+      "region": "Inner Mongolia",
+      "locality": "Horinger County, Hohhot",
+      "lat": 40.38,
+      "lon": 111.82,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 170,
+        "high": 351,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Three zones begun Oct 2023; Buildings 1, 4 and 5 operational by Aug 2026 (~170 MW IT); Building 2 and 6 to follow, ~351 MW by 2028 (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2023-10",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "ep_huawei_horinger"
+          ],
+          "note": "Epoch: land clearing begins in all three zones after an official ceremony, 8 Oct 2023."
+        },
+        "operational": {
+          "value": "2025-06",
+          "precision": "month",
+          "source_ids": [
+            "ep_huawei_horinger"
+          ],
+          "note": "Epoch: West Building 1 operational 11 Jun 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_huawei_horinger",
+          "title": "Huawei Horinger – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/huawei-horinger",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Epoch-only (satellite); Epoch lists no external source. Add a news source. Refine coordinates."
+    },
+    {
+      "slug": "huawei-wuhu",
+      "name": "Wuhu AI campus",
+      "owner": "Huawei",
+      "tenant": "Huawei",
+      "country": "CN",
+      "region": "Anhui",
+      "locality": "Wuhu",
+      "lat": 31.33,
+      "lon": 118.43,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 197,
+        "high": 453,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Three campuses begun from Dec 2022; five buildings operational by Nov 2026 (~197 MW IT), all eight AI buildings projected by end-2027 (~453 MW) (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2022-12",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_huawei_wuhu"
+          ],
+          "note": "Epoch satellite: land clearing begins at the east campus 1 Dec 2022."
+        },
+        "operational": {
+          "value": "2025-01",
+          "precision": "month",
+          "source_ids": [
+            "ep_huawei_wuhu"
+          ],
+          "note": "Epoch: first building operational 1 Jan 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_huawei_wuhu",
+          "title": "Huawei Wuhu – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/huawei-wuhu",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Epoch-only (satellite); add a news source. Refine coordinates."
+    },
+    {
+      "slug": "envision-galaxy-ulanqab",
+      "name": "Galaxy campus",
+      "owner": "Envision",
+      "tenant": "Not disclosed (major Chinese tech companies, reportedly)",
+      "country": "CN",
+      "region": "Inner Mongolia",
+      "locality": "Ulanqab",
+      "lat": 40.95,
+      "lon": 113.22,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 118,
+        "high": 470,
+        "type": "it_load_estimate"
+      },
+      "status": "partially_operational",
+      "status_note": "Envision commissioned the Galaxy campus (Aug 2026); Building 1 ~118 MW IT, four buildings projected by end-2027 (~470 MW) (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2025-08",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_envision_galaxy_ulanqab"
+          ],
+          "note": "Epoch satellite: land clearing for Building 1 begins 1 Aug 2025."
+        },
+        "operational": {
+          "value": "2026-08",
+          "precision": "month",
+          "source_ids": [
+            "envision_galaxy",
+            "ep_envision_galaxy_ulanqab"
+          ],
+          "note": "Envision announces commissioning of the Galaxy campus (Epoch dates it 6 Aug 2026)."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_envision_galaxy_ulanqab",
+          "title": "Envision Galaxy Ulanqab – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/envision-galaxy-ulanqab",
+          "kind": "satellite"
+        },
+        {
+          "id": "envision_galaxy",
+          "title": "Envision commissions Galaxy campus in Ulanqab, establishing a new model for gigawatt-scale AI infrastructure",
+          "publisher": "Envision (PR Newswire)",
+          "url": "https://www.prnewswire.com/news-releases/envision-commissions-galaxy-campus-in-ulanqab-establishing-a-new-model-for-gigawatt-scale-ai-infrastructure-302844834.html",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "The release calls it gigawatt-scale; find its stated capacity. Refine coordinates."
+    },
+    {
+      "slug": "alibaba-zhangbei",
+      "name": "Zhangbei AI buildings",
+      "owner": "Alibaba",
+      "tenant": "Alibaba",
+      "country": "CN",
+      "region": "Hebei",
+      "locality": "Zhangbei County, Zhangjiakou",
+      "lat": 41.16,
+      "lon": 114.72,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 169,
+        "high": 169,
+        "type": "it_load_estimate"
+      },
+      "status": "operational",
+      "status_note": "Six buildings begun May 2024, all operational by Jan 2026 (Epoch, ~169 MW IT).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2024-05",
+          "precision": "month",
+          "basis": "first_evidence",
+          "source_ids": [
+            "ep_alibaba_zhangbei"
+          ],
+          "note": "Epoch satellite: groundwork visible around Buildings 1–4, 1 May 2024."
+        },
+        "operational": {
+          "value": "2025-09",
+          "precision": "month",
+          "source_ids": [
+            "ep_alibaba_zhangbei"
+          ],
+          "note": "Epoch: Buildings 1–3 expected operational 17 Sep 2025 (substation connected, chillers installed)."
+        }
+      },
+      "sources": [
+        {
+          "id": "ep_alibaba_zhangbei",
+          "title": "Alibaba Zhangbei – AI data center directory",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/alibaba-zhangbei",
+          "kind": "satellite"
+        }
+      ],
+      "review_notes": "Epoch-only (satellite); Alibaba's older Zhangbei campus (2016) is excluded. Add a news source. Refine coordinates."
+    }
+  ]
+}

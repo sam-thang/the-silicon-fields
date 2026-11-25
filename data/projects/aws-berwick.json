@@ -1,0 +1,69 @@
+{
+  "slug": "aws-berwick",
+  "name": "Susquehanna campus (Berwick)",
+  "owner": "Amazon (AWS)",
+  "tenant": "AWS (Project Rainier per NYT, speculative)",
+  "country": "US",
+  "region": "Pennsylvania",
+  "locality": "Salem Township near Berwick (Susquehanna nuclear plant)",
+  "lat": 41.09,
+  "lon": -76.15,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 108,
+    "high": 169,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Former Talen/Cumulus campus bought by AWS for $650M (Mar 2024) next to the Susquehanna nuclear plant; Buildings 1–3 online by Aug 2026 (~108 MW IT), Building 4 in 2027 (~169 MW) (Epoch); PA PUC filing describes 16 buildings.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-07",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "ep_aws_berwick"
+      ],
+      "note": "Talen: site-prep permits obtained and site work under way (Jul 2021)."
+    },
+    "operational": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "ep_aws_berwick"
+      ],
+      "note": "Epoch estimate: Building 1 operational 9 Sep 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_aws_berwick",
+      "title": "AWS Berwick – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/aws-berwick",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "talen_10q_2024",
+      "title": "Talen Energy 10-Q (Q2 2024): sale of Cumulus campus to AWS",
+      "publisher": "Talen Energy (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162828024036935/tln-20240630.htm",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "pa_puc_aws",
+      "title": "PA PUC filing on the planned AWS development",
+      "publisher": "Pennsylvania PUC",
+      "url": "https://www.puc.pa.gov/pcdocs/1861638.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Full 16-building plan would be far larger than Epoch's 169 MW; find a sourced campus figure. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

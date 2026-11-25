@@ -1,0 +1,53 @@
+{
+  "slug": "google-council-bluffs-east",
+  "name": "Council Bluffs east buildings",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Iowa",
+  "locality": "Council Bluffs, Pottawattamie County",
+  "lat": 41.23,
+  "lon": -95.82,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 237,
+    "high": 237,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Three new east buildings since 2022, all operational by Jul 2026 (Epoch, ~237 MW IT). Google's older Council Bluffs buildings are excluded.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2022-09",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_council_bluffs_east"
+      ],
+      "note": "Epoch satellite: land clearing for east buildings begins 6 Sep 2022."
+    },
+    "operational": {
+      "value": "2024-11",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_council_bluffs_east"
+      ],
+      "note": "Epoch best guess: Building 1 operational mid-Nov 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_council_bluffs_east",
+      "title": "Google Council Bluffs (East) – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-council-bluffs-east",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Only Epoch (with Iowa DNR permits it cites); add a news source. Post-2020 phase only. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

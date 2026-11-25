@@ -1,0 +1,69 @@
+{
+  "slug": "ytl-johor",
+  "name": "YTL Green Data Center Park",
+  "owner": "YTL Power International",
+  "tenant": "Not disclosed (Nvidia GB200 cluster)",
+  "country": "MY",
+  "region": "Johor",
+  "locality": "Kulai",
+  "lat": 1.66,
+  "lon": 103.6,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 113,
+    "high": 600,
+    "type": "mixed"
+  },
+  "status": "partially_operational",
+  "status_note": "Building 1 operational Nov 2025 with Nvidia GB200s; ~113 MW IT running (Epoch); YTL guides the park to 600 MW by end-2027 (Kenanga via The Star); Epoch projects 284 MW IT by 2028.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-11",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_ytl_johor"
+      ],
+      "note": "Epoch satellite: land clearing for Building 1 begins 1 Nov 2023."
+    },
+    "operational": {
+      "value": "2025-11",
+      "precision": "month",
+      "source_ids": [
+        "ep_ytl_johor"
+      ],
+      "note": "Epoch: Building 1 operational with GB200s, 3 Nov 2025 (per MIDA)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_ytl_johor",
+      "title": "YTL Johor – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/ytl-johor",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ytl_gb200",
+      "title": "YTL creates one of the world's most advanced supercomputers powered by Nvidia Grace Blackwell-based DGX Cloud",
+      "publisher": "YTL Power International",
+      "url": "https://www.ytlpowerinternational.com/press-releases/ytl-creates-one-of-the-worlds-most-advanced-supercomputers-powered-by-nvidia-grace-blackwell-based-dgx-cloud/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "star_ytl",
+      "title": "DC expansion to lift YTL Power",
+      "publisher": "The Star",
+      "url": "https://www.thestar.com.my/business/business-news/2026/06/24/dc-expansion-to-lift-ytl-power",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Range mixes Epoch's IT estimate (113 MW) and YTL's 600 MW park guidance. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

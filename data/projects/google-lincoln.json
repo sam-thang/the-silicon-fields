@@ -1,0 +1,62 @@
+{
+  "slug": "google-lincoln",
+  "name": "Lincoln campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Nebraska",
+  "locality": "Lincoln, Lancaster County",
+  "lat": 40.81,
+  "lon": -96.7,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 141,
+    "high": 283,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Building 1 operational ~May 2026 (Epoch estimate, ~141 MW IT); Building 2 projected Q4 2027 (~283 MW).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-06",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_lincoln",
+        "dcd_google_lincoln"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Jun 2023."
+    },
+    "operational": {
+      "value": "2026-05",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_lincoln"
+      ],
+      "note": "Epoch estimate: Building 1 operational 12 May 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_lincoln",
+      "title": "Google Lincoln – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-lincoln",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_google_lincoln",
+      "title": "Work on data center in Lincoln, Nebraska finally starting",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/work-on-data-center-in-lincoln-nebraska-finally-starting/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Operational date is Epoch's estimate. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

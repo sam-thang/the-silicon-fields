@@ -1,0 +1,53 @@
+{
+  "slug": "google-bristow",
+  "name": "Bristow campus",
+  "owner": "Google",
+  "tenant": "Google (DeepMind per Epoch)",
+  "country": "US",
+  "region": "Virginia",
+  "locality": "Bristow, Prince William County",
+  "lat": 38.72,
+  "lon": -77.54,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 238,
+    "high": 238,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Three buildings, all operational by May 2026 (Epoch, ~238 MW IT).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-07",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_bristow"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Jul 2021."
+    },
+    "operational": {
+      "value": "2024-04",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_bristow"
+      ],
+      "note": "Epoch: Building 1 operational 29 Apr 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_bristow",
+      "title": "Google Bristow – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-bristow",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch cites no external source for this site; add a Google/news source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

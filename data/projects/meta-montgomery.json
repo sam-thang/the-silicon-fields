@@ -1,0 +1,77 @@
+{
+  "slug": "meta-montgomery",
+  "name": "Montgomery data center",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Alabama",
+  "locality": "Montgomery",
+  "lat": 32.37,
+  "lon": -86.3,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 153,
+    "high": 358,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Buildings 1–2 estimated operational Jun 2026 (~153 MW IT); expansion announced Sep 2025 to ~1.3 million sq ft, Buildings 3–6 projected Q1 2027 (~358 MW) (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-05",
+      "precision": "month",
+      "source_ids": [
+        "meta_montgomery"
+      ],
+      "note": "Meta: 'Hello Montgomery', May 2024."
+    },
+    "construction_start": {
+      "value": "2024-03",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_meta_montgomery"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Mar 2024."
+    },
+    "operational": {
+      "value": "2026-06",
+      "precision": "month",
+      "source_ids": [
+        "ep_meta_montgomery"
+      ],
+      "note": "Epoch estimate: Buildings 1–2 operational 18 Jun 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_meta_montgomery",
+      "title": "Meta Montgomery – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-montgomery",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "meta_montgomery",
+      "title": "Hello Montgomery",
+      "publisher": "Meta",
+      "url": "https://datacenters.atmeta.com/2024/05/hello-montgomery/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "meta_montgomery_exp",
+      "title": "Montgomery, we're growing",
+      "publisher": "Meta",
+      "url": "https://datacenters.atmeta.com/2025/09/montgomery-were-growing/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Operational date is Epoch's estimate. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

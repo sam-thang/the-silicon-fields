@@ -1,0 +1,61 @@
+{
+  "slug": "google-columbus",
+  "name": "Columbus campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "Columbus, Franklin County",
+  "lat": 39.96,
+  "lon": -83,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 303,
+    "high": 386,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Buildings 1–4 operational (Epoch, ~303 MW IT); Building 5 projected for mid-2027 (~386 MW) per an AEP transmission notice.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-10",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_columbus"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Oct 2021."
+    },
+    "operational": {
+      "value": "2024-04",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_columbus"
+      ],
+      "note": "Epoch: Building 1 operational 1 Apr 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_columbus",
+      "title": "Google Columbus – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-columbus",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_google_columbus",
+      "title": "Google breaks ground on Columbus, Ohio data center",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/google-breaks-ground-on-columbus-ohio-data-center/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Announcement date to add (DCD groundbreaking article). Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "google-papillion-expansion",
+  "name": "Papillion expansion",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Nebraska",
+  "locality": "Papillion, Sarpy County",
+  "lat": 41.13,
+  "lon": -96.03,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 237,
+    "high": 237,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Expansion buildings 1–3 operational by Aug 2024 (Epoch, ~237 MW IT); Buildings 4–5 under construction (May 2026).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2020-03",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_papillion"
+      ],
+      "note": "Epoch satellite: land clearing for expansion Building 1 begins 4 Mar 2020."
+    },
+    "operational": {
+      "value": "2023-01",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_papillion"
+      ],
+      "note": "Epoch: expansion Building 1 assumed operational 23 Jan 2023 (cooling-tower vapour)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_papillion",
+      "title": "Google Papillion – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-papillion",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Only Epoch (with a draft air permit); add a Google/news source. Buildings 4–5 would add capacity. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

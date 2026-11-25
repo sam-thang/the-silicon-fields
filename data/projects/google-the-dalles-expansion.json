@@ -1,0 +1,53 @@
+{
+  "slug": "google-the-dalles-expansion",
+  "name": "The Dalles expansion (2023+)",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Oregon",
+  "locality": "The Dalles, Wasco County",
+  "lat": 45.61,
+  "lon": -121.2,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 154,
+    "high": 154,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Two new buildings begun in 2023, both operational by Apr 2026 (Epoch, ~154 MW IT). Google's original The Dalles campus (2006) is excluded.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-03",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_the_dalles"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Mar 2023."
+    },
+    "operational": {
+      "value": "2025-03",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_the_dalles"
+      ],
+      "note": "Epoch estimate: Building 1 operational 7 Mar 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_the_dalles",
+      "title": "Google The Dalles – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-the-dalles",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Post-2020 phase only. Add a news source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

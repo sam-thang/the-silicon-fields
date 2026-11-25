@@ -1,0 +1,78 @@
+{
+  "slug": "aws-new-albany",
+  "name": "New Albany campus",
+  "owner": "Amazon (AWS)",
+  "tenant": "AWS",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "New Albany, Licking County",
+  "lat": 40.06,
+  "lon": -82.86,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 213,
+    "high": 338,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "$3.5B AWS project (tax deal approved Sep 2023); eastern and middle buildings operational (Epoch counts ~213 MW IT, the AI share only), northern buildings due 2027 (~338 MW).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2023-09",
+      "precision": "month",
+      "source_ids": [
+        "wosu_aws"
+      ],
+      "note": "New Albany city council approves tax break for $3.5B Amazon data center project, 20 Sep 2023."
+    },
+    "construction_start": {
+      "value": "2022-06",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_aws_new_albany"
+      ],
+      "note": "Epoch satellite: land clearing for Buildings 5–9 begins 1 Jun 2022."
+    },
+    "operational": {
+      "value": "2024-12",
+      "precision": "month",
+      "source_ids": [
+        "ep_aws_new_albany",
+        "na_cd_2024"
+      ],
+      "note": "Buildings 5–9 partly occupied per New Albany's Dec 2024 report."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_aws_new_albany",
+      "title": "AWS New Albany – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/aws-new-albany",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "wosu_aws",
+      "title": "New Albany city council approves tax break deal for $3.5 billion Amazon data center project",
+      "publisher": "WOSU",
+      "url": "https://www.wosu.org/politics-government/2023-09-20/new-albany-city-council-approves-tax-break-deal-for-3-5-billion-amazon-data-center-project",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "na_cd_2024",
+      "title": "Community Development Report, Dec 2024",
+      "publisher": "City of New Albany",
+      "url": "https://newalbanyohio.org/wp-content/uploads/2025/01/CD-2024-12.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch counts only ~44% of campus IT power (the AI-chip share), so the full campus is larger. Construction began before the dated announcement. Coordinates offset from Meta Prometheus for display; refine.",
+  "last_verified": "2026-11-25"
+}

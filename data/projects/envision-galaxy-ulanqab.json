@@ -1,0 +1,62 @@
+{
+  "slug": "envision-galaxy-ulanqab",
+  "name": "Galaxy campus",
+  "owner": "Envision",
+  "tenant": "Not disclosed (major Chinese tech companies, reportedly)",
+  "country": "CN",
+  "region": "Inner Mongolia",
+  "locality": "Ulanqab",
+  "lat": 40.95,
+  "lon": 113.22,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 118,
+    "high": 470,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Envision commissioned the Galaxy campus (Aug 2026); Building 1 ~118 MW IT, four buildings projected by end-2027 (~470 MW) (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2025-08",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_envision_galaxy_ulanqab"
+      ],
+      "note": "Epoch satellite: land clearing for Building 1 begins 1 Aug 2025."
+    },
+    "operational": {
+      "value": "2026-08",
+      "precision": "month",
+      "source_ids": [
+        "envision_galaxy",
+        "ep_envision_galaxy_ulanqab"
+      ],
+      "note": "Envision announces commissioning of the Galaxy campus (Epoch dates it 6 Aug 2026)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_envision_galaxy_ulanqab",
+      "title": "Envision Galaxy Ulanqab – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/envision-galaxy-ulanqab",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "envision_galaxy",
+      "title": "Envision commissions Galaxy campus in Ulanqab, establishing a new model for gigawatt-scale AI infrastructure",
+      "publisher": "Envision (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/envision-commissions-galaxy-campus-in-ulanqab-establishing-a-new-model-for-gigawatt-scale-ai-infrastructure-302844834.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "The release calls it gigawatt-scale; find its stated capacity. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

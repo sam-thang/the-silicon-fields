@@ -1,0 +1,61 @@
+{
+  "slug": "google-pryor-north-expansion",
+  "name": "Pryor North expansion (Building 2)",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Oklahoma",
+  "locality": "Pryor, MidAmerica Industrial Park",
+  "lat": 36.31,
+  "lon": -95.32,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 315,
+    "high": 315,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Warehouse retrofitted into an AI building from 2025, operational Sep 2026 (Epoch drone confirmation); adds ~315 MW IT to Building 1 (53 MW, begun 2019, excluded as pre-2020).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2025-01",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_pryor_north"
+      ],
+      "note": "Epoch: Building 2 being retrofitted from a warehouse by 28 Jan 2025."
+    },
+    "operational": {
+      "value": "2026-09",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_pryor_north"
+      ],
+      "note": "Epoch: Building 2 operational, cooling fans confirmed spinning by RAAD drone imagery 8 Sep 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_pryor_north",
+      "title": "Google Pryor (North) – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-pryor-north",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "google_ok_blog",
+      "title": "Google's investment in American innovation in Oklahoma",
+      "publisher": "Google",
+      "url": "https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Record covers only the post-2020 phase (Building 2); Pryor's older campus is excluded. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

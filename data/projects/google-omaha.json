@@ -1,0 +1,53 @@
+{
+  "slug": "google-omaha",
+  "name": "Omaha campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Nebraska",
+  "locality": "Omaha, Douglas County",
+  "lat": 41.28,
+  "lon": -96.06,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 237,
+    "high": 395,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Buildings 1–3 operational by mid-2026 (Epoch, ~237 MW IT); Buildings 4–5 projected 2028 (~395 MW).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-11",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_omaha"
+      ],
+      "note": "Epoch satellite: land clearing begins 25 Nov 2021."
+    },
+    "operational": {
+      "value": "2024-04",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_omaha"
+      ],
+      "note": "Epoch estimate: Building 1 operational 8 Apr 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_omaha",
+      "title": "Google Omaha – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-omaha",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Only Epoch (with a draft air permit it cites); add a Google/news source and announcement date. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

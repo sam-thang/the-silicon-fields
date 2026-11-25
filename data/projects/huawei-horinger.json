@@ -1,0 +1,53 @@
+{
+  "slug": "huawei-horinger",
+  "name": "Horinger AI campus",
+  "owner": "Huawei",
+  "tenant": "Huawei",
+  "country": "CN",
+  "region": "Inner Mongolia",
+  "locality": "Horinger County, Hohhot",
+  "lat": 40.38,
+  "lon": 111.82,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 170,
+    "high": 351,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Three zones begun Oct 2023; Buildings 1, 4 and 5 operational by Aug 2026 (~170 MW IT); Building 2 and 6 to follow, ~351 MW by 2028 (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-10",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "ep_huawei_horinger"
+      ],
+      "note": "Epoch: land clearing begins in all three zones after an official ceremony, 8 Oct 2023."
+    },
+    "operational": {
+      "value": "2025-06",
+      "precision": "month",
+      "source_ids": [
+        "ep_huawei_horinger"
+      ],
+      "note": "Epoch: West Building 1 operational 11 Jun 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_huawei_horinger",
+      "title": "Huawei Horinger – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/huawei-horinger",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch-only (satellite); Epoch lists no external source. Add a news source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

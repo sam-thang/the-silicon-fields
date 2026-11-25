@@ -1,0 +1,62 @@
+{
+  "slug": "google-mesa",
+  "name": "Mesa campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Arizona",
+  "locality": "Mesa, Maricopa County",
+  "lat": 33.3545,
+  "lon": -111.6781,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 90,
+    "high": 183,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Building 1 operational Jul 2025 (~90 MW IT); Building 2 estimated operational Aug 2026 (~183 MW); prep for Building 3 begun (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-08",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_mesa",
+        "dcd_google_mesa"
+      ],
+      "note": "Epoch satellite: land clearing for the whole site begins 1 Aug 2023."
+    },
+    "operational": {
+      "value": "2025-07",
+      "precision": "month",
+      "source_ids": [
+        "ep_google_mesa"
+      ],
+      "note": "Epoch: Building 1 operational 1 Jul 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_mesa",
+      "title": "Google Mesa – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-mesa",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_google_mesa",
+      "title": "Google breaks ground on Mesa data center campus in Arizona",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/google-breaks-ground-on-mesa-data-center-campus-in-arizona/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Coordinates from the Google Earth view Epoch links for Building 1 (site precision). Announcement date to add.",
+  "last_verified": "2026-11-25"
+}
