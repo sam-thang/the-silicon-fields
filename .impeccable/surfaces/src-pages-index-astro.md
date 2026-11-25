@@ -32,6 +32,7 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape home`.
 - The headline total **includes paused projects** (e.g. Fermi Project Matador). They keep Paused Slate and their own grey legend row, and are never shown as active construction.
 - **Under-construction projects use `high` capacity, labelled "up to".** Planned uses `high`; operational uses `low`. The methodology page states these rules.
 - Where low and high differ, the headline shows the column-basis total, and the line under it gives the low–high range.
+- **No published construction start** (owner decision 2026-11-25): an under-construction project turns amber at its first sourced evidence of construction (`dates.construction_start.basis: "first_evidence"`). The site card then says "construction start date not published".
 - Projects with no capacity figure count toward the project total, not toward GW, and are drawn as dots.
 - Comparison (changed 2026-11-25): **households, not countries**. "Enough for about N homes", localised by region (US: EIA; Norway: SSB/NVE), marked "est." (assumes full capacity all year; home demand = annual kWh ÷ 8,760 h). Factors live in `data/factors.json`. Headline wording stays open, because tens of millions of homes is abstract; consider pairing it with a sourced local anchor. Country comparison is dropped from v1.
 

@@ -1938,6 +1938,17 @@
     "status": "under_construction",
     "status_note": "Sweetwater 1 (1.4 GW) energized May 1, 2026; power ramps as buildings are commissioned",
     "expected_completion": null,
+    "dates": {
+      "construction_start": {
+        "value": "2026-05",
+        "precision": "month",
+        "basis": "first_evidence",
+        "source_ids": [
+          "iren_pr"
+        ],
+        "note": "Construction start date not published. First sourced evidence: 1.4 GW substation energized 1 May 2026."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -1959,9 +1970,9 @@
       }
     ],
     "verification": "primary",
-    "review_notes": "County differs between sources (Nolan vs Fisher) - check before pinning exact site.",
+    "review_notes": "County differs between sources (Nolan vs Fisher) - check before pinning exact site. Dates batch 4: announcement date not yet sourced (reportedly revealed with IREN 2025 results; find the release). County still differs (Fisher vs Nolan).",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "powerhouse-grand-prairie",
@@ -1979,9 +1990,19 @@
       "high": 1800,
       "type": "grid_switchyard"
     },
-    "status": "under_construction",
-    "status_note": "1.8 GW switchyard; first 500 MW approved by ERCOT; first building slated to energize May 2026",
+    "status": "permitting",
+    "status_note": "1.8 GW switchyard planned; first 500 MW approved by ERCOT. A May 2026 energization was planned, but no groundbreaking or energization has been reported.",
     "expected_completion": "2028",
+    "dates": {
+      "announced": {
+        "value": "2025-02",
+        "precision": "month",
+        "source_ids": [
+          "dcd_ph",
+          "di_ph"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -2003,9 +2024,9 @@
       }
     ],
     "verification": "news",
-    "review_notes": "1.8 GW is switchyard capacity across 24 buildings in 3 phases.",
+    "review_notes": "1.8 GW is switchyard capacity across 24 buildings in 3 phases. Dates batch 4: status changed from under_construction to permitting (no news or Epoch evidence of construction).",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "openai-project-camellia",
@@ -2014,18 +2035,29 @@
     "users": "OpenAI",
     "country": "US",
     "region": "Georgia",
-    "locality": "Georgia (site TBD)",
-    "lat": 32.9,
-    "lon": -83.4,
-    "location_precision": "state",
+    "locality": "Effingham County (NW of Savannah)",
+    "lat": 32.37,
+    "lon": -81.34,
+    "location_precision": "county",
     "capacity_mw": {
       "low": 3200,
       "high": 3200,
-      "type": "planned_campus"
+      "type": "utility_contract",
+      "note": "3.2 GW Georgia Power supply contract, delivered in phases 2028-2032; not IT load."
     },
     "status": "permitting",
-    "status_note": "Still in permitting; 3.2 GW power contract with Georgia Power",
-    "expected_completion": null,
+    "status_note": "Permitting. OpenAI contracted 3.2 GW from Georgia Power (Jul 2026), delivered 2028-2032; can curtail up to 1 GW at peak demand.",
+    "expected_completion": "2028-2032 (phased power delivery)",
+    "dates": {
+      "announced": {
+        "value": "2026-07",
+        "precision": "month",
+        "source_ids": [
+          "openai_effingham",
+          "tc_openai_750b"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -2037,12 +2069,28 @@
         "publisher": "Finish Line",
         "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "openai_effingham",
+        "title": "Building AI infrastructure with the Effingham County community",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "tc_openai_750b",
+        "title": "OpenAI's AI spending spree has ballooned to $750B",
+        "publisher": "TechCrunch",
+        "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Exact location unknown – show at state level or hide until known.",
+    "review_notes": "Dates batch 4: location found (Effingham County, ~1,400 acres, per OpenAI and TechCrunch); county-level point until the site is pinned. Capacity type 'utility_contract' must be added to the schema.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "microsoft-pecos",
@@ -2057,12 +2105,22 @@
     "location_precision": "town",
     "capacity_mw": {
       "low": 2000,
-      "high": 2670,
-      "type": "planned_campus"
+      "high": 2000,
+      "type": "planned_campus",
+      "note": "Microsoft: ~2 GW of datacenter capacity. Chevron's co-located plant (Project Kilby) scales to 2.67 GW of generation; not the same measure."
     },
     "status": "announced",
-    "status_note": "~2 GW, up to 2.67 GW dedicated generation",
+    "status_note": "Announced Jun 2026: ~2 GW campus with a dedicated Chevron gas plant (first power by 2028), multibillion-dollar build over 5-7 years.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2026-06",
+        "precision": "month",
+        "source_ids": [
+          "ms_pecos"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -2074,17 +2132,33 @@
         "publisher": "Finish Line",
         "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "ms_pecos",
+        "title": "Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos",
+        "publisher": "Microsoft",
+        "url": "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "decoder_pecos",
+        "title": "Microsoft is building a 2 gigawatt data center in Texas with its own gas plant",
+        "publisher": "The Decoder",
+        "url": "https://the-decoder.com/microsoft-is-building-a-2-gigawatt-data-center-in-texas-with-its-own-gas-plant-to-dodge-the-grid/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
-    "verification": "news",
+    "verification": "primary",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "buckeye-tech-park",
     "name": "Buckeye Technology Park",
-    "owner": "",
+    "owner": "Tract (data center park developer)",
     "users": "",
     "country": "US",
     "region": "Arizona",
@@ -2098,8 +2172,17 @@
       "type": "planned_campus"
     },
     "status": "announced",
-    "status_note": "Up to 1.8 GW across up to 40 buildings; ~$20B",
+    "status_note": "Announced Aug 2024: up to 1.8 GW across up to 40 buildings on 2,069 acres; utility plans still in progress.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2024-08",
+        "precision": "month",
+        "source_ids": [
+          "tract_buckeye"
+        ]
+      }
+    },
     "investment_usd": {
       "value": 20000000000,
       "est": true
@@ -2111,12 +2194,28 @@
         "publisher": "Finish Line",
         "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "tract_buckeye",
+        "title": "Tract Closes Acquisition of 2,069 acres in Buckeye, Arizona",
+        "publisher": "Tract (GlobeNewswire)",
+        "url": "https://globenewswire.com/news-release/2024/08/28/2937145/0/en/Tract-Closes-Acquisition-of-2-069-acres-in-Buckeye-Arizona.html",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_buckeye",
+        "title": "Tract announces 1.8GW data center park in Phoenix, Arizona",
+        "publisher": "DatacenterDynamics",
+        "url": "https://datacenterdynamics.com/en/news/tract-announces-18gw-data-center-park-in-phoenix-arizona",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
-    "verification": "news",
-    "review_notes": "Developer name missing.",
+    "verification": "primary",
+    "review_notes": "Dates batch 4: developer is Tract. Park model (land and power sold to other operators), like Tract TRIC; multi-phase build-out over up to 15 years.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "lambda-project-red-clay",
@@ -2137,6 +2236,15 @@
     "status": "announced",
     "status_note": "Announced Nov 4, 2026",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2026-11",
+        "precision": "month",
+        "source_ids": [
+          "lambda_al"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -2148,12 +2256,28 @@
         "publisher": "Baxtel",
         "url": "https://baxtel.com/news/category/news?page=3",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "lambda_al",
+        "title": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+        "publisher": "Lambda",
+        "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "alr_lambda",
+        "title": "Lambda announces plans for $33.1 billion data center campus in Lowndes County",
+        "publisher": "Alabama Reporter",
+        "url": "https://www.alreporter.com/2026/11/05/lambda-to-build-new-data-center-in-lowndes-county-investing-33b-in-alabama",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
-    "verification": "news",
-    "review_notes": "Find Lambda's own announcement as primary source.",
+    "verification": "primary",
+    "review_notes": "Dates batch 4: Lambda's own release added. Capacity differs by tracker (Baxtel 1 GW, Cleanview 1.5 GW); keep 1 GW until Lambda states a figure. Local context: $1.15B tax abatement (3-2 vote, Oct 2026) and two resident lawsuits.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "aws-walla-walla",
@@ -2172,8 +2296,18 @@
       "type": "planned_campus"
     },
     "status": "permitting",
-    "status_note": "Three-building campus on 134 acres per county documents",
+    "status_note": "Permitting: three-building, 300 MW first phase on 134 acres; county land-use application deemed complete Sep 2026, SEPA review pending, no approval yet.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2026",
+        "precision": "year",
+        "source_ids": [
+          "gw_aws_wa"
+        ],
+        "note": "Port of Walla Walla sold 554 acres to Amazon Data Services in Feb 2026."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -2185,12 +2319,28 @@
         "publisher": "Baxtel",
         "url": "https://baxtel.com/data-center/50irly",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "gw_aws_wa",
+        "title": "Amazon plans its first data centers in Washington state as residents raise concerns",
+        "publisher": "GeekWire",
+        "url": "https://geekwire.com/2026/amazon-plans-its-first-data-centers-in-washington-state-as-residents-raise-concerns",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_aws_wa",
+        "title": "AWS proceeds with data center project in Walla Walla, Washington",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/aws-proceeds-with-data-center-project-in-walla-walla-washington/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "meta-alberta",
@@ -2208,9 +2358,27 @@
       "high": 1000,
       "type": "planned_campus"
     },
-    "status": "announced",
-    "status_note": "Meta's first Canadian data center, >$9B",
+    "status": "under_construction",
+    "status_note": "Groundbroken Jul 2026; Meta's first data center in Canada (>CAD $13B). Power from a new gas plant not due until late 2030 and still awaiting regulatory approval.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2026-07",
+        "precision": "month",
+        "source_ids": [
+          "meta_alberta",
+          "ab_gov_dc"
+        ],
+        "note": "Meta post dated 6 Jul 2026; Alberta government lists 8 Jul 2026."
+      },
+      "construction_start": {
+        "value": "2026-07",
+        "precision": "month",
+        "source_ids": [
+          "meta_alberta"
+        ]
+      }
+    },
     "investment_usd": {
       "value": 9000000000,
       "est": true
@@ -2222,12 +2390,28 @@
         "publisher": "Data Center Knowledge",
         "url": "https://datacenterknowledge.com/data-center-construction/new-data-center-developments-august-2026",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "meta_alberta",
+        "title": "Breaking Ground on Meta's First Data Center in Canada",
+        "publisher": "Meta",
+        "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "ab_gov_dc",
+        "title": "Alberta's AI data centres",
+        "publisher": "Government of Alberta",
+        "url": "https://www.alberta.ca/datacentres",
+        "kind": "primary",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-uae",
