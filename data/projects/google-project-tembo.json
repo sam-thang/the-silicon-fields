@@ -80,10 +80,18 @@
       "url": "https://cowboystatedaily.com/2026/01/08/huge-cheyenne-data-center-grows-to-2-7-gigawatts-nearly-triple-state-power-use",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "bbg_crusoe_pause",
+      "title": "Crusoe touts 5 gigawatts of data centers, pauses Wyoming site",
+      "publisher": "Bloomberg Law",
+      "url": "https://news.bloomberglaw.com/artificial-intelligence/crusoe-touts-5-gigawatts-of-data-centers-pauses-wyoming-site",
+      "kind": "news",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
-  "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025.",
+  "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025. Same site as Crusoe/Tallgrass \"Project Jade\" (1.8 GW, announced Jul 2025): Crusoe paused and exited in Jun 2026 at Google's request (Bloomberg); Google continues with Black Hills. Not a separate project.",
   "approved": true,
   "last_verified": "2026-11-25"
 }

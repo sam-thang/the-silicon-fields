@@ -1,0 +1,52 @@
+{
+  "slug": "softbank-sakai",
+  "name": "Sakai AI data center (former Sharp plant)",
+  "owner": "SoftBank Corp.",
+  "tenant": "SoftBank (OpenAI collaboration)",
+  "country": "JP",
+  "region": "Osaka",
+  "locality": "Sakai (former Sharp LCD plant)",
+  "lat": 34.57,
+  "lon": 135.44,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 150,
+    "high": 400,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "SoftBank is converting part of Sharp's former Sakai LCD plant (bought Mar 2025, ~¥100bn) into an AI data center: ~150 MW initially, ~250 MW by FY2028, potentially over 400 MW; completion now set for FY2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "announced": {
+      "value": "2024-06",
+      "precision": "month",
+      "source_ids": [
+        "softbank_sakai_pr"
+      ],
+      "note": "SoftBank–Sharp MoU announced 7 Jun 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "softbank_sakai_pr",
+      "title": "SoftBank Corp. to construct large-scale AI data center that utilizes Sharp Sakai Plant",
+      "publisher": "SoftBank Corp.",
+      "url": "https://www.softbank.jp/en/corp/news/press/sbkk/2024/20240607_01",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_softbank_sakai",
+      "title": "SoftBank buys former Sharp factory for $676m to build AI data center in Osaka, Japan",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/softbank-buys-former-sharp-factory-for-676m-to-build-ai-data-center-in-osaka-japan",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Conversion works not yet confirmed by a source, so status stays 'announced'. Range: 150 MW initial vs 'over 400 MW' potential (SoftBank). Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

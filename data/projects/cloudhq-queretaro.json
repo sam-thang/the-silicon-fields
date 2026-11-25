@@ -1,0 +1,59 @@
+{
+  "slug": "cloudhq-queretaro",
+  "name": "CloudHQ Querétaro campus (QRO)",
+  "owner": "CloudHQ",
+  "country": "MX",
+  "region": "Querétaro",
+  "locality": "Near Querétaro International Airport, Colón",
+  "lat": 20.62,
+  "lon": -100.19,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 288,
+    "high": 1000,
+    "type": "mixed"
+  },
+  "status": "announced",
+  "status_note": "Six-building campus (6 × 48 MW IT = 288 MW) on ~52 ha; investment raised to ~$6B and planned power to ~1,000 MW (Oct 2026). Work so far reported on the substation and transmission lines.",
+  "expected_completion": "2032",
+  "dates": {
+    "announced": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "mnd_cloudhq"
+      ],
+      "note": "CloudHQ announces $4.8B plan for six Querétaro data centers (Mexico News Daily, 25 Sep 2025); project first floated in 2022."
+    }
+  },
+  "sources": [
+    {
+      "id": "mnd_cloudhq",
+      "title": "CloudHQ announces US $4.8B plan to build 6 data centers in Querétaro",
+      "publisher": "Mexico News Daily",
+      "url": "https://mexiconewsdaily.com/business/cloudhq-4b-queretaro-data-centers",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "icio_cloudhq",
+      "title": "CloudHQ raises Mexico data centre investment to US$6 billion as power capacity quadruples",
+      "publisher": "Intelligent CIO",
+      "url": "https://www.intelligentcio.com/latam/2026/10/19/cloudhq-raises-mexico-data-centre-investment-to-us6-billion-as-power-capacity-quadruples/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bna_cloudhq",
+      "title": "CloudHQ breaks ground on power infra for Mexican datacenter campus",
+      "publisher": "BNamericas",
+      "url": "https://bnamericas.com/en/news/cloudhq-breaks-ground-on-power-infra-for-mexican-datacenter-campus",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Groundbreaking on power infrastructure reported (BNamericas, undated; page blocked): date it and decide whether that counts as construction start. Range: 288 MW IT vs ~1,000 MW planned power.",
+  "last_verified": "2026-11-25"
+}

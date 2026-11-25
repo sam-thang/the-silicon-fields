@@ -1,0 +1,70 @@
+{
+  "slug": "sk-aws-ulsan",
+  "name": "SK AI Data Center Ulsan",
+  "owner": "SK Telecom / SK Ecoplant",
+  "tenant": "AWS",
+  "country": "KR",
+  "region": "Ulsan",
+  "locality": "Ulsan",
+  "lat": 35.54,
+  "lon": 129.31,
+  "location_precision": "city",
+  "capacity_mw": {
+    "low": 103,
+    "high": 103,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "~7 trillion won AI data center with AWS: 41 MW first phase by Nov 2027, 103 MW by Feb 2029; SK Telecom aims to grow the site to 1 GW scale.",
+  "expected_completion": "2029",
+  "dates": {
+    "announced": {
+      "value": "2025-06",
+      "precision": "month",
+      "source_ids": [
+        "asiae_ulsan_jun"
+      ],
+      "note": "SK and AWS to build 100 MW data center in Ulsan (Asia Economy, 15 Jun 2025)."
+    },
+    "construction_start": {
+      "value": "2025-08",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "kt_ulsan",
+        "skt_ulsan"
+      ],
+      "note": "Groundbreaking ceremony 29 Aug 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "asiae_ulsan_jun",
+      "title": "SK and AWS to build 100 MW data center in Ulsan with multi-trillion won investment",
+      "publisher": "Asia Economy",
+      "url": "https://www.asiae.co.kr/en/article/2025061515511823958",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "kt_ulsan",
+      "title": "SK, AWS break ground for AI data center in Ulsan",
+      "publisher": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20250829/sk-aws-break-ground-for-ai-data-center-in-ulsan",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "skt_ulsan",
+      "title": "SK AI Data Center Ulsan groundbreaking",
+      "publisher": "SK Telecom Newsroom",
+      "url": "https://news.sktelecom.com/en/1948",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "1 GW is an ambition, not a plan: column uses 103 MW. Refine coordinates to the site.",
+  "last_verified": "2026-11-25"
+}

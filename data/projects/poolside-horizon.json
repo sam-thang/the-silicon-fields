@@ -1,0 +1,61 @@
+{
+  "slug": "poolside-horizon",
+  "name": "Project Horizon",
+  "owner": "Poolside",
+  "tenant": "CoreWeave (anchor, first phase)",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Longfellow Ranch, Pecos County (near Fort Stockton)",
+  "lat": 30.75,
+  "lon": -102.7,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 2000,
+    "high": 2000,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "2 GW self-powered (on-site gas) AI campus on 568 acres in eight 250 MW phases; CoreWeave anchors the first 250 MW phase. No construction confirmed by a source yet.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "poolside_blog",
+        "bbg_poolside"
+      ],
+      "note": "Announced 15 Oct 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "poolside_blog",
+      "title": "Announcing Project Horizon: why we're building a 2 gigawatt AI campus in Texas",
+      "publisher": "Poolside",
+      "url": "https://poolside.ai/blog/announcing-project-horizon",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bbg_poolside",
+      "title": "AI startup Poolside teams with CoreWeave on massive data center",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-10-15/ai-startup-poolside-teams-with-coreweave-on-massive-data-center",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcf_poolside",
+      "title": "How CoreWeave and Poolside are teaming up in West Texas",
+      "publisher": "Data Center Frontier",
+      "url": "https://www.datacenterfrontier.com/machine-learning/article/55326541/how-coreweave-and-poolside-are-teaming-up-in-west-texas-to-build-the-next-generation-of-ai-data-centers",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Developer reportedly spun out in Jan 2026 (single wiki source; check). Exact ranch location approximate (county precision).",
+  "last_verified": "2026-11-25"
+}

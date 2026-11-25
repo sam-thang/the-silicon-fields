@@ -1,0 +1,498 @@
+{
+  "_note": "Batch 9 (owner pre-approved 2026-11-25): first news-based batch, large projects outside Epoch's directory, mostly outside the US. Skipped: Stargate UK (shelved), Stargate Korea (stalled, ~20 MW sites), Stargate Argentina and Fluidstack France (no site named), AWS Aragon and Meta Talavera (no sourced MW yet), AirTrunk/CDC (status unclear). Crusoe 'Project Jade' (Cheyenne) is the same site as google-project-tembo (Crusoe exited Jun 2026), so not added.",
+  "accessed": "2026-11-25",
+  "projects": [
+    {
+      "slug": "qts-cambois",
+      "name": "Cambois data centre campus",
+      "owner": "QTS (Blackstone)",
+      "tenant": "Not disclosed",
+      "country": "GB",
+      "region": "Northumberland",
+      "locality": "Cambois, near Blyth (former Blyth power station / Britishvolt site)",
+      "lat": 55.16,
+      "lon": -1.53,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 720,
+        "high": 720,
+        "type": "planned_campus"
+      },
+      "status": "under_construction",
+      "status_note": "~£10bn campus of up to 10 buildings scaling to 720 MW; enabling works (site preparation) began Oct 2025 after approval in Aug 2025; first data centre building due to start in 2026.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2025-10",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "dcr_cambois",
+            "bdaily_cambois"
+          ],
+          "note": "Enabling works / site preparation started; onsite event early Oct 2025 (Data Centre Review, 14 Oct 2025)."
+        }
+      },
+      "sources": [
+        {
+          "id": "dcr_cambois",
+          "title": "QTS starts enabling works for huge Cambois data centre campus",
+          "publisher": "Data Centre Review",
+          "url": "https://datacentrereview.com/2025/10/qts-starts-enabling-works-for-huge-cambois-data-centre-campus/",
+          "kind": "news"
+        },
+        {
+          "id": "bdaily_cambois",
+          "title": "Groundwork begins at £10 billion AI hub",
+          "publisher": "Bdaily",
+          "url": "https://bdaily.co.uk/articles/2025/10/07/groundwork-begins-at-10-billion-ai-hub",
+          "kind": "news"
+        },
+        {
+          "id": "qts_cambois_pr",
+          "title": "QTS launches social value programme during Cambois data centre enabling works celebration",
+          "publisher": "QTS",
+          "url": "https://q.com/news/qts-launches-social-value-programme-during-cambois-data-centre-enabling-works-celebration/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Construction so far is enabling works; check whether the first building has started (2026). Blackstone's original announcement date (2024) to add. Refine coordinates."
+    },
+    {
+      "slug": "sk-aws-ulsan",
+      "name": "SK AI Data Center Ulsan",
+      "owner": "SK Telecom / SK Ecoplant",
+      "tenant": "AWS",
+      "country": "KR",
+      "region": "Ulsan",
+      "locality": "Ulsan",
+      "lat": 35.54,
+      "lon": 129.31,
+      "location_precision": "city",
+      "capacity_mw": {
+        "low": 103,
+        "high": 103,
+        "type": "planned_campus"
+      },
+      "status": "under_construction",
+      "status_note": "~7 trillion won AI data center with AWS: 41 MW first phase by Nov 2027, 103 MW by Feb 2029; SK Telecom aims to grow the site to 1 GW scale.",
+      "expected_completion": "2029",
+      "dates": {
+        "announced": {
+          "value": "2025-06",
+          "precision": "month",
+          "source_ids": [
+            "asiae_ulsan_jun"
+          ],
+          "note": "SK and AWS to build 100 MW data center in Ulsan (Asia Economy, 15 Jun 2025)."
+        },
+        "construction_start": {
+          "value": "2025-08",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "kt_ulsan",
+            "skt_ulsan"
+          ],
+          "note": "Groundbreaking ceremony 29 Aug 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "asiae_ulsan_jun",
+          "title": "SK and AWS to build 100 MW data center in Ulsan with multi-trillion won investment",
+          "publisher": "Asia Economy",
+          "url": "https://www.asiae.co.kr/en/article/2025061515511823958",
+          "kind": "news"
+        },
+        {
+          "id": "kt_ulsan",
+          "title": "SK, AWS break ground for AI data center in Ulsan",
+          "publisher": "The Korea Times",
+          "url": "https://www.koreatimes.co.kr/business/tech-science/20250829/sk-aws-break-ground-for-ai-data-center-in-ulsan",
+          "kind": "news"
+        },
+        {
+          "id": "skt_ulsan",
+          "title": "SK AI Data Center Ulsan groundbreaking",
+          "publisher": "SK Telecom Newsroom",
+          "url": "https://news.sktelecom.com/en/1948",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "1 GW is an ambition, not a plan: column uses 103 MW. Refine coordinates to the site."
+    },
+    {
+      "slug": "oleary-wonder-valley-alberta",
+      "name": "Wonder Valley (Alberta)",
+      "owner": "O'Leary Digital",
+      "country": "CA",
+      "region": "Alberta",
+      "locality": "Greenview Industrial Gateway, ~42 km south of Grande Prairie",
+      "lat": 54.8,
+      "lon": -118.75,
+      "location_precision": "county",
+      "capacity_mw": {
+        "low": null,
+        "high": null,
+        "type": "unknown"
+      },
+      "status": "permitting",
+      "status_note": "Off-grid AI data centre park with its own gas power proposed Dec 2024 (initially reported as a $70B park); Alberta permitting under way (Feb 2026), land sale contract signed Mar 2026; phased development now expected 2028–2029.",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2024-12",
+          "precision": "month",
+          "source_ids": [
+            "greenview_release",
+            "mobilesyrup_wv"
+          ],
+          "note": "Municipal District of Greenview media release, 9 Dec 2024; public kickoff 10 Dec 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "greenview_release",
+          "title": "Media release: AI data centre",
+          "publisher": "Municipal District of Greenview",
+          "url": "https://mdgreenview.ab.ca/media-release-ai-data-centre-gig",
+          "kind": "primary"
+        },
+        {
+          "id": "mobilesyrup_wv",
+          "title": "Kevin O'Leary wants to build natural gas-powered AI data centre in Alberta",
+          "publisher": "MobileSyrup",
+          "url": "https://mobilesyrup.com/2024/12/09/kevin-oleary-wants-to-build-natural-gas-powered-ai-data-centre-in-alberta/",
+          "kind": "news"
+        },
+        {
+          "id": "oleary_pr_2026",
+          "title": "O'Leary Digital forms joint venture to advance 7.5 GW Wonder Valley Utah campus; Alberta permitting underway",
+          "publisher": "O'Leary Digital (PR Newswire)",
+          "url": "https://tools.prnewswire.com/en-us/live/20823/release/20260217EN90212",
+          "kind": "primary"
+        },
+        {
+          "id": "logic_wv",
+          "title": "Wonder Valley data centre, Alberta (The Big Read)",
+          "publisher": "The Logic",
+          "url": "https://thelogic.co/news/the-big-read/wonder-valley-data-centre-alberta-kevin-oleary/",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Capacity for the Alberta site not confirmed (7.5 GW in the 2026 release is the Utah campus; reported gas plant up to 8.5 GW). Drawn as a dot until a sourced data centre figure exists. Approximate location."
+    },
+    {
+      "slug": "omnia-bytedance-pecem",
+      "name": "Pecém data center (TikTok)",
+      "owner": "Omnia Data Centers",
+      "tenant": "ByteDance (TikTok)",
+      "country": "BR",
+      "region": "Ceará",
+      "locality": "Pecém industrial and port complex, São Gonçalo do Amarante",
+      "lat": -3.55,
+      "lon": -38.82,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 200,
+        "high": 300,
+        "type": "mixed"
+      },
+      "status": "under_construction",
+      "status_note": "ByteDance's largest data center outside China (Bloomberg); works began Jan 2026, first module due mid-2027. Reports give 200 MW contracted by ByteDance and 300 MW planned.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": {
+          "value": "2026-01",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "opovo_pecem"
+          ],
+          "note": "O Povo, 15 Jan 2026: TikTok data center starts works at Pecém."
+        }
+      },
+      "sources": [
+        {
+          "id": "opovo_pecem",
+          "title": "Data center do TikTok inicia obras no Pecém",
+          "publisher": "O Povo",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/01/15/amp/data-center-do-tiktok-inicia-obras-no-pecem.html",
+          "kind": "news"
+        },
+        {
+          "id": "dn_pecem_2027",
+          "title": "Data center do TikTok no Ceará começa a operar em 2027, diz Omnia",
+          "publisher": "Diário do Nordeste",
+          "url": "https://diariodonordeste.verdesmares.com.br/negocios/data-center-do-tiktok-no-ceara-comeca-a-operar-em-2027-diz-omnia-1.3745712",
+          "kind": "news"
+        },
+        {
+          "id": "bbg_bytedance_br",
+          "title": "ByteDance picks Brazil for its largest data center outside China",
+          "publisher": "Bloomberg Law",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/bytedance-picks-brazil-for-its-largest-data-center-outside-china",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Capacity range from news reports (200 MW contracted vs 300 MW planned); investment figures vary widely. Announcement date to add. Refine coordinates."
+    },
+    {
+      "slug": "softbank-sakai",
+      "name": "Sakai AI data center (former Sharp plant)",
+      "owner": "SoftBank Corp.",
+      "tenant": "SoftBank (OpenAI collaboration)",
+      "country": "JP",
+      "region": "Osaka",
+      "locality": "Sakai (former Sharp LCD plant)",
+      "lat": 34.57,
+      "lon": 135.44,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 150,
+        "high": 400,
+        "type": "planned_campus"
+      },
+      "status": "announced",
+      "status_note": "SoftBank is converting part of Sharp's former Sakai LCD plant (bought Mar 2025, ~¥100bn) into an AI data center: ~150 MW initially, ~250 MW by FY2028, potentially over 400 MW; completion now set for FY2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "announced": {
+          "value": "2024-06",
+          "precision": "month",
+          "source_ids": [
+            "softbank_sakai_pr"
+          ],
+          "note": "SoftBank–Sharp MoU announced 7 Jun 2024."
+        }
+      },
+      "sources": [
+        {
+          "id": "softbank_sakai_pr",
+          "title": "SoftBank Corp. to construct large-scale AI data center that utilizes Sharp Sakai Plant",
+          "publisher": "SoftBank Corp.",
+          "url": "https://www.softbank.jp/en/corp/news/press/sbkk/2024/20240607_01",
+          "kind": "primary"
+        },
+        {
+          "id": "dcd_softbank_sakai",
+          "title": "SoftBank buys former Sharp factory for $676m to build AI data center in Osaka, Japan",
+          "publisher": "DatacenterDynamics",
+          "url": "https://datacenterdynamics.com/en/news/softbank-buys-former-sharp-factory-for-676m-to-build-ai-data-center-in-osaka-japan",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Conversion works not yet confirmed by a source, so status stays 'announced'. Range: 150 MW initial vs 'over 400 MW' potential (SoftBank). Refine coordinates."
+    },
+    {
+      "slug": "tcs-hypervault-hyderabad",
+      "name": "HyperVault AI data centre campus",
+      "owner": "HyperVault (TCS)",
+      "country": "IN",
+      "region": "Telangana",
+      "locality": "Hyderabad",
+      "lat": 17.39,
+      "lon": 78.49,
+      "location_precision": "city",
+      "capacity_mw": {
+        "low": 1000,
+        "high": 1000,
+        "type": "planned_campus"
+      },
+      "status": "announced",
+      "status_note": "TCS unit HyperVault and partners (incl. TPG) to invest up to ₹700bn (~$7.4B) in a 1 GW campus on ~264 acres; phased build, construction targeted for early 2027 (announced Sep 2026).",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2026-09",
+          "precision": "month",
+          "source_ids": [
+            "reuters_hypervault"
+          ],
+          "note": "Reuters, 5 Sep 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "reuters_hypervault",
+          "title": "India's TCS unit to invest up to $7.4 billion in AI data center campus",
+          "publisher": "Reuters (via KFGO)",
+          "url": "https://kfgo.com/2026/09/05/indias-tcs-unit-to-invest-up-to-7-4-billion-in-ai-data-center-campus/",
+          "kind": "news"
+        },
+        {
+          "id": "crn_hypervault",
+          "title": "TCS' HyperVault makes ₹70,000 crore AI infrastructure play with 1 GW Hyderabad campus",
+          "publisher": "CRN Asia",
+          "url": "https://www.crnasia.com/india/news/2026/tcs-hypervault-makes-70-000-crore-ai-infrastructure-play-with-1-gw-hyderabad-campus",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Exact site within Hyderabad not yet published. Construction timing reported inconsistently (start vs completion early 2027)."
+    },
+    {
+      "slug": "homer-city-energy-campus",
+      "name": "Homer City Energy Campus",
+      "owner": "Homer City Redevelopment",
+      "tenant": "Not confirmed (AWS reported for data centers in Indiana County)",
+      "country": "US",
+      "region": "Pennsylvania",
+      "locality": "Homer City, Indiana County (former coal plant)",
+      "lat": 40.51,
+      "lon": -79.19,
+      "location_precision": "site",
+      "capacity_mw": {
+        "low": 4500,
+        "high": 4500,
+        "type": "power_generation"
+      },
+      "status": "announced",
+      "status_note": "Former coal plant site becoming a 4.5 GW gas plant and data center campus on 3,200 acres; Kiewit-built gas plant under construction (steel going up Mar 2026), first power now expected 2028; data center buildings not yet confirmed under construction.",
+      "expected_completion": "2036",
+      "dates": {
+        "announced": {
+          "value": "2025-04",
+          "precision": "month",
+          "source_ids": [
+            "inquirer_homer",
+            "dcd_homer"
+          ],
+          "note": "Announced 2 Apr 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "inquirer_homer",
+          "title": "Coal-fired power plant to become gas-powered AI campus",
+          "publisher": "The Philadelphia Inquirer",
+          "url": "https://inquirer.com/business/coal-fired-power-plant-gas-powered-ai-campus-20250402.html",
+          "kind": "news"
+        },
+        {
+          "id": "dcd_homer",
+          "title": "Homer City and Kiewit unveil plans for 4.5GW natural gas-powered AI data center in Pennsylvania",
+          "publisher": "DatacenterDynamics",
+          "url": "https://datacenterdynamics.com/en/news/homer-city-and-kiewit-unveil-plans-for-45gw-natural-gas-powered-ai-data-center-in-pennsylvania",
+          "kind": "news"
+        },
+        {
+          "id": "axios_homer",
+          "title": "Homer City power plant, grid and data centers",
+          "publisher": "Axios Pittsburgh",
+          "url": "https://www.axios.com/local/pittsburgh/2026/03/31/homer-city-power-plant-grid-data-centers-pennsylvania",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "4.5 GW is the gas plant (power_generation), like GW Ranch; data center IT capacity not published. Status will move to under construction once a source confirms data center buildings. Check the AWS tenancy report (TechRadar). Site coordinates are the former plant (approx.)."
+    },
+    {
+      "slug": "cloudhq-queretaro",
+      "name": "CloudHQ Querétaro campus (QRO)",
+      "owner": "CloudHQ",
+      "country": "MX",
+      "region": "Querétaro",
+      "locality": "Near Querétaro International Airport, Colón",
+      "lat": 20.62,
+      "lon": -100.19,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 288,
+        "high": 1000,
+        "type": "mixed"
+      },
+      "status": "announced",
+      "status_note": "Six-building campus (6 × 48 MW IT = 288 MW) on ~52 ha; investment raised to ~$6B and planned power to ~1,000 MW (Oct 2026). Work so far reported on the substation and transmission lines.",
+      "expected_completion": "2032",
+      "dates": {
+        "announced": {
+          "value": "2025-09",
+          "precision": "month",
+          "source_ids": [
+            "mnd_cloudhq"
+          ],
+          "note": "CloudHQ announces $4.8B plan for six Querétaro data centers (Mexico News Daily, 25 Sep 2025); project first floated in 2022."
+        }
+      },
+      "sources": [
+        {
+          "id": "mnd_cloudhq",
+          "title": "CloudHQ announces US $4.8B plan to build 6 data centers in Querétaro",
+          "publisher": "Mexico News Daily",
+          "url": "https://mexiconewsdaily.com/business/cloudhq-4b-queretaro-data-centers",
+          "kind": "news"
+        },
+        {
+          "id": "icio_cloudhq",
+          "title": "CloudHQ raises Mexico data centre investment to US$6 billion as power capacity quadruples",
+          "publisher": "Intelligent CIO",
+          "url": "https://www.intelligentcio.com/latam/2026/10/19/cloudhq-raises-mexico-data-centre-investment-to-us6-billion-as-power-capacity-quadruples/",
+          "kind": "news"
+        },
+        {
+          "id": "bna_cloudhq",
+          "title": "CloudHQ breaks ground on power infra for Mexican datacenter campus",
+          "publisher": "BNamericas",
+          "url": "https://bnamericas.com/en/news/cloudhq-breaks-ground-on-power-infra-for-mexican-datacenter-campus",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Groundbreaking on power infrastructure reported (BNamericas, undated; page blocked): date it and decide whether that counts as construction start. Range: 288 MW IT vs ~1,000 MW planned power."
+    },
+    {
+      "slug": "poolside-horizon",
+      "name": "Project Horizon",
+      "owner": "Poolside",
+      "tenant": "CoreWeave (anchor, first phase)",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Longfellow Ranch, Pecos County (near Fort Stockton)",
+      "lat": 30.75,
+      "lon": -102.7,
+      "location_precision": "county",
+      "capacity_mw": {
+        "low": 2000,
+        "high": 2000,
+        "type": "planned_campus"
+      },
+      "status": "announced",
+      "status_note": "2 GW self-powered (on-site gas) AI campus on 568 acres in eight 250 MW phases; CoreWeave anchors the first 250 MW phase. No construction confirmed by a source yet.",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2025-10",
+          "precision": "month",
+          "source_ids": [
+            "poolside_blog",
+            "bbg_poolside"
+          ],
+          "note": "Announced 15 Oct 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "poolside_blog",
+          "title": "Announcing Project Horizon: why we're building a 2 gigawatt AI campus in Texas",
+          "publisher": "Poolside",
+          "url": "https://poolside.ai/blog/announcing-project-horizon",
+          "kind": "primary"
+        },
+        {
+          "id": "bbg_poolside",
+          "title": "AI startup Poolside teams with CoreWeave on massive data center",
+          "publisher": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-10-15/ai-startup-poolside-teams-with-coreweave-on-massive-data-center",
+          "kind": "news"
+        },
+        {
+          "id": "dcf_poolside",
+          "title": "How CoreWeave and Poolside are teaming up in West Texas",
+          "publisher": "Data Center Frontier",
+          "url": "https://www.datacenterfrontier.com/machine-learning/article/55326541/how-coreweave-and-poolside-are-teaming-up-in-west-texas-to-build-the-next-generation-of-ai-data-centers",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Developer reportedly spun out in Jan 2026 (single wiki source; check). Exact ranch location approximate (county precision)."
+    }
+  ]
+}

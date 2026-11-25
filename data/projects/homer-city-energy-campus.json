@@ -1,0 +1,61 @@
+{
+  "slug": "homer-city-energy-campus",
+  "name": "Homer City Energy Campus",
+  "owner": "Homer City Redevelopment",
+  "tenant": "Not confirmed (AWS reported for data centers in Indiana County)",
+  "country": "US",
+  "region": "Pennsylvania",
+  "locality": "Homer City, Indiana County (former coal plant)",
+  "lat": 40.51,
+  "lon": -79.19,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 4500,
+    "high": 4500,
+    "type": "power_generation"
+  },
+  "status": "announced",
+  "status_note": "Former coal plant site becoming a 4.5 GW gas plant and data center campus on 3,200 acres; Kiewit-built gas plant under construction (steel going up Mar 2026), first power now expected 2028; data center buildings not yet confirmed under construction.",
+  "expected_completion": "2036",
+  "dates": {
+    "announced": {
+      "value": "2025-04",
+      "precision": "month",
+      "source_ids": [
+        "inquirer_homer",
+        "dcd_homer"
+      ],
+      "note": "Announced 2 Apr 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "inquirer_homer",
+      "title": "Coal-fired power plant to become gas-powered AI campus",
+      "publisher": "The Philadelphia Inquirer",
+      "url": "https://inquirer.com/business/coal-fired-power-plant-gas-powered-ai-campus-20250402.html",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_homer",
+      "title": "Homer City and Kiewit unveil plans for 4.5GW natural gas-powered AI data center in Pennsylvania",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/homer-city-and-kiewit-unveil-plans-for-45gw-natural-gas-powered-ai-data-center-in-pennsylvania",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "axios_homer",
+      "title": "Homer City power plant, grid and data centers",
+      "publisher": "Axios Pittsburgh",
+      "url": "https://www.axios.com/local/pittsburgh/2026/03/31/homer-city-power-plant-grid-data-centers-pennsylvania",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "4.5 GW is the gas plant (power_generation), like GW Ranch; data center IT capacity not published. Status will move to under construction once a source confirms data center buildings. Check the AWS tenancy report (TechRadar). Site coordinates are the former plant (approx.).",
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "omnia-bytedance-pecem",
+  "name": "Pecém data center (TikTok)",
+  "owner": "Omnia Data Centers",
+  "tenant": "ByteDance (TikTok)",
+  "country": "BR",
+  "region": "Ceará",
+  "locality": "Pecém industrial and port complex, São Gonçalo do Amarante",
+  "lat": -3.55,
+  "lon": -38.82,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 200,
+    "high": 300,
+    "type": "mixed"
+  },
+  "status": "under_construction",
+  "status_note": "ByteDance's largest data center outside China (Bloomberg); works began Jan 2026, first module due mid-2027. Reports give 200 MW contracted by ByteDance and 300 MW planned.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2026-01",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "opovo_pecem"
+      ],
+      "note": "O Povo, 15 Jan 2026: TikTok data center starts works at Pecém."
+    }
+  },
+  "sources": [
+    {
+      "id": "opovo_pecem",
+      "title": "Data center do TikTok inicia obras no Pecém",
+      "publisher": "O Povo",
+      "url": "https://www.opovo.com.br/noticias/economia/2026/01/15/amp/data-center-do-tiktok-inicia-obras-no-pecem.html",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dn_pecem_2027",
+      "title": "Data center do TikTok no Ceará começa a operar em 2027, diz Omnia",
+      "publisher": "Diário do Nordeste",
+      "url": "https://diariodonordeste.verdesmares.com.br/negocios/data-center-do-tiktok-no-ceara-comeca-a-operar-em-2027-diz-omnia-1.3745712",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bbg_bytedance_br",
+      "title": "ByteDance picks Brazil for its largest data center outside China",
+      "publisher": "Bloomberg Law",
+      "url": "https://news.bloomberglaw.com/artificial-intelligence/bytedance-picks-brazil-for-its-largest-data-center-outside-china",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Capacity range from news reports (200 MW contracted vs 300 MW planned); investment figures vary widely. Announcement date to add. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

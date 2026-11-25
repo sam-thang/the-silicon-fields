@@ -1,0 +1,12 @@
+{
+  "_note": "Batch 9 updates: link the Crusoe Project Jade reporting to google-project-tembo (same Cheyenne site).",
+  "accessed": "2026-11-25",
+  "projects": {
+    "google-project-tembo": {
+      "add_sources": [
+        { "id": "bbg_crusoe_pause", "title": "Crusoe touts 5 gigawatts of data centers, pauses Wyoming site", "publisher": "Bloomberg Law", "url": "https://news.bloomberglaw.com/artificial-intelligence/crusoe-touts-5-gigawatts-of-data-centers-pauses-wyoming-site", "kind": "news" }
+      ],
+      "review_append": "Same site as Crusoe/Tallgrass \"Project Jade\" (1.8 GW, announced Jul 2025): Crusoe paused and exited in Jun 2026 at Google's request (Bloomberg); Google continues with Black Hills. Not a separate project."
+    }
+  }
+}

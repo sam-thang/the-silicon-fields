@@ -1,0 +1,62 @@
+{
+  "slug": "qts-cambois",
+  "name": "Cambois data centre campus",
+  "owner": "QTS (Blackstone)",
+  "tenant": "Not disclosed",
+  "country": "GB",
+  "region": "Northumberland",
+  "locality": "Cambois, near Blyth (former Blyth power station / Britishvolt site)",
+  "lat": 55.16,
+  "lon": -1.53,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 720,
+    "high": 720,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "~£10bn campus of up to 10 buildings scaling to 720 MW; enabling works (site preparation) began Oct 2025 after approval in Aug 2025; first data centre building due to start in 2026.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2025-10",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "dcr_cambois",
+        "bdaily_cambois"
+      ],
+      "note": "Enabling works / site preparation started; onsite event early Oct 2025 (Data Centre Review, 14 Oct 2025)."
+    }
+  },
+  "sources": [
+    {
+      "id": "dcr_cambois",
+      "title": "QTS starts enabling works for huge Cambois data centre campus",
+      "publisher": "Data Centre Review",
+      "url": "https://datacentrereview.com/2025/10/qts-starts-enabling-works-for-huge-cambois-data-centre-campus/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bdaily_cambois",
+      "title": "Groundwork begins at £10 billion AI hub",
+      "publisher": "Bdaily",
+      "url": "https://bdaily.co.uk/articles/2025/10/07/groundwork-begins-at-10-billion-ai-hub",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "qts_cambois_pr",
+      "title": "QTS launches social value programme during Cambois data centre enabling works celebration",
+      "publisher": "QTS",
+      "url": "https://q.com/news/qts-launches-social-value-programme-during-cambois-data-centre-enabling-works-celebration/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Construction so far is enabling works; check whether the first building has started (2026). Blackstone's original announcement date (2024) to add. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

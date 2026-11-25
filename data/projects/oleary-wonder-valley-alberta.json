@@ -1,0 +1,68 @@
+{
+  "slug": "oleary-wonder-valley-alberta",
+  "name": "Wonder Valley (Alberta)",
+  "owner": "O'Leary Digital",
+  "country": "CA",
+  "region": "Alberta",
+  "locality": "Greenview Industrial Gateway, ~42 km south of Grande Prairie",
+  "lat": 54.8,
+  "lon": -118.75,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": null,
+    "high": null,
+    "type": "unknown"
+  },
+  "status": "permitting",
+  "status_note": "Off-grid AI data centre park with its own gas power proposed Dec 2024 (initially reported as a $70B park); Alberta permitting under way (Feb 2026), land sale contract signed Mar 2026; phased development now expected 2028–2029.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-12",
+      "precision": "month",
+      "source_ids": [
+        "greenview_release",
+        "mobilesyrup_wv"
+      ],
+      "note": "Municipal District of Greenview media release, 9 Dec 2024; public kickoff 10 Dec 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "greenview_release",
+      "title": "Media release: AI data centre",
+      "publisher": "Municipal District of Greenview",
+      "url": "https://mdgreenview.ab.ca/media-release-ai-data-centre-gig",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "mobilesyrup_wv",
+      "title": "Kevin O'Leary wants to build natural gas-powered AI data centre in Alberta",
+      "publisher": "MobileSyrup",
+      "url": "https://mobilesyrup.com/2024/12/09/kevin-oleary-wants-to-build-natural-gas-powered-ai-data-centre-in-alberta/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "oleary_pr_2026",
+      "title": "O'Leary Digital forms joint venture to advance 7.5 GW Wonder Valley Utah campus; Alberta permitting underway",
+      "publisher": "O'Leary Digital (PR Newswire)",
+      "url": "https://tools.prnewswire.com/en-us/live/20823/release/20260217EN90212",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "logic_wv",
+      "title": "Wonder Valley data centre, Alberta (The Big Read)",
+      "publisher": "The Logic",
+      "url": "https://thelogic.co/news/the-big-read/wonder-valley-data-centre-alberta-kevin-oleary/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Capacity for the Alberta site not confirmed (7.5 GW in the 2026 release is the Utah campus; reported gas plant up to 8.5 GW). Drawn as a dot until a sourced data centre figure exists. Approximate location.",
+  "last_verified": "2026-11-25"
+}

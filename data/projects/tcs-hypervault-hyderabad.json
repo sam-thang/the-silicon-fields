@@ -1,0 +1,51 @@
+{
+  "slug": "tcs-hypervault-hyderabad",
+  "name": "HyperVault AI data centre campus",
+  "owner": "HyperVault (TCS)",
+  "country": "IN",
+  "region": "Telangana",
+  "locality": "Hyderabad",
+  "lat": 17.39,
+  "lon": 78.49,
+  "location_precision": "city",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "TCS unit HyperVault and partners (incl. TPG) to invest up to ₹700bn (~$7.4B) in a 1 GW campus on ~264 acres; phased build, construction targeted for early 2027 (announced Sep 2026).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-09",
+      "precision": "month",
+      "source_ids": [
+        "reuters_hypervault"
+      ],
+      "note": "Reuters, 5 Sep 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "reuters_hypervault",
+      "title": "India's TCS unit to invest up to $7.4 billion in AI data center campus",
+      "publisher": "Reuters (via KFGO)",
+      "url": "https://kfgo.com/2026/09/05/indias-tcs-unit-to-invest-up-to-7-4-billion-in-ai-data-center-campus/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "crn_hypervault",
+      "title": "TCS' HyperVault makes ₹70,000 crore AI infrastructure play with 1 GW Hyderabad campus",
+      "publisher": "CRN Asia",
+      "url": "https://www.crnasia.com/india/news/2026/tcs-hypervault-makes-70-000-crore-ai-infrastructure-play-with-1-gw-hyderabad-campus",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Exact site within Hyderabad not yet published. Construction timing reported inconsistently (start vs completion early 2027).",
+  "last_verified": "2026-11-25"
+}
