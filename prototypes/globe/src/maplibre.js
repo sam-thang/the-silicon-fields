@@ -6,7 +6,7 @@ import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 maplibregl.setWorkerUrl(workerUrl);
 import {
   COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, landDots, heightFor, items, stageAt,
-  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable,
+  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable, dimHex, fitGlobe, placeShade,
 } from "./shared.js";
 
 const { meter, loadTest } = mountChrome("MapLibre");
@@ -30,12 +30,15 @@ function circle(lon, lat, r, n = 16) {
 }
 const shapes = new Map(all.map((it) => [it.id, { col: circle(it.lon, it.lat, COLUMN_RADIUS_M), approx: circle(it.lon, it.lat, APPROX_RADIUS_M, 32) }]));
 
+let selectedId = null; // the picked project; the others dim while it is shown
+
 function collections(iso) {
   const cols = [], dots = [], approx = [];
   for (const it of all) {
     const stage = stageAt(it.p, iso);
     if (!stage) continue;
-    const props = { id: it.id, stage, color: STAGE_COLOR[stage] };
+    const dim = selectedId !== null && it.id !== selectedId;
+    const props = { id: it.id, stage, color: dim ? dimHex(STAGE_COLOR[stage]) : STAGE_COLOR[stage] };
     if (it.p.column_mw === null) {
       dots.push({ type: "Feature", properties: props, geometry: { type: "Point", coordinates: [it.lon, it.lat] } });
     } else {
@@ -60,6 +63,8 @@ const map = new maplibregl.Map({
     version: 8,
     projection: { type: "globe" },
     sky: { "atmosphere-blend": 0 },
+    // Flat status colors: no side shading on columns (keeps the Lightness Ladder intact).
+    light: { anchor: "viewport", intensity: 0 },
     sources: {
       land: { type: "geojson", data: { type: "Feature", properties: {}, geometry: { type: "MultiPoint", coordinates: landDots } } },
       cols: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
@@ -67,7 +72,8 @@ const map = new maplibregl.Map({
       approx: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
     },
     layers: [
-      { id: "ocean", type: "background", paint: { "background-color": COLOR.ocean } },
+      // Ocean is transparent: the lit sphere behind the canvas (#shade) shows through.
+      { id: "ocean", type: "background", paint: { "background-color": COLOR.ocean, "background-opacity": 0 } },
       {
         id: "land", type: "circle", source: "land",
         paint: {
@@ -85,7 +91,7 @@ const map = new maplibregl.Map({
       },
       {
         id: "cols-planned", type: "fill-extrusion", source: "cols", filter: ["==", ["get", "stage"], "planned"],
-        paint: { "fill-extrusion-color": ["get", "color"], "fill-extrusion-height": ["get", "height"], "fill-extrusion-opacity": 0.55, "fill-extrusion-vertical-gradient": false },
+        paint: { "fill-extrusion-color": ["get", "color"], "fill-extrusion-height": ["get", "height"], "fill-extrusion-opacity": 0.8, "fill-extrusion-vertical-gradient": false },
       },
     ],
   },
@@ -128,15 +134,33 @@ function pick(point) {
   }
   return best;
 }
+function select(hit, point) {
+  const id = hit ? hit.it.id : null;
+  hit ? card.show(hit.it, hit.stage, point.x, point.y) : card.hide();
+  if (id !== selectedId) {
+    selectedId = id;
+    render(currentIso);
+  }
+}
 map.on("mousemove", (e) => {
   const hit = pick(e.point);
   map.getCanvas().style.cursor = hit ? "pointer" : "";
-  hit ? card.show(hit.it, hit.stage, e.point.x, e.point.y) : card.hide();
+  select(hit, e.point);
 });
-map.on("click", (e) => {
-  const hit = pick(e.point);
-  hit ? card.show(hit.it, hit.stage, e.point.x, e.point.y) : card.hide();
-});
+map.on("click", (e) => select(pick(e.point), e.point));
+
+// Keep the lit sphere behind the canvas fitted to the globe.
+function updateShade() {
+  const c = map.project(map.getCenter());
+  placeShade(fitGlobe(
+    ([lng, lat]) => { const p = map.project([lng, lat]); return [p.x, p.y]; },
+    ([x, y]) => { const ll = map.unproject([x, y]); return ll ? [ll.lng, ll.lat] : null; },
+    [c.x, c.y],
+  ));
+}
+map.on("move", updateShade);
+map.on("resize", updateShade);
+map.on("load", updateShade);
 
 autoRotate((deg) => {
   const c = map.getCenter();

@@ -37,7 +37,27 @@ a { color: var(--text-primary); text-underline-offset: 3px; text-decoration-colo
 a:hover { text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--operational); outline-offset: 3px; border-radius: 4px; }
 
-#globe { position: fixed; inset: 0; background: var(--space-navy); }
+#globe { position: fixed; inset: 0; }
+
+/* Globe volume, behind the transparent ocean: halo (Tile Navy 25%), lit sphere, 1px edge. */
+#shade { position: fixed; inset: 0; pointer-events: none; --cx: 50vw; --cy: 50vh; --r: 0px; }
+#shade > div {
+  position: absolute;
+  left: calc(var(--cx) - var(--r));
+  top: calc(var(--cy) - var(--r));
+  width: calc(var(--r) * 2);
+  height: calc(var(--r) * 2);
+  border-radius: 50%;
+}
+#shade .sphere {
+  background: radial-gradient(circle at 40% 35%, #16294a 0%, #0a1529 75%);
+  box-sizing: border-box;
+  border: 1px solid var(--line-strong);
+}
+#shade .halo {
+  background: rgb(19 38 74 / 0.25);
+  transform: scale(1.047);
+}
 #globe canvas { outline: none; }
 
 /* Top-left chrome: engine, meter, load test */

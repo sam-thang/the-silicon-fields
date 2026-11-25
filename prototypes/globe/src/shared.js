@@ -48,7 +48,7 @@ export const geojson = JSON.parse(raw);
 export const MAX_MW = Math.max(...geojson.features.map((f) => f.properties.column_mw ?? 0));
 export const MAX_HEIGHT_M = Number(params.get("h") ?? 2500) * 1000; // ?h= tallest column in km
 export const heightFor = (mw) => (mw / MAX_MW) * MAX_HEIGHT_M;
-export const COLUMN_RADIUS_M = 40000;
+export const COLUMN_RADIUS_M = 28000;
 export const APPROX_RADIUS_M = 160000;
 
 // ---- Timeline: month index 0 = 2020-01 ... 131 = 2030-12 ----
@@ -262,18 +262,86 @@ export function createCard() {
   };
 }
 
-/** Auto-rotation until the first interaction (off with reduced motion). */
+/**
+ * Auto-rotation until the first interaction (off with reduced motion).
+ * Real Earth spin: the surface moves west to east, so the view's longitude decreases
+ * (US -> Pacific -> East Asia -> India -> Middle East -> Europe).
+ */
 export function autoRotate(stepFn) {
   let on = !reducedMotion && params.get("rotate") !== "0";
   const stopIt = () => (on = false);
   for (const ev of ["pointerdown", "wheel", "touchstart", "keydown"]) addEventListener(ev, stopIt, { passive: true, capture: true });
   let last = performance.now();
   const loop = (now) => {
-    if (on) stepFn(((now - last) / 1000) * 4); // 4 degrees per second
+    if (on) stepFn(((now - last) / 1000) * -4); // 4 degrees per second, westward view
     last = now;
     requestAnimationFrame(loop);
   };
   requestAnimationFrame(loop);
+}
+
+/** Mix a hex color toward the ocean navy: used to dim the other columns while one is picked. */
+export function dimHex(hex, k = 0.6) {
+  const a = hexToRgb(hex);
+  const b = hexToRgb(COLOR.ocean);
+  return "#" + a.map((v, i) => Math.round(v + (b[i] - v) * k).toString(16).padStart(2, "0")).join("");
+}
+
+// ---- Globe volume (DESIGN.md): lit gradient sphere, 1px edge, faint halo ----
+// The engines draw the ocean transparent; this element sits behind the canvas and is
+// fitted to the globe's on-screen outline each frame.
+const shade = document.createElement("div");
+shade.id = "shade";
+shade.innerHTML = `<div class="halo"></div><div class="sphere"></div>`;
+document.body.prepend(shade);
+
+/**
+ * Finds the globe's outline on screen: walks rays out from a point on the globe,
+ * binary-searching where a pixel stops round-tripping through unproject/project,
+ * then fits a circle through those edge points.
+ */
+export function fitGlobe(project, unproject, origin) {
+  const onGlobe = (x, y) => {
+    const ll = unproject([x, y]);
+    if (!ll || !Number.isFinite(ll[0]) || !Number.isFinite(ll[1])) return false;
+    const p = project(ll);
+    return p && Math.hypot(p[0] - x, p[1] - y) < 1.5;
+  };
+  const pts = [];
+  for (let k = 0; k < 16; k++) {
+    const a = (k / 16) * 2 * Math.PI;
+    let lo = 0, hi = 4000;
+    for (let i = 0; i < 14; i++) {
+      const mid = (lo + hi) / 2;
+      if (onGlobe(origin[0] + Math.cos(a) * mid, origin[1] + Math.sin(a) * mid)) lo = mid;
+      else hi = mid;
+    }
+    if (lo > 2) pts.push([origin[0] + Math.cos(a) * lo, origin[1] + Math.sin(a) * lo]);
+  }
+  if (pts.length < 6) return null;
+  // Least-squares circle fit (Kasa): x² + y² + Dx + Ey + F = 0.
+  let sx = 0, sy = 0, sxx = 0, syy = 0, sxy = 0, sz = 0, sxz = 0, syz = 0;
+  const n = pts.length;
+  for (const [x, y] of pts) {
+    const z = x * x + y * y;
+    sx += x; sy += y; sxx += x * x; syy += y * y; sxy += x * y; sz += z; sxz += x * z; syz += y * z;
+  }
+  const M = [[sxx, sxy, sx], [sxy, syy, sy], [sx, sy, n]];
+  const v = [-sxz, -syz, -sz];
+  const det = (m) => m[0][0] * (m[1][1] * m[2][2] - m[1][2] * m[2][1]) - m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0]) + m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]);
+  const d0 = det(M);
+  if (!d0) return null;
+  const col = (i) => M.map((row, r) => row.map((c, j) => (j === i ? v[r] : c)));
+  const D = det(col(0)) / d0, E = det(col(1)) / d0, F = det(col(2)) / d0;
+  const cx = -D / 2, cy = -E / 2;
+  return { cx, cy, r: Math.sqrt(cx * cx + cy * cy - F) };
+}
+
+export function placeShade(fit) {
+  if (!fit) return;
+  shade.style.setProperty("--cx", `${fit.cx}px`);
+  shade.style.setProperty("--cy", `${fit.cy}px`);
+  shade.style.setProperty("--r", `${fit.r}px`);
 }
 
 export function webglAvailable() {

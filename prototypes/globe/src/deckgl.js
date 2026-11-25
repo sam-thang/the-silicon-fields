@@ -5,7 +5,7 @@ import { SimpleMeshLayer } from "@deck.gl/mesh-layers";
 import { SphereGeometry } from "@luma.gl/engine";
 import {
   COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, LAND_DOT_RADIUS_M, landDots, heightFor, items, stageAt, hexToRgb, params,
-  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable,
+  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable, dimHex, fitGlobe, placeShade,
 } from "./shared.js";
 
 const { meter, loadTest } = mountChrome("deck.gl");
@@ -25,7 +25,9 @@ const EARTH = {
 const rgb = Object.fromEntries(Object.entries(STAGE_COLOR).map(([k, v]) => [k, hexToRgb(v)]));
 let viewState = { longitude: -88, latitude: 12, zoom: innerWidth < 600 ? 0.75 : 1.9 };
 let iso = null;
-let hover = null;
+let hover = null; // the picked project; the others dim while it is shown
+const dimRgb = Object.fromEntries(Object.entries(STAGE_COLOR).map(([k, v]) => [k, hexToRgb(dimHex(v))]));
+const colorOf = (v) => (hover && v.it.id !== hover.it.id ? dimRgb : rgb)[v.stage];
 
 function layers() {
   const visible = [];
@@ -46,7 +48,7 @@ function layers() {
     extruded: true,
     pickable: true,
     material: false,
-    updateTriggers: { getFillColor: iso },
+    updateTriggers: { getFillColor: [iso, hover?.it.id], getLineColor: [iso, hover?.it.id] },
   };
   return [
     new SimpleMeshLayer({
@@ -55,8 +57,9 @@ function layers() {
       mesh: new SphereGeometry({ radius: 6.3e6, nlat: 36, nlong: 72 }),
       coordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
       getPosition: [0, 0, 0],
-      getColor: hexToRgb(COLOR.ocean),
-      material: { ambient: 1, diffuse: 0, shininess: 0, specularColor: [0, 0, 0] },
+      // Invisible, depth only: hides the far side; the lit sphere behind the canvas (#shade) shows through.
+      getColor: [0, 0, 0, 0],
+      material: false,
     }),
     EARTH
       ? new BitmapLayer({
@@ -77,13 +80,13 @@ function layers() {
     }),
     new ScatterplotLayer({
       id: "dots", data: dots, pickable: true, getPosition: common.getPosition, radiusUnits: "pixels", getRadius: 4,
-      getFillColor: (v) => rgb[v.stage], updateTriggers: { getFillColor: iso },
+      getFillColor: colorOf, updateTriggers: { getFillColor: [iso, hover?.it.id] },
     }),
-    new ColumnLayer({ id: "cols-solid", data: solid, ...common, getFillColor: (v) => rgb[v.stage] }),
+    new ColumnLayer({ id: "cols-solid", data: solid, ...common, getFillColor: colorOf }),
     // Planned: translucent body plus a crisp outline (DESIGN.md), via the wireframe.
     new ColumnLayer({
       id: "cols-planned", data: planned, ...common, wireframe: true,
-      getFillColor: [...rgb.planned, 100], getLineColor: rgb.planned,
+      getFillColor: (v) => [...colorOf(v), 100], getLineColor: colorOf,
       parameters: { depthWriteEnabled: false },
     }),
   ];
@@ -104,12 +107,35 @@ const deck = new Deck({
   getCursor: ({ isDragging }) => (isDragging ? "grabbing" : hover ? "pointer" : "grab"),
   onHover: (info) => showPick(info),
   onClick: (info) => showPick(info),
-  onAfterRender: () => meter.firstGlobe(),
+  onAfterRender: () => {
+    meter.firstGlobe();
+    updateShade();
+  },
 });
 
 function showPick(info) {
-  hover = info.object ?? null;
-  hover ? card.show(hover.it, hover.stage, info.x, info.y) : card.hide();
+  const next = info.object ?? null;
+  next ? card.show(next.it, next.stage, info.x, info.y) : card.hide();
+  if ((next?.it.id ?? null) !== (hover?.it.id ?? null)) {
+    hover = next;
+    deck.setProps({ layers: layers() });
+  }
+}
+
+// Keep the lit sphere behind the canvas fitted to the globe (only when the view changes).
+let shadeKey = "";
+function updateShade() {
+  const vp = deck.getViewports()[0];
+  if (!vp) return;
+  const key = [vp.width, vp.height, viewState.longitude, viewState.latitude, viewState.zoom].join();
+  if (key === shadeKey) return;
+  shadeKey = key;
+  const o = vp.project([viewState.longitude, viewState.latitude, 0]);
+  placeShade(fitGlobe(
+    (ll) => vp.project([ll[0], ll[1], 0]),
+    (xy) => vp.unproject(xy),
+    [o[0], o[1]],
+  ));
 }
 
 function render(nextIso) {
