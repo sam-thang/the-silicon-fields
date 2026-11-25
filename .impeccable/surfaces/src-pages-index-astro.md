@@ -61,6 +61,6 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape home`.
 ## Open decisions (a builder must not invent these)
 - **Data pass:** sourced `announced`, `construction_start` and `operational` dates, each with a precision (month/quarter/year), for all 41 records, approved by the owner. Until then, the engine prototype runs on current status only. No placeholder dates.
 - Exact headline wording for the homes comparison (verified factors first).
-- Globe engine: MapLibre or deck.gl, decided by a mid-range phone prototype.
+- ~~Globe engine~~ Decided 2026-11-25: **MapLibre GL JS** (owner, after phone-testing both prototypes). Carry over from `prototypes/globe/`: dotted land (Land Dot), lit sphere + edge + halo behind a transparent ocean, flat column lighting, hover/tap dimming, real west-to-east spin.
 - Where the column-glow setting lives (suggested: a "View" menu next to the legend).
 - Schema mismatches in the seed: capacity types `power_generation` and `grid_switchyard`, location precision `city`, field `users` vs `tenant`.

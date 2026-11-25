@@ -40,3 +40,6 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape globe`.
 - Final engine: the owner's call after testing.
 - Column height scale: linear in capacity; tallest (Hyperion 17 GW) vs smallest (214 MW) shown to the owner for judgment.
 - Partially operational color on the timeline (prototype uses amber: still building, partly online) to confirm with the owner.
+
+## Outcome (2026-11-25)
+- Owner chose **MapLibre GL JS** after testing on an iPhone. deck.gl prototype kept only as a record.

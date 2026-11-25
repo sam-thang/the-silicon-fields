@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro (static pages generated from JSON data, with islands for the globe, before/after slider and address search). Globe engine still open: prototype MapLibre GL JS globe projection with extruded columns against deck.gl ColumnLayer on a globe view, and pick whichever runs smoothest on a mid-range phone. Python scripts in `scripts/` handle validation, the GeoJSON build and imagery prep. Hosted on Cloudflare Pages. v1 has no database, user accounts or paid services.
+Astro (static pages generated from JSON data, with islands for the globe, before/after slider and address search). Globe engine: MapLibre GL JS globe projection with extruded columns (chosen by the owner after phone prototypes, Nov 2026). Node scripts in `scripts/` handle validation, the GeoJSON build and imagery prep. Hosted on Cloudflare Pages. v1 has no database, user accounts or paid services.
 
 ## Users
 
@@ -69,7 +69,7 @@ A curated, sourced, project-level view of the AI data center build-out, at plane
 - Only `approved: true` records are published. `tracker_only` records are never published.
 - Water use appears only where a source gives a figure for that site. Estimates are marked "est.".
 
-**Undecided:** which globe engine to use (MapLibre or deck.gl, pending phone prototypes); refined coordinates (the seed coordinates are approximate and need refining from imagery or filings before launch).
+**Undecided:** refined coordinates (the seed coordinates are approximate and need refining from imagery or filings before launch).
 
 ## Brand Commitments
 

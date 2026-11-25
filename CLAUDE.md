@@ -191,7 +191,7 @@ Keep in `data/factors.json`, each with source and date, shown on the methodology
 Keep it simple and cheap. Mostly static.
 
 - **Framework:** Astro (static pages per project from the JSON data, islands for the map and slider).
-- **Globe:** MapLibre GL JS globe projection with extruded columns, or deck.gl (ColumnLayer) on a globe view. Prototype both quickly and pick the one that runs smoothest on a phone. Columns need a date field so the timeline can filter them.
+- **Globe: MapLibre GL JS** (owner decision Nov 2026, after phone-testing both prototypes in `prototypes/globe/`): globe projection, `fill-extrusion` columns with flat lighting (`light.intensity: 0`), dotted land from `prototypes/globe/build-dots.mjs`, transparent ocean over a lit sphere fitted behind the canvas. Columns need a date field so the timeline can filter them. deck.gl was rejected (no tilt on its globe view); its prototype stays only as a record.
 - **Before/after slider:** small custom component, keyboard accessible.
 - **Address search:** a geocoding API with a free tier (e.g. a Nominatim-based service, respecting its usage policy). Distance is computed in the browser.
 - **Hosting:** Cloudflare Pages (domain also on Cloudflare).
