@@ -1,0 +1,70 @@
+{
+  "slug": "dayone-nusajaya",
+  "name": "DayOne Nusajaya (Phase 2)",
+  "owner": "DayOne (formerly GDS International)",
+  "tenant": "Not disclosed (FT reports Alibaba and ByteDance train models in Johor)",
+  "country": "MY",
+  "region": "Johor",
+  "locality": "Nusajaya Tech Park, Iskandar Puteri",
+  "lat": 1.43,
+  "lon": 103.6,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 473,
+    "high": 473,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Epoch: Phase 2 Buildings 1–10 operational (est. 473 MW IT) as of Oct 2026; Phase 1 excluded.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-06",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_nusajaya"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Jun 2023."
+    },
+    "operational": {
+      "value": "2024-12",
+      "precision": "month",
+      "source_ids": [
+        "ep_nusajaya",
+        "dayone_archive_2024"
+      ],
+      "note": "Buildings 1–2 operational by 31 Dec 2024 (earliest archived DayOne page: 120 MW in operation in Johor)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_nusajaya",
+      "title": "DayOne Nusajaya – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/dayone-nusajaya",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dayone_archive_2024",
+      "title": "DayOne website (archived 31 Dec 2024): 120 MW in operation in Johor",
+      "publisher": "DayOne",
+      "url": "https://web.archive.org/web/20241231165420/https://dayonedc.com/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ft_johor",
+      "title": "Alibaba and ByteDance train AI models in south-east Asia",
+      "publisher": "Financial Times",
+      "url": "https://www.ft.com/content/96fe9898-a3a4-4a33-be1d-da06bdb6cb2b",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Tenant not confirmed per site. No announcement date. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "terawulf-lake-mariner",
+  "name": "Lake Mariner AI campus",
+  "owner": "TeraWulf",
+  "tenant": "Fluidstack (Google TPUs for Anthropic, likely)",
+  "country": "US",
+  "region": "New York",
+  "locality": "Barker, Niagara County (former Somerset coal plant)",
+  "lat": 43.36,
+  "lon": -78.6,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 210,
+    "high": 378,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Epoch: AI Buildings CB3–CB4 operational (est. 210 MW IT); CB5 under construction, projected 378 MW by Q1 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2025-06",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_lakemariner"
+      ],
+      "note": "Epoch satellite: land clearing for Building 1 (CB3) begins 11 Jun 2025."
+    },
+    "operational": {
+      "value": "2026-05",
+      "precision": "month",
+      "source_ids": [
+        "ep_lakemariner",
+        "terawulf_q4_2025"
+      ],
+      "note": "CB3 energised by mid-May 2026 (TeraWulf guidance; Epoch drone imagery 8 May 2026)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_lakemariner",
+      "title": "Anthropic Lake Mariner – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/anthropic-lake-mariner",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "terawulf_q4_2025",
+      "title": "TeraWulf reports fourth quarter and full year 2025 results",
+      "publisher": "TeraWulf",
+      "url": "https://investors.terawulf.com/news-events/press-releases/detail/132/terawulf-reports-fourth-quarter-and-full-year-2025-results",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "anthropic_50b",
+      "title": "Anthropic invests $50 billion in American AI infrastructure",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "The older Lake Mariner bitcoin-mining buildings (from 2021) are excluded; this record covers the AI buildings only. Announced date (Fluidstack lease, 2025) to add. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

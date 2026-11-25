@@ -1,0 +1,69 @@
+{
+  "slug": "cipher-barber-lake",
+  "name": "Barber Lake",
+  "owner": "Cipher Mining",
+  "tenant": "Fluidstack (Google TPUs for Anthropic)",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Colorado City, Mitchell County",
+  "lat": 32.39,
+  "lon": -100.86,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 207,
+    "high": 300,
+    "type": "mixed"
+  },
+  "status": "under_construction",
+  "status_note": "207 MW critical IT (300 MW gross) contracted to Fluidstack; Building 1 shell complete, not yet energised (Epoch, Jul 2026).",
+  "expected_completion": "2027",
+  "dates": {
+    "announced": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "cipher_fluidstack_pr"
+      ],
+      "note": "Cipher–Fluidstack 168 MW hosting agreement, 25 Sep 2025 (expanded to 207 MW IT in Nov 2025)."
+    },
+    "construction_start": {
+      "value": "2025-09",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_barber"
+      ],
+      "note": "Epoch satellite: site grading begins 18 Sep 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_barber",
+      "title": "Anthropic Barber Lake – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/anthropic-barber-lake",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cipher_fluidstack_pr",
+      "title": "Cipher Mining signs 168 MW, 10-year AI hosting agreement with Fluidstack",
+      "publisher": "Cipher Mining (GlobeNewswire)",
+      "url": "https://www.globenewswire.com/news-release/2025/09/25/3156107/0/en/Cipher-Mining-Signs-168-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cipher_56mw_pr",
+      "title": "Cipher Mining signs additional 56 MW, 10-year AI hosting agreement with Fluidstack",
+      "publisher": "Cipher Mining (GlobeNewswire)",
+      "url": "https://www.globenewswire.com/news-release/2025/11/20/3191801/0/en/Cipher-Mining-Signs-Additional-56-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Range: 207 MW is critical IT, 300 MW is gross (both Cipher). Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

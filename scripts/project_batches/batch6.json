@@ -1,0 +1,312 @@
+{
+  "_note": "Batch 6 (PROPOSAL, not applied): first 12 new 100 MW+ projects under the owner's rule (2026-11-25): announced, started or online since 2020, 100 MW+. Discovery and status/date evidence from Epoch AI satellite pages (owner rule: Epoch counts as news-level evidence). Capacity figures are Epoch IT-power estimates unless noted. Coordinates are town-level unless noted and must be refined before launch.",
+  "accessed": "2026-11-25",
+  "projects": [
+    {
+      "slug": "xai-colossus-1",
+      "name": "Colossus 1",
+      "owner": "SpaceXAI (xAI)",
+      "tenant": "Anthropic",
+      "country": "US",
+      "region": "Tennessee",
+      "locality": "Memphis (former Electrolux plant)",
+      "lat": 35.06,
+      "lon": -90.16,
+      "location_precision": "town",
+      "capacity_mw": { "low": 340, "high": 340, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Epoch: 340 MW IT operational since Jul 2025 (H100/H200/GB200); Anthropic agreed in May 2026 to use all of its compute.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2024-04", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_col1"], "note": "Epoch satellite: site work begins 24 Apr 2024 (retrofit of a former Electrolux building)." },
+        "operational": { "value": "2024-09", "precision": "month", "source_ids": ["ep_col1", "xai_colossus"], "note": "Epoch: 100k H100s online 2 Sep 2024; first training workload Aug 2024." }
+      },
+      "sources": [
+        { "id": "ep_col1", "title": "Colossus 1 – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-1", "kind": "satellite" },
+        { "id": "xai_colossus", "title": "Colossus", "publisher": "xAI", "url": "https://x.ai/colossus", "kind": "primary" },
+        { "id": "anthropic_spacex", "title": "Higher limits with SpaceX compute", "publisher": "Anthropic", "url": "https://www.anthropic.com/news/higher-limits-spacex", "kind": "primary" }
+      ],
+      "review_notes": "No sourced announcement date. Refine coordinates to the Paul R. Lowry Rd site. xAI and Anthropic pages cited via Epoch; open them before launch."
+    },
+    {
+      "slug": "dayone-nusajaya",
+      "name": "DayOne Nusajaya (Phase 2)",
+      "owner": "DayOne (formerly GDS International)",
+      "tenant": "Not disclosed (FT reports Alibaba and ByteDance train models in Johor)",
+      "country": "MY",
+      "region": "Johor",
+      "locality": "Nusajaya Tech Park, Iskandar Puteri",
+      "lat": 1.43,
+      "lon": 103.6,
+      "location_precision": "town",
+      "capacity_mw": { "low": 473, "high": 473, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Epoch: Phase 2 Buildings 1–10 operational (est. 473 MW IT) as of Oct 2026; Phase 1 excluded.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2023-06", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_nusajaya"], "note": "Epoch satellite: land clearing begins 1 Jun 2023." },
+        "operational": { "value": "2024-12", "precision": "month", "source_ids": ["ep_nusajaya", "dayone_archive_2024"], "note": "Buildings 1–2 operational by 31 Dec 2024 (earliest archived DayOne page: 120 MW in operation in Johor)." }
+      },
+      "sources": [
+        { "id": "ep_nusajaya", "title": "DayOne Nusajaya – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/dayone-nusajaya", "kind": "satellite" },
+        { "id": "dayone_archive_2024", "title": "DayOne website (archived 31 Dec 2024): 120 MW in operation in Johor", "publisher": "DayOne", "url": "https://web.archive.org/web/20241231165420/https://dayonedc.com/", "kind": "primary" },
+        { "id": "ft_johor", "title": "Alibaba and ByteDance train AI models in south-east Asia", "publisher": "Financial Times", "url": "https://www.ft.com/content/96fe9898-a3a4-4a33-be1d-da06bdb6cb2b", "kind": "news" }
+      ],
+      "review_notes": "Tenant not confirmed per site. No announcement date. Refine coordinates."
+    },
+    {
+      "slug": "dayone-kempas",
+      "name": "DayOne Kempas",
+      "owner": "DayOne (formerly GDS International)",
+      "tenant": "Not disclosed",
+      "country": "MY",
+      "region": "Johor",
+      "locality": "Kempas, Johor Bahru",
+      "lat": 1.55,
+      "lon": 103.71,
+      "location_precision": "town",
+      "capacity_mw": { "low": 223, "high": 422, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Epoch: Buildings 1–4 and 9 operational (est. 223 MW observed); Buildings 5–8 modelled to reach 422 MW by Oct 2026.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2023-11", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_kempas"], "note": "Epoch satellite: land clearing begins 11 Nov 2023." },
+        "operational": { "value": "2026-01", "precision": "month", "source_ids": ["ep_kempas", "dayone_archive_2026"], "note": "Buildings 3–4 operational by 22 Jan 2026; DayOne reported 390 MW in service in Johor (Nusajaya + Kempas)." }
+      },
+      "sources": [
+        { "id": "ep_kempas", "title": "DayOne Kempas – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/dayone-kempas", "kind": "satellite" },
+        { "id": "dayone_archive_2026", "title": "DayOne Johor market page (archived Mar 2026): 390 MW in service", "publisher": "DayOne", "url": "https://web.archive.org/web/20260314134756/https://dayonedc.com/market/johor", "kind": "primary" }
+      ],
+      "review_notes": "Full 422 MW is Epoch's model, not observed; kept as partially operational until confirmed. Refine coordinates."
+    },
+    {
+      "slug": "amazon-madison-canton",
+      "name": "Madison County mega site",
+      "owner": "Amazon (AWS)",
+      "tenant": "AWS (Project Rainier; Anthropic per SemiAnalysis, speculative)",
+      "country": "US",
+      "region": "Mississippi",
+      "locality": "Canton, Madison County",
+      "lat": 32.61,
+      "lon": -90.04,
+      "location_precision": "town",
+      "capacity_mw": { "low": 284, "high": 683, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Epoch: Buildings 1–5 operational (est. 284 MW IT) since mid-2025; Buildings 6–12 under construction, projected 683 MW by 2028.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2023-10", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_madison"], "note": "Epoch satellite: land clearing begins 2 Oct 2023." },
+        "operational": { "value": "2025-06", "precision": "month", "source_ids": ["ep_madison"], "note": "Epoch: Buildings 1–5 operational 23 Jun 2025 (inferred from roofs and generators)." }
+      },
+      "sources": [
+        { "id": "ep_madison", "title": "Amazon Madison Mega Site – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/amazon-madison-mega-site", "kind": "satellite" },
+        { "id": "dcd_aws_ms", "title": "AWS confirmed as company behind $10bn Mississippi data center development", "publisher": "DatacenterDynamics", "url": "https://www.datacenterdynamics.com/en/news/aws-confirmed-as-company-behind-10bn-mississippi-data-center-development/", "kind": "news" },
+        { "id": "nyt_rainier", "title": "Amazon's AI data centers (Project Rainier)", "publisher": "The New York Times", "url": "https://www.nytimes.com/2025/06/24/technology/amazon-ai-data-centers.html", "kind": "news" }
+      ],
+      "review_notes": "Announcement (DCD, ~Jan 2024) not dated yet: open the DCD article to add announced date. Refine coordinates."
+    },
+    {
+      "slug": "coreweave-denton",
+      "name": "Denton AI campus",
+      "owner": "Core Scientific",
+      "tenant": "CoreWeave (OpenAI likely, per WSJ)",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Denton",
+      "lat": 33.21,
+      "lon": -97.13,
+      "location_precision": "town",
+      "capacity_mw": { "low": 262, "high": 282, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Former bitcoin-mining site converted for CoreWeave; Buildings 1–7 operational by mid-2026 (est. 262 MW IT); Building 8 fit-out scheduled to May 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2024-11", "precision": "month", "source_ids": ["ep_denton"], "note": "Epoch: Texas TDLR filing shows conversion work starting Nov 2024." },
+        "operational": { "value": "2025-05", "precision": "month", "source_ids": ["ep_denton"], "note": "First 8 MW billable AI tranche running 31 May 2025." }
+      },
+      "sources": [
+        { "id": "ep_denton", "title": "CoreWeave Denton TX – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-denton-tx", "kind": "satellite" },
+        { "id": "corz_denton_pr", "title": "Core Scientific and CoreWeave announce $1.2 billion expansion at Denton, TX site", "publisher": "Core Scientific", "url": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site", "kind": "primary" },
+        { "id": "corz_q4_2025", "title": "Core Scientific Q4 2025 earnings call transcript", "publisher": "The Motley Fool", "url": "https://www.fool.com/earnings/call-transcripts/2026/03/02/core-scientific-corz-q4-2025-earnings-transcript/", "kind": "news" }
+      ],
+      "review_notes": "Announced date: open the Core Scientific release to date it. Refine coordinates."
+    },
+    {
+      "slug": "bridge-my06-sedenak",
+      "name": "Bridge Data Centres MY06",
+      "owner": "Bridge Data Centres",
+      "tenant": "ByteDance (MIDA release on phase 1 opening)",
+      "country": "MY",
+      "region": "Johor",
+      "locality": "Sedenak Tech Park, Kulai",
+      "lat": 1.6954,
+      "lon": 103.4214,
+      "location_precision": "site",
+      "capacity_mw": { "low": 243, "high": 243, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Epoch: Buildings 1–7 operational (est. 243 MW IT) since May 2025; Buildings 8–10 built but not yet seen in use.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2021-11", "precision": "month", "source_ids": ["mida_my06", "ep_my06"], "note": "MIDA: ground broken Nov 2021; Epoch satellite shows land clearing from Oct 2021." },
+        "operational": { "value": "2022-Q4", "precision": "quarter", "source_ids": ["ep_my06", "malaymail_my06"], "note": "Building 1 in service by Oct–Dec 2022 (Chindata filings, Malay Mail)." }
+      },
+      "sources": [
+        { "id": "ep_my06", "title": "Bridge Data Centres MY06 – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/bridge-data-centres-my06", "kind": "satellite" },
+        { "id": "mida_my06", "title": "Bridge Data Centres and ByteDance celebrate grand opening of the first phase hyperscale data centre MY06 in Johor", "publisher": "Malaysian Investment Development Authority", "url": "https://www.mida.gov.my/media-release/bridge-data-centres-and-bytedance-celebrate-grand-opening-of-the-first-phase-hyperscale-data-centre-my06-in-johor-malaysia/", "kind": "primary" },
+        { "id": "malaymail_my06", "title": "MIDA: Malaysia still most desirable location for data centre hubs in the region", "publisher": "Malay Mail", "url": "https://www.malaymail.com/news/money/2022/10/21/mida-malaysia-still-most-desirable-location-for-data-centre-hubs-in-the-region/34929", "kind": "news" }
+      ],
+      "review_notes": "Coordinates from the Google Street View point Epoch cites for the MY06-2 campus (site precision, but check it sits inside the campus). Capacity is current IT estimate; Buildings 8–10 would add more."
+    },
+    {
+      "slug": "terawulf-lake-mariner",
+      "name": "Lake Mariner AI campus",
+      "owner": "TeraWulf",
+      "tenant": "Fluidstack (Google TPUs for Anthropic, likely)",
+      "country": "US",
+      "region": "New York",
+      "locality": "Barker, Niagara County (former Somerset coal plant)",
+      "lat": 43.36,
+      "lon": -78.6,
+      "location_precision": "town",
+      "capacity_mw": { "low": 210, "high": 378, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Epoch: AI Buildings CB3–CB4 operational (est. 210 MW IT); CB5 under construction, projected 378 MW by Q1 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2025-06", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_lakemariner"], "note": "Epoch satellite: land clearing for Building 1 (CB3) begins 11 Jun 2025." },
+        "operational": { "value": "2026-05", "precision": "month", "source_ids": ["ep_lakemariner", "terawulf_q4_2025"], "note": "CB3 energised by mid-May 2026 (TeraWulf guidance; Epoch drone imagery 8 May 2026)." }
+      },
+      "sources": [
+        { "id": "ep_lakemariner", "title": "Anthropic Lake Mariner – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/anthropic-lake-mariner", "kind": "satellite" },
+        { "id": "terawulf_q4_2025", "title": "TeraWulf reports fourth quarter and full year 2025 results", "publisher": "TeraWulf", "url": "https://investors.terawulf.com/news-events/press-releases/detail/132/terawulf-reports-fourth-quarter-and-full-year-2025-results", "kind": "primary" },
+        { "id": "anthropic_50b", "title": "Anthropic invests $50 billion in American AI infrastructure", "publisher": "Anthropic", "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure", "kind": "primary" }
+      ],
+      "review_notes": "The older Lake Mariner bitcoin-mining buildings (from 2021) are excluded; this record covers the AI buildings only. Announced date (Fluidstack lease, 2025) to add. Refine coordinates."
+    },
+    {
+      "slug": "galaxy-helios",
+      "name": "Helios",
+      "owner": "Galaxy Digital",
+      "tenant": "CoreWeave",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Afton, Dickens County",
+      "lat": 33.77,
+      "lon": -100.82,
+      "location_precision": "town",
+      "capacity_mw": { "low": 528, "high": 528, "type": "it_load_estimate" },
+      "status": "under_construction",
+      "status_note": "Former crypto-mining site; Building 1 externally complete (Jun 2026) but not yet confirmed operational; Phases II–III through 2028 (Epoch est. 528 MW IT). Galaxy studies a further 2.7 GW.",
+      "expected_completion": "2028",
+      "dates": {
+        "construction_start": { "value": "2025-05", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_helios"], "note": "Epoch satellite: land clearing and conversion begin by 31 May 2025." }
+      },
+      "sources": [
+        { "id": "ep_helios", "title": "Coreweave Helios – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-helios", "kind": "satellite" },
+        { "id": "galaxy_q3_2025", "title": "Galaxy announces third quarter 2025 financial results", "publisher": "Galaxy Digital", "url": "https://investor.galaxy.com/news/news-details/2025/Galaxy-Announces-Third-Quarter-2025-Financial-Results/default.aspx", "kind": "primary" }
+      ],
+      "review_notes": "Epoch's Aug 2026 'operational' is inferred from Galaxy's timeline, not observed, so status stays under construction. Announced date (CoreWeave commitment, 2025) to add. Refine coordinates."
+    },
+    {
+      "slug": "cipher-barber-lake",
+      "name": "Barber Lake",
+      "owner": "Cipher Mining",
+      "tenant": "Fluidstack (Google TPUs for Anthropic)",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Colorado City, Mitchell County",
+      "lat": 32.39,
+      "lon": -100.86,
+      "location_precision": "town",
+      "capacity_mw": { "low": 207, "high": 300, "type": "mixed" },
+      "status": "under_construction",
+      "status_note": "207 MW critical IT (300 MW gross) contracted to Fluidstack; Building 1 shell complete, not yet energised (Epoch, Jul 2026).",
+      "expected_completion": "2027",
+      "dates": {
+        "announced": { "value": "2025-09", "precision": "month", "source_ids": ["cipher_fluidstack_pr"], "note": "Cipher–Fluidstack 168 MW hosting agreement, 25 Sep 2025 (expanded to 207 MW IT in Nov 2025)." },
+        "construction_start": { "value": "2025-09", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_barber"], "note": "Epoch satellite: site grading begins 18 Sep 2025." }
+      },
+      "sources": [
+        { "id": "ep_barber", "title": "Anthropic Barber Lake – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/anthropic-barber-lake", "kind": "satellite" },
+        { "id": "cipher_fluidstack_pr", "title": "Cipher Mining signs 168 MW, 10-year AI hosting agreement with Fluidstack", "publisher": "Cipher Mining (GlobeNewswire)", "url": "https://www.globenewswire.com/news-release/2025/09/25/3156107/0/en/Cipher-Mining-Signs-168-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html", "kind": "primary" },
+        { "id": "cipher_56mw_pr", "title": "Cipher Mining signs additional 56 MW, 10-year AI hosting agreement with Fluidstack", "publisher": "Cipher Mining (GlobeNewswire)", "url": "https://www.globenewswire.com/news-release/2025/11/20/3191801/0/en/Cipher-Mining-Signs-Additional-56-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html", "kind": "primary" }
+      ],
+      "review_notes": "Range: 207 MW is critical IT, 300 MW is gross (both Cipher). Refine coordinates."
+    },
+    {
+      "slug": "crusoe-abilene-expansion",
+      "name": "Abilene expansion (Microsoft)",
+      "owner": "Crusoe",
+      "tenant": "Microsoft",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Abilene (Lancium Clean Campus)",
+      "lat": 32.45,
+      "lon": -99.73,
+      "location_precision": "town",
+      "capacity_mw": { "low": 672, "high": 672, "type": "it_load_estimate" },
+      "status": "under_construction",
+      "status_note": "Two buildings next to Stargate Abilene, first planned for OpenAI/Oracle; Microsoft took them after Oracle and OpenAI dropped the expansion (Bloomberg, Mar 2026). Epoch projects 672 MW IT by late 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2025-11", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_crusoe_exp"], "note": "Epoch satellite: land clearing for Buildings 1–2 begins 2 Nov 2025." }
+      },
+      "sources": [
+        { "id": "ep_crusoe_exp", "title": "Crusoe Abilene Expansion – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/crusoe-abilene-expansion", "kind": "satellite" },
+        { "id": "bbg_abilene_exp", "title": "Oracle and OpenAI end plans to expand flagship data center", "publisher": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center", "kind": "news" }
+      ],
+      "review_notes": "Microsoft's role rests on Epoch plus an executive's X post; find a Microsoft or news confirmation and its date (= announced). Same coordinates as Stargate Abilene; offset slightly before launch so the columns don't overlap exactly."
+    },
+    {
+      "slug": "google-armstrong-county",
+      "name": "Armstrong County campus (\"Goodnight\")",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Claude, Armstrong County",
+      "lat": 35.11,
+      "lon": -101.36,
+      "location_precision": "town",
+      "capacity_mw": { "low": 1006, "high": 1006, "type": "it_load_estimate" },
+      "status": "under_construction",
+      "status_note": "Six buildings under construction (Epoch, Apr 2026), est. 1 GW IT by late 2027; Google named Armstrong County in its $40B Texas plan (Reuters, Nov 2025).",
+      "expected_completion": "2027",
+      "dates": {
+        "announced": { "value": "2025-11", "precision": "month", "source_ids": ["reuters_google_tx"], "note": "Reuters, 14 Nov 2025: Google to invest $40B in new Texas data centers incl. Armstrong County." },
+        "construction_start": { "value": "2025-05", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_goodnight"], "note": "Epoch satellite: land clearing begins 19 May 2025." }
+      },
+      "sources": [
+        { "id": "ep_goodnight", "title": "Goodnight – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/goodnight", "kind": "satellite" },
+        { "id": "reuters_google_tx", "title": "Google to invest $40 billion in new data centers in Texas", "publisher": "Reuters", "url": "https://www.reuters.com/business/google-invest-40-billion-new-data-centers-texas-bloomberg-news-reports-2025-11-14/", "kind": "news" },
+        { "id": "armstrong_abatement", "title": "Amended and restated tax abatement agreement (GNDC1)", "publisher": "Armstrong County", "url": "https://www.co.armstrong.tx.us/upload/page/5361/Amended_Restated_Consolidated%20Second%20Property%20Tax%20Abatement%20Agreement%20%20GNDC1_ArmstrongCounty.pdf", "kind": "primary" }
+      ],
+      "review_notes": "Epoch marks Google as owner 'speculative'; Reuters ties Google to Armstrong County. Confirm the abatement agreement names Google. Construction started before the public announcement (normal for Google). Refine coordinates."
+    },
+    {
+      "slug": "meta-temple",
+      "name": "Temple data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US",
+      "region": "Texas",
+      "locality": "Temple, Bell County",
+      "lat": 31.1,
+      "lon": -97.34,
+      "location_precision": "town",
+      "capacity_mw": { "low": 152, "high": 178, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Meta's AI-optimised design after the original H-shaped building was demolished mid-construction in 2023; Buildings 1–2 operational (est. 152 MW IT), Building 3 to 178 MW (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2022-04", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_temple"], "note": "Epoch satellite: land clearing begins 1 Apr 2022." },
+        "operational": { "value": "2025-12", "precision": "month", "source_ids": ["ep_temple"], "note": "Epoch best estimate: Buildings 1–2 operational 9 Dec 2025." }
+      },
+      "sources": [
+        { "id": "ep_temple", "title": "Meta Temple – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/meta-temple", "kind": "satellite" },
+        { "id": "jedunn_temple", "title": "Meta Temple Data Center", "publisher": "JE Dunn", "url": "https://jedunn.com/projects/meta-temple-data-center/", "kind": "primary" }
+      ],
+      "review_notes": "Meta announcement (2022) to add with date. Building 3 completion (Sep 2026) is from a TDLR schedule, not observed: column uses the observed 152 MW. Refine coordinates."
+    }
+  ]
+}

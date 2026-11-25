@@ -1,0 +1,70 @@
+{
+  "slug": "xai-colossus-1",
+  "name": "Colossus 1",
+  "owner": "SpaceXAI (xAI)",
+  "tenant": "Anthropic",
+  "country": "US",
+  "region": "Tennessee",
+  "locality": "Memphis (former Electrolux plant)",
+  "lat": 35.06,
+  "lon": -90.16,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 340,
+    "high": 340,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Epoch: 340 MW IT operational since Jul 2025 (H100/H200/GB200); Anthropic agreed in May 2026 to use all of its compute.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2024-04",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_col1"
+      ],
+      "note": "Epoch satellite: site work begins 24 Apr 2024 (retrofit of a former Electrolux building)."
+    },
+    "operational": {
+      "value": "2024-09",
+      "precision": "month",
+      "source_ids": [
+        "ep_col1",
+        "xai_colossus"
+      ],
+      "note": "Epoch: 100k H100s online 2 Sep 2024; first training workload Aug 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_col1",
+      "title": "Colossus 1 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-1",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "xai_colossus",
+      "title": "Colossus",
+      "publisher": "xAI",
+      "url": "https://x.ai/colossus",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "anthropic_spacex",
+      "title": "Higher limits with SpaceX compute",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "No sourced announcement date. Refine coordinates to the Paul R. Lowry Rd site. xAI and Anthropic pages cited via Epoch; open them before launch.",
+  "last_verified": "2026-11-25"
+}

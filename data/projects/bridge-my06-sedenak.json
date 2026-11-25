@@ -1,0 +1,70 @@
+{
+  "slug": "bridge-my06-sedenak",
+  "name": "Bridge Data Centres MY06",
+  "owner": "Bridge Data Centres",
+  "tenant": "ByteDance (MIDA release on phase 1 opening)",
+  "country": "MY",
+  "region": "Johor",
+  "locality": "Sedenak Tech Park, Kulai",
+  "lat": 1.6954,
+  "lon": 103.4214,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 243,
+    "high": 243,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Epoch: Buildings 1–7 operational (est. 243 MW IT) since May 2025; Buildings 8–10 built but not yet seen in use.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2021-11",
+      "precision": "month",
+      "source_ids": [
+        "mida_my06",
+        "ep_my06"
+      ],
+      "note": "MIDA: ground broken Nov 2021; Epoch satellite shows land clearing from Oct 2021."
+    },
+    "operational": {
+      "value": "2022-Q4",
+      "precision": "quarter",
+      "source_ids": [
+        "ep_my06",
+        "malaymail_my06"
+      ],
+      "note": "Building 1 in service by Oct–Dec 2022 (Chindata filings, Malay Mail)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_my06",
+      "title": "Bridge Data Centres MY06 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/bridge-data-centres-my06",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "mida_my06",
+      "title": "Bridge Data Centres and ByteDance celebrate grand opening of the first phase hyperscale data centre MY06 in Johor",
+      "publisher": "Malaysian Investment Development Authority",
+      "url": "https://www.mida.gov.my/media-release/bridge-data-centres-and-bytedance-celebrate-grand-opening-of-the-first-phase-hyperscale-data-centre-my06-in-johor-malaysia/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "malaymail_my06",
+      "title": "MIDA: Malaysia still most desirable location for data centre hubs in the region",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/news/money/2022/10/21/mida-malaysia-still-most-desirable-location-for-data-centre-hubs-in-the-region/34929",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Coordinates from the Google Street View point Epoch cites for the MY06-2 campus (site precision, but check it sits inside the campus). Capacity is current IT estimate; Buildings 8–10 would add more.",
+  "last_verified": "2026-11-25"
+}

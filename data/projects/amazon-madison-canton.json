@@ -1,0 +1,69 @@
+{
+  "slug": "amazon-madison-canton",
+  "name": "Madison County mega site",
+  "owner": "Amazon (AWS)",
+  "tenant": "AWS (Project Rainier; Anthropic per SemiAnalysis, speculative)",
+  "country": "US",
+  "region": "Mississippi",
+  "locality": "Canton, Madison County",
+  "lat": 32.61,
+  "lon": -90.04,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 284,
+    "high": 683,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Epoch: Buildings 1–5 operational (est. 284 MW IT) since mid-2025; Buildings 6–12 under construction, projected 683 MW by 2028.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2023-10",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_madison"
+      ],
+      "note": "Epoch satellite: land clearing begins 2 Oct 2023."
+    },
+    "operational": {
+      "value": "2025-06",
+      "precision": "month",
+      "source_ids": [
+        "ep_madison"
+      ],
+      "note": "Epoch: Buildings 1–5 operational 23 Jun 2025 (inferred from roofs and generators)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_madison",
+      "title": "Amazon Madison Mega Site – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/amazon-madison-mega-site",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_aws_ms",
+      "title": "AWS confirmed as company behind $10bn Mississippi data center development",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/aws-confirmed-as-company-behind-10bn-mississippi-data-center-development/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "nyt_rainier",
+      "title": "Amazon's AI data centers (Project Rainier)",
+      "publisher": "The New York Times",
+      "url": "https://www.nytimes.com/2025/06/24/technology/amazon-ai-data-centers.html",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Announcement (DCD, ~Jan 2024) not dated yet: open the DCD article to add announced date. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

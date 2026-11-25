@@ -1,0 +1,53 @@
+{
+  "slug": "crusoe-abilene-expansion",
+  "name": "Abilene expansion (Microsoft)",
+  "owner": "Crusoe",
+  "tenant": "Microsoft",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Abilene (Lancium Clean Campus)",
+  "lat": 32.45,
+  "lon": -99.73,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 672,
+    "high": 672,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "Two buildings next to Stargate Abilene, first planned for OpenAI/Oracle; Microsoft took them after Oracle and OpenAI dropped the expansion (Bloomberg, Mar 2026). Epoch projects 672 MW IT by late 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2025-11",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_crusoe_exp"
+      ],
+      "note": "Epoch satellite: land clearing for Buildings 1–2 begins 2 Nov 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_crusoe_exp",
+      "title": "Crusoe Abilene Expansion – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/crusoe-abilene-expansion",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bbg_abilene_exp",
+      "title": "Oracle and OpenAI end plans to expand flagship data center",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Microsoft's role rests on Epoch plus an executive's X post; find a Microsoft or news confirmation and its date (= announced). Same coordinates as Stargate Abilene; offset slightly before launch so the columns don't overlap exactly.",
+  "last_verified": "2026-11-25"
+}

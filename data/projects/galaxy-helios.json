@@ -1,0 +1,53 @@
+{
+  "slug": "galaxy-helios",
+  "name": "Helios",
+  "owner": "Galaxy Digital",
+  "tenant": "CoreWeave",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Afton, Dickens County",
+  "lat": 33.77,
+  "lon": -100.82,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 528,
+    "high": 528,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "Former crypto-mining site; Building 1 externally complete (Jun 2026) but not yet confirmed operational; Phases II–III through 2028 (Epoch est. 528 MW IT). Galaxy studies a further 2.7 GW.",
+  "expected_completion": "2028",
+  "dates": {
+    "construction_start": {
+      "value": "2025-05",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_helios"
+      ],
+      "note": "Epoch satellite: land clearing and conversion begin by 31 May 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_helios",
+      "title": "Coreweave Helios – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-helios",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "galaxy_q3_2025",
+      "title": "Galaxy announces third quarter 2025 financial results",
+      "publisher": "Galaxy Digital",
+      "url": "https://investor.galaxy.com/news/news-details/2025/Galaxy-Announces-Third-Quarter-2025-Financial-Results/default.aspx",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch's Aug 2026 'operational' is inferred from Galaxy's timeline, not observed, so status stays under construction. Announced date (CoreWeave commitment, 2025) to add. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

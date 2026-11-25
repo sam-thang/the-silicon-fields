@@ -174,7 +174,7 @@ Keep in `data/factors.json`, each with source and date, shown on the methodology
 
 ## Data sources (check licenses before copying data)
 
-- **Epoch AI – AI data center directory** (satellite-based construction status per site). Cite and link; check license before reusing data.
+- **Epoch AI – AI data center directory** (satellite-based construction status per site). Cite and link. License checked 2026-11-25: **CC BY 4.0** ("free to use, distribute, and reproduce provided the source and authors are credited"); credit "Epoch AI, AI data centers" with a link on the methodology page and wherever their estimates appear.
 - **Data Center Index**, **Electric Choice US data center tracker**, **Baxtel**: discovery and cross-checking.
 - Company announcements, utility filings, county/municipal permits, local news: primary sources for each record.
 - Rule: a project needs at least one primary or reputable news source; trackers alone are not enough.

@@ -1,0 +1,62 @@
+{
+  "slug": "dayone-kempas",
+  "name": "DayOne Kempas",
+  "owner": "DayOne (formerly GDS International)",
+  "tenant": "Not disclosed",
+  "country": "MY",
+  "region": "Johor",
+  "locality": "Kempas, Johor Bahru",
+  "lat": 1.55,
+  "lon": 103.71,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 223,
+    "high": 422,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Epoch: Buildings 1–4 and 9 operational (est. 223 MW observed); Buildings 5–8 modelled to reach 422 MW by Oct 2026.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2023-11",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_kempas"
+      ],
+      "note": "Epoch satellite: land clearing begins 11 Nov 2023."
+    },
+    "operational": {
+      "value": "2026-01",
+      "precision": "month",
+      "source_ids": [
+        "ep_kempas",
+        "dayone_archive_2026"
+      ],
+      "note": "Buildings 3–4 operational by 22 Jan 2026; DayOne reported 390 MW in service in Johor (Nusajaya + Kempas)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_kempas",
+      "title": "DayOne Kempas – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/dayone-kempas",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dayone_archive_2026",
+      "title": "DayOne Johor market page (archived Mar 2026): 390 MW in service",
+      "publisher": "DayOne",
+      "url": "https://web.archive.org/web/20260314134756/https://dayonedc.com/market/johor",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Full 422 MW is Epoch's model, not observed; kept as partially operational until confirmed. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

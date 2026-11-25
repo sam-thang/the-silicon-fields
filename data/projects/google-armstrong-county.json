@@ -1,0 +1,69 @@
+{
+  "slug": "google-armstrong-county",
+  "name": "Armstrong County campus (\"Goodnight\")",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Claude, Armstrong County",
+  "lat": 35.11,
+  "lon": -101.36,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1006,
+    "high": 1006,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "Six buildings under construction (Epoch, Apr 2026), est. 1 GW IT by late 2027; Google named Armstrong County in its $40B Texas plan (Reuters, Nov 2025).",
+  "expected_completion": "2027",
+  "dates": {
+    "announced": {
+      "value": "2025-11",
+      "precision": "month",
+      "source_ids": [
+        "reuters_google_tx"
+      ],
+      "note": "Reuters, 14 Nov 2025: Google to invest $40B in new Texas data centers incl. Armstrong County."
+    },
+    "construction_start": {
+      "value": "2025-05",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_goodnight"
+      ],
+      "note": "Epoch satellite: land clearing begins 19 May 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_goodnight",
+      "title": "Goodnight – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/goodnight",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "reuters_google_tx",
+      "title": "Google to invest $40 billion in new data centers in Texas",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/business/google-invest-40-billion-new-data-centers-texas-bloomberg-news-reports-2025-11-14/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "armstrong_abatement",
+      "title": "Amended and restated tax abatement agreement (GNDC1)",
+      "publisher": "Armstrong County",
+      "url": "https://www.co.armstrong.tx.us/upload/page/5361/Amended_Restated_Consolidated%20Second%20Property%20Tax%20Abatement%20Agreement%20%20GNDC1_ArmstrongCounty.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch marks Google as owner 'speculative'; Reuters ties Google to Armstrong County. Confirm the abatement agreement names Google. Construction started before the public announcement (normal for Google). Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

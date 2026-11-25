@@ -1,0 +1,68 @@
+{
+  "slug": "coreweave-denton",
+  "name": "Denton AI campus",
+  "owner": "Core Scientific",
+  "tenant": "CoreWeave (OpenAI likely, per WSJ)",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Denton",
+  "lat": 33.21,
+  "lon": -97.13,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 262,
+    "high": 282,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Former bitcoin-mining site converted for CoreWeave; Buildings 1–7 operational by mid-2026 (est. 262 MW IT); Building 8 fit-out scheduled to May 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2024-11",
+      "precision": "month",
+      "source_ids": [
+        "ep_denton"
+      ],
+      "note": "Epoch: Texas TDLR filing shows conversion work starting Nov 2024."
+    },
+    "operational": {
+      "value": "2025-05",
+      "precision": "month",
+      "source_ids": [
+        "ep_denton"
+      ],
+      "note": "First 8 MW billable AI tranche running 31 May 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_denton",
+      "title": "CoreWeave Denton TX – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-denton-tx",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "corz_denton_pr",
+      "title": "Core Scientific and CoreWeave announce $1.2 billion expansion at Denton, TX site",
+      "publisher": "Core Scientific",
+      "url": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "corz_q4_2025",
+      "title": "Core Scientific Q4 2025 earnings call transcript",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/03/02/core-scientific-corz-q4-2025-earnings-transcript/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Announced date: open the Core Scientific release to date it. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}
