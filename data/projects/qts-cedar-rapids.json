@@ -1,0 +1,69 @@
+{
+  "slug": "qts-cedar-rapids",
+  "name": "QTS Cedar Rapids campus",
+  "owner": "QTS (Blackstone)",
+  "tenant": "Not disclosed (SemiAnalysis: Meta, speculative)",
+  "country": "US",
+  "region": "Iowa",
+  "locality": "Cedar Rapids, Linn County",
+  "lat": 41.96,
+  "lon": -91.62,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 616,
+    "high": 1133,
+    "type": "mixed"
+  },
+  "status": "under_construction",
+  "status_note": "Seven buildings; phase 1 externally complete and commissioning (Oct 2026). 616 MW load request filed by a QTS entity (MISO) vs Epoch's 1.13 GW IT estimate for both phases by late 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2025-01",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_qts_cr"
+      ],
+      "note": "Epoch satellite: land clearing for Buildings 1–3 begins 17 Jan 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_qts_cr",
+      "title": "QTS Cedar Rapids – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/qts-cedar-rapids",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "miso_loads",
+      "title": "New load announcements in MISO regions",
+      "publisher": "MISO",
+      "url": "https://cdn.misoenergy.org/NEW%20LOAD%20ANNOUNCEMENTS%20IN%20MISO%20REGIONS%2012062024684954.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "gazette_cr",
+      "title": "Fast start to Cedar Rapids data center projects",
+      "publisher": "The Gazette",
+      "url": "https://www.thegazette.com/business/fast-start-to-cedar-rapids-data-center-projects/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cbj_qts",
+      "title": "Scope of QTS data project in Cedar Rapids continuing to grow",
+      "publisher": "Corridor Business Journal",
+      "url": "https://corridorbusiness.com/scope-of-qts-data-project-in-cedar-rapids-continuing-to-grow/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Range: 616 MW (MISO load request, phase 1) vs 1,133 MW (Epoch IT est., two phases). Announced date to add from The Gazette/CBJ. Coordinates offset slightly from Google Cedar Rapids for display; refine both.",
+  "last_verified": "2026-11-25"
+}

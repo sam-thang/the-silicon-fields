@@ -1,0 +1,53 @@
+{
+  "slug": "google-cedar-rapids",
+  "name": "Cedar Rapids campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Iowa",
+  "locality": "Cedar Rapids, Linn County",
+  "lat": 41.92,
+  "lon": -91.72,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 261,
+    "high": 261,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "Three buildings; Building 1 generators and cooling towers being installed (Apr 2026); Epoch projects 261 MW IT by Q2 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2024-06",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_google_cr"
+      ],
+      "note": "Epoch satellite: land clearing begins 14 Jun 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_google_cr",
+      "title": "Google Cedar Rapids – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/google-cedar-rapids",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "miso_loads",
+      "title": "New load announcements in MISO regions",
+      "publisher": "MISO",
+      "url": "https://cdn.misoenergy.org/NEW%20LOAD%20ANNOUNCEMENTS%20IN%20MISO%20REGIONS%2012062024684954.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Google's public announcement (date) to add. Refine coordinates (offset from QTS Cedar Rapids for display).",
+  "last_verified": "2026-11-25"
+}

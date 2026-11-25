@@ -1,0 +1,53 @@
+{
+  "slug": "qts-eagle-mountain",
+  "name": "QTS Eagle Mountain campus",
+  "owner": "QTS (Blackstone)",
+  "tenant": "Not disclosed (Epoch: Meta, speculative)",
+  "country": "US",
+  "region": "Utah",
+  "locality": "Eagle Mountain, Utah County",
+  "lat": 40.29,
+  "lon": -112.03,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 304,
+    "high": 304,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "Building 1 roofed, cooling and generators being installed (May 2026); Epoch projects 203 MW IT by end-2026 and 304 MW by H2 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2023-10",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_qts_em"
+      ],
+      "note": "Epoch satellite: first signs of site preparation 1 Oct 2023."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_qts_em",
+      "title": "QTS Eagle Mountain – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/qts-eagle-mountain",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "qts_em_site",
+      "title": "Eagle Mountain data center",
+      "publisher": "QTS",
+      "url": "https://q.com/data-centers/eagle-mountain/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Separate from Meta's older Eagle Mountain data center (2018, excluded as pre-2020). Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

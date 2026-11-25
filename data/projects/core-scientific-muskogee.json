@@ -1,0 +1,62 @@
+{
+  "slug": "core-scientific-muskogee",
+  "name": "Muskogee HPC data center",
+  "owner": "Core Scientific",
+  "tenant": "CoreWeave (first building)",
+  "country": "US",
+  "region": "Oklahoma",
+  "locality": "Port of Muskogee",
+  "lat": 35.77,
+  "lon": -95.31,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 100,
+    "high": 153,
+    "type": "mixed"
+  },
+  "status": "under_construction",
+  "status_note": "100 MW HPC data center (Core Scientific) with ~70 MW IT for CoreWeave; Building 1 built but not seen operating (Jun 2026); a second, unleased 82.5 MW building planned for Q4 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "announced": {
+      "value": "2024-11",
+      "precision": "month",
+      "source_ids": [
+        "corz_muskogee_pr"
+      ],
+      "note": "Groundbreaking announced 18 Nov 2024."
+    },
+    "construction_start": {
+      "value": "2024-11",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "corz_muskogee_pr",
+        "ep_muskogee"
+      ],
+      "note": "Core Scientific, CoreWeave and Port Muskogee break ground, 18 Nov 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_muskogee",
+      "title": "CoreWeave Muskogee OK – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-muskogee-ok",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "corz_muskogee_pr",
+      "title": "Core Scientific and Port Muskogee break ground on 100 MW HPC data center",
+      "publisher": "Core Scientific",
+      "url": "https://investors.corescientific.com/news-events/press-releases/detail/99/core-scientific-and-port-muskogee-break-ground-on-100-mw-hpc-data-center",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Range mixes facility (100 MW, Core Scientific) and Epoch's IT estimate incl. the unleased second building (153 MW). Refine coordinates to the port site.",
+  "last_verified": "2026-11-25"
+}

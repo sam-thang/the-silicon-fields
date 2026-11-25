@@ -1,0 +1,312 @@
+{
+  "_note": "Batch 7 (owner pre-approved all batches 2026-11-25): 14 more 100 MW+ projects from the Epoch AI directory, rule: announced/started/online since 2020 and 100 MW+. Status and dates from Epoch satellite pages (news-level evidence by owner rule) plus primary/news sources Epoch cites. Capacity = Epoch IT-power estimates unless a company figure is given. Coordinates are town-level and must be refined. Skipped: CoreWeave Lancaster (92 MW IT), EcoDataCenter 2 (48 MW IT for Mistral; campus total to check).",
+  "accessed": "2026-11-25",
+  "projects": [
+    {
+      "slug": "google-fort-wayne",
+      "name": "Fort Wayne campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US", "region": "Indiana", "locality": "Fort Wayne, Allen County",
+      "lat": 41.08, "lon": -85.14, "location_precision": "town",
+      "capacity_mw": { "low": 863, "high": 863, "type": "it_load_estimate" },
+      "status": "under_construction",
+      "status_note": "One of the first sites with Google's new larger design; Building 2 in fit-out (Aug 2026), six buildings projected to ~863 MW IT (~1 GW facility) by mid-2028 (Epoch).",
+      "expected_completion": "2028",
+      "dates": {
+        "announced": { "value": "2023-12", "precision": "month", "source_ids": ["fw_council"], "note": "Fort Wayne City Council resolution R-23-12-02, 19 Dec 2023." },
+        "construction_start": { "value": "2024-04", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_fortwayne"], "note": "Epoch satellite: first land clearing 1 Apr 2024." }
+      },
+      "sources": [
+        { "id": "ep_fortwayne", "title": "Google Fort Wayne – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/google-fort-wayne", "kind": "satellite" },
+        { "id": "fw_council", "title": "City Council resolution R-23-12-02", "publisher": "City of Fort Wayne", "url": "https://citycouncildocuments.acfw.net/documents/download/2023-12-19/R-23-12-02.pdf", "kind": "primary" },
+        { "id": "localfw_tax", "title": "Data centers, secrecy and tax abatements", "publisher": "The Local FW", "url": "https://www.thelocalfw.com/data-centers-secrecy-and-tax-abatements/", "kind": "news" }
+      ],
+      "review_notes": "Confirm the council resolution names Google or its project entity. Refine coordinates."
+    },
+    {
+      "slug": "qts-cedar-rapids",
+      "name": "QTS Cedar Rapids campus",
+      "owner": "QTS (Blackstone)",
+      "tenant": "Not disclosed (SemiAnalysis: Meta, speculative)",
+      "country": "US", "region": "Iowa", "locality": "Cedar Rapids, Linn County",
+      "lat": 41.96, "lon": -91.62, "location_precision": "town",
+      "capacity_mw": { "low": 616, "high": 1133, "type": "mixed" },
+      "status": "under_construction",
+      "status_note": "Seven buildings; phase 1 externally complete and commissioning (Oct 2026). 616 MW load request filed by a QTS entity (MISO) vs Epoch's 1.13 GW IT estimate for both phases by late 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2025-01", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_qts_cr"], "note": "Epoch satellite: land clearing for Buildings 1–3 begins 17 Jan 2025." }
+      },
+      "sources": [
+        { "id": "ep_qts_cr", "title": "QTS Cedar Rapids – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/qts-cedar-rapids", "kind": "satellite" },
+        { "id": "miso_loads", "title": "New load announcements in MISO regions", "publisher": "MISO", "url": "https://cdn.misoenergy.org/NEW%20LOAD%20ANNOUNCEMENTS%20IN%20MISO%20REGIONS%2012062024684954.pdf", "kind": "primary" },
+        { "id": "gazette_cr", "title": "Fast start to Cedar Rapids data center projects", "publisher": "The Gazette", "url": "https://www.thegazette.com/business/fast-start-to-cedar-rapids-data-center-projects/", "kind": "news" },
+        { "id": "cbj_qts", "title": "Scope of QTS data project in Cedar Rapids continuing to grow", "publisher": "Corridor Business Journal", "url": "https://corridorbusiness.com/scope-of-qts-data-project-in-cedar-rapids-continuing-to-grow/", "kind": "news" }
+      ],
+      "review_notes": "Range: 616 MW (MISO load request, phase 1) vs 1,133 MW (Epoch IT est., two phases). Announced date to add from The Gazette/CBJ. Coordinates offset slightly from Google Cedar Rapids for display; refine both."
+    },
+    {
+      "slug": "google-cedar-rapids",
+      "name": "Cedar Rapids campus",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US", "region": "Iowa", "locality": "Cedar Rapids, Linn County",
+      "lat": 41.92, "lon": -91.72, "location_precision": "town",
+      "capacity_mw": { "low": 261, "high": 261, "type": "it_load_estimate" },
+      "status": "under_construction",
+      "status_note": "Three buildings; Building 1 generators and cooling towers being installed (Apr 2026); Epoch projects 261 MW IT by Q2 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2024-06", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_google_cr"], "note": "Epoch satellite: land clearing begins 14 Jun 2024." }
+      },
+      "sources": [
+        { "id": "ep_google_cr", "title": "Google Cedar Rapids – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/google-cedar-rapids", "kind": "satellite" },
+        { "id": "miso_loads", "title": "New load announcements in MISO regions", "publisher": "MISO", "url": "https://cdn.misoenergy.org/NEW%20LOAD%20ANNOUNCEMENTS%20IN%20MISO%20REGIONS%2012062024684954.pdf", "kind": "primary" }
+      ],
+      "review_notes": "Google's public announcement (date) to add. Refine coordinates (offset from QTS Cedar Rapids for display)."
+    },
+    {
+      "slug": "qts-eagle-mountain",
+      "name": "QTS Eagle Mountain campus",
+      "owner": "QTS (Blackstone)",
+      "tenant": "Not disclosed (Epoch: Meta, speculative)",
+      "country": "US", "region": "Utah", "locality": "Eagle Mountain, Utah County",
+      "lat": 40.29, "lon": -112.03, "location_precision": "town",
+      "capacity_mw": { "low": 304, "high": 304, "type": "it_load_estimate" },
+      "status": "under_construction",
+      "status_note": "Building 1 roofed, cooling and generators being installed (May 2026); Epoch projects 203 MW IT by end-2026 and 304 MW by H2 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2023-10", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_qts_em"], "note": "Epoch satellite: first signs of site preparation 1 Oct 2023." }
+      },
+      "sources": [
+        { "id": "ep_qts_em", "title": "QTS Eagle Mountain – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/qts-eagle-mountain", "kind": "satellite" },
+        { "id": "qts_em_site", "title": "Eagle Mountain data center", "publisher": "QTS", "url": "https://q.com/data-centers/eagle-mountain/", "kind": "primary" }
+      ],
+      "review_notes": "Separate from Meta's older Eagle Mountain data center (2018, excluded as pre-2020). Refine coordinates."
+    },
+    {
+      "slug": "meta-rosemount",
+      "name": "Rosemount data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US", "region": "Minnesota", "locality": "Rosemount (former UMore Park land)",
+      "lat": 44.72, "lon": -93.1, "location_precision": "town",
+      "capacity_mw": { "low": 178, "high": 178, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Two buildings on 280 acres of former University of Minnesota land; estimated operational mid-2026 at ~178 MW IT (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "announced": { "value": "2024-03", "precision": "month", "source_ids": ["meta_rosemount"], "note": "Meta: 'Hello Rosemount', March 2024." },
+        "construction_start": { "value": "2024-02", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_rosemount"], "note": "Epoch satellite: land clearing begins 1 Feb 2024." },
+        "operational": { "value": "2026-06", "precision": "month", "source_ids": ["ep_rosemount"], "note": "Epoch estimate: Buildings 1–2 operational 19 Jun 2026 (complete in Mar 2026 imagery + commissioning)." }
+      },
+      "sources": [
+        { "id": "ep_rosemount", "title": "Meta Rosemount – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/meta-rosemount", "kind": "satellite" },
+        { "id": "meta_rosemount", "title": "Hello Rosemount", "publisher": "Meta", "url": "https://datacenters.atmeta.com/2024/03/hello-rosemount/", "kind": "primary" }
+      ],
+      "review_notes": "Operational date is Epoch's estimate, not observed. Refine coordinates."
+    },
+    {
+      "slug": "meta-kuna",
+      "name": "Kuna data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US", "region": "Idaho", "locality": "Kuna, Ada County",
+      "lat": 43.49, "lon": -116.42, "location_precision": "town",
+      "capacity_mw": { "low": 152, "high": 152, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Buildings 1–2 operational from Jun 2026 (Epoch, ~152 MW IT); two smaller buildings under construction to the north.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2022-07", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_kuna"], "note": "Epoch satellite: land clearing begins 1 Jul 2022." },
+        "operational": { "value": "2026-06", "precision": "month", "source_ids": ["ep_kuna"], "note": "Epoch: Buildings 1–2 operational 1 Jun 2026 (first server rack arrived Mar 2026 per Meta)." }
+      },
+      "sources": [
+        { "id": "ep_kuna", "title": "Meta Kuna – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/meta-kuna", "kind": "satellite" },
+        { "id": "meta_kuna_pdf", "title": "Meta's Kuna Data Center (fact sheet)", "publisher": "Meta", "url": "https://datacenters.atmeta.com/wp-content/uploads/2025/02/Meta_s-Kuna-Data-Center.pdf", "kind": "primary" },
+        { "id": "statesman_kuna", "title": "Meta Kuna data center construction (peak construction March 2025)", "publisher": "Idaho Statesman", "url": "https://www.idahostatesman.com/news/business/article304464416.html", "kind": "news" }
+      ],
+      "review_notes": "Meta announced Kuna in 2022: add the dated announcement. Refine coordinates."
+    },
+    {
+      "slug": "meta-cheyenne",
+      "name": "Cheyenne data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US", "region": "Wyoming", "locality": "Cheyenne, Laramie County",
+      "lat": 41.14, "lon": -104.82, "location_precision": "town",
+      "capacity_mw": { "low": 152, "high": 207, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Meta's 21st US data center; Buildings 1–2 estimated operational Jul 2026 (~152 MW IT), Buildings 3–4 projected Q1 2027 (~207 MW) (Epoch).",
+      "expected_completion": "2027",
+      "dates": {
+        "announced": { "value": "2024-07", "precision": "month", "source_ids": ["meta_cheyenne"], "note": "Meta: 'Hello Cheyenne', July 2024." },
+        "construction_start": { "value": "2024-05", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_cheyenne"], "note": "Epoch satellite: land clearing begins 1 May 2024." },
+        "operational": { "value": "2026-07", "precision": "month", "source_ids": ["ep_cheyenne"], "note": "Epoch estimate: Buildings 1–2 operational 25 Jul 2026." }
+      },
+      "sources": [
+        { "id": "ep_cheyenne", "title": "Meta Cheyenne – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/meta-cheyenne", "kind": "satellite" },
+        { "id": "meta_cheyenne", "title": "Hello Cheyenne", "publisher": "Meta", "url": "https://datacenters.atmeta.com/2024/07/hello-cheyenne/", "kind": "primary" },
+        { "id": "cheyenneleads_meta", "title": "Meta announces new data center, a major investment in Cheyenne, Wyoming", "publisher": "Cheyenne LEADS", "url": "https://cheyenneleads.org/meta-announces-new-data-center-a-major-investment-in-cheyenne-wyoming/", "kind": "primary" }
+      ],
+      "review_notes": "Operational date is Epoch's estimate. Refine coordinates."
+    },
+    {
+      "slug": "meta-jeffersonville",
+      "name": "Jeffersonville data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US", "region": "Indiana", "locality": "Jeffersonville, Clark County",
+      "lat": 38.33, "lon": -85.7, "location_precision": "town",
+      "capacity_mw": { "low": 178, "high": 178, "type": "it_load_estimate" },
+      "status": "operational",
+      "status_note": "Buildings 1–2 operational from Jun 2026 (Epoch, ~178 MW IT).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2024-02", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_jeffersonville"], "note": "Epoch satellite: land clearing begins 1 Feb 2024." },
+        "operational": { "value": "2026-06", "precision": "month", "source_ids": ["ep_jeffersonville"], "note": "Epoch: Buildings 1–2 operational 4 Jun 2026." }
+      },
+      "sources": [
+        { "id": "ep_jeffersonville", "title": "Meta Jeffersonville – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/meta-jeffersonville", "kind": "satellite" },
+        { "id": "meta_jeff_pdf", "title": "Meta's Jeffersonville Data Center (fact sheet)", "publisher": "Meta", "url": "https://datacenters.atmeta.com/wp-content/uploads/2025/02/Meta_s-Jeffersonville-Data-Center.pdf", "kind": "primary" },
+        { "id": "turner_jeff", "title": "Turner Construction Company to build hyperscale data center for Meta in Indiana", "publisher": "Turner Construction", "url": "https://www.turnerconstruction.com/insights/turner-construction-company-to-build-hyperscale-data-center-for-meta-in-indiana", "kind": "primary" }
+      ],
+      "review_notes": "Meta announcement date to add. Refine coordinates."
+    },
+    {
+      "slug": "meta-aiken",
+      "name": "Aiken data center",
+      "owner": "Meta",
+      "tenant": "Meta",
+      "country": "US", "region": "South Carolina", "locality": "Aiken, Aiken County",
+      "lat": 33.56, "lon": -81.72, "location_precision": "town",
+      "capacity_mw": { "low": 69, "high": 129, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Meta's 22nd US data center (>$800M); Building 1 confirmed operational by drone imagery Aug 2026 (~69 MW IT), Building 2 assumed ~3 months later (~129 MW) (Epoch).",
+      "expected_completion": null,
+      "dates": {
+        "announced": { "value": "2024-08", "precision": "month", "source_ids": ["meta_aiken"], "note": "Meta: 'Hello South Carolina', August 2024." },
+        "construction_start": { "value": "2024-05", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_aiken"], "note": "Epoch satellite: land clearing begins 30 May 2024." },
+        "operational": { "value": "2026-08", "precision": "month", "source_ids": ["ep_aiken"], "note": "Epoch: Building 1 confirmed operational via drone imagery 7 Aug 2026." }
+      },
+      "sources": [
+        { "id": "ep_aiken", "title": "Meta Aiken – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/meta-aiken", "kind": "satellite" },
+        { "id": "meta_aiken", "title": "Hello South Carolina", "publisher": "Meta", "url": "https://datacenters.atmeta.com/2024/08/hello-south-carolina/", "kind": "primary" }
+      ],
+      "review_notes": "129 MW is Epoch's estimate for both buildings (just above the 100 MW bar). Refine coordinates."
+    },
+    {
+      "slug": "amazon-ridgeland",
+      "name": "Ridgeland campus",
+      "owner": "Amazon (AWS)",
+      "tenant": "AWS (Project Rainier; Anthropic per Epoch, speculative)",
+      "country": "US", "region": "Mississippi", "locality": "Ridgeland, Madison County",
+      "lat": 32.43, "lon": -90.13, "location_precision": "town",
+      "capacity_mw": { "low": 228, "high": 840, "type": "it_load_estimate" },
+      "status": "partially_operational",
+      "status_note": "Buildings 1–4 operational from May 2026 (Epoch, ~228 MW IT); Epoch projects 14 buildings and ~840 MW by Q3 2028.",
+      "expected_completion": "2028",
+      "dates": {
+        "construction_start": { "value": "2024-02", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_ridgeland"], "note": "Epoch satellite: land clearing begins 24 Feb 2024." },
+        "operational": { "value": "2026-05", "precision": "month", "source_ids": ["ep_ridgeland"], "note": "Epoch: Buildings 1–4 operational 15 May 2026." }
+      },
+      "sources": [
+        { "id": "ep_ridgeland", "title": "Amazon Ridgeland – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/amazon-ridgeland", "kind": "satellite" },
+        { "id": "dcd_aws_ms", "title": "AWS confirmed as company behind $10bn Mississippi data center development", "publisher": "DatacenterDynamics", "url": "https://www.datacenterdynamics.com/en/news/aws-confirmed-as-company-behind-10bn-mississippi-data-center-development/", "kind": "news" }
+      ],
+      "review_notes": "Check whether AWS's $10B Madison County announcement covers both Ridgeland and Canton (then link the two records and share the announced date). 840 MW is Epoch's projection. Refine coordinates."
+    },
+    {
+      "slug": "core-scientific-muskogee",
+      "name": "Muskogee HPC data center",
+      "owner": "Core Scientific",
+      "tenant": "CoreWeave (first building)",
+      "country": "US", "region": "Oklahoma", "locality": "Port of Muskogee",
+      "lat": 35.77, "lon": -95.31, "location_precision": "town",
+      "capacity_mw": { "low": 100, "high": 153, "type": "mixed" },
+      "status": "under_construction",
+      "status_note": "100 MW HPC data center (Core Scientific) with ~70 MW IT for CoreWeave; Building 1 built but not seen operating (Jun 2026); a second, unleased 82.5 MW building planned for Q4 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "announced": { "value": "2024-11", "precision": "month", "source_ids": ["corz_muskogee_pr"], "note": "Groundbreaking announced 18 Nov 2024." },
+        "construction_start": { "value": "2024-11", "precision": "month", "basis": "reported_start", "source_ids": ["corz_muskogee_pr", "ep_muskogee"], "note": "Core Scientific, CoreWeave and Port Muskogee break ground, 18 Nov 2024." }
+      },
+      "sources": [
+        { "id": "ep_muskogee", "title": "CoreWeave Muskogee OK – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-muskogee-ok", "kind": "satellite" },
+        { "id": "corz_muskogee_pr", "title": "Core Scientific and Port Muskogee break ground on 100 MW HPC data center", "publisher": "Core Scientific", "url": "https://investors.corescientific.com/news-events/press-releases/detail/99/core-scientific-and-port-muskogee-break-ground-on-100-mw-hpc-data-center", "kind": "primary" }
+      ],
+      "review_notes": "Range mixes facility (100 MW, Core Scientific) and Epoch's IT estimate incl. the unleased second building (153 MW). Refine coordinates to the port site."
+    },
+    {
+      "slug": "start-campus-sines",
+      "name": "SINES Data Campus",
+      "owner": "Start Campus",
+      "tenant": "Nscale for Microsoft (first building)",
+      "country": "PT", "region": "Setúbal", "locality": "Sines",
+      "lat": 37.95, "lon": -8.85, "location_precision": "town",
+      "capacity_mw": { "low": 233, "high": 1200, "type": "mixed" },
+      "status": "partially_operational",
+      "status_note": "Six-building campus planned to 1.2 GW by 2030 (Start Campus); SIN01 in operation since Oct 2024 and running Nvidia GB300s for Microsoft via Nscale since Q1 2026; SIN02 under construction (Epoch: 233 MW IT by Q3 2027).",
+      "expected_completion": "2030",
+      "dates": {
+        "construction_start": { "value": "2022-01", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_sines"], "note": "Epoch satellite: land clearing for SIN01 begins Jan 2022." },
+        "operational": { "value": "2024-10", "precision": "month", "source_ids": ["econews_sines", "ep_sines"], "note": "ECO News (Mar 2025): SIN01 in operation since October 2024." }
+      },
+      "sources": [
+        { "id": "ep_sines", "title": "Start Campus Sines Data Campus – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/start-campus-sines-data-campus", "kind": "satellite" },
+        { "id": "startcampus_sines", "title": "SINES Data Campus", "publisher": "Start Campus", "url": "https://www.startcampus.pt/sines", "kind": "primary" },
+        { "id": "startcampus_gb300", "title": "Start Campus hosts EU's first Nvidia GB300 chips with Nscale for Microsoft", "publisher": "Start Campus", "url": "https://lp.startcampus.pt/start-campus-hosts-eus-first-nvidia-gb300-chips-with-nscale-for-microsoft", "kind": "primary" },
+        { "id": "econews_sines", "title": "Start Campus to start construction of second data centre building in Sines by end June", "publisher": "ECO News", "url": "https://econews.pt/2025/03/24/start-campus-to-start-construction-of-second-data-centre-building-in-sines-by-end-june/", "kind": "news" }
+      ],
+      "review_notes": "Range: 233 MW (Epoch IT by 2027) vs 1.2 GW (Start Campus full campus by 2030). Announcement (2021) to add with source. Refine coordinates."
+    },
+    {
+      "slug": "applied-digital-polaris-forge-1",
+      "name": "Polaris Forge 1",
+      "owner": "Applied Digital",
+      "tenant": "CoreWeave",
+      "country": "US", "region": "North Dakota", "locality": "Ellendale, Dickey County",
+      "lat": 46.0, "lon": -98.53, "location_precision": "town",
+      "capacity_mw": { "low": 100, "high": 400, "type": "planned_campus" },
+      "status": "partially_operational",
+      "status_note": "400 MW leased to CoreWeave across three buildings (~$7B, 15-year leases); Building 1 (100 MW) ready for service Nov 2025, Building 2 delivered 2026, Building 3 due H1 2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": { "value": "2023-10", "precision": "month", "source_ids": ["apld_groundbreaking", "ep_ellendale"], "note": "Applied Digital groundbreaking (Epoch dates it 31 Oct 2023)." },
+        "operational": { "value": "2025-10", "precision": "month", "source_ids": ["apld_rfs1", "ep_ellendale"], "note": "First 50 MW of Building 1 ready for service 27 Oct 2025." }
+      },
+      "sources": [
+        { "id": "ep_ellendale", "title": "CoreWeave Ellendale ND – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-ellendale-nd", "kind": "satellite" },
+        { "id": "apld_groundbreaking", "title": "Applied Digital announces groundbreaking", "publisher": "Applied Digital", "url": "https://ir.applieddigital.com/news-events/press-releases/detail/75/applied-digital-announces-groundbreaking-of", "kind": "primary" },
+        { "id": "apld_250mw", "title": "Applied Digital announces 250MW AI data center lease with CoreWeave", "publisher": "Applied Digital", "url": "https://ir.applieddigital.com/news-events/press-releases/detail/123/applied-digital-announces-250mw-ai-data-center-lease-with", "kind": "primary" },
+        { "id": "apld_rfs1", "title": "Applied Digital achieves ready for service for Phase 1 at Polaris Forge 1", "publisher": "Applied Digital", "url": "https://ir.applieddigital.com/news-events/press-releases/detail/133/applied-digital-achieves-ready-for-service-for-phase-1-at", "kind": "primary" },
+        { "id": "apld_bldg2", "title": "Applied Digital delivers second building at Polaris Forge 1", "publisher": "Applied Digital", "url": "https://ir.applieddigital.com/news-events/press-releases/detail/157/applied-digital-delivers-second-building-at-polaris-forge-1", "kind": "primary" }
+      ],
+      "review_notes": "Epoch counts only 68 MW IT as running; Applied Digital reports 100 MW buildings delivered. Date the Building 2 delivery release and raise 'low' if confirmed. Refine coordinates."
+    },
+    {
+      "slug": "nebius-vineland",
+      "name": "Vineland AI data center",
+      "owner": "DataOne",
+      "tenant": "Nebius (Microsoft, likely)",
+      "country": "US", "region": "New Jersey", "locality": "Vineland, Cumberland County",
+      "lat": 39.49, "lon": -75.03, "location_precision": "town",
+      "capacity_mw": { "low": 50, "high": 300, "type": "mixed" },
+      "status": "partially_operational",
+      "status_note": "Up to 300 MW for Nebius (Nebius); first ~50 MW IT phase operational early 2026 (Epoch, Apr 2026 imagery); Microsoft secured 100,000 GB300s via Nebius.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": { "value": "2024-05", "precision": "month", "basis": "first_evidence", "source_ids": ["ep_vineland"], "note": "Epoch satellite: land clearing begins 31 May 2024." },
+        "operational": { "value": "2026-Q1", "precision": "quarter", "source_ids": ["ep_vineland"], "note": "Epoch: first 50 MW phase operational around early 2026 (cooling in place by 15 Apr 2026)." }
+      },
+      "sources": [
+        { "id": "ep_vineland", "title": "Microsoft-Nebius New Jersey – AI data center directory", "publisher": "Epoch AI", "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-nebius-new-jersey", "kind": "satellite" },
+        { "id": "nebius_nj", "title": "Nebius accelerates US expansion, adding up to 300 MW capacity at new data center in New Jersey", "publisher": "Nebius", "url": "https://nebius.com/newsroom/nebius-accelerates-us-expansion-adding-up-to-300-mw-capacity-at-new-data-center-in-new-jersey", "kind": "primary" },
+        { "id": "capemay_vineland", "title": "Large data center nears completion in Vineland", "publisher": "Cape May County Herald", "url": "https://capemaycountyherald.com/article/large-data-center-nears-completion-in-vineland/", "kind": "news" }
+      ],
+      "review_notes": "Range mixes IT (50 MW running, Epoch) and the 'up to 300 MW' Nebius figure. Announcement date (Nebius release, 2025) to add. Refine coordinates."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "amazon-ridgeland",
+  "name": "Ridgeland campus",
+  "owner": "Amazon (AWS)",
+  "tenant": "AWS (Project Rainier; Anthropic per Epoch, speculative)",
+  "country": "US",
+  "region": "Mississippi",
+  "locality": "Ridgeland, Madison County",
+  "lat": 32.43,
+  "lon": -90.13,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 228,
+    "high": 840,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Buildings 1–4 operational from May 2026 (Epoch, ~228 MW IT); Epoch projects 14 buildings and ~840 MW by Q3 2028.",
+  "expected_completion": "2028",
+  "dates": {
+    "construction_start": {
+      "value": "2024-02",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_ridgeland"
+      ],
+      "note": "Epoch satellite: land clearing begins 24 Feb 2024."
+    },
+    "operational": {
+      "value": "2026-05",
+      "precision": "month",
+      "source_ids": [
+        "ep_ridgeland"
+      ],
+      "note": "Epoch: Buildings 1–4 operational 15 May 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_ridgeland",
+      "title": "Amazon Ridgeland – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/amazon-ridgeland",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_aws_ms",
+      "title": "AWS confirmed as company behind $10bn Mississippi data center development",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/aws-confirmed-as-company-behind-10bn-mississippi-data-center-development/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Check whether AWS's $10B Madison County announcement covers both Ridgeland and Canton (then link the two records and share the announced date). 840 MW is Epoch's projection. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

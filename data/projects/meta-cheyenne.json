@@ -1,0 +1,77 @@
+{
+  "slug": "meta-cheyenne",
+  "name": "Cheyenne data center",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Wyoming",
+  "locality": "Cheyenne, Laramie County",
+  "lat": 41.14,
+  "lon": -104.82,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 152,
+    "high": 207,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Meta's 21st US data center; Buildings 1–2 estimated operational Jul 2026 (~152 MW IT), Buildings 3–4 projected Q1 2027 (~207 MW) (Epoch).",
+  "expected_completion": "2027",
+  "dates": {
+    "announced": {
+      "value": "2024-07",
+      "precision": "month",
+      "source_ids": [
+        "meta_cheyenne"
+      ],
+      "note": "Meta: 'Hello Cheyenne', July 2024."
+    },
+    "construction_start": {
+      "value": "2024-05",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_cheyenne"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 May 2024."
+    },
+    "operational": {
+      "value": "2026-07",
+      "precision": "month",
+      "source_ids": [
+        "ep_cheyenne"
+      ],
+      "note": "Epoch estimate: Buildings 1–2 operational 25 Jul 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_cheyenne",
+      "title": "Meta Cheyenne – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-cheyenne",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "meta_cheyenne",
+      "title": "Hello Cheyenne",
+      "publisher": "Meta",
+      "url": "https://datacenters.atmeta.com/2024/07/hello-cheyenne/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cheyenneleads_meta",
+      "title": "Meta announces new data center, a major investment in Cheyenne, Wyoming",
+      "publisher": "Cheyenne LEADS",
+      "url": "https://cheyenneleads.org/meta-announces-new-data-center-a-major-investment-in-cheyenne-wyoming/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Operational date is Epoch's estimate. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

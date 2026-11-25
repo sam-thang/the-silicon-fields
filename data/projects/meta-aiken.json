@@ -1,0 +1,69 @@
+{
+  "slug": "meta-aiken",
+  "name": "Aiken data center",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "South Carolina",
+  "locality": "Aiken, Aiken County",
+  "lat": 33.56,
+  "lon": -81.72,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 69,
+    "high": 129,
+    "type": "it_load_estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Meta's 22nd US data center (>$800M); Building 1 confirmed operational by drone imagery Aug 2026 (~69 MW IT), Building 2 assumed ~3 months later (~129 MW) (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-08",
+      "precision": "month",
+      "source_ids": [
+        "meta_aiken"
+      ],
+      "note": "Meta: 'Hello South Carolina', August 2024."
+    },
+    "construction_start": {
+      "value": "2024-05",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_aiken"
+      ],
+      "note": "Epoch satellite: land clearing begins 30 May 2024."
+    },
+    "operational": {
+      "value": "2026-08",
+      "precision": "month",
+      "source_ids": [
+        "ep_aiken"
+      ],
+      "note": "Epoch: Building 1 confirmed operational via drone imagery 7 Aug 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_aiken",
+      "title": "Meta Aiken – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-aiken",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "meta_aiken",
+      "title": "Hello South Carolina",
+      "publisher": "Meta",
+      "url": "https://datacenters.atmeta.com/2024/08/hello-south-carolina/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "129 MW is Epoch's estimate for both buildings (just above the 100 MW bar). Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

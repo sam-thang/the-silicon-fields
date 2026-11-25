@@ -1,0 +1,86 @@
+{
+  "slug": "applied-digital-polaris-forge-1",
+  "name": "Polaris Forge 1",
+  "owner": "Applied Digital",
+  "tenant": "CoreWeave",
+  "country": "US",
+  "region": "North Dakota",
+  "locality": "Ellendale, Dickey County",
+  "lat": 46,
+  "lon": -98.53,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 100,
+    "high": 400,
+    "type": "planned_campus"
+  },
+  "status": "partially_operational",
+  "status_note": "400 MW leased to CoreWeave across three buildings (~$7B, 15-year leases); Building 1 (100 MW) ready for service Nov 2025, Building 2 delivered 2026, Building 3 due H1 2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2023-10",
+      "precision": "month",
+      "source_ids": [
+        "apld_groundbreaking",
+        "ep_ellendale"
+      ],
+      "note": "Applied Digital groundbreaking (Epoch dates it 31 Oct 2023)."
+    },
+    "operational": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "apld_rfs1",
+        "ep_ellendale"
+      ],
+      "note": "First 50 MW of Building 1 ready for service 27 Oct 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_ellendale",
+      "title": "CoreWeave Ellendale ND – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-ellendale-nd",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "apld_groundbreaking",
+      "title": "Applied Digital announces groundbreaking",
+      "publisher": "Applied Digital",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/75/applied-digital-announces-groundbreaking-of",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "apld_250mw",
+      "title": "Applied Digital announces 250MW AI data center lease with CoreWeave",
+      "publisher": "Applied Digital",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/123/applied-digital-announces-250mw-ai-data-center-lease-with",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "apld_rfs1",
+      "title": "Applied Digital achieves ready for service for Phase 1 at Polaris Forge 1",
+      "publisher": "Applied Digital",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/133/applied-digital-achieves-ready-for-service-for-phase-1-at",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "apld_bldg2",
+      "title": "Applied Digital delivers second building at Polaris Forge 1",
+      "publisher": "Applied Digital",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/157/applied-digital-delivers-second-building-at-polaris-forge-1",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Epoch counts only 68 MW IT as running; Applied Digital reports 100 MW buildings delivered. Date the Building 2 delivery release and raise 'low' if confirmed. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

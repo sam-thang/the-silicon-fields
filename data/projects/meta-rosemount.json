@@ -1,0 +1,69 @@
+{
+  "slug": "meta-rosemount",
+  "name": "Rosemount data center",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Minnesota",
+  "locality": "Rosemount (former UMore Park land)",
+  "lat": 44.72,
+  "lon": -93.1,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 178,
+    "high": 178,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Two buildings on 280 acres of former University of Minnesota land; estimated operational mid-2026 at ~178 MW IT (Epoch).",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-03",
+      "precision": "month",
+      "source_ids": [
+        "meta_rosemount"
+      ],
+      "note": "Meta: 'Hello Rosemount', March 2024."
+    },
+    "construction_start": {
+      "value": "2024-02",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_rosemount"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Feb 2024."
+    },
+    "operational": {
+      "value": "2026-06",
+      "precision": "month",
+      "source_ids": [
+        "ep_rosemount"
+      ],
+      "note": "Epoch estimate: Buildings 1–2 operational 19 Jun 2026 (complete in Mar 2026 imagery + commissioning)."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_rosemount",
+      "title": "Meta Rosemount – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-rosemount",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "meta_rosemount",
+      "title": "Hello Rosemount",
+      "publisher": "Meta",
+      "url": "https://datacenters.atmeta.com/2024/03/hello-rosemount/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Operational date is Epoch's estimate, not observed. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

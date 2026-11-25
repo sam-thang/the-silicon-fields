@@ -1,0 +1,69 @@
+{
+  "slug": "meta-jeffersonville",
+  "name": "Jeffersonville data center",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Indiana",
+  "locality": "Jeffersonville, Clark County",
+  "lat": 38.33,
+  "lon": -85.7,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 178,
+    "high": 178,
+    "type": "it_load_estimate"
+  },
+  "status": "operational",
+  "status_note": "Buildings 1–2 operational from Jun 2026 (Epoch, ~178 MW IT).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2024-02",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_jeffersonville"
+      ],
+      "note": "Epoch satellite: land clearing begins 1 Feb 2024."
+    },
+    "operational": {
+      "value": "2026-06",
+      "precision": "month",
+      "source_ids": [
+        "ep_jeffersonville"
+      ],
+      "note": "Epoch: Buildings 1–2 operational 4 Jun 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_jeffersonville",
+      "title": "Meta Jeffersonville – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/meta-jeffersonville",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "meta_jeff_pdf",
+      "title": "Meta's Jeffersonville Data Center (fact sheet)",
+      "publisher": "Meta",
+      "url": "https://datacenters.atmeta.com/wp-content/uploads/2025/02/Meta_s-Jeffersonville-Data-Center.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "turner_jeff",
+      "title": "Turner Construction Company to build hyperscale data center for Meta in Indiana",
+      "publisher": "Turner Construction",
+      "url": "https://www.turnerconstruction.com/insights/turner-construction-company-to-build-hyperscale-data-center-for-meta-in-indiana",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Meta announcement date to add. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

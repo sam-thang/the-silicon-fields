@@ -1,0 +1,78 @@
+{
+  "slug": "start-campus-sines",
+  "name": "SINES Data Campus",
+  "owner": "Start Campus",
+  "tenant": "Nscale for Microsoft (first building)",
+  "country": "PT",
+  "region": "Setúbal",
+  "locality": "Sines",
+  "lat": 37.95,
+  "lon": -8.85,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 233,
+    "high": 1200,
+    "type": "mixed"
+  },
+  "status": "partially_operational",
+  "status_note": "Six-building campus planned to 1.2 GW by 2030 (Start Campus); SIN01 in operation since Oct 2024 and running Nvidia GB300s for Microsoft via Nscale since Q1 2026; SIN02 under construction (Epoch: 233 MW IT by Q3 2027).",
+  "expected_completion": "2030",
+  "dates": {
+    "construction_start": {
+      "value": "2022-01",
+      "precision": "month",
+      "basis": "first_evidence",
+      "source_ids": [
+        "ep_sines"
+      ],
+      "note": "Epoch satellite: land clearing for SIN01 begins Jan 2022."
+    },
+    "operational": {
+      "value": "2024-10",
+      "precision": "month",
+      "source_ids": [
+        "econews_sines",
+        "ep_sines"
+      ],
+      "note": "ECO News (Mar 2025): SIN01 in operation since October 2024."
+    }
+  },
+  "sources": [
+    {
+      "id": "ep_sines",
+      "title": "Start Campus Sines Data Campus – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/start-campus-sines-data-campus",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "startcampus_sines",
+      "title": "SINES Data Campus",
+      "publisher": "Start Campus",
+      "url": "https://www.startcampus.pt/sines",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "startcampus_gb300",
+      "title": "Start Campus hosts EU's first Nvidia GB300 chips with Nscale for Microsoft",
+      "publisher": "Start Campus",
+      "url": "https://lp.startcampus.pt/start-campus-hosts-eus-first-nvidia-gb300-chips-with-nscale-for-microsoft",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "econews_sines",
+      "title": "Start Campus to start construction of second data centre building in Sines by end June",
+      "publisher": "ECO News",
+      "url": "https://econews.pt/2025/03/24/start-campus-to-start-construction-of-second-data-centre-building-in-sines-by-end-june/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Range: 233 MW (Epoch IT by 2027) vs 1.2 GW (Start Campus full campus by 2030). Announcement (2021) to add with source. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}
