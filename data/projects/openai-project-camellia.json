@@ -1,0 +1,65 @@
+{
+  "slug": "openai-project-camellia",
+  "name": "Project Camellia",
+  "owner": "OpenAI",
+  "tenant": "OpenAI",
+  "country": "US",
+  "region": "Georgia",
+  "locality": "Effingham County (NW of Savannah)",
+  "lat": 32.37,
+  "lon": -81.34,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 3200,
+    "high": 3200,
+    "type": "utility_contract",
+    "note": "3.2 GW Georgia Power supply contract, delivered in phases 2028-2032; not IT load."
+  },
+  "status": "permitting",
+  "status_note": "Permitting. OpenAI contracted 3.2 GW from Georgia Power (Jul 2026), delivered 2028-2032; can curtail up to 1 GW at peak demand.",
+  "expected_completion": "2028-2032 (phased power delivery)",
+  "dates": {
+    "announced": {
+      "value": "2026-07",
+      "precision": "month",
+      "source_ids": [
+        "openai_effingham",
+        "tc_openai_750b"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "fl",
+      "title": "Largest Data Center Projects Breaking Ground in 2026 and 2027",
+      "publisher": "Finish Line",
+      "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "openai_effingham",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "tc_openai_750b",
+      "title": "OpenAI's AI spending spree has ballooned to $750B",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Dates batch 4: location found (Effingham County, ~1,400 acres, per OpenAI and TechCrunch); county-level point until the site is pinned. Capacity type 'utility_contract' must be added to the schema.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

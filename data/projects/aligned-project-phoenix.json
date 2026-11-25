@@ -1,0 +1,80 @@
+{
+  "slug": "aligned-project-phoenix",
+  "name": "Project Phoenix",
+  "owner": "Aligned Data Centers",
+  "tenant": "",
+  "country": "US",
+  "region": "Pennsylvania",
+  "locality": "Shippingport (former Bruce Mansfield plant)",
+  "lat": 40.63,
+  "lon": -80.43,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 2000,
+    "high": 2000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Groundbreaking Sept 2026; state Notice of Commencement filed Oct 8, 2026; ~$10B",
+  "expected_completion": "2028-2029",
+  "dates": {
+    "announced": {
+      "value": "2026-02",
+      "precision": "month",
+      "source_ids": [
+        "trib_phoenix"
+      ],
+      "note": "Earliest found public report (zoning approval); a proposal may have been reported earlier."
+    },
+    "construction_start": {
+      "value": "2026-09",
+      "precision": "month",
+      "source_ids": [
+        "dcd_phoenix",
+        "pa_dgs"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 10000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "pa_dgs",
+      "title": "State construction notice: Aligned Data Centers, Notice of Commencement (Oct 8, 2026)",
+      "publisher": "Pennsylvania Department of General Services",
+      "url": "https://www.pa.gov/dgs/state-construction-notices-directory/Wizard/ProjectDetail/2832",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dcf_pa",
+      "title": "From Coal to Compute: How Pennsylvania Is Rebuilding Power for AI Data Centers",
+      "publisher": "Data Center Frontier",
+      "url": "https://www.datacenterfrontier.com/energy/article/55404954/from-coal-to-compute-how-pennsylvania-is-rebuilding-power-for-ai-data-centers",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "trib_phoenix",
+      "title": "Sprawling data center campus proposed next to old Bruce Mansfield power plant in Shippingport",
+      "publisher": "TribLive",
+      "url": "https://triblive.com/local/regional/sprawling-data-center-campus-proposed-next-to-old-bruce-mansfield-power-plant-in-shippingport",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_phoenix",
+      "title": "Aligned breaks ground on gigawatt-scale data center campus in Pennsylvania",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "xai-colossus-2",
+  "name": "Colossus 2 (+ MACROHARDRR)",
+  "owner": "SpaceXAI (xAI)",
+  "tenant": "SpaceXAI, Anthropic, Cursor",
+  "country": "US",
+  "region": "Tennessee / Mississippi",
+  "locality": "Memphis, TN & Southaven, MS",
+  "lat": 35.02,
+  "lon": -90.03,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 946,
+    "high": 2000,
+    "type": "mixed"
+  },
+  "status": "partially_operational",
+  "status_note": "Epoch: 946 MW IT operational; Cleanview: ~1.3 GW; expansion toward 2 GW",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-03",
+      "precision": "month",
+      "source_ids": [
+        "dcd_xai_site"
+      ],
+      "note": "Site purchased 7 Mar 2025."
+    },
+    "construction_start": {
+      "value": "2025-02",
+      "precision": "month",
+      "source_ids": [
+        "ep_col2"
+      ],
+      "note": "Epoch satellite imagery: land clearing begins 28 Feb 2025."
+    },
+    "operational": {
+      "value": "2026-Q1",
+      "precision": "quarter",
+      "source_ids": [
+        "dcd_xai_ms",
+        "ep_col2"
+      ],
+      "note": "DCD: came online in January (year inferred as 2026); Epoch observed cooling array operational by 6 Apr 2026."
+    }
+  },
+  "investment_usd": {
+    "value": 35800000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "ep_col2",
+      "title": "Colossus 2 – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "cv_col",
+      "title": "Colossus 1 & 2 – behind-the-meter data centers",
+      "publisher": "Cleanview",
+      "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/colossus",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dcf_xai",
+      "title": "xAI's AI Factories: From Colossus to MACROHARDRR",
+      "publisher": "Data Center Frontier",
+      "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dcd_xai_site",
+      "title": "Elon Musk's xAI buys one million sq ft site for second Memphis data center",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/elon-musks-xai-buys-one-million-sq-ft-site-for-second-memphis-data-center/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_xai_ms",
+      "title": "SpaceXAI launching two additional data center campuses in Mississippi to further expand Colossus 2",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/spacexai-launching-two-additional-data-center-campuses-in-mississippi-to-further-expand-colossus-2",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Low = Epoch IT power; high = announced 2 GW expansion.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

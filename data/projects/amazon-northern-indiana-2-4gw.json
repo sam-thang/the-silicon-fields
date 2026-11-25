@@ -1,0 +1,47 @@
+{
+  "slug": "amazon-northern-indiana-2-4gw",
+  "name": "Northern Indiana expansion",
+  "owner": "Amazon (AWS)",
+  "tenant": "",
+  "country": "US",
+  "region": "Indiana",
+  "locality": "Northern Indiana (sites TBD)",
+  "lat": 41.5,
+  "lon": -86.2,
+  "location_precision": "region",
+  "capacity_mw": {
+    "low": 2400,
+    "high": 2400,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "$15B for new campuses adding 2.4 GW",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-11",
+      "precision": "month",
+      "source_ids": [
+        "amz_in"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 15000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "amz_in",
+      "title": "Amazon plans to invest $15 billion in Northern Indiana",
+      "publisher": "Amazon",
+      "url": "https://aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Location only regional – do not pin a precise point.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

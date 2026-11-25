@@ -1,0 +1,87 @@
+{
+  "slug": "stargate-port-washington",
+  "name": "Stargate Port Washington ('Lighthouse')",
+  "owner": "Vantage Data Centers",
+  "tenant": "OpenAI / Oracle",
+  "country": "US",
+  "region": "Wisconsin",
+  "locality": "Port Washington",
+  "lat": 43.39,
+  "lon": -87.88,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus",
+    "note": "Shown as 'up to 1 GW'; source wording: 'close to a gigawatt of AI capacity' (owner-approved 2026-11-25)."
+  },
+  "status": "under_construction",
+  "status_note": "Groundbroken Dec 2025; second building topped out Jun 2026. Announcement: 'close to a gigawatt of AI capacity' across four data centers.",
+  "expected_completion": "2028",
+  "dates": {
+    "announced": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "dbrg_lighthouse"
+      ]
+    },
+    "construction_start": {
+      "value": "2025-12",
+      "precision": "month",
+      "source_ids": [
+        "dr_lighthouse"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "llmsg",
+      "title": "OpenAI Stargate Data Centers: Every US Site, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/stargate-data-centers/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dcf_q1",
+      "title": "Land and Expand: Early 2026 Megaprojects Reflect a Power-First Ethos",
+      "publisher": "Data Center Frontier",
+      "url": "https://www.datacenterfrontier.com/site-selection/article/55360277/land-and-expand-early-2026-megaprojects-reflect-a-power-first-ethos",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dbrg_lighthouse",
+      "title": "OpenAI, Oracle and Vantage Data Centers Announce Stargate Data Center Site in Wisconsin",
+      "publisher": "DigitalBridge / Vantage Data Centers",
+      "url": "https://ir.digitalbridge.com/news-releases/news-release-details/openai-oracle-and-vantage-data-centers-announce-stargate-data",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dr_lighthouse",
+      "title": "$15 billion Vantage data center breaks ground in Port Washington",
+      "publisher": "The Daily Reporter",
+      "url": "https://dailyreporter.com/2025/12/18/15-billion-vantage-data-center-breaks-ground-in-port-washington/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_lighthouse_topout",
+      "title": "Vantage tops out second building at OpenAI's Lighthouse campus in Wisconsin",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/vantage-tops-out-second-building-at-openais-lighthouse-campus-in-wisconsin",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Capacity missing – research before publishing. Dates batch 2: status updated to under_construction and capacity filled (up to 1 GW).",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "meta-lebanon-indiana",
+  "name": "Meta Lebanon",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Indiana",
+  "locality": "Lebanon",
+  "lat": 40.05,
+  "lon": -86.47,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Groundbreaking reported by Data Center Frontier",
+  "expected_completion": "2027-Q4 to 2028-Q1",
+  "dates": {
+    "announced": {
+      "value": "2026-02",
+      "precision": "month",
+      "source_ids": [
+        "meta_lebanon"
+      ]
+    },
+    "construction_start": {
+      "value": "2026-02",
+      "precision": "month",
+      "source_ids": [
+        "iedc_meta",
+        "meta_lebanon"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 10000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "llm",
+      "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dcf_meta",
+      "title": "AI's New Land Grab: Meta's Indiana Megaproject",
+      "publisher": "Data Center Frontier",
+      "url": "https://datacenterfrontier.com/machine-learning/article/55357508/ais-new-land-grab-metas-indiana-megaproject-and-the-rise-of-europes-neocloud-challengers",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "meta_lebanon",
+      "title": "Meta's New Data Center in Lebanon, Indiana Marks a Milestone AI Investment",
+      "publisher": "Meta",
+      "url": "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "iedc_meta",
+      "title": "Gov. Braun breaks ground on $10B Meta data center campus at LEAP District",
+      "publisher": "Indiana Economic Development Corporation",
+      "url": "https://iedc.in.gov/events/news/details/2026/02/11/gov.-braun-breaks-ground-on-10b-meta-data-center-campus-at-leap-district",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

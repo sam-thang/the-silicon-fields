@@ -1,0 +1,96 @@
+{
+  "slug": "stargate-abilene",
+  "name": "Stargate Abilene (Lancium Clean Campus)",
+  "owner": "Oracle / Crusoe",
+  "tenant": "OpenAI",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Abilene",
+  "lat": 32.45,
+  "lon": -99.73,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1200,
+    "high": 1200,
+    "type": "planned_campus"
+  },
+  "status": "partially_operational",
+  "status_note": "Epoch: ~0.3 GW operational; 1.2 GW projected Q4 2026",
+  "expected_completion": "2026-Q4",
+  "dates": {
+    "announced": {
+      "value": "2024-07",
+      "precision": "month",
+      "source_ids": [
+        "crusoe_2024"
+      ]
+    },
+    "construction_start": {
+      "value": "2024",
+      "precision": "year",
+      "source_ids": [
+        "crusoe_2024",
+        "bx_lancium"
+      ],
+      "note": "Baxtel (tracker only) gives June 2024; year precision used until a news or primary source confirms the month."
+    },
+    "operational": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "dcd_abilene_live"
+      ],
+      "note": "First phase (Buildings 1-2, ~200 MW) announced live 30 Sep 2025."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "epsg",
+      "title": "OpenAI Stargate: where the US sites stand",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "sl",
+      "title": "Inside America's 5 Largest Data Center Megaprojects in 2026",
+      "publisher": "Smart Labor Management",
+      "url": "https://www.smarterlabor.com/blog/the-gigawatt-era-inside-the-5-largest-data-center-projects-in-america-in-2026",
+      "kind": "secondary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "crusoe_2024",
+      "title": "Crusoe to Build Initial 200 MW AI Data Center With Plans to Expand at 1.2 GW Lancium Clean Campus",
+      "publisher": "Crusoe (Business Wire)",
+      "url": "https://www.businesswire.com/news/home/20240718273783/en/Crusoe-to-Build-Initial-200-MW-AI-Data-Center-With-Plans-to-Expand-at-1.2-GW-Lancium-Clean-Campus/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_abilene_live",
+      "title": "Crusoe's Abilene data center officially live, serving Oracle and OpenAI's Stargate",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/crusoes-abilene-data-center-officially-live-serving-oracle-and-openais-stargate/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bx_lancium",
+      "title": "Lancium: Abilene",
+      "publisher": "Baxtel",
+      "url": "https://baxtel.com/data-center/lancium-abilene",
+      "kind": "tracker",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

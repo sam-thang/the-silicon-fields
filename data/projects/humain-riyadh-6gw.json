@@ -1,0 +1,64 @@
+{
+  "slug": "humain-riyadh-6gw",
+  "name": "HUMAIN Riyadh hyperscale campus",
+  "owner": "HUMAIN (PIF)",
+  "tenant": "",
+  "country": "SA",
+  "region": "Riyadh",
+  "locality": "Al Saad (east Riyadh)",
+  "lat": 24.71,
+  "lon": 46.68,
+  "location_precision": "city",
+  "capacity_mw": {
+    "low": 6000,
+    "high": 6000,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "Enabling-works contract (roads, power distribution, water, fibre) awarded Sep 2026 for a 24 km² site in Al Saad, east Riyadh; main construction contract not yet awarded. Six 1 GW plots in two phases.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-05",
+      "precision": "month",
+      "source_ids": [
+        "meed_ry_tender"
+      ],
+      "note": "Infrastructure tender issued May 2026."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "meed_ry",
+      "title": "Contractor wins 6GW data centre campus infrastructure",
+      "publisher": "MEED",
+      "url": "https://www.meed.com/contractor-wins-6gw-data-centre-campus-infrastructure",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "meed_ry_tender",
+      "title": "Humain tenders infrastructure for 6GW data centre campus",
+      "publisher": "MEED",
+      "url": "https://guest.meed.com/humain-tenders-6gw-data-centre-campus-infrastructure/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "eam_ry",
+      "title": "Al Yamama takes the infrastructure contract for Humain's 6 GW Riyadh AI campus",
+      "publisher": "Enterprise AM",
+      "url": "https://enterpriseam.com/ksa/2026/09/27/al-yamama-takes-the-infrastructure-contract-for-humains-6-gw-riyadh-ai-campus/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Paywalled source; confirm status and site. Dates batch 5: status changed from under_construction to announced (only enabling works awarded).",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

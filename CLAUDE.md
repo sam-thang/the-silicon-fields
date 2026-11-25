@@ -68,7 +68,7 @@ Decisions already made:
 - Navy background (#0B1426), amber accent, light blue (#6FB4FF, translucent) for planned, and a soft blue-grey (not pure white) for operational so it stays distinct from amber.
 - Paused/stalled projects (e.g. Fermi Project Matador) in neutral grey.
 - Column glow is a user-toggleable setting, **off by default**.
-- Mockup numbers are placeholders; real numbers come from `data/projects.json`.
+- Mockup numbers are placeholders; real numbers come from `data/projects/` (compiled to `data/projects.geojson`).
 - The mockups are static: the globe rotation, timeline animation and interactions are to be built.
 
 ### Using Impeccable
@@ -135,17 +135,22 @@ One record per project, stored as JSON in `data/projects/<slug>.json`, compiled 
   "investment_usd": { "value": null, "est": true },
   "area_acres": null,
   "status": "announced | permitting | under_construction | partially_operational | operational | paused | cancelled",
-  "construction_start": "2024-12",
   "expected_completion": null,
+  "dates": {
+    "announced":          { "value": "2024-12", "precision": "month | quarter | year", "source_ids": ["s1"], "note": "" },
+    "construction_start": { "value": "2024-12", "precision": "month", "basis": "reported_start | first_evidence", "source_ids": ["s1"] },
+    "operational":        { "value": "2025-Q4", "precision": "quarter", "source_ids": ["s1"] },
+    "paused":             { "value": "2026", "precision": "year", "source_ids": ["s1"] }
+  },
   "imagery": { "before_date": "", "after_date": "" },
   "local_context": [ { "type": "tax_incentive | permit | opposition | ballot | utility_deal", "summary": "", "source_id": "" } ],
-  "sources": [ { "id": "s1", "title": "", "url": "", "publisher": "", "accessed": "YYYY-MM-DD" } ],
+  "sources": [ { "id": "s1", "title": "", "url": "", "publisher": "", "kind": "primary | news | satellite | tracker | secondary", "accessed": "YYYY-MM-DD" } ],
   "last_verified": "YYYY-MM-DD"
 }
 ```
 
 Rules:
-- The seed dataset is `data/projects.json` (41 projects, compiled and approved Nov 2026). Split it into one file per project. Only records with `"approved": true` are shown on the site (all 41 are currently approved). Records without a capacity figure are drawn as a small dot labelled "capacity not disclosed", not a column.
+- The schema is `data/schema/project.schema.json` (normative; it also allows `location_precision` `city`/`region`/`state` and capacity types `power_generation`, `grid_switchyard`, `utility_contract`). The 41 seed records (approved Nov 2026) were split into `data/projects/` on 2026-11-25; there is no single `projects.json` any more. Only records with `"approved": true` are shown on the site (all 41 are currently approved). Records without a capacity figure are drawn as a small dot labelled "capacity not disclosed", not a column.
 - `verification: "tracker_only"` records are never published until a primary or news source is added.
 - When `low` and `high` differ, show the range ("8–10 GW") and both sources. Column height uses `high` for planned sites and `low` for operational ones; document this on the methodology page.
 - `status: "paused"` (e.g. Fermi Project Matador) is shown in a neutral grey with the status note, never as active construction.
@@ -153,7 +158,10 @@ Rules:
 - Coordinates in the seed are approximate (town/county level). Refine them from imagery or filings before launch.
 - Coordinates must come from a source (filings, tracker, imagery). If only the town is known, set `location_precision` accordingly and show it on the page.
 - `capacity_mw.type` matters: "planned campus GW" and "IT load MW" are not comparable. Always label which one is shown.
-- Validate all records with a JSON Schema in CI (`scripts/validate.py`).
+- Every date carries a precision and at least one primary, news or satellite source. Status and dates must agree (e.g. under construction needs a construction or operational date; announced/permitting must not have one). If no construction start is published, use the first sourced evidence of construction with `basis: "first_evidence"`; the card then says "construction start date not published".
+- Column height: `low` for operational sites, `high` (shown as "up to") for all other statuses. Timeline dates are the start of their period, and the UI shows the precision.
+- Validate all records with the JSON Schema and cross-field rules in CI: `npm run validate` (`scripts/validate.mjs`). `npm run data` validates and builds `data/projects.geojson` (git-ignored build output).
+- New research goes in an approved batch file under `scripts/date_batches/` and is applied with `node scripts/apply_date_batch.mjs <batch>`, so every change is reviewable.
 
 ## Conversion factors (single source of truth)
 
@@ -184,7 +192,7 @@ Keep it simple and cheap. Mostly static.
 - **Before/after slider:** small custom component, keyboard accessible.
 - **Address search:** a geocoding API with a free tier (e.g. a Nominatim-based service, respecting its usage policy). Distance is computed in the browser.
 - **Hosting:** Cloudflare Pages (domain also on Cloudflare).
-- **Scripts:** Python in `scripts/` for validation, GeoJSON build and imagery prep (same language as Landturned's backend).
+- **Scripts:** Node (ES modules, `.mjs`) in `scripts/` for validation, GeoJSON build and imagery prep (owner decision Nov 2026: Node instead of Python, one runtime with Astro). Run them through `npm run` scripts.
 - No database, user accounts or paid services in v1.
 
 ## Project structure
@@ -192,7 +200,8 @@ Keep it simple and cheap. Mostly static.
 ```
 /data/projects/*.json     one file per project
 /data/factors.json        conversion factors with sources
-/scripts/                 validate.py, build_geojson.py, imagery tools
+/data/schema/             project.schema.json
+/scripts/                 validate.mjs, build_geojson.mjs, apply_date_batch.mjs, lib/, date_batches/, imagery tools
 /src/pages/               index, near-me, projects/[slug], methodology
 /src/components/          Map, BeforeAfter, BigNumber, SourceList, Timeline
 /docs/                    data-collection.md, imagery-licensing.md

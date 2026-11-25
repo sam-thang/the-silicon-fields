@@ -1,0 +1,80 @@
+{
+  "slug": "stargate-uae",
+  "name": "Stargate UAE",
+  "owner": "G42 / Khazna",
+  "tenant": "OpenAI",
+  "country": "AE",
+  "region": "Abu Dhabi",
+  "locality": "UAE–US AI Campus",
+  "lat": 24.45,
+  "lon": 54.65,
+  "location_precision": "city",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "First 200 MW under construction; Epoch projects it online by Dec 2026 (G42 targeted Q3 2026). Part of a 5 GW UAE-US AI campus; 1 GW cluster est. Jan 2028.",
+  "expected_completion": "2026-12 (phase 1)",
+  "dates": {
+    "announced": {
+      "value": "2025-05",
+      "precision": "month",
+      "source_ids": [
+        "bw_uae",
+        "oai_uae"
+      ]
+    },
+    "construction_start": {
+      "value": "2025-06",
+      "precision": "month",
+      "source_ids": [
+        "ep_uae"
+      ],
+      "note": "Epoch satellite imagery: land clearing for Buildings 1-2 begins 9 Jun 2025."
+    }
+  },
+  "investment_usd": {
+    "value": 7600000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "oai_uae",
+      "title": "Introducing Stargate UAE",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/introducing-stargate-uae",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ep_uae",
+      "title": "OpenAI Stargate UAE – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-uae",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "tn_uae",
+      "title": "Stargate UAE's first phase to be completed in third quarter of 2026",
+      "publisher": "The National",
+      "url": "https://www.thenationalnews.com/business/2025/12/05/stargate-uaes-first-phase-to-be-completed-in-third-quarter-of-2026",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "bw_uae",
+      "title": "Global Tech Alliance Launches Stargate UAE",
+      "publisher": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20250522084566/en",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Investment $7.6B is Epoch's estimate for phase 1.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

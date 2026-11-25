@@ -1,0 +1,63 @@
+{
+  "slug": "buckeye-tech-park",
+  "name": "Buckeye Technology Park",
+  "owner": "Tract (data center park developer)",
+  "tenant": "",
+  "country": "US",
+  "region": "Arizona",
+  "locality": "Buckeye",
+  "lat": 33.37,
+  "lon": -112.58,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1800,
+    "high": 1800,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "Announced Aug 2024: up to 1.8 GW across up to 40 buildings on 2,069 acres; utility plans still in progress.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-08",
+      "precision": "month",
+      "source_ids": [
+        "tract_buckeye"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 20000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "fl",
+      "title": "Largest Data Center Projects Breaking Ground in 2026 and 2027",
+      "publisher": "Finish Line",
+      "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "tract_buckeye",
+      "title": "Tract Closes Acquisition of 2,069 acres in Buckeye, Arizona",
+      "publisher": "Tract (GlobeNewswire)",
+      "url": "https://globenewswire.com/news-release/2024/08/28/2937145/0/en/Tract-Closes-Acquisition-of-2-069-acres-in-Buckeye-Arizona.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_buckeye",
+      "title": "Tract announces 1.8GW data center park in Phoenix, Arizona",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/tract-announces-18gw-data-center-park-in-phoenix-arizona",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Dates batch 4: developer is Tract. Park model (land and power sold to other operators), like Tract TRIC; multi-phase build-out over up to 15 years.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

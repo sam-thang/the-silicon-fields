@@ -1,0 +1,72 @@
+{
+  "slug": "meta-bowling-green",
+  "name": "Meta Bowling Green",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "Wood County",
+  "lat": 41.37,
+  "lon": -83.65,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 422,
+    "high": 422,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "~422 MW IT is an Epoch estimate",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-04",
+      "precision": "month",
+      "source_ids": [
+        "jobsohio_meta"
+      ]
+    },
+    "construction_start": {
+      "value": "2024-10",
+      "precision": "month",
+      "source_ids": [
+        "cv_meta_bg",
+        "jobsohio_meta"
+      ],
+      "note": "Month from Cleanview (tracker); JobsOhio confirms construction was under way by Apr 2025."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "llm",
+      "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "jobsohio_meta",
+      "title": "Regional Growth Partnership and JobsOhio welcome Meta to Northwest Ohio with new $800 million data center announcement",
+      "publisher": "JobsOhio",
+      "url": "https://www.jobsohio.com/newsroom/news-press/regional-growth-partnership-and-jobsohio-welcome-meta-to-northwest-ohio-with-new-800-million-data-center-announcement",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cv_meta_bg",
+      "title": "Meta Bowling Green",
+      "publisher": "Cleanview",
+      "url": "https://cleanview.co/data-centers/ohio/meta-bowling-green-243",
+      "kind": "tracker",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Dates batch 2: construction month is tracker-sourced; one tracker lists the campus as cancelled (unverified).",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "powerhouse-grand-prairie",
+  "name": "Grand Prairie campus",
+  "owner": "PowerHouse Data Centers / Provident Data Centers",
+  "tenant": "",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Grand Prairie (Ellis County, 881 Miller Rd)",
+  "lat": 32.5,
+  "lon": -97.03,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 1800,
+    "high": 1800,
+    "type": "grid_switchyard"
+  },
+  "status": "permitting",
+  "status_note": "1.8 GW switchyard planned; first 500 MW approved by ERCOT. A May 2026 energization was planned, but no groundbreaking or energization has been reported.",
+  "expected_completion": "2028",
+  "dates": {
+    "announced": {
+      "value": "2025-02",
+      "precision": "month",
+      "source_ids": [
+        "dcd_ph",
+        "di_ph"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "di_ph",
+      "title": "Dallas' Provident Data Centers, Virginia's PowerHouse Partner on 'Hyperscale' North Texas Campus",
+      "publisher": "Dallas Innovates",
+      "url": "https://dallasinnovates.com/dallas-provident-data-centers-virginias-powerhouse-partner-on-hyperscale-north-texas-campus/",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "dcd_ph",
+      "title": "PowerHouse and Provident to develop 1.8GW campus in DFW, Texas",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/powerhouse-and-provident-to-develop-18gw-campus-in-dfw-texas",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "1.8 GW is switchyard capacity across 24 buildings in 3 phases. Dates batch 4: status changed from under_construction to permitting (no news or Epoch evidence of construction).",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

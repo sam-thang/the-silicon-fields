@@ -1,0 +1,79 @@
+{
+  "slug": "creekstone-delta-gigasite",
+  "name": "Delta Gigasite",
+  "owner": "Creekstone Energy",
+  "tenant": "",
+  "country": "US",
+  "region": "Utah",
+  "locality": "Millard County (SE of Delta)",
+  "lat": 39.3,
+  "lon": -112.5,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 10000,
+    "type": "mixed"
+  },
+  "status": "under_construction",
+  "status_note": "Utah state: construction began late 2025, $17B commitment. Company cites >1 GW IT load across phases and a 10 GW headline",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-08",
+      "precision": "month",
+      "source_ids": [
+        "deseret_ck"
+      ]
+    },
+    "construction_start": {
+      "value": "2025-Q4",
+      "precision": "quarter",
+      "source_ids": [
+        "ut_gov"
+      ],
+      "note": "State release: construction began late 2025."
+    }
+  },
+  "investment_usd": {
+    "value": 17000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "ut_gov",
+      "title": "Creekstone Energy, LLC Commits $17 Billion to Millard County Data Center Project",
+      "publisher": "Utah Governor's Office of Economic Opportunity",
+      "url": "https://business.utah.gov/?p=87333",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ub_ck",
+      "title": "Creekstone Energy secures largest solar lease in Utah (press release)",
+      "publisher": "Utah Business",
+      "url": "https://www.utahbusiness.com/press-releases/2026/04/22/creekstone-energy-secures-largest-solar-lease-utah-millard-county-delta/",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "bw_ck",
+      "title": "Creekstone Energy raises Series B to advance 10-GW AI Gigasite",
+      "publisher": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20251104790930/en",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "deseret_ck",
+      "title": "World's largest data center campus could be coming to central Utah",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/business/2025/08/15/worlds-largest-data-center-campus-could-be-coming-to-central-utah/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Show as range: >1 GW IT load (phased) up to 10 GW headline. Phase 1 is only ~220-300 MW.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "the-silicon-fields",
+  "private": true,
+  "type": "module",
+  "description": "The Silicon Fields: mapping the land and power behind AI.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build:geojson": "node scripts/build_geojson.mjs",
+    "data": "npm run validate && npm run build:geojson"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

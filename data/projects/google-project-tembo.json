@@ -1,0 +1,89 @@
+{
+  "slug": "google-project-tembo",
+  "name": "Project Tembo / Cheyenne campus",
+  "owner": "Google",
+  "tenant": "Google",
+  "country": "US",
+  "region": "Wyoming",
+  "locality": "Laramie County (near Cheyenne)",
+  "lat": 41.14,
+  "lon": -104.82,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 2700,
+    "high": 2700,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Google announced $17B for first Wyoming data center (Nov 6, 2026)",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-07",
+      "precision": "month",
+      "source_ids": [
+        "cv_jade",
+        "csd_jade"
+      ],
+      "note": "Announced as Project Jade (Crusoe/Tallgrass). Cleanview: 24 Jul 2025; Cowboy State Daily: August 2025."
+    },
+    "construction_start": {
+      "value": "2026-11",
+      "precision": "month",
+      "source_ids": [
+        "google_wy"
+      ],
+      "note": "Google (5 Nov 2026): 'We're building our first data center in Wyoming.' Other reports expect site grading from late 2026 and vertical construction in 2027."
+    }
+  },
+  "investment_usd": {
+    "value": 17000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "bb",
+      "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+      "publisher": "Blackridge Research",
+      "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "bx_wy",
+      "title": "Google to invest $17B in first Wyoming data center near Cheyenne",
+      "publisher": "Baxtel",
+      "url": "https://baxtel.com/data-center/weid5m",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "google_wy",
+      "title": "Investing in Wyoming's infrastructure, energy and workforce",
+      "publisher": "Google",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cv_jade",
+      "title": "Project Jade (behind-the-meter data centers report)",
+      "publisher": "Cleanview",
+      "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/project-jade",
+      "kind": "tracker",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "csd_jade",
+      "title": "Huge Cheyenne Data Center Grows To 2.7 Gigawatts",
+      "publisher": "Cowboy State Daily",
+      "url": "https://cowboystatedaily.com/2026/01/08/huge-cheyenne-data-center-grows-to-2-7-gigawatts-nearly-triple-state-power-use",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

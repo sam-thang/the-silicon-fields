@@ -1,20 +1,19 @@
-// Applies an approved date-research batch to data/projects.json.
-// Usage: node scripts/apply_date_batch.mjs scripts/date_batches/batch1.json
-// Adds sources (skipping URLs already present), inserts a `dates` block after
-// `expected_completion`, and applies any approved status changes.
-import { readFileSync, writeFileSync } from "node:fs";
+// Applies an approved research batch to the per-project files in data/projects/.
+// Usage: node scripts/apply_date_batch.mjs scripts/date_batches/<batch>.json
+// Adds sources (skipping URLs already present), merges a `dates` block (kept
+// right after `expected_completion`), and applies approved status/field changes.
+// Batches 1-5 (Nov 2026) were applied to the old single data/projects.json.
+import { existsSync, readFileSync } from "node:fs";
+import { projectPath, saveProject } from "./lib/projects.mjs";
 
-const DATA = new URL("../data/projects.json", import.meta.url);
 const batchPath = process.argv[2];
 if (!batchPath) throw new Error("Pass a batch file path");
-
 const batch = JSON.parse(readFileSync(batchPath, "utf8"));
-const projects = JSON.parse(readFileSync(DATA, "utf8"));
-const bySlug = new Map(projects.map((p) => [p.slug, p]));
 
 for (const [slug, change] of Object.entries(batch.projects)) {
-  const p = bySlug.get(slug);
-  if (!p) throw new Error(`Unknown slug: ${slug}`);
+  const file = projectPath(slug);
+  if (!existsSync(file)) throw new Error(`Unknown slug: ${slug}`);
+  const p = JSON.parse(readFileSync(file, "utf8"));
 
   for (const s of change.add_sources ?? []) {
     if (p.sources.some((x) => x.url === s.url)) continue;
@@ -29,7 +28,6 @@ for (const [slug, change] of Object.entries(batch.projects)) {
     }
   }
 
-  // Approved top-level overrides, e.g. capacity_mw or expected_completion.
   for (const [k, v] of Object.entries(change.set ?? {})) p[k] = v;
   if (change.status) p.status = change.status;
   if (change.status_note) p.status_note = change.status_note;
@@ -37,18 +35,14 @@ for (const [slug, change] of Object.entries(batch.projects)) {
     p.review_notes = [p.review_notes, change.review_append].filter(Boolean).join(" ");
   }
 
-  // Rebuild the record so `dates` sits right after `expected_completion`.
   const rebuilt = {};
   for (const [k, v] of Object.entries(p)) {
     if (k === "dates") continue;
     rebuilt[k] = v;
     if (k === "expected_completion") rebuilt.dates = { ...(p.dates ?? {}), ...change.dates };
   }
-  p.last_verified = batch.accessed;
   rebuilt.last_verified = batch.accessed;
-  bySlug.set(slug, rebuilt);
+  saveProject(rebuilt);
 }
 
-const out = projects.map((p) => bySlug.get(p.slug));
-writeFileSync(DATA, JSON.stringify(out, null, 2) + "\n");
 console.log(`Applied ${Object.keys(batch.projects).length} projects from ${batchPath}`);

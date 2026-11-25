@@ -1,0 +1,73 @@
+{
+  "slug": "stargate-norway-narvik",
+  "name": "Stargate Norway (Narvik)",
+  "owner": "Nscale / Aker",
+  "tenant": "OpenAI; Epoch lists Microsoft as likely user",
+  "country": "NO",
+  "region": "Nordland",
+  "locality": "Kvandal, Narvik",
+  "lat": 68.43,
+  "lon": 17.43,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 230,
+    "high": 290,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Under construction; Epoch saw no buildings operating as of Jul 2026 and projects Buildings 1-2 online by end of 2026. Tenant reported as OpenAI (Stargate) and as Microsoft (Epoch: 'likely').",
+  "expected_completion": "2026-H2",
+  "dates": {
+    "announced": {
+      "value": "2025-07",
+      "precision": "month",
+      "source_ids": [
+        "reg_no",
+        "tr_no"
+      ],
+      "note": "Launched as Stargate Norway 31 Jul 2025."
+    },
+    "construction_start": {
+      "value": "2023-07",
+      "precision": "month",
+      "source_ids": [
+        "ep_nar"
+      ],
+      "note": "Epoch satellite imagery: site prep 'at least as early as July 2023' (Nscale, before the Stargate name); Building 1 going up Aug 2025."
+    }
+  },
+  "investment_usd": {
+    "value": 3500000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "tr_no",
+      "title": "Stargate Norway: OpenAI's First AI Data Center in Europe",
+      "publisher": "TechRepublic",
+      "url": "https://www.techrepublic.com/article/news-openai-stargate-norway-ai-data-center/",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ep_nar",
+      "title": "Microsoft Narvik Norway – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-narvik-norway",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "reg_no",
+      "title": "Altman embraces inner Viking, raids Europe with 100K GPU supercluster in Norway",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/2025/07/31/norway_stargate_openai/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Tenant reporting differs (OpenAI vs Microsoft) – verify and explain on card.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

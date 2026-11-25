@@ -1,0 +1,86 @@
+{
+  "slug": "stargate-frontier-shackelford",
+  "name": "Stargate Frontier",
+  "owner": "Vantage Data Centers",
+  "tenant": "OpenAI / Oracle",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Shackelford County",
+  "lat": 32.72,
+  "lon": -99.33,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 1400,
+    "high": 1400,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "First building targeted 2H 2026",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-08",
+      "precision": "month",
+      "source_ids": [
+        "vantage_2025"
+      ]
+    },
+    "construction_start": {
+      "value": "2025-12",
+      "precision": "month",
+      "source_ids": [
+        "wmedia_frontier"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 25000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "llm",
+      "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "fn",
+      "title": "Data center download: The biggest projects you missed",
+      "publisher": "Fierce Network",
+      "url": "https://www.fierce-network.com/cloud/data-center-download-biggest-projects-you-missed",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "bb",
+      "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+      "publisher": "Blackridge Research",
+      "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "vantage_2025",
+      "title": "Vantage Data Centers Unveils Plans for \"Frontier,\" a $25B Mega-campus in Texas",
+      "publisher": "Vantage Data Centers (Business Wire)",
+      "url": "https://www.businesswire.com/news/home/20250819333311/en/Vantage-Data-Centers-Unveils-Plans-for-%E2%80%9CFrontier%E2%80%9D-a-25B-Mega-campus-in-Texas-to-Meet-Unprecedented-AI-Demand",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "wmedia_frontier",
+      "title": "Vantage Data Centers breaks ground on data center campus in Texas",
+      "publisher": "W.Media",
+      "url": "https://w.media/vantage-data-centers-breaks-ground-on-data-center-campus-in-texas/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

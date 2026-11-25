@@ -1,0 +1,88 @@
+{
+  "slug": "stargate-new-mexico",
+  "name": "Stargate New Mexico",
+  "owner": "Oracle / STACK Infrastructure",
+  "tenant": "OpenAI",
+  "country": "US",
+  "region": "New Mexico",
+  "locality": "Doña Ana County (Santa Teresa)",
+  "lat": 31.86,
+  "lon": -106.68,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Epoch: construction advanced significantly since Feb 2026; capacity stated as 1 GW+",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "sb_5sites"
+      ],
+      "note": "Named as a Stargate site 23 Sep 2025 (local name: Project Jupiter)."
+    },
+    "construction_start": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "yahoo_jupiter"
+      ],
+      "note": "Construction reported to begin in September 2025 after the county approved the bond."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "epnm",
+      "title": "OpenAI Stargate New Mexico – satellite explorer",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-new-mexico/satellite-explorer?date=2026-01-02",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "fn",
+      "title": "Data center download: The biggest projects you missed",
+      "publisher": "Fierce Network",
+      "url": "https://www.fierce-network.com/cloud/data-center-download-biggest-projects-you-missed",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "llmsg",
+      "title": "OpenAI Stargate Data Centers: Every US Site, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/stargate-data-centers/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "sb_5sites",
+      "title": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+      "publisher": "SoftBank Group",
+      "url": "https://group.softbank/en/news/press/20250924",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "yahoo_jupiter",
+      "title": "Massive data center project in Doña Ana County facing one hurdle",
+      "publisher": "Yahoo News (local report)",
+      "url": "https://www.yahoo.com/news/articles/massive-data-center-project-ana-051803555.html",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Fierce Network cites $165B – verify before showing any investment figure. Dates batch 2: construction month comes from one news report; confirm.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

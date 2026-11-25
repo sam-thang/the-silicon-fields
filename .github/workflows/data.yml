@@ -1,0 +1,22 @@
+name: Data
+
+on:
+  push:
+    paths: ["data/**", "scripts/**", "package.json", "package-lock.json", ".github/workflows/data.yml"]
+  pull_request:
+    paths: ["data/**", "scripts/**", "package.json", "package-lock.json", ".github/workflows/data.yml"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate project records
+        run: npm run validate
+      - name: Build GeoJSON
+        run: npm run build:geojson

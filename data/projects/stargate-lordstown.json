@@ -1,0 +1,79 @@
+{
+  "slug": "stargate-lordstown",
+  "name": "Stargate Lordstown",
+  "owner": "SoftBank",
+  "tenant": "OpenAI",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "Lordstown",
+  "lat": 41.17,
+  "lon": -80.86,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 214,
+    "high": 214,
+    "type": "it_load_estimate"
+  },
+  "status": "under_construction",
+  "status_note": "~214 MW IT is an Epoch estimate. Disputed: SoftBank says it broke ground (Sep 2025); the village mayor said a large AI data center is not planned, and Epoch describes the site as mainly an AI server factory.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "sb_5sites"
+      ]
+    },
+    "construction_start": {
+      "value": "2025-09",
+      "precision": "month",
+      "source_ids": [
+        "sb_5sites"
+      ],
+      "note": "SoftBank: 'has broken ground on an advanced data center design'."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "llm",
+      "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "llmsg",
+      "title": "OpenAI Stargate Data Centers: Every US Site, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/stargate-data-centers/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "sb_5sites",
+      "title": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites",
+      "publisher": "SoftBank Group",
+      "url": "https://group.softbank/en/news/press/20250924",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "vindy_lordstown",
+      "title": "Lordstown chosen as one of five AI data center sites",
+      "publisher": "The Vindicator",
+      "url": "https://www.vindy.com/uncategorized/2025/09/lordstown-chosen-as-one-of-five-ai-data-center-sites/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Capacity is an IT-load estimate, not comparable with campus GW. Dates batch 2: scope disputed; recheck whether a data center (vs. a server factory) is being built.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

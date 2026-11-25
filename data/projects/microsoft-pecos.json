@@ -1,0 +1,64 @@
+{
+  "slug": "microsoft-pecos",
+  "name": "Pecos AI Campus",
+  "owner": "Microsoft",
+  "tenant": "Microsoft",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Pecos",
+  "lat": 31.42,
+  "lon": -103.49,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 2000,
+    "high": 2000,
+    "type": "planned_campus",
+    "note": "Microsoft: ~2 GW of datacenter capacity. Chevron's co-located plant (Project Kilby) scales to 2.67 GW of generation; not the same measure."
+  },
+  "status": "announced",
+  "status_note": "Announced Jun 2026: ~2 GW campus with a dedicated Chevron gas plant (first power by 2028), multibillion-dollar build over 5-7 years.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-06",
+      "precision": "month",
+      "source_ids": [
+        "ms_pecos"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "fl",
+      "title": "Largest Data Center Projects Breaking Ground in 2026 and 2027",
+      "publisher": "Finish Line",
+      "url": "https://finishline.biz/resources/largest-data-center-projects-2026-2027",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ms_pecos",
+      "title": "Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos",
+      "publisher": "Microsoft",
+      "url": "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "decoder_pecos",
+      "title": "Microsoft is building a 2 gigawatt data center in Texas with its own gas plant",
+      "publisher": "The Decoder",
+      "url": "https://the-decoder.com/microsoft-is-building-a-2-gigawatt-data-center-in-texas-with-its-own-gas-plant-to-dodge-the-grid/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

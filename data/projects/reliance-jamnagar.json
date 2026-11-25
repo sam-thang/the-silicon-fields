@@ -1,0 +1,63 @@
+{
+  "slug": "reliance-jamnagar",
+  "name": "Reliance Jamnagar AI campus",
+  "owner": "Reliance Industries",
+  "tenant": "",
+  "country": "IN",
+  "region": "Gujarat",
+  "locality": "Jamnagar",
+  "lat": 22.47,
+  "lon": 70.06,
+  "location_precision": "city",
+  "capacity_mw": {
+    "low": 3000,
+    "high": 3000,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "3 GW plan reported Jan 2025 (Bloomberg via TechCrunch); no dated evidence of construction found. A 168 MW building for Meta was agreed Jun 2026, delivery targeted within two years.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-01",
+      "precision": "month",
+      "source_ids": [
+        "tc_rel_jam"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "ob_jam",
+      "title": "India's Data Centre Boom: Adani, Reliance, Bharti in Fast Lane",
+      "publisher": "Outlook Business",
+      "url": "https://www.outlookbusiness.com/explainers/indias-data-centre-boom-adani-reliance-bharti-in-fast-lane-in-a-crowded-field",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "tc_rel_jam",
+      "title": "Reliance plans world's biggest AI data centre in India, report says",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2025/01/23/reliance-plans-world-biggest-ai-data-centre-in-india-report-says",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "pvm_rel_meta",
+      "title": "Reliance, Meta to develop 168 MW AI data centre powered by renewable energy in Jamnagar",
+      "publisher": "pv magazine India",
+      "url": "https://www.pv-magazine-india.com/2026/06/10/reliance-meta-to-develop-168-mw-ai-data-centre-powered-by-renewable-energy-in-jamnagar/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Capacity is reported, not confirmed. Dates batch 5: status changed from under_construction to announced (no dated construction evidence).",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

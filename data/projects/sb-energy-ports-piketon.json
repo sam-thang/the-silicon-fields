@@ -1,0 +1,80 @@
+{
+  "slug": "sb-energy-ports-piketon",
+  "name": "PORTS Technology Campus",
+  "owner": "SB Energy / SoftBank",
+  "tenant": "OpenAI (reported)",
+  "country": "US",
+  "region": "Ohio",
+  "locality": "Piketon",
+  "lat": 39.07,
+  "lon": -83.01,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 8000,
+    "high": 10000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Sources differ: 8 GW (New Market Pitch) vs up to 10 GW (Smart Labor)",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-03",
+      "precision": "month",
+      "source_ids": [
+        "doe_ports",
+        "cbs_ports"
+      ]
+    },
+    "construction_start": {
+      "value": "2026-03",
+      "precision": "month",
+      "source_ids": [
+        "doe_ports"
+      ],
+      "note": "DOE describes the 20 Mar 2026 event as a groundbreaking; no later report of site work found."
+    }
+  },
+  "investment_usd": {
+    "value": 67200000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "sl",
+      "title": "Inside America's 5 Largest Data Center Megaprojects in 2026",
+      "publisher": "Smart Labor Management",
+      "url": "https://www.smarterlabor.com/blog/the-gigawatt-era-inside-the-5-largest-data-center-projects-in-america-in-2026",
+      "kind": "secondary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "nmp",
+      "title": "Who is building the biggest AI data center?",
+      "publisher": "New Market Pitch",
+      "url": "https://newmarketpitch.com/blogs/news/ai-data-center-biggest-campus",
+      "kind": "secondary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "doe_ports",
+      "title": "Partnership ensures affordable energy powers AI future at Portsmouth Site",
+      "publisher": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cbs_ports",
+      "title": "Trump officials announce data center and gas plants for former Ohio uranium site",
+      "publisher": "CBS News (AP)",
+      "url": "https://www.cbsnews.com/pittsburgh/news/data-center-gas-plants-ohio",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Confirm status with a primary source (SB Energy / DOE PORTS site). Dates batch 1: no report of active site work after the Mar 2026 groundbreaking; recheck status.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

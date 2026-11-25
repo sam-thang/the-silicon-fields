@@ -1,0 +1,96 @@
+{
+  "slug": "amazon-rainier-new-carlisle",
+  "name": "Project Rainier – New Carlisle",
+  "owner": "Amazon (AWS)",
+  "tenant": "Anthropic",
+  "country": "US",
+  "region": "Indiana",
+  "locality": "New Carlisle",
+  "lat": 41.7,
+  "lon": -86.51,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 2300,
+    "high": 2300,
+    "type": "facility_power_permit"
+  },
+  "status": "partially_operational",
+  "status_note": "18 buildings operating, 14 under construction; permits suggest 2.3 GW total",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2024-04",
+      "precision": "month",
+      "source_ids": [
+        "iedc_aws"
+      ]
+    },
+    "construction_start": {
+      "value": "2024-02",
+      "precision": "month",
+      "source_ids": [
+        "epoch_nc_sat"
+      ],
+      "note": "Land clearing observed 9 Feb 2024, before the public announcement."
+    },
+    "operational": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "cd_rainier",
+        "epoch_nc_sat"
+      ],
+      "note": "Project Rainier brought online Oct 2025 (~500k Trainium2 chips)."
+    }
+  },
+  "investment_usd": {
+    "value": 11000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "ep_nc",
+      "title": "Anthropic-Amazon New Carlisle – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/anthropic-amazon-new-carlisle",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "mai_nc",
+      "title": "AWS New Carlisle data center campus",
+      "publisher": "Measured AI",
+      "url": "https://measuredai.substack.com/p/aws-new-carlisle-data-center-campus",
+      "kind": "secondary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "iedc_aws",
+      "title": "Gov. Holcomb announces Amazon Web Services plans to invest $11B to create a new data center campus in Northern Indiana",
+      "publisher": "Indiana Economic Development Corporation",
+      "url": "https://www.iedc.in.gov/events/news/details/2024/04/25/gov.-holcomb-announces-amazon-web-services-plans-to-invest-11b-to-create-a-new-data-center-campus-in-northern-indiana",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_nc_sat",
+      "title": "Anthropic-Amazon Project Rainier, New Carlisle – satellite explorer (land clearing 9 Feb 2024; updated 19 Oct 2026)",
+      "publisher": "Epoch AI (satellite imagery)",
+      "url": "https://epoch.ai/data/data-centers/satellite-explorer/AnthropicAmazonProjectRainierNewCarlisleIndiana",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "cd_rainier",
+      "title": "AWS activates Project Rainier data center campus",
+      "publisher": "Converge Digest",
+      "url": "https://convergedigest.com/aws-activates-project-rainier-data-center-campus/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Dates batch 3: Epoch projects ~1.9 GW IT by 2028 vs 2.3 GW permit figure; review capacity later.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

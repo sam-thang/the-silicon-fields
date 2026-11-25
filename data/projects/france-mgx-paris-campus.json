@@ -1,0 +1,56 @@
+{
+  "slug": "france-mgx-paris-campus",
+  "name": "Paris-region AI campus",
+  "owner": "MGX / Bpifrance / Nvidia / Mistral AI",
+  "tenant": "",
+  "country": "FR",
+  "region": "Île-de-France",
+  "locality": "Paris region",
+  "lat": 48.6,
+  "lon": 2.9,
+  "location_precision": "region",
+  "capacity_mw": {
+    "low": 1400,
+    "high": 1400,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "Construction expected to start H2 2026; operations 2028",
+  "expected_completion": "2028",
+  "dates": {
+    "announced": {
+      "value": "2025-05",
+      "precision": "month",
+      "source_ids": [
+        "x_mgx_fr",
+        "reg_fr"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "reg_fr",
+      "title": "Nvidia part of plans for mega 1.4 GW AI datacenter near Paris",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/2025/05/20/paris_dc_hub_1_point_4_gw/",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "x_mgx_fr",
+      "title": "MGX, Bpifrance, Mistral AI and NVIDIA launch joint venture to build Europe's largest AI campus in France",
+      "publisher": "École Polytechnique (partners' press release)",
+      "url": "https://polytechnique.edu/en/press-room/press-releases/mgx-bpifrance-mistral-ai-and-nvidia-launch-joint-venture-build-europes-largest-ai-campus-france",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Confirm whether construction started; find exact site. Dates batch 5: no evidence the planned H2 2026 construction start has happened; site still undisclosed.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

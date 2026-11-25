@@ -1,0 +1,104 @@
+{
+  "slug": "fermi-project-matador",
+  "name": "Project Matador",
+  "owner": "Fermi America",
+  "tenant": "No tenant secured (per Cleanview)",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Carson County (near Amarillo)",
+  "lat": 35.33,
+  "lon": -101.62,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 11000,
+    "high": 17000,
+    "type": "planned_campus"
+  },
+  "status": "paused",
+  "status_note": "Cleanview: construction largely stalled, no tenant, CEO/CFO departed Apr 2026",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-06",
+      "precision": "month",
+      "source_ids": [
+        "spg_fermi"
+      ]
+    },
+    "construction_start": {
+      "value": "2025",
+      "precision": "year",
+      "source_ids": [
+        "ee_texas"
+      ],
+      "note": "Site work reported by Dec 2025; no formal groundbreaking date found."
+    },
+    "paused": {
+      "value": "2026-04",
+      "precision": "month",
+      "source_ids": [
+        "cv_fermi",
+        "ans_fermi"
+      ],
+      "note": "CEO and CFO departed Apr 2026; construction largely stalled."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "cv_fermi",
+      "title": "Fermi America (Project Matador) – behind-the-meter data centers",
+      "publisher": "Cleanview",
+      "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/fermi-america",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "nei_fermi",
+      "title": "Fermi America's Project Matador facing problems",
+      "publisher": "NEI Magazine",
+      "url": "https://www.neimagazine.com/?p=109108",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ec",
+      "title": "U.S. Data Center Tracker (2026)",
+      "publisher": "Electric Choice",
+      "url": "https://www.electricchoice.com/datacenters/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "spg_fermi",
+      "title": "Texas company pursues massive AI energy facility with nuclear, gas, solar",
+      "publisher": "S&P Global Market Intelligence",
+      "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/6/texas-company-pursues-massive-ai-energy-facility-with-nuclear-gas-solar-91113424",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ee_texas",
+      "title": "Trump, atoms, AI and the Texas data center gusher",
+      "publisher": "E&E News",
+      "url": "https://www.eenews.net/articles/trump-atoms-ai-and-the-texas-data-center-gusher/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ans_fermi",
+      "title": "Fermi America coverage (executive departures, Apr 2026)",
+      "publisher": "American Nuclear Society – Nuclear News",
+      "url": "https://www.ans.org/news/tag-fermi%20america/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Show as 'stalled' – do NOT present as active construction.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

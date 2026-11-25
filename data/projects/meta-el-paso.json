@@ -1,0 +1,70 @@
+{
+  "slug": "meta-el-paso",
+  "name": "Meta El Paso",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "US",
+  "region": "Texas",
+  "locality": "El Paso",
+  "lat": 31.87,
+  "lon": -106.4,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Online 2028",
+  "expected_completion": "2028",
+  "dates": {
+    "announced": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "meta_elpaso"
+      ]
+    },
+    "construction_start": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "meta_elpaso"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 10000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "llm",
+      "title": "Every AI Data Center Under Construction in the US, Mapped (2026)",
+      "publisher": "LLM Pulse",
+      "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "meta_elpaso",
+      "title": "Breaking Ground on Our New AI-Optimized Data Center in El Paso",
+      "publisher": "Meta",
+      "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_elpaso_gas",
+      "title": "Meta to deploy 366MW of modular gas units to power 1GW data center in El Paso, Texas",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/meta-to-deploy-366mw-of-modular-gas-units-to-power-1gw-data-center-in-el-paso-texas/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Confirm exact site location.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "tract-tric",
+  "name": "Tract Reno parks (TRIC)",
+  "owner": "Tract (data center park developer)",
+  "tenant": "Multiple tenants (TBD)",
+  "country": "US",
+  "region": "Nevada",
+  "locality": "Tahoe-Reno Industrial Center, Storey County",
+  "lat": 39.53,
+  "lon": -119.45,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 810,
+    "high": 2000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Peru Shelf Technology Park (810 MW) under construction since 2024; 2 GW across the 2,200-acre TRIC holdings",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2023-10",
+      "precision": "month",
+      "source_ids": [
+        "nnbw_tract"
+      ]
+    },
+    "construction_start": {
+      "value": "2024-04",
+      "precision": "month",
+      "source_ids": [
+        "tract_gb",
+        "dcd_tract"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "dcd_tract",
+      "title": "Tract breaks ground on 810MW data center park in Reno, Nevada",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/tract-breaks-ground-on-810mw-data-center-park-in-reno-nevada",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "nnbw_tract",
+      "title": "Tract purchases 2,200 acres at TRIC",
+      "publisher": "Northern Nevada Business Weekly",
+      "url": "https://nnbw.com/news/2023/oct/18/tract-purchases-2200-acres-at-tric",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "tract_gb",
+      "title": "Tract Breaks Ground on Peru Shelf Technology Park in Storey County, Nevada",
+      "publisher": "Tract (GlobeNewswire)",
+      "url": "https://globenewswire.com/news-release/2024/04/30/2872517/0/en/Tract-Breaks-Ground-on-Peru-Shelf-Technology-Park-in-Storey-County-Nevada.html",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "Tract sells powered land to other companies; it is a park, not one data center. Consider a park label.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

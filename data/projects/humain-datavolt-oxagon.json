@@ -1,0 +1,88 @@
+{
+  "slug": "humain-datavolt-oxagon",
+  "name": "Oxagon AI campus (NEOM)",
+  "owner": "DataVolt / HUMAIN",
+  "tenant": "Nebius (anchor for 50 MW)",
+  "country": "SA",
+  "region": "Tabuk",
+  "locality": "Oxagon, NEOM",
+  "lat": 27.6,
+  "lon": 35.6,
+  "location_precision": "region",
+  "capacity_mw": {
+    "low": 360,
+    "high": 1500,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Groundbroken Feb 2026: 100 MW of a 360 MW first phase (wider 1.5 GW campus), operational target 2028. AGBI (Aug 2026) reported main construction would start 'in months'.",
+  "expected_completion": "2028",
+  "dates": {
+    "announced": {
+      "value": "2025-02",
+      "precision": "month",
+      "source_ids": [
+        "neom_dv_2025"
+      ]
+    },
+    "construction_start": {
+      "value": "2026-02",
+      "precision": "month",
+      "source_ids": [
+        "dcd_oxagon_gb",
+        "neom"
+      ],
+      "note": "Groundbreaking at LEAP 2026."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "neom",
+      "title": "HUMAIN partners with DataVolt to jointly develop 100MW of a 360MW AI data center project in NEOM",
+      "publisher": "NEOM",
+      "url": "https://www.neom.com/en-us/newsroom/HUMAIN-and-DataVolt-to-develop-AI-data-center-in-NEOM",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "zaw_neom",
+      "title": "Saudi AI firms Humain, DataVolt partner for data center on kingdom's Red Sea coast",
+      "publisher": "Zawya / Reuters",
+      "url": "https://www.zawya.com/en/business/saudi-ai-firms-humain-datavolt-partner-for-data-center-on-kingdoms-red-sea-coast-472918",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "neom_dv_2025",
+      "title": "DataVolt signs agreement with NEOM",
+      "publisher": "NEOM",
+      "url": "https://www.neom.com/en-us/newsroom/datavolt-signs-agreement-with-neom",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_oxagon_gb",
+      "title": "HUMAIN breaks ground on NEOM's Oxagon data center",
+      "publisher": "DatacenterDynamics",
+      "url": "https://datacenterdynamics.com/en/news/humain-breaks-ground-on-neoms-oxagon-data-center",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "agbi_oxagon",
+      "title": "Neom to start constructing Oxagon AI data centre in months",
+      "publisher": "AGBI",
+      "url": "https://www.agbi.com/ai/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Dates batch 5: recheck whether main construction has begun (AGBI Aug 2026).",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

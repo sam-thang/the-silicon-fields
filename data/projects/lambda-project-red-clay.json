@@ -1,0 +1,63 @@
+{
+  "slug": "lambda-project-red-clay",
+  "name": "Project Red Clay",
+  "owner": "Lambda",
+  "tenant": "Lambda",
+  "country": "US",
+  "region": "Alabama",
+  "locality": "Lowndes County",
+  "lat": 32.15,
+  "lon": -86.6,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "Announced Nov 4, 2026",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-11",
+      "precision": "month",
+      "source_ids": [
+        "lambda_al"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "bx_news",
+      "title": "Baxtel news (Nov 2026): Lambda Project Red Clay; Google Wyoming",
+      "publisher": "Baxtel",
+      "url": "https://baxtel.com/news/category/news?page=3",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "lambda_al",
+      "title": "Lambda to build new data center in Lowndes County, Alabama, investing more than $33 billion in state",
+      "publisher": "Lambda",
+      "url": "https://lambda.ai/blog/lambda-to-invest-33-billion-in-alabama-with-new-data-center",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "alr_lambda",
+      "title": "Lambda announces plans for $33.1 billion data center campus in Lowndes County",
+      "publisher": "Alabama Reporter",
+      "url": "https://www.alreporter.com/2026/11/05/lambda-to-build-new-data-center-in-lowndes-county-investing-33b-in-alabama",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Dates batch 4: Lambda's own release added. Capacity differs by tracker (Baxtel 1 GW, Cleanview 1.5 GW); keep 1 GW until Lambda states a figure. Local context: $1.15B tax abatement (3-2 vote, Oct 2026) and two resident lawsuits.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

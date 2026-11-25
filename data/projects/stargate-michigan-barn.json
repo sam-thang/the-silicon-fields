@@ -1,0 +1,88 @@
+{
+  "slug": "stargate-michigan-barn",
+  "name": "Stargate Michigan ('The Barn')",
+  "owner": "Related Digital",
+  "tenant": "OpenAI / Oracle",
+  "country": "US",
+  "region": "Michigan",
+  "locality": "Saline Township",
+  "lat": 42.17,
+  "lon": -83.78,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 1400,
+    "high": 1400,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Epoch projects completion Q4 2028",
+  "expected_completion": "2028-Q4",
+  "dates": {
+    "announced": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "mpr_barn"
+      ]
+    },
+    "construction_start": {
+      "value": "2026",
+      "precision": "year",
+      "source_ids": [
+        "ccre_barn",
+        "dbiz_barn"
+      ],
+      "note": "Construction began in 2026; no exact groundbreaking date found."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "epsg",
+      "title": "OpenAI Stargate: where the US sites stand",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "bb",
+      "title": "Top 15 New Upcoming Data Centers in the USA (October 2026)",
+      "publisher": "Blackridge Research",
+      "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "mpr_barn",
+      "title": "Massive data center project announced for Michigan",
+      "publisher": "Michigan Public",
+      "url": "https://www.michiganpublic.org/economy/2025-10-30/massive-data-center-project-announced-for-michigan",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ccre_barn",
+      "title": "Oracle, OpenAI begin construction on Michigan data center campus",
+      "publisher": "ConnectCRE",
+      "url": "https://www.connectcre.com/stories/oracle-openai-begin-construction-on-michigan-data-center-campus/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dbiz_barn",
+      "title": "Related Digital's $16B Saline Township Data Center is Walbridge's Largest Project Ever",
+      "publisher": "DBusiness",
+      "url": "https://www.dbusiness.com/daily-news/delated-digitals-16b-saline-township-data-center-is-walbridges-largest-project-ever/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

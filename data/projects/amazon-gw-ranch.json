@@ -1,0 +1,79 @@
+{
+  "slug": "amazon-gw-ranch",
+  "name": "GW Ranch",
+  "owner": "Amazon (site); Pacifico Energy (power plant)",
+  "tenant": "Amazon",
+  "country": "US",
+  "region": "Texas",
+  "locality": "Pecos County (17 mi N of Fort Stockton)",
+  "lat": 31.162,
+  "lon": -102.896,
+  "location_precision": "site",
+  "capacity_mw": {
+    "low": 5000,
+    "high": 7650,
+    "type": "power_generation"
+  },
+  "status": "permitting",
+  "status_note": "Amazon acquired the site (Aug 2026) and filed its first buildings with the state; air permit for 7.65 GW of generation granted Jan 2026. No news or primary source yet confirms data center construction.",
+  "expected_completion": "2027 (first power)",
+  "dates": {
+    "announced": {
+      "value": "2025-08",
+      "precision": "month",
+      "source_ids": [
+        "pacifico_2025"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "dck_gw",
+      "title": "Amazon Explores Grid Connection for 8,000-Acre AI Campus",
+      "publisher": "Data Center Knowledge",
+      "url": "https://www.datacenterknowledge.com/energy-power-supply/amazon-explores-grid-connection-for-8-000-acre-ai-campus",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "tceq_gw",
+      "title": "TCEQ public notice: GW Ranch Energy Center air permit",
+      "publisher": "Texas Commission on Environmental Quality",
+      "url": "https://www.tceq.texas.gov/downloads/permitting/air/bilingual/pending-permit-notices/181033-pls-english.pdf",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "et_gw",
+      "title": "Data Center-Focused GW Ranch Project Clears Texas Air Permitting Hurdle",
+      "publisher": "EnergyTech",
+      "url": "https://www.energytech.com/distributed-energy/article/55353756/data-center-focused-gw-ranch-project-clears-texas-air-permitting-hurdle",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "pacifico_2025",
+      "title": "Pacifico Energy Announces GW Ranch Project Bringing 5 Gigawatts of Reliable Off Grid Power for AI Innovation",
+      "publisher": "Pacifico Energy (Business Wire)",
+      "url": "https://www.businesswire.com/news/home/20250820331187/en/Pacifico-Energy-Announces-GW-Ranch-Project-Bringing-5-Gigawatts-of-Reliable-Off-Grid-Power-for-AI-Innovation",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "bx_gw_acq",
+      "title": "Amazon Acquires 8,000-Acre Texas Site for Gas-Powered Data Center",
+      "publisher": "Baxtel",
+      "url": "https://baxtel.com/news/amazon-acquires-8-000-acre-texas-site-for-gas-powered-data-center",
+      "kind": "tracker",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Capacity is POWER GENERATION (5 GW goal by 2031; 7.65 GW air permit), not data center IT load. Coordinates from TCEQ permit. Dates batch 1: status changed from under_construction to permitting; only trackers report land clearing (Jul 2026). Upgrade when a news or primary source confirms construction.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

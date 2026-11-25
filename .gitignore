@@ -22,3 +22,6 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Build output (compiled from data/projects/ by npm run build:geojson)
+data/projects.geojson

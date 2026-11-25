@@ -1,0 +1,72 @@
+{
+  "slug": "meta-alberta",
+  "name": "Meta Alberta AI campus",
+  "owner": "Meta",
+  "tenant": "Meta",
+  "country": "CA",
+  "region": "Alberta",
+  "locality": "Sturgeon County",
+  "lat": 53.75,
+  "lon": -113.5,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Groundbroken Jul 2026; Meta's first data center in Canada (>CAD $13B). Power from a new gas plant not due until late 2030 and still awaiting regulatory approval.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-07",
+      "precision": "month",
+      "source_ids": [
+        "meta_alberta",
+        "ab_gov_dc"
+      ],
+      "note": "Meta post dated 6 Jul 2026; Alberta government lists 8 Jul 2026."
+    },
+    "construction_start": {
+      "value": "2026-07",
+      "precision": "month",
+      "source_ids": [
+        "meta_alberta"
+      ]
+    }
+  },
+  "investment_usd": {
+    "value": 9000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "dck_aug",
+      "title": "New Data Center Developments: August 2026",
+      "publisher": "Data Center Knowledge",
+      "url": "https://datacenterknowledge.com/data-center-construction/new-data-center-developments-august-2026",
+      "kind": "news",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "meta_alberta",
+      "title": "Breaking Ground on Meta's First Data Center in Canada",
+      "publisher": "Meta",
+      "url": "https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "ab_gov_dc",
+      "title": "Alberta's AI data centres",
+      "publisher": "Government of Alberta",
+      "url": "https://www.alberta.ca/datacentres",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

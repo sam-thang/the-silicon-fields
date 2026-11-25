@@ -1,0 +1,96 @@
+{
+  "slug": "microsoft-fairwater-wisconsin",
+  "name": "Fairwater Wisconsin",
+  "owner": "Microsoft",
+  "tenant": "OpenAI (likely), Microsoft",
+  "country": "US",
+  "region": "Wisconsin",
+  "locality": "Mount Pleasant",
+  "lat": 42.71,
+  "lon": -87.92,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 450,
+    "high": 450,
+    "type": "estimate"
+  },
+  "status": "partially_operational",
+  "status_note": "Building 1 complete and operational (Apr 2026); Building 2 under construction, completion scheduled 2028.",
+  "expected_completion": "2028",
+  "dates": {
+    "announced": {
+      "value": "2024-05",
+      "precision": "month",
+      "source_ids": [
+        "ms_wi_complete"
+      ],
+      "note": "Microsoft: project first announced May 2024."
+    },
+    "construction_start": {
+      "value": "2023-07",
+      "precision": "month",
+      "source_ids": [
+        "epoch_fw_sat"
+      ]
+    },
+    "operational": {
+      "value": "2026-04",
+      "precision": "month",
+      "source_ids": [
+        "ms_wi_complete",
+        "epoch_fw_sat"
+      ],
+      "note": "Building 1 online 16 Apr 2026."
+    }
+  },
+  "investment_usd": {
+    "value": 7000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "ms_wi",
+      "title": "Made in Wisconsin: The world's most powerful AI datacenter",
+      "publisher": "Microsoft",
+      "url": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ep_fw",
+      "title": "Microsoft Fairwater Wisconsin – AI data center directory",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin",
+      "kind": "satellite",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "gk_fw",
+      "title": "Fairwater (systems notes)",
+      "publisher": "Glenn K. Lockwood",
+      "url": "https://glennklockwood.com/garden/systems/fairwater",
+      "kind": "secondary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ms_wi_complete",
+      "title": "Microsoft completes construction on first datacenter facility in Mount Pleasant, Wisconsin",
+      "publisher": "Microsoft",
+      "url": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_fw_sat",
+      "title": "Microsoft Fairwater Wisconsin – satellite explorer (land clearing 14 Jul 2023; updated 25 Jul 2026)",
+      "publisher": "Epoch AI (satellite imagery)",
+      "url": "https://epoch.ai/data/data-centers/satellite-explorer/MicrosoftFairwaterWisconsin",
+      "kind": "satellite",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft. Dates batch 3: status changed from operational to partially_operational. Epoch projects ~2.3 GW IT by 2028 vs 450 MW estimate here; review capacity later.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

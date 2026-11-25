@@ -1,0 +1,64 @@
+{
+  "slug": "aws-walla-walla",
+  "name": "Walla Walla County campus",
+  "owner": "Amazon (AWS)",
+  "tenant": "",
+  "country": "US",
+  "region": "Washington",
+  "locality": "Walla Walla County",
+  "lat": 46.07,
+  "lon": -118.34,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": 300,
+    "high": 300,
+    "type": "planned_campus"
+  },
+  "status": "permitting",
+  "status_note": "Permitting: three-building, 300 MW first phase on 134 acres; county land-use application deemed complete Sep 2026, SEPA review pending, no approval yet.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026",
+      "precision": "year",
+      "source_ids": [
+        "gw_aws_wa"
+      ],
+      "note": "Port of Walla Walla sold 554 acres to Amazon Data Services in Feb 2026."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "bx_aws",
+      "title": "AWS reveals 300MW data center campus plan in Walla Walla County",
+      "publisher": "Baxtel",
+      "url": "https://baxtel.com/data-center/50irly",
+      "kind": "tracker",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "gw_aws_wa",
+      "title": "Amazon plans its first data centers in Washington state as residents raise concerns",
+      "publisher": "GeekWire",
+      "url": "https://geekwire.com/2026/amazon-plans-its-first-data-centers-in-washington-state-as-residents-raise-concerns",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "dcd_aws_wa",
+      "title": "AWS proceeds with data center project in Walla Walla, Washington",
+      "publisher": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/aws-proceeds-with-data-center-project-in-walla-walla-washington/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

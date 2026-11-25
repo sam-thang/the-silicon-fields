@@ -1,0 +1,63 @@
+{
+  "slug": "google-visakhapatnam",
+  "name": "Google India AI Hub",
+  "owner": "Google (with AdaniConneX, Nxtra by Airtel)",
+  "tenant": "Google",
+  "country": "IN",
+  "region": "Andhra Pradesh",
+  "locality": "Visakhapatnam",
+  "lat": 17.69,
+  "lon": 83.22,
+  "location_precision": "city",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "Groundbreaking Apr 28, 2026; three campuses",
+  "expected_completion": "2030",
+  "dates": {
+    "announced": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "g_viz_blog"
+      ]
+    },
+    "construction_start": {
+      "value": "2026-04",
+      "precision": "month",
+      "source_ids": [
+        "g_viz"
+      ],
+      "note": "Groundbreaking 28 Apr 2026 at Tarluvada."
+    }
+  },
+  "investment_usd": {
+    "value": 15000000000,
+    "est": true
+  },
+  "sources": [
+    {
+      "id": "g_viz",
+      "title": "Google Breaks Ground on India AI Hub",
+      "publisher": "Google Cloud Press Corner",
+      "url": "https://www.googlecloudpresscorner.com/2026-04-28-Google-Breaks-Ground-on-India-AI-Hub%2C-Launching-a-National-Industrial-Ecosystem-Alongside-Indias-Digital-Infrastructure-Milestone",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "g_viz_blog",
+      "title": "Google AI Hub – Scaling India's AI Infrastructure and Community Impact",
+      "publisher": "Google",
+      "url": "https://blog.google/intl/en-in/google-ai-hub-scaling-indias-ai-infrastructure-and-community-impact/",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}

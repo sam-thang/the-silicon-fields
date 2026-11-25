@@ -1,0 +1,63 @@
+{
+  "slug": "microsoft-fairwater-atlanta",
+  "name": "Fairwater Atlanta",
+  "owner": "Microsoft",
+  "tenant": "Microsoft",
+  "country": "US",
+  "region": "Georgia",
+  "locality": "Fayetteville (QTS campus)",
+  "lat": 33.45,
+  "lon": -84.45,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": null,
+    "high": null,
+    "type": "unknown"
+  },
+  "status": "operational",
+  "status_note": "Began operation Oct 2025 on QTS's campus in Fayetteville, south of Atlanta. Capacity not disclosed.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-11",
+      "precision": "month",
+      "source_ids": [
+        "ms_atl"
+      ]
+    },
+    "operational": {
+      "value": "2025-10",
+      "precision": "month",
+      "source_ids": [
+        "ms_atl"
+      ],
+      "note": "Began operations Oct 2025; unveiled 12 Nov 2025."
+    }
+  },
+  "investment_usd": {
+    "value": null,
+    "est": null
+  },
+  "sources": [
+    {
+      "id": "ms_atl",
+      "title": "From Wisconsin to Atlanta: Microsoft connects datacenters to build its first AI superfactory",
+      "publisher": "Microsoft",
+      "url": "https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-datacenters-to-build-its-first-ai-superfactory/",
+      "kind": "primary",
+      "accessed": "2026-11-23"
+    },
+    {
+      "id": "ajc_fairwater",
+      "title": "Microsoft's newest AI superfactory opens at sprawling Fayetteville campus",
+      "publisher": "The Atlanta Journal-Constitution",
+      "url": "https://www.ajc.com/business/2025/11/microsofts-newest-ai-superfactory-opens-at-sprawling-fayetteville-campus",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "primary",
+  "review_notes": "Capacity and exact site missing. Dates batch 3: relocated from Atlanta city centre to Fayetteville (town precision) per AJC; refine to the QTS site from imagery.",
+  "approved": true,
+  "last_verified": "2026-11-25"
+}
