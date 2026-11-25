@@ -33,7 +33,7 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape home`.
 - **Under-construction projects use `high` capacity, labelled "up to".** Planned uses `high`; operational uses `low`. The methodology page states these rules.
 - Where low and high differ, the headline shows the column-basis total, and the line under it gives the low–high range.
 - Projects with no capacity figure count toward the project total, not toward GW, and are drawn as dots.
-- Country comparison: shown with "est.". Average demand = TWh ÷ 8,760 h, from one named source (Ember or EIA, to be chosen) recorded in `data/factors.json`.
+- Comparison (changed 2026-11-25): **households, not countries**. "Enough for about N homes", localised by region (US: EIA; Norway: SSB/NVE), marked "est." (assumes full capacity all year; home demand = annual kWh ÷ 8,760 h). Factors live in `data/factors.json`. Headline wording stays open, because tens of millions of homes is abstract; consider pairing it with a sourced local anchor. Country comparison is dropped from v1.
 
 ## States and ranges
 - 41 projects; capacity 214 MW – 17 GW; 2 with no capacity figure; 2 at region- or state-level precision (soft circle at the base); 1 paused.
@@ -59,7 +59,7 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape home`.
 
 ## Open decisions (a builder must not invent these)
 - **Data pass:** sourced `announced`, `construction_start` and `operational` dates, each with a precision (month/quarter/year), for all 41 records, approved by the owner. Until then, the engine prototype runs on current status only. No placeholder dates.
-- Country-comparison source: Ember or EIA.
+- Exact headline wording for the homes comparison (verified factors first).
 - Globe engine: MapLibre or deck.gl, decided by a mid-range phone prototype.
 - Where the column-glow setting lives (suggested: a "View" menu next to the legend).
 - Schema mismatches in the seed: capacity types `power_generation` and `grid_switchyard`, location precision `city`, field `users` vs `tenant`.
