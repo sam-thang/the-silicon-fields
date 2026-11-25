@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Utah",
   "locality": "Eagle Mountain, Utah County",
-  "lat": 40.29,
-  "lon": -112.03,
-  "location_precision": "town",
+  "lat": 40.2689,
+  "lon": -112.0343,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 304,
     "high": 304,
@@ -44,10 +44,18 @@
       "url": "https://q.com/data-centers/eagle-mountain/",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Separate from Meta's older Eagle Mountain data center (2018, excluded as pre-2020). Refine coordinates.",
+  "review_notes": "Separate from Meta's older Eagle Mountain data center (2018, excluded as pre-2020). Coordinates: Epoch site address \"652 E Hyperscale Way, Eagle Mountain, UT 84013\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

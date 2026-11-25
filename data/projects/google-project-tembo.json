@@ -6,7 +6,7 @@
   "country": "US",
   "region": "Wyoming",
   "locality": "Laramie County (near Cheyenne)",
-  "lat": 41.14,
+  "lat": 41.09,
   "lon": -104.82,
   "location_precision": "county",
   "capacity_mw": {
@@ -91,7 +91,7 @@
     }
   ],
   "verification": "news",
-  "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025. Same site as Crusoe/Tallgrass \"Project Jade\" (1.8 GW, announced Jul 2025): Crusoe paused and exited in Jun 2026 at Google's request (Bloomberg); Google continues with Black Hills. Not a separate project.",
+  "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025. Same site as Crusoe/Tallgrass \"Project Jade\" (1.8 GW, announced Jul 2025): Crusoe paused and exited in Jun 2026 at Google's request (Bloomberg); Google continues with Black Hills. Not a separate project. Point moved ~5 km south of Cheyenne (Project Jade site is south of the city) so it no longer sits on Meta Cheyenne; county precision, approximate.",
   "approved": true,
   "last_verified": "2026-11-25"
 }

@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Iowa",
   "locality": "Council Bluffs, Pottawattamie County",
-  "lat": 41.23,
-  "lon": -95.82,
-  "location_precision": "town",
+  "lat": 41.1774,
+  "lon": -95.804,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 237,
     "high": 237,
@@ -44,10 +44,18 @@
       "url": "https://epoch.ai/data/ai-data-centers/directory/google-council-bluffs-east",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google (Council Bluffs)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1073720208",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Only Epoch (with Iowa DNR permits it cites); add a news source. Post-2020 phase only. Refine coordinates.",
+  "review_notes": "Only Epoch (with Iowa DNR permits it cites); add a news source. Post-2020 phase only. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

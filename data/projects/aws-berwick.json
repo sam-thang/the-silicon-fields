@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Pennsylvania",
   "locality": "Salem Township near Berwick (Susquehanna nuclear plant)",
-  "lat": 41.09,
-  "lon": -76.15,
-  "location_precision": "town",
+  "lat": 41.084,
+  "lon": -76.1434,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 108,
     "high": 169,
@@ -60,10 +60,18 @@
       "url": "https://www.puc.pa.gov/pcdocs/1861638.pdf",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Amazon AWS PHL",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1334234458",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Full 16-building plan would be far larger than Epoch's 169 MW; find a sourced campus figure. Refine coordinates.",
+  "review_notes": "Full 16-building plan would be far larger than Epoch's 169 MW; find a sourced campus figure. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

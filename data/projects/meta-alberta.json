@@ -6,9 +6,9 @@
   "country": "CA",
   "region": "Alberta",
   "locality": "Sturgeon County",
-  "lat": 53.75,
-  "lon": -113.5,
-  "location_precision": "county",
+  "lat": 53.8245,
+  "lon": -113.1987,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 1000,
     "high": 1000,
@@ -63,10 +63,18 @@
       "url": "https://www.alberta.ca/datacentres",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Sturgeon Data Centre (Meta)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/node/14174834883",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
-  "review_notes": "",
+  "review_notes": "Coordinates: OpenStreetMap footprint (2026-11-25).",
   "approved": true,
   "last_verified": "2026-11-25"
 }

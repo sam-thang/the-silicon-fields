@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Ohio",
   "locality": "New Albany",
-  "lat": 40.08,
-  "lon": -82.81,
-  "location_precision": "town",
+  "lat": 40.0657,
+  "lon": -82.7491,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 1000,
     "high": 1000,
@@ -70,10 +70,18 @@
       "url": "https://epoch.ai/data/data-centers/satellite-explorer/MetaPrometheusNewAlbanyOhio",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: NAO 3 (Meta New Albany)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/802160675",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
-  "review_notes": "Confirm capacity with primary source. Dates batch 3: status changed from operational to partially_operational; added TechCrunch and Epoch satellite sources.",
+  "review_notes": "Confirm capacity with primary source. Dates batch 3: status changed from operational to partially_operational; added TechCrunch and Epoch satellite sources. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "approved": true,
   "last_verified": "2026-11-25"
 }

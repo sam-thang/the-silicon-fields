@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Texas",
   "locality": "Temple, Bell County",
-  "lat": 31.1,
-  "lon": -97.34,
-  "location_precision": "town",
+  "lat": 31.126,
+  "lon": -97.36,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 152,
     "high": 178,
@@ -52,10 +52,18 @@
       "url": "https://jedunn.com/projects/meta-temple-data-center/",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Meta announcement (2022) to add with date. Building 3 completion (Sep 2026) is from a TDLR schedule, not observed: column uses the observed 152 MW. Refine coordinates.",
+  "review_notes": "Meta announcement (2022) to add with date. Building 3 completion (Sep 2026) is from a TDLR schedule, not observed: column uses the observed 152 MW. Coordinates: Epoch site address \"2310 Eberhardt Rd, Temple, TX 76504\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

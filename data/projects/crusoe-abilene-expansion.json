@@ -6,7 +6,7 @@
   "country": "US",
   "region": "Texas",
   "locality": "Abilene (Lancium Clean Campus)",
-  "lat": 32.45,
+  "lat": 32.465,
   "lon": -99.73,
   "location_precision": "town",
   "capacity_mw": {
@@ -48,6 +48,6 @@
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Microsoft's role rests on Epoch plus an executive's X post; find a Microsoft or news confirmation and its date (= announced). Same coordinates as Stargate Abilene; offset slightly before launch so the columns don't overlap exactly.",
+  "review_notes": "Microsoft's role rests on Epoch plus an executive's X post; find a Microsoft or news confirmation and its date (= announced). Same coordinates as Stargate Abilene; offset slightly before launch so the columns don't overlap exactly. Same campus and Epoch address (5502 Spinks Rd) as Stargate Abilene; point offset ~1.7 km north for display only.",
   "last_verified": "2026-11-25"
 }

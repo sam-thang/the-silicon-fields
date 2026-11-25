@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Iowa",
   "locality": "Cedar Rapids, Linn County",
-  "lat": 41.96,
-  "lon": -91.62,
-  "location_precision": "town",
+  "lat": 41.9056,
+  "lon": -91.7511,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 616,
     "high": 1133,
@@ -60,10 +60,18 @@
       "url": "https://corridorbusiness.com/scope-of-qts-data-project-in-cedar-rapids-continuing-to-grow/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Range: 616 MW (MISO load request, phase 1) vs 1,133 MW (Epoch IT est., two phases). Announced date to add from The Gazette/CBJ. Coordinates offset slightly from Google Cedar Rapids for display; refine both.",
+  "review_notes": "Range: 616 MW (MISO load request, phase 1) vs 1,133 MW (Epoch IT est., two phases). Announced date to add from The Gazette/CBJ. Coordinates: Epoch site address \"6200 76th Ave SW, Fairfax, IA 52228\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

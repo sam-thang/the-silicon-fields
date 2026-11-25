@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Oklahoma",
   "locality": "Pryor, MidAmerica Industrial Park",
-  "lat": 36.31,
-  "lon": -95.32,
-  "location_precision": "town",
+  "lat": 36.2412,
+  "lon": -95.33,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 315,
     "high": 315,
@@ -52,10 +52,18 @@
       "url": "https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Record covers only the post-2020 phase (Building 2); Pryor's older campus is excluded. Refine coordinates.",
+  "review_notes": "Record covers only the post-2020 phase (Building 2); Pryor's older campus is excluded. Coordinates: Epoch site address \"4581 Webb St, Pryor, OK 74361\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

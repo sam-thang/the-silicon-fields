@@ -6,9 +6,9 @@
   "country": "US",
   "region": "New York",
   "locality": "Barker, Niagara County (former Somerset coal plant)",
-  "lat": 43.36,
-  "lon": -78.6,
-  "location_precision": "town",
+  "lat": 43.3587,
+  "lon": -78.6041,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 210,
     "high": 378,
@@ -61,10 +61,18 @@
       "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "The older Lake Mariner bitcoin-mining buildings (from 2021) are excluded; this record covers the AI buildings only. Announced date (Fluidstack lease, 2025) to add. Refine coordinates.",
+  "review_notes": "The older Lake Mariner bitcoin-mining buildings (from 2021) are excluded; this record covers the AI buildings only. Announced date (Fluidstack lease, 2025) to add. Coordinates: Epoch site address \"7725 Lake Rd, Barker, NY 14012\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Virginia",
   "locality": "Bristow, Prince William County",
-  "lat": 38.72,
-  "lon": -77.54,
-  "location_precision": "town",
+  "lat": 38.7761,
+  "lon": -77.5825,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 238,
     "high": 238,
@@ -44,10 +44,18 @@
       "url": "https://epoch.ai/data/ai-data-centers/directory/google-bristow",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google Mango Farm Building 1",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1252196815",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Epoch cites no external source for this site; add a Google/news source. Refine coordinates.",
+  "review_notes": "Epoch cites no external source for this site; add a Google/news source. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

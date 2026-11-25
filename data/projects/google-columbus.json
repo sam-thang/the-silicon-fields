@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Ohio",
   "locality": "Columbus, Franklin County",
-  "lat": 39.96,
-  "lon": -83,
-  "location_precision": "town",
+  "lat": 39.8503,
+  "lon": -82.9956,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 303,
     "high": 386,
@@ -52,10 +52,18 @@
       "url": "https://www.datacenterdynamics.com/en/news/google-breaks-ground-on-columbus-ohio-data-center/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google Lockbourne, OH",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1281982556",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Announcement date to add (DCD groundbreaking article). Refine coordinates.",
+  "review_notes": "Announcement date to add (DCD groundbreaking article). Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Oklahoma",
   "locality": "Port of Muskogee",
-  "lat": 35.77,
-  "lon": -95.31,
-  "location_precision": "town",
+  "lat": 35.6969,
+  "lon": -95.3839,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 100,
     "high": 153,
@@ -53,10 +53,18 @@
       "url": "https://investors.corescientific.com/news-events/press-releases/detail/99/core-scientific-and-port-muskogee-break-ground-on-100-mw-hpc-data-center",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Range mixes facility (100 MW, Core Scientific) and Epoch's IT estimate incl. the unleased second building (153 MW). Refine coordinates to the port site.",
+  "review_notes": "Range mixes facility (100 MW, Core Scientific) and Epoch's IT estimate incl. the unleased second building (153 MW). Coordinates: Epoch site address \"1525 W 43rd St S, Muskogee, OK 74401, USA\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

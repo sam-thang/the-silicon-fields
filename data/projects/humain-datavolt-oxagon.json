@@ -6,9 +6,9 @@
   "country": "SA",
   "region": "Tabuk",
   "locality": "Oxagon, NEOM",
-  "lat": 27.6,
-  "lon": 35.6,
-  "location_precision": "region",
+  "lat": 27.4744,
+  "lon": 35.6027,
+  "location_precision": "town",
   "capacity_mw": {
     "low": 360,
     "high": 1500,
@@ -79,10 +79,18 @@
       "url": "https://www.agbi.com/ai/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Neom Hyper Scale Data Center",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1323864443",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "primary",
-  "review_notes": "Dates batch 5: recheck whether main construction has begun (AGBI Aug 2026).",
+  "review_notes": "Dates batch 5: recheck whether main construction has begun (AGBI Aug 2026). Point from an OSM footprint named 'Neom Hyper Scale Data Center' (generic name), kept at town precision.",
   "approved": true,
   "last_verified": "2026-11-25"
 }

@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Georgia",
   "locality": "Fayetteville (QTS campus)",
-  "lat": 33.45,
-  "lon": -84.45,
-  "location_precision": "town",
+  "lat": 33.4454,
+  "lon": -84.5255,
+  "location_precision": "site",
   "capacity_mw": {
     "low": null,
     "high": null,
@@ -54,10 +54,18 @@
       "url": "https://www.ajc.com/business/2025/11/microsofts-newest-ai-superfactory-opens-at-sprawling-fayetteville-campus",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "primary",
-  "review_notes": "Capacity and exact site missing. Dates batch 3: relocated from Atlanta city centre to Fayetteville (town precision) per AJC; refine to the QTS site from imagery.",
+  "review_notes": "Capacity and exact site missing. Dates batch 3: relocated from Atlanta city centre to Fayetteville (town precision) per AJC; refine to the QTS site from imagery. Coordinates: Epoch site address \"1435 Hwy 54 W, Fayetteville, GA 30214\" geocoded with Nominatim (2026-11-25).",
   "approved": true,
   "last_verified": "2026-11-25"
 }

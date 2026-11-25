@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Indiana",
   "locality": "Fort Wayne, Allen County",
-  "lat": 41.08,
-  "lon": -85.14,
-  "location_precision": "town",
+  "lat": 41.0309,
+  "lon": -85.0536,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 863,
     "high": 863,
@@ -60,10 +60,18 @@
       "url": "https://www.thelocalfw.com/data-centers-secrecy-and-tax-abatements/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Confirm the council resolution names Google or its project entity. Refine coordinates.",
+  "review_notes": "Confirm the council resolution names Google or its project entity. Coordinates: Epoch site address \"6015 Adams Center Road, Fort Wayne, IN 46806\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

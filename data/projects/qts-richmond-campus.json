@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Virginia",
   "locality": "Sandston, Henrico County",
-  "lat": 37.52,
-  "lon": -77.32,
-  "location_precision": "town",
+  "lat": 37.4888,
+  "lon": -77.2475,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 562,
     "high": 658,
@@ -68,10 +68,18 @@
       "url": "https://q.com/data-centers/richmond-3/",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Merged from three Epoch entries (Richmond 1 expansion counted from 2023). Richmond 1's original buildings (pre-2020) excluded. Tenants not disclosed. Refine coordinates.",
+  "review_notes": "Merged from three Epoch entries (Richmond 1 expansion counted from 2023). Richmond 1's original buildings (pre-2020) excluded. Tenants not disclosed. Coordinates: Epoch site address \"6000 Technology Blvd, Sandston, VA 23150\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

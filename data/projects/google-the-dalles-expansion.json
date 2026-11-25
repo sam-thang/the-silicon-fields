@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Oregon",
   "locality": "The Dalles, Wasco County",
-  "lat": 45.61,
-  "lon": -121.2,
-  "location_precision": "town",
+  "lat": 45.6232,
+  "lon": -121.2067,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 154,
     "high": 154,
@@ -44,10 +44,18 @@
       "url": "https://epoch.ai/data/ai-data-centers/directory/google-the-dalles",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google (The Dalles, newest building)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1443567519",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Post-2020 phase only. Add a news source. Refine coordinates.",
+  "review_notes": "Post-2020 phase only. Add a news source. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

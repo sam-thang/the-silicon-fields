@@ -1,0 +1,615 @@
+{
+  "_note": "Coordinate refinement 1 (2026-11-25): named OpenStreetMap footprints (site precision) and Epoch AI site addresses geocoded via Nominatim at house/building level. Skipped road-level geocodes and Meta Jeffersonville (address resolves downtown, not River Ridge). Two display offsets for exact duplicates are noted in their records.",
+  "accessed": "2026-11-25",
+  "projects": {
+    "amazon-ridgeland": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Amazon Web Services (Ridgeland)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1510517632",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 32.4119,
+        "lon": -90.19,
+        "location_precision": "site",
+        "review_notes": "Check whether AWS's $10B Madison County announcement covers both Ridgeland and Canton (then link the two records and share the announced date). 840 MW is Epoch's projection. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "amazon-rainier-new-carlisle": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Amazon AWS Data Center",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1303947602",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.6678,
+        "lon": -86.4731,
+        "location_precision": "site",
+        "review_notes": "Dates batch 3: Epoch projects ~1.9 GW IT by 2028 vs 2.3 GW permit figure; review capacity later. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "aws-berwick": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Amazon AWS PHL",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1334234458",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.084,
+        "lon": -76.1434,
+        "location_precision": "site",
+        "review_notes": "Full 16-building plan would be far larger than Epoch's 169 MW; find a sourced campus figure. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "aws-new-albany": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Amazon Web Services CMH50",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/562775657",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 40.0945,
+        "lon": -82.7513,
+        "location_precision": "site",
+        "review_notes": "Epoch counts only ~44% of campus IT power (the AI-chip share), so the full campus is larger. Construction began before the dated announcement. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-bristow": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google Mango Farm Building 1",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1252196815",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 38.7761,
+        "lon": -77.5825,
+        "location_precision": "site",
+        "review_notes": "Epoch cites no external source for this site; add a Google/news source. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-columbus": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google Lockbourne, OH",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1281982556",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 39.8503,
+        "lon": -82.9956,
+        "location_precision": "site",
+        "review_notes": "Announcement date to add (DCD groundbreaking article). Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-council-bluffs-east": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google (Council Bluffs)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1073720208",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.1774,
+        "lon": -95.804,
+        "location_precision": "site",
+        "review_notes": "Only Epoch (with Iowa DNR permits it cites); add a news source. Post-2020 phase only. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-lancaster-oh": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google (Lancaster)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1252196824",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 39.724,
+        "lon": -82.689,
+        "location_precision": "site",
+        "review_notes": "Site work predates the public announcement. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-midlothian": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google (Midlothian)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/844386860",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 32.4421,
+        "lon": -97.0625,
+        "location_precision": "site",
+        "review_notes": "Just above the 100 MW bar (Epoch estimate). Add a Google/news source. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-new-albany": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google NBY-2",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1222007663",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 40.0596,
+        "lon": -82.7645,
+        "location_precision": "site",
+        "review_notes": "Only Epoch cites this site; add a Google/news source and announcement date. Building 5 would add capacity. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-omaha": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google (Omaha)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1422101112",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.3419,
+        "lon": -96.0877,
+        "location_precision": "site",
+        "review_notes": "Only Epoch (with a draft air permit it cites); add a Google/news source and announcement date. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-papillion-expansion": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google (Papillion)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/844394357",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.135,
+        "lon": -96.1467,
+        "location_precision": "site",
+        "review_notes": "Only Epoch (with a draft air permit); add a Google/news source. Buildings 4–5 would add capacity. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "google-the-dalles-expansion": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Google (The Dalles, newest building)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1443567519",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 45.6232,
+        "lon": -121.2067,
+        "location_precision": "site",
+        "review_notes": "Post-2020 phase only. Add a news source. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "meta-alberta": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Sturgeon Data Centre (Meta)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/node/14174834883",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 53.8245,
+        "lon": -113.1987,
+        "location_precision": "site",
+        "review_notes": "Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "meta-huntsville": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Meta Huntsville Data center",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1160814415",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 34.8435,
+        "lon": -86.6289,
+        "location_precision": "site",
+        "review_notes": "Meta announced Huntsville in 2018; included because these buildings started in Dec 2021. Operational dates are Epoch estimates. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "meta-prometheus": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: NAO 3 (Meta New Albany)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/802160675",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 40.0657,
+        "lon": -82.7491,
+        "location_precision": "site",
+        "review_notes": "Confirm capacity with primary source. Dates batch 3: status changed from operational to partially_operational; added TechCrunch and Epoch satellite sources. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "microsoft-goodyear": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: PHX-12 (Microsoft)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1532070752",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 33.4108,
+        "lon": -112.3649,
+        "location_precision": "site",
+        "review_notes": "Add a Microsoft/news source for the site and the MAI training claim. Buildings 5–6 would add capacity. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "qts-hillsboro-2": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: QTS Data Center - Hillsboro 2",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/918871786",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 45.5588,
+        "lon": -122.9318,
+        "location_precision": "site",
+        "review_notes": "Meta as tenant is Epoch's 'likely'. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "xai-colossus-1": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: xAI Colossus",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1381264361",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 35.0599,
+        "lon": -90.1563,
+        "location_precision": "site",
+        "review_notes": "No sourced announcement date. Lowry Rd site. xAI and Anthropic pages cited via Epoch; open them before launch. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "nebius-vineland": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: DataOne Vineland (Nebius)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1553894888",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 39.4275,
+        "lon": -75.0169,
+        "location_precision": "site",
+        "review_notes": "Range mixes IT (50 MW running, Epoch) and the 'up to 300 MW' Nebius figure. Announcement date (Nebius release, 2025) to add. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "galaxy-helios": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Argo Data Center (Helios, now Galaxy)",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1490401523",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 33.7773,
+        "lon": -100.8689,
+        "location_precision": "site",
+        "review_notes": "Epoch's Aug 2026 'operational' is inferred from Galaxy's timeline, not observed, so status stays under construction. Announced date (CoreWeave commitment, 2025) to add. Coordinates: OpenStreetMap footprint (2026-11-25)."
+      }
+    },
+    "humain-datavolt-oxagon": {
+      "add_sources": [
+        {
+          "id": "osm_site",
+          "title": "OpenStreetMap: Neom Hyper Scale Data Center",
+          "publisher": "OpenStreetMap contributors (ODbL)",
+          "url": "https://www.openstreetmap.org/way/1323864443",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 27.4744,
+        "lon": 35.6027,
+        "location_precision": "town",
+        "review_notes": "Dates batch 5: recheck whether main construction has begun (AGBI Aug 2026). Point from an OSM footprint named 'Neom Hyper Scale Data Center' (generic name), kept at town precision."
+      }
+    },
+    "microsoft-fairwater-atlanta": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 33.4454,
+        "lon": -84.5255,
+        "location_precision": "site",
+        "review_notes": "Capacity and exact site missing. Dates batch 3: relocated from Atlanta city centre to Fayetteville (town precision) per AJC; refine to the QTS site from imagery. Coordinates: Epoch site address \"1435 Hwy 54 W, Fayetteville, GA 30214\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "google-pryor-north-expansion": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 36.2412,
+        "lon": -95.33,
+        "location_precision": "site",
+        "review_notes": "Record covers only the post-2020 phase (Building 2); Pryor's older campus is excluded. Coordinates: Epoch site address \"4581 Webb St, Pryor, OK 74361\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "microsoft-fairwater-wisconsin": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 42.6749,
+        "lon": -87.8949,
+        "location_precision": "site",
+        "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft. Dates batch 3: status changed from operational to partially_operational. Epoch projects ~2.3 GW IT by 2028 vs 450 MW estimate here; review capacity later. Coordinates: Epoch site address \"4800 90th St, Mount Pleasant, WI 53403\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "terawulf-lake-mariner": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 43.3587,
+        "lon": -78.6041,
+        "location_precision": "site",
+        "review_notes": "The older Lake Mariner bitcoin-mining buildings (from 2021) are excluded; this record covers the AI buildings only. Announced date (Fluidstack lease, 2025) to add. Coordinates: Epoch site address \"7725 Lake Rd, Barker, NY 14012\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "qts-richmond-campus": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 37.4888,
+        "lon": -77.2475,
+        "location_precision": "site",
+        "review_notes": "Merged from three Epoch entries (Richmond 1 expansion counted from 2023). Richmond 1's original buildings (pre-2020) excluded. Tenants not disclosed. Coordinates: Epoch site address \"6000 Technology Blvd, Sandston, VA 23150\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "meta-temple": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 31.126,
+        "lon": -97.36,
+        "location_precision": "site",
+        "review_notes": "Meta announcement (2022) to add with date. Building 3 completion (Sep 2026) is from a TDLR schedule, not observed: column uses the observed 152 MW. Coordinates: Epoch site address \"2310 Eberhardt Rd, Temple, TX 76504\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "meta-kuna": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 43.4592,
+        "lon": -116.4211,
+        "location_precision": "site",
+        "review_notes": "Meta announced Kuna in 2022: add the dated announcement. Coordinates: Epoch site address \"601 Kuna Mora Rd,  Kuna ID 83634\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "core-scientific-muskogee": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 35.6969,
+        "lon": -95.3839,
+        "location_precision": "site",
+        "review_notes": "Range mixes facility (100 MW, Core Scientific) and Epoch's IT estimate incl. the unleased second building (153 MW). Coordinates: Epoch site address \"1525 W 43rd St S, Muskogee, OK 74401, USA\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "google-cedar-rapids": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.9222,
+        "lon": -91.7157,
+        "location_precision": "site",
+        "review_notes": "Google's public announcement (date) to add. Coordinates: Epoch site address \"5800 EDGEWOOD RD SW CEDAR RAPIDS, IA 52404\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "google-fort-wayne": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.0309,
+        "lon": -85.0536,
+        "location_precision": "site",
+        "review_notes": "Confirm the council resolution names Google or its project entity. Coordinates: Epoch site address \"6015 Adams Center Road, Fort Wayne, IN 46806\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "qts-cedar-rapids": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 41.9056,
+        "lon": -91.7511,
+        "location_precision": "site",
+        "review_notes": "Range: 616 MW (MISO load request, phase 1) vs 1,133 MW (Epoch IT est., two phases). Announced date to add from The Gazette/CBJ. Coordinates: Epoch site address \"6200 76th Ave SW, Fairfax, IA 52228\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "google-lincoln": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 40.9075,
+        "lon": -96.6458,
+        "location_precision": "site",
+        "review_notes": "Operational date is Epoch's estimate. Coordinates: Epoch site address \"5475 Cloud Ct, Lincoln, NE 68514\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "qts-eagle-mountain": {
+      "add_sources": [
+        {
+          "id": "epoch_dataset",
+          "title": "Epoch AI, AI data centers dataset (site address)",
+          "publisher": "Epoch AI",
+          "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+          "kind": "secondary"
+        }
+      ],
+      "set": {
+        "lat": 40.2689,
+        "lon": -112.0343,
+        "location_precision": "site",
+        "review_notes": "Separate from Meta's older Eagle Mountain data center (2018, excluded as pre-2020). Coordinates: Epoch site address \"652 E Hyperscale Way, Eagle Mountain, UT 84013\" geocoded with Nominatim (2026-11-25)."
+      }
+    },
+    "crusoe-abilene-expansion": {
+      "set": {
+        "lat": 32.465,
+        "lon": -99.73,
+        "review_notes": "Microsoft's role rests on Epoch plus an executive's X post; find a Microsoft or news confirmation and its date (= announced). Same coordinates as Stargate Abilene; offset slightly before launch so the columns don't overlap exactly. Same campus and Epoch address (5502 Spinks Rd) as Stargate Abilene; point offset ~1.7 km north for display only."
+      }
+    },
+    "google-project-tembo": {
+      "set": {
+        "lat": 41.09,
+        "lon": -104.82,
+        "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025. Same site as Crusoe/Tallgrass \"Project Jade\" (1.8 GW, announced Jul 2025): Crusoe paused and exited in Jun 2026 at Google's request (Bloomberg); Google continues with Black Hills. Not a separate project. Point moved ~5 km south of Cheyenne (Project Jade site is south of the city) so it no longer sits on Meta Cheyenne; county precision, approximate."
+      }
+    }
+  }
+}

@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Alabama",
   "locality": "Huntsville",
-  "lat": 34.73,
-  "lon": -86.59,
-  "location_precision": "town",
+  "lat": 34.8435,
+  "lon": -86.6289,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 146,
     "high": 146,
@@ -52,10 +52,18 @@
       "url": "https://www.prnewswire.com/news-releases/tva-announces-largest-valley-solar-installations--built-for-facebook-300743255.html",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Meta Huntsville Data center",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1160814415",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Meta announced Huntsville in 2018; included because these buildings started in Dec 2021. Operational dates are Epoch estimates. Refine coordinates.",
+  "review_notes": "Meta announced Huntsville in 2018; included because these buildings started in Dec 2021. Operational dates are Epoch estimates. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

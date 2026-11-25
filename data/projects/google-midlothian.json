@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Texas",
   "locality": "Midlothian, Ellis County",
-  "lat": 32.48,
-  "lon": -96.99,
-  "location_precision": "town",
+  "lat": 32.4421,
+  "lon": -97.0625,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 69,
     "high": 103,
@@ -44,10 +44,18 @@
       "url": "https://epoch.ai/data/ai-data-centers/directory/google-midlothian",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google (Midlothian)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/844386860",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Just above the 100 MW bar (Epoch estimate). Add a Google/news source. Refine coordinates.",
+  "review_notes": "Just above the 100 MW bar (Epoch estimate). Add a Google/news source. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

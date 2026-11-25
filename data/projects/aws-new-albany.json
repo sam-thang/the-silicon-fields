@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Ohio",
   "locality": "New Albany, Licking County",
-  "lat": 40.06,
-  "lon": -82.86,
-  "location_precision": "town",
+  "lat": 40.0945,
+  "lon": -82.7513,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 213,
     "high": 338,
@@ -69,10 +69,18 @@
       "url": "https://newalbanyohio.org/wp-content/uploads/2025/01/CD-2024-12.pdf",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Amazon Web Services CMH50",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/562775657",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Epoch counts only ~44% of campus IT power (the AI-chip share), so the full campus is larger. Construction began before the dated announcement. Coordinates offset from Meta Prometheus for display; refine.",
+  "review_notes": "Epoch counts only ~44% of campus IT power (the AI-chip share), so the full campus is larger. Construction began before the dated announcement. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

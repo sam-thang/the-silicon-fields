@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Nebraska",
   "locality": "Lincoln, Lancaster County",
-  "lat": 40.81,
-  "lon": -96.7,
-  "location_precision": "town",
+  "lat": 40.9075,
+  "lon": -96.6458,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 141,
     "high": 283,
@@ -53,10 +53,18 @@
       "url": "https://www.datacenterdynamics.com/en/news/work-on-data-center-in-lincoln-nebraska-finally-starting/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Operational date is Epoch's estimate. Refine coordinates.",
+  "review_notes": "Operational date is Epoch's estimate. Coordinates: Epoch site address \"5475 Cloud Ct, Lincoln, NE 68514\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

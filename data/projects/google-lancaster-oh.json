@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Ohio",
   "locality": "Lancaster, Fairfield County",
-  "lat": 39.71,
-  "lon": -82.6,
-  "location_precision": "town",
+  "lat": 39.724,
+  "lon": -82.689,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 137,
     "high": 137,
@@ -60,10 +60,18 @@
       "url": "https://ohiocapitaljournal.com/2023/08/29/google-announces-plans-to-invest-1-7-billion-in-a-trio-of-central-ohio-data-centers/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google (Lancaster)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1252196824",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Site work predates the public announcement. Refine coordinates.",
+  "review_notes": "Site work predates the public announcement. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

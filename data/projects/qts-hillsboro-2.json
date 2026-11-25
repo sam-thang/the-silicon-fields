@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Oregon",
   "locality": "Hillsboro, Washington County",
-  "lat": 45.54,
-  "lon": -122.95,
-  "location_precision": "town",
+  "lat": 45.5588,
+  "lon": -122.9318,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 180,
     "high": 180,
@@ -52,10 +52,18 @@
       "url": "https://q.com/data-centers/hillsboro-2/",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: QTS Data Center - Hillsboro 2",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/918871786",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Meta as tenant is Epoch's 'likely'. Refine coordinates.",
+  "review_notes": "Meta as tenant is Epoch's 'likely'. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

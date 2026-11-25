@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Idaho",
   "locality": "Kuna, Ada County",
-  "lat": 43.49,
-  "lon": -116.42,
-  "location_precision": "town",
+  "lat": 43.4592,
+  "lon": -116.4211,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 152,
     "high": 152,
@@ -60,10 +60,18 @@
       "url": "https://www.idahostatesman.com/news/business/article304464416.html",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Meta announced Kuna in 2022: add the dated announcement. Refine coordinates.",
+  "review_notes": "Meta announced Kuna in 2022: add the dated announcement. Coordinates: Epoch site address \"601 Kuna Mora Rd,  Kuna ID 83634\" geocoded with Nominatim (2026-11-25).",
   "last_verified": "2026-11-25"
 }

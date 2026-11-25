@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Nebraska",
   "locality": "Papillion, Sarpy County",
-  "lat": 41.13,
-  "lon": -96.03,
-  "location_precision": "town",
+  "lat": 41.135,
+  "lon": -96.1467,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 237,
     "high": 237,
@@ -44,10 +44,18 @@
       "url": "https://epoch.ai/data/ai-data-centers/directory/google-papillion",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google (Papillion)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/844394357",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Only Epoch (with a draft air permit); add a Google/news source. Buildings 4–5 would add capacity. Refine coordinates.",
+  "review_notes": "Only Epoch (with a draft air permit); add a Google/news source. Buildings 4–5 would add capacity. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

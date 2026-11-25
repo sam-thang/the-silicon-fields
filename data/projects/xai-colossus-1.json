@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Tennessee",
   "locality": "Memphis (former Electrolux plant)",
-  "lat": 35.06,
-  "lon": -90.16,
-  "location_precision": "town",
+  "lat": 35.0599,
+  "lon": -90.1563,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 340,
     "high": 340,
@@ -61,10 +61,18 @@
       "url": "https://www.anthropic.com/news/higher-limits-spacex",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: xAI Colossus",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1381264361",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "No sourced announcement date. Refine coordinates to the Paul R. Lowry Rd site. xAI and Anthropic pages cited via Epoch; open them before launch.",
+  "review_notes": "No sourced announcement date. Lowry Rd site. xAI and Anthropic pages cited via Epoch; open them before launch. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

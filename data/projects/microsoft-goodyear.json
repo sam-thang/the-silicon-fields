@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Arizona",
   "locality": "Goodyear, Maricopa County",
-  "lat": 33.44,
-  "lon": -112.36,
-  "location_precision": "town",
+  "lat": 33.4108,
+  "lon": -112.3649,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 202,
     "high": 202,
@@ -52,10 +52,18 @@
       "url": "https://newsletter.semianalysis.com/p/microsofts-ai-strategy-deconstructed",
       "kind": "secondary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: PHX-12 (Microsoft)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1532070752",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Add a Microsoft/news source for the site and the MAI training claim. Buildings 5–6 would add capacity. Refine coordinates.",
+  "review_notes": "Add a Microsoft/news source for the site and the MAI training claim. Buildings 5–6 would add capacity. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

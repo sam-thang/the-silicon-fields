@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Wisconsin",
   "locality": "Mount Pleasant",
-  "lat": 42.71,
-  "lon": -87.92,
-  "location_precision": "town",
+  "lat": 42.6749,
+  "lon": -87.8949,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 450,
     "high": 450,
@@ -87,10 +87,18 @@
       "url": "https://epoch.ai/data/data-centers/satellite-explorer/MicrosoftFairwaterWisconsin",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "epoch_dataset",
+      "title": "Epoch AI, AI data centers dataset (site address)",
+      "publisher": "Epoch AI",
+      "url": "https://epoch.ai/data/data_centers/data_centers.csv",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "primary",
-  "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft. Dates batch 3: status changed from operational to partially_operational. Epoch projects ~2.3 GW IT by 2028 vs 450 MW estimate here; review capacity later.",
+  "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft. Dates batch 3: status changed from operational to partially_operational. Epoch projects ~2.3 GW IT by 2028 vs 450 MW estimate here; review capacity later. Coordinates: Epoch site address \"4800 90th St, Mount Pleasant, WI 53403\" geocoded with Nominatim (2026-11-25).",
   "approved": true,
   "last_verified": "2026-11-25"
 }

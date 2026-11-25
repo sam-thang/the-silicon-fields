@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Nebraska",
   "locality": "Omaha, Douglas County",
-  "lat": 41.28,
-  "lon": -96.06,
-  "location_precision": "town",
+  "lat": 41.3419,
+  "lon": -96.0877,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 237,
     "high": 395,
@@ -44,10 +44,18 @@
       "url": "https://epoch.ai/data/ai-data-centers/directory/google-omaha",
       "kind": "satellite",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Google (Omaha)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1422101112",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Only Epoch (with a draft air permit it cites); add a Google/news source and announcement date. Refine coordinates.",
+  "review_notes": "Only Epoch (with a draft air permit it cites); add a Google/news source and announcement date. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

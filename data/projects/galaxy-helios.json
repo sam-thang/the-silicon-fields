@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Texas",
   "locality": "Afton, Dickens County",
-  "lat": 33.77,
-  "lon": -100.82,
-  "location_precision": "town",
+  "lat": 33.7773,
+  "lon": -100.8689,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 528,
     "high": 528,
@@ -44,10 +44,18 @@
       "url": "https://investor.galaxy.com/news/news-details/2025/Galaxy-Announces-Third-Quarter-2025-Financial-Results/default.aspx",
       "kind": "primary",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Argo Data Center (Helios, now Galaxy)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1490401523",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Epoch's Aug 2026 'operational' is inferred from Galaxy's timeline, not observed, so status stays under construction. Announced date (CoreWeave commitment, 2025) to add. Refine coordinates.",
+  "review_notes": "Epoch's Aug 2026 'operational' is inferred from Galaxy's timeline, not observed, so status stays under construction. Announced date (CoreWeave commitment, 2025) to add. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

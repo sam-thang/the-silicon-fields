@@ -6,9 +6,9 @@
   "country": "US",
   "region": "New Jersey",
   "locality": "Vineland, Cumberland County",
-  "lat": 39.49,
-  "lon": -75.03,
-  "location_precision": "town",
+  "lat": 39.4275,
+  "lon": -75.0169,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 50,
     "high": 300,
@@ -60,10 +60,18 @@
       "url": "https://capemaycountyherald.com/article/large-data-center-nears-completion-in-vineland/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: DataOne Vineland (Nebius)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1553894888",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Range mixes IT (50 MW running, Epoch) and the 'up to 300 MW' Nebius figure. Announcement date (Nebius release, 2025) to add. Refine coordinates.",
+  "review_notes": "Range mixes IT (50 MW running, Epoch) and the 'up to 300 MW' Nebius figure. Announcement date (Nebius release, 2025) to add. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

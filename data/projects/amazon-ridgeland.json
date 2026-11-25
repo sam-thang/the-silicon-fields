@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Mississippi",
   "locality": "Ridgeland, Madison County",
-  "lat": 32.43,
-  "lon": -90.13,
-  "location_precision": "town",
+  "lat": 32.4119,
+  "lon": -90.19,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 228,
     "high": 840,
@@ -52,10 +52,18 @@
       "url": "https://www.datacenterdynamics.com/en/news/aws-confirmed-as-company-behind-10bn-mississippi-data-center-development/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Amazon Web Services (Ridgeland)",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1510517632",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
   "approved": true,
-  "review_notes": "Check whether AWS's $10B Madison County announcement covers both Ridgeland and Canton (then link the two records and share the announced date). 840 MW is Epoch's projection. Refine coordinates.",
+  "review_notes": "Check whether AWS's $10B Madison County announcement covers both Ridgeland and Canton (then link the two records and share the announced date). 840 MW is Epoch's projection. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "last_verified": "2026-11-25"
 }

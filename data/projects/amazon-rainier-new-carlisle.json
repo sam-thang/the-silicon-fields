@@ -6,9 +6,9 @@
   "country": "US",
   "region": "Indiana",
   "locality": "New Carlisle",
-  "lat": 41.7,
-  "lon": -86.51,
-  "location_precision": "town",
+  "lat": 41.6678,
+  "lon": -86.4731,
+  "location_precision": "site",
   "capacity_mw": {
     "low": 2300,
     "high": 2300,
@@ -87,10 +87,18 @@
       "url": "https://convergedigest.com/aws-activates-project-rainier-data-center-campus/",
       "kind": "news",
       "accessed": "2026-11-25"
+    },
+    {
+      "id": "osm_site",
+      "title": "OpenStreetMap: Amazon AWS Data Center",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1303947602",
+      "kind": "secondary",
+      "accessed": "2026-11-25"
     }
   ],
   "verification": "news",
-  "review_notes": "Dates batch 3: Epoch projects ~1.9 GW IT by 2028 vs 2.3 GW permit figure; review capacity later.",
+  "review_notes": "Dates batch 3: Epoch projects ~1.9 GW IT by 2028 vs 2.3 GW permit figure; review capacity later. Coordinates: OpenStreetMap footprint (2026-11-25).",
   "approved": true,
   "last_verified": "2026-11-25"
 }
