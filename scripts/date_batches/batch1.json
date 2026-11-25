@@ -1,0 +1,94 @@
+{
+  "_note": "Batch 1 of the timeline date research, approved by the owner 2026-11-25. Applied with scripts/apply_date_batch.mjs.",
+  "accessed": "2026-11-25",
+  "projects": {
+    "meta-hyperion": {
+      "add_sources": [
+        { "id": "meta_1yr", "title": "One Year In: Meta's Richland Parish Data Center Supports Louisiana Economy With $875M In Contracts", "publisher": "Meta", "url": "https://about.fb.com/news/2025/12/metas-richland-parish-data-center-supports-louisiana-economy-875-million-in-contracts/", "kind": "primary" },
+        { "id": "led_meta", "title": "Meta selects Northeast Louisiana as site of $10 billion AI-optimized data center", "publisher": "Louisiana Economic Development", "url": "https://opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state", "kind": "primary" }
+      ],
+      "dates": {
+        "announced": { "value": "2024-12", "precision": "month", "source_ids": ["led_meta"] },
+        "construction_start": { "value": "2024-12", "precision": "month", "source_ids": ["meta_1yr"] }
+      }
+    },
+    "stargate-abilene": {
+      "add_sources": [
+        { "id": "crusoe_2024", "title": "Crusoe to Build Initial 200 MW AI Data Center With Plans to Expand at 1.2 GW Lancium Clean Campus", "publisher": "Crusoe (Business Wire)", "url": "https://www.businesswire.com/news/home/20240718273783/en/Crusoe-to-Build-Initial-200-MW-AI-Data-Center-With-Plans-to-Expand-at-1.2-GW-Lancium-Clean-Campus/", "kind": "primary" },
+        { "id": "dcd_abilene_live", "title": "Crusoe's Abilene data center officially live, serving Oracle and OpenAI's Stargate", "publisher": "DatacenterDynamics", "url": "https://www.datacenterdynamics.com/en/news/crusoes-abilene-data-center-officially-live-serving-oracle-and-openais-stargate/", "kind": "news" },
+        { "id": "bx_lancium", "title": "Lancium: Abilene", "publisher": "Baxtel", "url": "https://baxtel.com/data-center/lancium-abilene", "kind": "tracker" }
+      ],
+      "dates": {
+        "announced": { "value": "2024-07", "precision": "month", "source_ids": ["crusoe_2024"] },
+        "construction_start": { "value": "2024", "precision": "year", "source_ids": ["crusoe_2024", "bx_lancium"], "note": "Baxtel (tracker only) gives June 2024; year precision used until a news or primary source confirms the month." },
+        "operational": { "value": "2025-09", "precision": "month", "source_ids": ["dcd_abilene_live"], "note": "First phase (Buildings 1-2, ~200 MW) announced live 30 Sep 2025." }
+      }
+    },
+    "stargate-frontier-shackelford": {
+      "add_sources": [
+        { "id": "vantage_2025", "title": "Vantage Data Centers Unveils Plans for \"Frontier,\" a $25B Mega-campus in Texas", "publisher": "Vantage Data Centers (Business Wire)", "url": "https://www.businesswire.com/news/home/20250819333311/en/Vantage-Data-Centers-Unveils-Plans-for-%E2%80%9CFrontier%E2%80%9D-a-25B-Mega-campus-in-Texas-to-Meet-Unprecedented-AI-Demand", "kind": "primary" },
+        { "id": "wmedia_frontier", "title": "Vantage Data Centers breaks ground on data center campus in Texas", "publisher": "W.Media", "url": "https://w.media/vantage-data-centers-breaks-ground-on-data-center-campus-in-texas/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-08", "precision": "month", "source_ids": ["vantage_2025"] },
+        "construction_start": { "value": "2025-12", "precision": "month", "source_ids": ["wmedia_frontier"] }
+      }
+    },
+    "creekstone-delta-gigasite": {
+      "add_sources": [
+        { "id": "deseret_ck", "title": "World's largest data center campus could be coming to central Utah", "publisher": "Deseret News", "url": "https://www.deseret.com/business/2025/08/15/worlds-largest-data-center-campus-could-be-coming-to-central-utah/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-08", "precision": "month", "source_ids": ["deseret_ck"] },
+        "construction_start": { "value": "2025-Q4", "precision": "quarter", "source_ids": ["ut_gov"], "note": "State release: construction began late 2025." }
+      }
+    },
+    "sb-energy-ports-piketon": {
+      "add_sources": [
+        { "id": "doe_ports", "title": "Partnership ensures affordable energy powers AI future at Portsmouth Site", "publisher": "U.S. Department of Energy", "url": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site", "kind": "primary" },
+        { "id": "cbs_ports", "title": "Trump officials announce data center and gas plants for former Ohio uranium site", "publisher": "CBS News (AP)", "url": "https://www.cbsnews.com/pittsburgh/news/data-center-gas-plants-ohio", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2026-03", "precision": "month", "source_ids": ["doe_ports", "cbs_ports"] },
+        "construction_start": { "value": "2026-03", "precision": "month", "source_ids": ["doe_ports"], "note": "DOE describes the 20 Mar 2026 event as a groundbreaking; no later report of site work found." }
+      },
+      "review_append": "Dates batch 1: no report of active site work after the Mar 2026 groundbreaking; recheck status."
+    },
+    "fermi-project-matador": {
+      "add_sources": [
+        { "id": "spg_fermi", "title": "Texas company pursues massive AI energy facility with nuclear, gas, solar", "publisher": "S&P Global Market Intelligence", "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/6/texas-company-pursues-massive-ai-energy-facility-with-nuclear-gas-solar-91113424", "kind": "news" },
+        { "id": "ee_texas", "title": "Trump, atoms, AI and the Texas data center gusher", "publisher": "E&E News", "url": "https://www.eenews.net/articles/trump-atoms-ai-and-the-texas-data-center-gusher/", "kind": "news" },
+        { "id": "ans_fermi", "title": "Fermi America coverage (executive departures, Apr 2026)", "publisher": "American Nuclear Society – Nuclear News", "url": "https://www.ans.org/news/tag-fermi%20america/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-06", "precision": "month", "source_ids": ["spg_fermi"] },
+        "construction_start": { "value": "2025", "precision": "year", "source_ids": ["ee_texas"], "note": "Site work reported by Dec 2025; no formal groundbreaking date found." },
+        "paused": { "value": "2026-04", "precision": "month", "source_ids": ["cv_fermi", "ans_fermi"], "note": "CEO and CFO departed Apr 2026; construction largely stalled." }
+      }
+    },
+    "google-project-tembo": {
+      "add_sources": [
+        { "id": "google_wy", "title": "Investing in Wyoming's infrastructure, energy and workforce", "publisher": "Google", "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/", "kind": "primary" },
+        { "id": "cv_jade", "title": "Project Jade (behind-the-meter data centers report)", "publisher": "Cleanview", "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/project-jade", "kind": "tracker" },
+        { "id": "csd_jade", "title": "Huge Cheyenne Data Center Grows To 2.7 Gigawatts", "publisher": "Cowboy State Daily", "url": "https://cowboystatedaily.com/2026/01/08/huge-cheyenne-data-center-grows-to-2-7-gigawatts-nearly-triple-state-power-use", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-07", "precision": "month", "source_ids": ["cv_jade", "csd_jade"], "note": "Announced as Project Jade (Crusoe/Tallgrass). Cleanview: 24 Jul 2025; Cowboy State Daily: August 2025." },
+        "construction_start": { "value": "2026-11", "precision": "month", "source_ids": ["google_wy"], "note": "Google (5 Nov 2026): 'We're building our first data center in Wyoming.' Other reports expect site grading from late 2026 and vertical construction in 2027." }
+      },
+      "review_append": "Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025."
+    },
+    "amazon-gw-ranch": {
+      "add_sources": [
+        { "id": "pacifico_2025", "title": "Pacifico Energy Announces GW Ranch Project Bringing 5 Gigawatts of Reliable Off Grid Power for AI Innovation", "publisher": "Pacifico Energy (Business Wire)", "url": "https://www.businesswire.com/news/home/20250820331187/en/Pacifico-Energy-Announces-GW-Ranch-Project-Bringing-5-Gigawatts-of-Reliable-Off-Grid-Power-for-AI-Innovation", "kind": "primary" },
+        { "id": "bx_gw_acq", "title": "Amazon Acquires 8,000-Acre Texas Site for Gas-Powered Data Center", "publisher": "Baxtel", "url": "https://baxtel.com/news/amazon-acquires-8-000-acre-texas-site-for-gas-powered-data-center", "kind": "tracker" }
+      ],
+      "status": "permitting",
+      "status_note": "Amazon acquired the site (Aug 2026) and filed its first buildings with the state; air permit for 7.65 GW of generation granted Jan 2026. No news or primary source yet confirms data center construction.",
+      "dates": {
+        "announced": { "value": "2025-08", "precision": "month", "source_ids": ["pacifico_2025"] }
+      },
+      "review_append": "Dates batch 1: status changed from under_construction to permitting; only trackers report land clearing (Jul 2026). Upgrade when a news or primary source confirms construction."
+    }
+  }
+}

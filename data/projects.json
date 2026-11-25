@@ -18,8 +18,24 @@
     "status": "under_construction",
     "status_note": "Construction began Dec 2024; expansion to 5 GW announced Jul 2026",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2024-12",
+        "precision": "month",
+        "source_ids": [
+          "led_meta"
+        ]
+      },
+      "construction_start": {
+        "value": "2024-12",
+        "precision": "month",
+        "source_ids": [
+          "meta_1yr"
+        ]
+      }
+    },
     "investment_usd": {
-      "value": 27000000000.0,
+      "value": 27000000000,
       "est": true
     },
     "sources": [
@@ -43,12 +59,28 @@
         "publisher": "Electric Choice",
         "url": "https://www.electricchoice.com/datacenters/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "meta_1yr",
+        "title": "One Year In: Meta's Richland Parish Data Center Supports Louisiana Economy With $875M In Contracts",
+        "publisher": "Meta",
+        "url": "https://about.fb.com/news/2025/12/metas-richland-parish-data-center-supports-louisiana-economy-875-million-in-contracts/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "led_meta",
+        "title": "Meta selects Northeast Louisiana as site of $10 billion AI-optimized data center",
+        "publisher": "Louisiana Economic Development",
+        "url": "https://opportunitylouisiana.gov/news/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state",
+        "kind": "primary",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "Investment: ~$27B JV per Smart Labor; Meta signalled far more over time.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "sb-energy-ports-piketon",
@@ -69,8 +101,26 @@
     "status": "under_construction",
     "status_note": "Sources differ: 8 GW (New Market Pitch) vs up to 10 GW (Smart Labor)",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2026-03",
+        "precision": "month",
+        "source_ids": [
+          "doe_ports",
+          "cbs_ports"
+        ]
+      },
+      "construction_start": {
+        "value": "2026-03",
+        "precision": "month",
+        "source_ids": [
+          "doe_ports"
+        ],
+        "note": "DOE describes the 20 Mar 2026 event as a groundbreaking; no later report of site work found."
+      }
+    },
     "investment_usd": {
-      "value": 67200000000.0,
+      "value": 67200000000,
       "est": true
     },
     "sources": [
@@ -87,12 +137,28 @@
         "publisher": "New Market Pitch",
         "url": "https://newmarketpitch.com/blogs/news/ai-data-center-biggest-campus",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "doe_ports",
+        "title": "Partnership ensures affordable energy powers AI future at Portsmouth Site",
+        "publisher": "U.S. Department of Energy",
+        "url": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "cbs_ports",
+        "title": "Trump officials announce data center and gas plants for former Ohio uranium site",
+        "publisher": "CBS News (AP)",
+        "url": "https://www.cbsnews.com/pittsburgh/news/data-center-gas-plants-ohio",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Confirm status with a primary source (SB Energy / DOE PORTS site).",
+    "review_notes": "Confirm status with a primary source (SB Energy / DOE PORTS site). Dates batch 1: no report of active site work after the Mar 2026 groundbreaking; recheck status.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "fermi-project-matador",
@@ -113,6 +179,32 @@
     "status": "paused",
     "status_note": "Cleanview: construction largely stalled, no tenant, CEO/CFO departed Apr 2026",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-06",
+        "precision": "month",
+        "source_ids": [
+          "spg_fermi"
+        ]
+      },
+      "construction_start": {
+        "value": "2025",
+        "precision": "year",
+        "source_ids": [
+          "ee_texas"
+        ],
+        "note": "Site work reported by Dec 2025; no formal groundbreaking date found."
+      },
+      "paused": {
+        "value": "2026-04",
+        "precision": "month",
+        "source_ids": [
+          "cv_fermi",
+          "ans_fermi"
+        ],
+        "note": "CEO and CFO departed Apr 2026; construction largely stalled."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -138,12 +230,36 @@
         "publisher": "Electric Choice",
         "url": "https://www.electricchoice.com/datacenters/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "spg_fermi",
+        "title": "Texas company pursues massive AI energy facility with nuclear, gas, solar",
+        "publisher": "S&P Global Market Intelligence",
+        "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/6/texas-company-pursues-massive-ai-energy-facility-with-nuclear-gas-solar-91113424",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "ee_texas",
+        "title": "Trump, atoms, AI and the Texas data center gusher",
+        "publisher": "E&E News",
+        "url": "https://www.eenews.net/articles/trump-atoms-ai-and-the-texas-data-center-gusher/",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "ans_fermi",
+        "title": "Fermi America coverage (executive departures, Apr 2026)",
+        "publisher": "American Nuclear Society – Nuclear News",
+        "url": "https://www.ans.org/news/tag-fermi%20america/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "Show as 'stalled' – do NOT present as active construction.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "creekstone-delta-gigasite",
@@ -164,8 +280,25 @@
     "status": "under_construction",
     "status_note": "Utah state: construction began late 2025, $17B commitment. Company cites >1 GW IT load across phases and a 10 GW headline",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-08",
+        "precision": "month",
+        "source_ids": [
+          "deseret_ck"
+        ]
+      },
+      "construction_start": {
+        "value": "2025-Q4",
+        "precision": "quarter",
+        "source_ids": [
+          "ut_gov"
+        ],
+        "note": "State release: construction began late 2025."
+      }
+    },
     "investment_usd": {
-      "value": 17000000000.0,
+      "value": 17000000000,
       "est": true
     },
     "sources": [
@@ -189,12 +322,20 @@
         "publisher": "Business Wire",
         "url": "https://www.businesswire.com/news/home/20251104790930/en",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "deseret_ck",
+        "title": "World's largest data center campus could be coming to central Utah",
+        "publisher": "Deseret News",
+        "url": "https://www.deseret.com/business/2025/08/15/worlds-largest-data-center-campus-could-be-coming-to-central-utah/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "primary",
     "review_notes": "Show as range: >1 GW IT load (phased) up to 10 GW headline. Phase 1 is only ~220-300 MW.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "amazon-gw-ranch",
@@ -212,9 +353,18 @@
       "high": 7650,
       "type": "power_generation"
     },
-    "status": "under_construction",
-    "status_note": "Amazon confirmed it acquired the site (Aug 2026); Pacifico builds off-grid gas power, first power targeted H1 2027",
+    "status": "permitting",
+    "status_note": "Amazon acquired the site (Aug 2026) and filed its first buildings with the state; air permit for 7.65 GW of generation granted Jan 2026. No news or primary source yet confirms data center construction.",
     "expected_completion": "2027 (first power)",
+    "dates": {
+      "announced": {
+        "value": "2025-08",
+        "precision": "month",
+        "source_ids": [
+          "pacifico_2025"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -240,12 +390,28 @@
         "publisher": "EnergyTech",
         "url": "https://www.energytech.com/distributed-energy/article/55353756/data-center-focused-gw-ranch-project-clears-texas-air-permitting-hurdle",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "pacifico_2025",
+        "title": "Pacifico Energy Announces GW Ranch Project Bringing 5 Gigawatts of Reliable Off Grid Power for AI Innovation",
+        "publisher": "Pacifico Energy (Business Wire)",
+        "url": "https://www.businesswire.com/news/home/20250820331187/en/Pacifico-Energy-Announces-GW-Ranch-Project-Bringing-5-Gigawatts-of-Reliable-Off-Grid-Power-for-AI-Innovation",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "bx_gw_acq",
+        "title": "Amazon Acquires 8,000-Acre Texas Site for Gas-Powered Data Center",
+        "publisher": "Baxtel",
+        "url": "https://baxtel.com/news/amazon-acquires-8-000-acre-texas-site-for-gas-powered-data-center",
+        "kind": "tracker",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "primary",
-    "review_notes": "Capacity is POWER GENERATION (5 GW goal by 2031; 7.65 GW air permit), not data center IT load. Coordinates from TCEQ permit.",
+    "review_notes": "Capacity is POWER GENERATION (5 GW goal by 2031; 7.65 GW air permit), not data center IT load. Coordinates from TCEQ permit. Dates batch 1: status changed from under_construction to permitting; only trackers report land clearing (Jul 2026). Upgrade when a news or primary source confirms construction.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "google-project-tembo",
@@ -266,8 +432,27 @@
     "status": "under_construction",
     "status_note": "Google announced $17B for first Wyoming data center (Nov 6, 2026)",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-07",
+        "precision": "month",
+        "source_ids": [
+          "cv_jade",
+          "csd_jade"
+        ],
+        "note": "Announced as Project Jade (Crusoe/Tallgrass). Cleanview: 24 Jul 2025; Cowboy State Daily: August 2025."
+      },
+      "construction_start": {
+        "value": "2026-11",
+        "precision": "month",
+        "source_ids": [
+          "google_wy"
+        ],
+        "note": "Google (5 Nov 2026): 'We're building our first data center in Wyoming.' Other reports expect site grading from late 2026 and vertical construction in 2027."
+      }
+    },
     "investment_usd": {
-      "value": 17000000000.0,
+      "value": 17000000000,
       "est": true
     },
     "sources": [
@@ -284,12 +469,36 @@
         "publisher": "Baxtel",
         "url": "https://baxtel.com/data-center/weid5m",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "google_wy",
+        "title": "Investing in Wyoming's infrastructure, energy and workforce",
+        "publisher": "Google",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "cv_jade",
+        "title": "Project Jade (behind-the-meter data centers report)",
+        "publisher": "Cleanview",
+        "url": "https://cleanview.co/reports/behind-the-meter-data-centers/full-report/project-jade",
+        "kind": "tracker",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "csd_jade",
+        "title": "Huge Cheyenne Data Center Grows To 2.7 Gigawatts",
+        "publisher": "Cowboy State Daily",
+        "url": "https://cowboystatedaily.com/2026/01/08/huge-cheyenne-data-center-grows-to-2-7-gigawatts-nearly-triple-state-power-use",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus.",
+    "review_notes": "Check whether Project Tembo and the $17B announcement are the same campus. Dates batch 1: confirm which Cowboy State Daily article dates the announcement to August 2025.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-abilene",
@@ -310,6 +519,32 @@
     "status": "partially_operational",
     "status_note": "Epoch: ~0.3 GW operational; 1.2 GW projected Q4 2026",
     "expected_completion": "2026-Q4",
+    "dates": {
+      "announced": {
+        "value": "2024-07",
+        "precision": "month",
+        "source_ids": [
+          "crusoe_2024"
+        ]
+      },
+      "construction_start": {
+        "value": "2024",
+        "precision": "year",
+        "source_ids": [
+          "crusoe_2024",
+          "bx_lancium"
+        ],
+        "note": "Baxtel (tracker only) gives June 2024; year precision used until a news or primary source confirms the month."
+      },
+      "operational": {
+        "value": "2025-09",
+        "precision": "month",
+        "source_ids": [
+          "dcd_abilene_live"
+        ],
+        "note": "First phase (Buildings 1-2, ~200 MW) announced live 30 Sep 2025."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -328,12 +563,36 @@
         "publisher": "Smart Labor Management",
         "url": "https://www.smarterlabor.com/blog/the-gigawatt-era-inside-the-5-largest-data-center-projects-in-america-in-2026",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "crusoe_2024",
+        "title": "Crusoe to Build Initial 200 MW AI Data Center With Plans to Expand at 1.2 GW Lancium Clean Campus",
+        "publisher": "Crusoe (Business Wire)",
+        "url": "https://www.businesswire.com/news/home/20240718273783/en/Crusoe-to-Build-Initial-200-MW-AI-Data-Center-With-Plans-to-Expand-at-1.2-GW-Lancium-Clean-Campus/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_abilene_live",
+        "title": "Crusoe's Abilene data center officially live, serving Oracle and OpenAI's Stargate",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/crusoes-abilene-data-center-officially-live-serving-oracle-and-openais-stargate/",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "bx_lancium",
+        "title": "Lancium: Abilene",
+        "publisher": "Baxtel",
+        "url": "https://baxtel.com/data-center/lancium-abilene",
+        "kind": "tracker",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-frontier-shackelford",
@@ -354,8 +613,24 @@
     "status": "under_construction",
     "status_note": "First building targeted 2H 2026",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-08",
+        "precision": "month",
+        "source_ids": [
+          "vantage_2025"
+        ]
+      },
+      "construction_start": {
+        "value": "2025-12",
+        "precision": "month",
+        "source_ids": [
+          "wmedia_frontier"
+        ]
+      }
+    },
     "investment_usd": {
-      "value": 25000000000.0,
+      "value": 25000000000,
       "est": true
     },
     "sources": [
@@ -379,12 +654,28 @@
         "publisher": "Blackridge Research",
         "url": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "vantage_2025",
+        "title": "Vantage Data Centers Unveils Plans for \"Frontier,\" a $25B Mega-campus in Texas",
+        "publisher": "Vantage Data Centers (Business Wire)",
+        "url": "https://www.businesswire.com/news/home/20250819333311/en/Vantage-Data-Centers-Unveils-Plans-for-%E2%80%9CFrontier%E2%80%9D-a-25B-Mega-campus-in-Texas-to-Meet-Unprecedented-AI-Demand",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "wmedia_frontier",
+        "title": "Vantage Data Centers breaks ground on data center campus in Texas",
+        "publisher": "W.Media",
+        "url": "https://w.media/vantage-data-centers-breaks-ground-on-data-center-campus-in-texas/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "stargate-milam-freebird",
@@ -633,7 +924,7 @@
     "status_note": "Groundbreaking reported by Data Center Frontier",
     "expected_completion": null,
     "investment_usd": {
-      "value": 10000000000.0,
+      "value": 10000000000,
       "est": true
     },
     "sources": [
@@ -677,7 +968,7 @@
     "status_note": "Online 2028",
     "expected_completion": "2028",
     "investment_usd": {
-      "value": 10000000000.0,
+      "value": 10000000000,
       "est": true
     },
     "sources": [
@@ -788,7 +1079,7 @@
     "status_note": "Epoch: 946 MW IT operational; Cleanview: ~1.3 GW; expansion toward 2 GW",
     "expected_completion": null,
     "investment_usd": {
-      "value": 35800000000.0,
+      "value": 35800000000,
       "est": true
     },
     "sources": [
@@ -839,7 +1130,7 @@
     "status_note": "Second datacenter of similar scale announced ($4B)",
     "expected_completion": null,
     "investment_usd": {
-      "value": 7000000000.0,
+      "value": 7000000000,
       "est": true
     },
     "sources": [
@@ -927,7 +1218,7 @@
     "status_note": "18 buildings operating, 14 under construction; permits suggest 2.3 GW total",
     "expected_completion": null,
     "investment_usd": {
-      "value": 11000000000.0,
+      "value": 11000000000,
       "est": true
     },
     "sources": [
@@ -971,7 +1262,7 @@
     "status_note": "$15B for new campuses adding 2.4 GW",
     "expected_completion": null,
     "investment_usd": {
-      "value": 15000000000.0,
+      "value": 15000000000,
       "est": true
     },
     "sources": [
@@ -1008,7 +1299,7 @@
     "status_note": "Groundbreaking Sept 2026; state Notice of Commencement filed Oct 8, 2026; ~$10B",
     "expected_completion": "2028-2029",
     "investment_usd": {
-      "value": 10000000000.0,
+      "value": 10000000000,
       "est": true
     },
     "sources": [
@@ -1251,7 +1542,7 @@
     "status_note": "Up to 1.8 GW across up to 40 buildings; ~$20B",
     "expected_completion": null,
     "investment_usd": {
-      "value": 20000000000.0,
+      "value": 20000000000,
       "est": true
     },
     "sources": [
@@ -1362,7 +1653,7 @@
     "status_note": "Meta's first Canadian data center, >$9B",
     "expected_completion": null,
     "investment_usd": {
-      "value": 9000000000.0,
+      "value": 9000000000,
       "est": true
     },
     "sources": [
@@ -1399,7 +1690,7 @@
     "status_note": "First 200 MW expected 2026 (Epoch: on track by Dec 2026); part of a 5 GW campus",
     "expected_completion": "2026-12 (phase 1)",
     "investment_usd": {
-      "value": 7600000000.0,
+      "value": 7600000000,
       "est": true
     },
     "sources": [
@@ -1450,7 +1741,7 @@
     "status_note": "Epoch: buildings 1–2 expected operational end of 2026",
     "expected_completion": "2026-H2",
     "investment_usd": {
-      "value": 3500000000.0,
+      "value": 3500000000,
       "est": true
     },
     "sources": [
@@ -1531,7 +1822,7 @@
     "status_note": "Groundbreaking Apr 28, 2026; three campuses",
     "expected_completion": "2030",
     "investment_usd": {
-      "value": 15000000000.0,
+      "value": 15000000000,
       "est": true
     },
     "sources": [
