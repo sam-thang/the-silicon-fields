@@ -8,6 +8,12 @@ import raw from "../../../data/projects.geojson?raw";
 // Dotted land, as in the mockup (built by build-dots.mjs from Natural Earth 1:50m).
 import landDots from "./land-dots.json";
 export { landDots };
+// Existing data centers (OpenStreetMap, ODbL): context only, never counted in totals.
+import osm from "../../../data/context/osm-datacenters.json";
+export const contextDots = osm.points.map(([lon, lat]) => [lon, lat]);
+export const CONTEXT_COUNT = osm.count;
+export const OSM_CREDIT = `<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>`;
+import factors from "../../../data/factors.json";
 
 export const params = new URLSearchParams(location.search);
 export const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -19,8 +25,10 @@ export const COLOR = {
   operational: "#DCE3EE",
   paused: "#6B7280",
   ocean: "#16294A",
-  landDot: "#4A6290", // mockups/desktop-globe-home.html land dots (not yet a DESIGN.md token)
+  landDot: "#4A6290", // DESIGN.md Land Dot
+  context: "#B5C2DA", // DESIGN.md Text Secondary, used as a graphic for the OSM context specks
 };
+export const CONTEXT_OPACITY = 0.6;
 export const LAND_DOT_RADIUS_M = 26000;
 export const STAGE_LABEL = {
   planned: "Planned",
@@ -278,6 +286,78 @@ export function autoRotate(stepFn) {
     requestAnimationFrame(loop);
   };
   requestAnimationFrame(loop);
+}
+
+// ---- Counter (top left, as in the mockup) ----
+// Homes: capacity x hours x utilisation / average US home (data/factors.json, est.).
+const F = factors.factors;
+const homesPerMW = (1000 * F.hours_per_year.value * F.capacity_utilisation.value) / F.us_home_kwh_per_year.value;
+const LEGEND = [
+  ["construction", "Under construction", ["construction", "partial"]],
+  ["planned", "Planned", ["planned"]],
+  ["operational", "Operational", ["operational"]],
+  ["paused", "Paused", ["paused"]],
+];
+const fmt = new Intl.NumberFormat("en-US");
+const gw = (mw) => (mw / 1000).toFixed(mw >= 10000 ? 0 : 1);
+
+export function mountCounter() {
+  const el = document.createElement("section");
+  el.id = "counter";
+  el.setAttribute("aria-label", "Totals at the selected date");
+  el.innerHTML = `
+    <p class="big"><span class="big-num">0</span><span class="big-unit">GW</span></p>
+    <p class="lead"></p>
+    <ul class="legend">
+      ${LEGEND.map(([k, label]) => `<li data-k="${k}"><span class="sw sw-${k}"></span><span class="lg-label">${label}</span><span class="lg-val"></span></li>`).join("")}
+      <li data-k="context"><span class="sw sw-context"></span><span class="lg-label">Existing data centers<span class="lg-src"> (OpenStreetMap)</span></span><span class="lg-val">${fmt.format(CONTEXT_COUNT)}</span></li>
+    </ul>
+    <p class="foot">Column height: capacity, “up to” unless fully operational. Homes: est., at full power, ${fmt.format(F.us_home_kwh_per_year.value)} kWh a year per average US home (EIA 2024).</p>`;
+  document.body.append(el);
+  // Sit below the prototype's test controls, whatever height they wrap to.
+  const place = () => {
+    const chrome = document.querySelector("#chrome");
+    if (chrome) el.style.top = `${Math.round(chrome.getBoundingClientRect().bottom + (innerWidth < 900 ? 16 : 48))}px`;
+  };
+  place();
+  addEventListener("resize", place);
+  document.fonts?.ready.then(place);
+  const num = el.querySelector(".big-num");
+  const lead = el.querySelector(".lead");
+  const vals = Object.fromEntries(LEGEND.map(([k]) => [k, el.querySelector(`[data-k="${k}"] .lg-val`)]));
+  return {
+    update(iso) {
+      const by = { construction: 0, planned: 0, operational: 0, paused: 0 };
+      const sites = { construction: 0, planned: 0, operational: 0, paused: 0 };
+      let total = 0, projects = 0;
+      for (const f of geojson.features) {
+        const p = f.properties;
+        const stage = stageAt(p, iso);
+        if (!stage) continue;
+        projects++;
+        const mw = p.column_mw ?? 0;
+        total += mw;
+        const k = stage === "partial" ? "construction" : stage;
+        by[k] += mw;
+        sites[k]++;
+      }
+      const [y, m] = iso.split("-");
+      const month = new Date(Number(y), Number(m) - 1).toLocaleString("en-US", { month: "short" });
+      num.textContent = gw(total);
+      const homes = Math.round((total * homesPerMW) / 1e6);
+      lead.textContent = `across ${projects} AI megaprojects built, being built or planned, as of ${month} ${y}. Enough for up to ${homes} million US homes (est.).`;
+      // A status whose sites have no published capacity says so instead of showing 0 GW.
+      for (const [k] of LEGEND) vals[k].textContent = by[k] ? `${gw(by[k])} GW` : sites[k] ? "undisclosed" : "0 GW";
+    },
+  };
+}
+
+/** Attribution line for engines without their own control (deck.gl). */
+export function mountCredit(html) {
+  const el = document.createElement("p");
+  el.id = "credit";
+  el.innerHTML = html;
+  document.body.append(el);
 }
 
 /** Mix a hex color toward the ocean navy: used to dim the other columns while one is picked. */

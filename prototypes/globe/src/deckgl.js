@@ -5,10 +5,13 @@ import { SimpleMeshLayer } from "@deck.gl/mesh-layers";
 import { SphereGeometry } from "@luma.gl/engine";
 import {
   COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, LAND_DOT_RADIUS_M, landDots, heightFor, items, stageAt, hexToRgb, params,
-  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable, dimHex, fitGlobe, placeShade,
+  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable, dimHex, fitGlobe, placeShade, mountCounter, mountCredit, contextDots, CONTEXT_OPACITY, OSM_CREDIT,
 } from "./shared.js";
 
 const { meter, loadTest } = mountChrome("deck.gl");
+const counter = mountCounter();
+mountCredit(`Land: Natural Earth · ${OSM_CREDIT}`);
+const contextColor = [...hexToRgb(COLOR.context), Math.round(255 * CONTEXT_OPACITY)];
 const all = items(loadTest);
 
 if (!webglAvailable()) {
@@ -74,6 +77,11 @@ function layers() {
           id: "land-dots", data: landDots, getPosition: (d) => d, getRadius: LAND_DOT_RADIUS_M,
           radiusMinPixels: 0.6, getFillColor: hexToRgb(COLOR.landDot),
         }),
+    // Existing data centers (OpenStreetMap): pale specks, context only.
+    new ScatterplotLayer({
+      id: "context", data: contextDots, getPosition: (d) => d, radiusUnits: "pixels", getRadius: 1.6,
+      getFillColor: contextColor,
+    }),
     new ScatterplotLayer({
       id: "approx", data: approx, getPosition: common.getPosition, getRadius: APPROX_RADIUS_M,
       getFillColor: (v) => [...rgb[v.stage], 40], updateTriggers: { getFillColor: iso },
@@ -140,6 +148,7 @@ function updateShade() {
 
 function render(nextIso) {
   iso = nextIso;
+  counter.update(iso);
   deck.setProps({ layers: layers() });
 }
 const timeline = mountTimeline(render);

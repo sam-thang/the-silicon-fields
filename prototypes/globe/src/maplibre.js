@@ -6,10 +6,11 @@ import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 maplibregl.setWorkerUrl(workerUrl);
 import {
   COLOR, STAGE_COLOR, COLUMN_RADIUS_M, APPROX_RADIUS_M, landDots, heightFor, items, stageAt,
-  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable, dimHex, fitGlobe, placeShade,
+  mountChrome, mountTimeline, createCard, autoRotate, webglAvailable, dimHex, fitGlobe, placeShade, mountCounter, contextDots, CONTEXT_OPACITY,
 } from "./shared.js";
 
 const { meter, loadTest } = mountChrome("MapLibre");
+const counter = mountCounter();
 const all = items(loadTest);
 
 if (!webglAvailable()) {
@@ -58,7 +59,7 @@ const map = new maplibregl.Map({
   zoom: innerWidth < 600 ? 1.1 : 2.0,
   pitch: 28,
   maxPitch: 70,
-  attributionControl: { compact: true, customAttribution: "Land: Natural Earth" },
+  attributionControl: { compact: true, customAttribution: ["Land: Natural Earth", '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>'] },
   style: {
     version: 8,
     projection: { type: "globe" },
@@ -67,6 +68,7 @@ const map = new maplibregl.Map({
     light: { anchor: "viewport", intensity: 0 },
     sources: {
       land: { type: "geojson", data: { type: "Feature", properties: {}, geometry: { type: "MultiPoint", coordinates: landDots } } },
+      context: { type: "geojson", data: { type: "Feature", properties: {}, geometry: { type: "MultiPoint", coordinates: contextDots } } },
       cols: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
       dots: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
       approx: { type: "geojson", data: { type: "FeatureCollection", features: [] } },
@@ -81,6 +83,16 @@ const map = new maplibregl.Map({
           "circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, 0.9, 2, 1.9, 5, 7],
           "circle-pitch-alignment": "map",
           "circle-pitch-scale": "map",
+        },
+      },
+      // Existing data centers (OpenStreetMap): pale specks, context only.
+      {
+        id: "context", type: "circle", source: "context",
+        paint: {
+          "circle-color": COLOR.context,
+          "circle-opacity": CONTEXT_OPACITY,
+          "circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, 1.1, 2, 2, 5, 4],
+          "circle-pitch-alignment": "map",
         },
       },
       { id: "approx", type: "fill", source: "approx", paint: { "fill-color": ["get", "color"], "fill-opacity": 0.16 } },
@@ -101,6 +113,7 @@ let currentIso = null;
 let ready = false;
 function render(iso) {
   currentIso = iso;
+  counter.update(iso);
   if (!ready) return;
   const c = collections(iso);
   map.getSource("cols").setData(c.cols);

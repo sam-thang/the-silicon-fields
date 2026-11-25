@@ -12,7 +12,8 @@
     "data": "npm run validate && npm run build:geojson",
     "proto": "npm run data && vite --config prototypes/globe/vite.config.mjs",
     "proto:build": "npm run data && vite build --config prototypes/globe/vite.config.mjs",
-    "proto:serve": "npm run proto:build && vite preview --config prototypes/globe/vite.config.mjs"
+    "proto:serve": "npm run proto:build && vite preview --config prototypes/globe/vite.config.mjs",
+    "context:osm": "node scripts/build_osm_context.mjs"
   },
   "devDependencies": {
     "@deck.gl/core": "^9.4.2",

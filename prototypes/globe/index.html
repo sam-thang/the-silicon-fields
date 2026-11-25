@@ -38,7 +38,7 @@
   <body>
     <main>
       <h1>Which globe engine?</h1>
-      <p>Two throwaway prototypes draw the same 41 approved projects from <code>data/projects.geojson</code>. Open each on your iPhone and note how it feels and what the meter says.</p>
+      <p>Two throwaway prototypes draw the same 41 approved projects from <code>data/projects.geojson</code>, over 3,496 existing data centers from OpenStreetMap. Open each on your iPhone and note how it feels and what the meter says.</p>
       <div class="engines">
         <a href="maplibre.html">Open MapLibre</a>
         <a href="deckgl.html">Open deck.gl</a>
@@ -66,13 +66,13 @@
       import "@fontsource/inter/400.css";
       import "@fontsource/inter/600.css";
       import "@fontsource/space-grotesk/700.css";
-      const WEIGHT = { maplibre: "389 KB", deckgl: "226 KB" };
       const rows = [
         ["fps while spinning", "spin"],
         ["worst while spinning", "spinWorst"],
         ["fps while scrubbing", "scrub"],
         ["fps, load test", "load"],
         ["First globe (s)", "first"],
+        ["Transfer, first visit (KB)", "weight"],
         ["Tap accuracy, Texas (of 5)", "taps"],
         ["Looks closest to the mockup (1–5)", "look"],
       ];
@@ -81,7 +81,6 @@
       try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch {}
       const tbody = document.querySelector("#results");
       tbody.innerHTML =
-        `<tr><td>Download, gzipped</td><td class="fixed">${WEIGHT.maplibre}</td><td class="fixed">${WEIGHT.deckgl}</td></tr>` +
         rows.map(([label, k]) => `<tr><td>${label}</td>${["maplibre", "deckgl"].map((e) =>
           `<td><input inputmode="decimal" aria-label="${label}, ${e === "maplibre" ? "MapLibre" : "deck.gl"}" data-k="${e}.${k}" value="${saved[`${e}.${k}`] ?? ""}"></td>`).join("")}</tr>`).join("");
       tbody.addEventListener("input", (e) => {
