@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thesiliconfields.com/schema/factors.schema.json",
+  "title": "Conversion factors",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["updated", "factors"],
+  "properties": {
+    "updated": { "type": "string", "format": "date" },
+    "factors": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/factor" }
+    }
+  },
+  "$defs": {
+    "factor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "value", "unit", "derivation", "sources"],
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "value": { "type": "number", "exclusiveMinimum": 0 },
+        "display": { "type": "string" },
+        "unit": { "type": "string", "minLength": 1 },
+        "data_year": { "type": "integer", "minimum": 2000 },
+        "derivation": { "type": "string", "minLength": 1 },
+        "note": { "type": "string" },
+        "inputs": { "type": "object", "additionalProperties": { "type": "number" } },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "publisher", "url", "kind", "accessed"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "published": { "type": "string", "format": "date" },
+        "kind": { "enum": ["primary", "news", "secondary"] },
+        "accessed": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

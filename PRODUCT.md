@@ -53,7 +53,7 @@ A curated, sourced, project-level view of the AI data center build-out, at plane
 
 **Not in v1:** change alerts or newsletter, automated construction-progress detection, an opposition or ballot tracker view, embeddable widgets.
 
-**Locale:** English only. Comparisons switch by the visitor's region: US visitors get acres, US football fields (1.32 acres including end zones) and EIA household figures; Norwegian visitors get hectares and SSB/NVE household figures. Wherever no sourced factor exists for a region, the site falls back to plain metric (hectares, GWh). MW and GW are used everywhere. Every factor lives in `data/factors.json` with its source and date.
+**Locale:** English only. The homes comparison is universal: every visitor sees "US homes" (EIA average, est.), so totals compare the same way wherever a link is shared (owner decision, Nov 2026). Area units switch by the visitor's region: US visitors get acres and US football fields (1.32 acres including end zones); Norwegian visitors get hectares. Wherever no sourced factor exists for a region, the site falls back to plain metric (hectares, GWh). MW and GW are used everywhere. Every factor lives in `data/factors.json` with its source and date.
 
 **Terminology:**
 - **Groundbroken** labels the construction start date (e.g. "Groundbroken Dec 2024").
@@ -86,7 +86,7 @@ A curated, sourced, project-level view of the AI data center build-out, at plane
 - `data/projects.json`: seed dataset of 41 projects, compiled and approved in Nov 2026, each with sources, a verification level and review notes. Coordinates are approximate.
 - `mockups/desktop-globe-home.html`, `mockups/mobile-site-card.html`: agreed static mockups. Their numbers are placeholders.
 - `mockups/accent-color-options.html`: reference only; the amber accent was chosen from it.
-- Not yet on hand, and must not be fabricated: `data/factors.json` figures (verify current EIA and SSB/NVE numbers first), refined coordinates, before/after imagery, water-use figures, investment figures beyond the sourced ones, and social preview images.
+- Not yet on hand, and must not be fabricated: refined coordinates, before/after imagery, water-use figures, investment figures beyond the sourced ones, and social preview images.
 
 ## Product Principles
 

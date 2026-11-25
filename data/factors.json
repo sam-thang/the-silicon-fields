@@ -1,0 +1,68 @@
+{
+  "updated": "2026-11-25",
+  "factors": {
+    "us_home_kwh_per_year": {
+      "label": "Average US home electricity use",
+      "value": 10380,
+      "unit": "kWh/year",
+      "data_year": 2024,
+      "derivation": "865 kWh per month x 12 (EIA states the monthly figure; the annual figure is our multiplication)",
+      "note": "Electricity sold to the average US residential customer. Homes with rooftop solar consume somewhat more than they buy. Used everywhere on the site (one universal comparison, owner decision 2026-11-25).",
+      "inputs": { "kwh_per_month": 865, "months": 12 },
+      "sources": [
+        {
+          "id": "eia_tie_65244",
+          "title": "Residential electric bills in Hawaii and Connecticut are twice those in New Mexico, Utah",
+          "publisher": "U.S. Energy Information Administration (Today in Energy)",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=65244",
+          "published": "2025-05-12",
+          "kind": "primary",
+          "accessed": "2026-11-25"
+        }
+      ]
+    },
+    "capacity_utilisation": {
+      "label": "Assumed share of the year a site runs at full capacity",
+      "value": 1,
+      "unit": "fraction",
+      "derivation": "Assumption, not a measurement: every site runs at full capacity all year. Gives an upper bound, consistent with the 'up to' column rule.",
+      "note": "Owner decision 2026-11-25. No sourced average utilisation for AI campuses is on hand; do not replace this with a guess. The UI labels the result 'est., at full power'.",
+      "sources": []
+    },
+    "hours_per_year": {
+      "label": "Hours in a year",
+      "value": 8760,
+      "unit": "h",
+      "derivation": "365 days x 24 hours (leap days ignored)",
+      "inputs": { "days": 365, "hours_per_day": 24 },
+      "sources": []
+    },
+    "football_field_acres": {
+      "label": "US football field, including end zones",
+      "value": 1.322,
+      "display": "1.32",
+      "unit": "acres",
+      "derivation": "360 ft x 160 ft = 57,600 sq ft; / 43,560 sq ft per acre = 1.322 acres",
+      "note": "Dimensions from NFL Rule 1, Section 1, Article 1 ('360 feet in length and 160 feet in width'). Figure confirmed by the owner 2026-11-25.",
+      "inputs": { "length_ft": 360, "width_ft": 160, "sq_ft_per_acre": 43560 },
+      "sources": [
+        {
+          "id": "nfl_rulebook",
+          "title": "Official Playing Rules of the National Football League, Rule 1 (The Field)",
+          "publisher": "National Football League",
+          "url": "https://static.www.nfl.com/image/upload/fl_attachment/league/tqivdkzt9mu6wdgsh1ku.pdf",
+          "kind": "primary",
+          "accessed": "2026-11-25"
+        },
+        {
+          "id": "wiki_football_field",
+          "title": "American football field",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/American_football_field",
+          "kind": "secondary",
+          "accessed": "2026-11-25"
+        }
+      ]
+    }
+  }
+}

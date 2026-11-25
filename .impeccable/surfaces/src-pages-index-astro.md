@@ -34,7 +34,7 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape home`.
 - Where low and high differ, the headline shows the column-basis total, and the line under it gives the low–high range.
 - **No published construction start** (owner decision 2026-11-25): an under-construction project turns amber at its first sourced evidence of construction (`dates.construction_start.basis: "first_evidence"`). The site card then says "construction start date not published".
 - Projects with no capacity figure count toward the project total, not toward GW, and are drawn as dots.
-- Comparison (changed 2026-11-25): **households, not countries**. "Enough for about N homes", localised by region (US: EIA; Norway: SSB/NVE), marked "est." (assumes full capacity all year; home demand = annual kWh ÷ 8,760 h). Factors live in `data/factors.json`. Headline wording stays open, because tens of millions of homes is abstract; consider pairing it with a sourced local anchor. Country comparison is dropped from v1.
+- Comparison (changed 2026-11-25): **households, not countries**. "Enough for up to N US homes", one universal figure for every visitor (owner decision 2026-11-25: EIA 2024, 10,380 kWh/yr), marked "est., at full power" (assumes full capacity all year; 1 GW ≈ 844,000 homes). Factors live in `data/factors.json`. Headline wording stays open, because tens of millions of homes is abstract; consider pairing it with a sourced local anchor. Country comparison is dropped from v1.
 
 ## States and ranges
 - 41 projects; capacity 214 MW – 17 GW; 2 with no capacity figure; 2 at region- or state-level precision (soft circle at the base); 1 paused.

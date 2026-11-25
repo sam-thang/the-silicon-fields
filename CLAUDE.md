@@ -166,8 +166,10 @@ Rules:
 ## Conversion factors (single source of truth)
 
 Keep in `data/factors.json`, each with source and date, shown on the methodology page:
-- Average household electricity use (US: EIA; Norway: SSB/NVE) → "homes powered" equivalent. **Verify current figures before using.**
-- Football field area (US field incl. end zones = 1.32 acres).
+- Average US home electricity use: **10,380 kWh/year** (EIA, 2024: 865 kWh/month × 12). This is the one universal homes comparison, used for every region (owner decision, Nov 2026), labelled "US homes" and "est.".
+- Capacity → homes assumes full capacity all year (utilisation 1, 8,760 h). This gives an upper bound, labelled "est., at full power". 1 GW ≈ 8.76 TWh/yr ≈ 844,000 US homes. Do not swap in a utilisation figure without a source.
+- Football field area: 360 × 160 ft incl. end zones (NFL Rule 1) = **1.32 acres**.
+- `data/factors.json` is checked by `data/schema/factors.schema.json` and `npm run validate`, which recomputes each value from its inputs. Re-verify the EIA figure when a newer year is published.
 - Never invent water-use figures. Show water only where a source gives a number for that site.
 
 ## Data sources (check licenses before copying data)

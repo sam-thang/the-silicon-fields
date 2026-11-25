@@ -1,10 +1,15 @@
 // Validates every record in data/projects/ against the JSON Schema plus the
-// cross-field rules from CLAUDE.md. Exits non-zero on any error (used in CI).
+// cross-field rules from CLAUDE.md, and data/factors.json against its schema
+// (each factor's value is recomputed from its inputs). Exits non-zero on any error (used in CI).
 // Usage: npm run validate
 import { readFileSync } from "node:fs";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import { loadProjects, SCHEMA_PATH, BUILDING_STATUSES, EVIDENCE_KINDS, periodStart } from "./lib/projects.mjs";
+import { join } from "node:path";
+import { ROOT, loadProjects, SCHEMA_PATH, BUILDING_STATUSES, EVIDENCE_KINDS, periodStart } from "./lib/projects.mjs";
+
+const FACTORS_PATH = join(ROOT, "data", "factors.json");
+const FACTORS_SCHEMA_PATH = join(ROOT, "data", "schema", "factors.schema.json");
 
 const schema = JSON.parse(readFileSync(SCHEMA_PATH, "utf8"));
 const ajv = new Ajv2020({ allErrors: true, strict: true });
@@ -95,6 +100,47 @@ for (const { file, slug, record: p } of loadProjects()) {
   if (p.review_notes?.trim()) warnings.push(`${file}: review note: ${p.review_notes.trim()}`);
 }
 
+// ---- data/factors.json (conversion factors for comparisons) ----
+const factorsDoc = JSON.parse(readFileSync(FACTORS_PATH, "utf8"));
+const validateFactors = ajv.compile(JSON.parse(readFileSync(FACTORS_SCHEMA_PATH, "utf8")));
+if (!validateFactors(factorsDoc)) {
+  for (const e of validateFactors.errors) errors.push(`factors.json: schema ${e.instancePath || "/"} ${e.message}`);
+} else {
+  // Factors the comparisons depend on, and how to recompute each from its inputs.
+  const RECOMPUTE = {
+    us_home_kwh_per_year: (i) => i.kwh_per_month * i.months,
+    hours_per_year: (i) => i.days * i.hours_per_day,
+    football_field_acres: (i) => (i.length_ft * i.width_ft) / i.sq_ft_per_acre,
+    capacity_utilisation: null, // assumption, no inputs
+  };
+  // Assumptions and definitions may have no source; everything else needs evidence.
+  const UNSOURCED_OK = new Set(["capacity_utilisation", "hours_per_year"]);
+  const f = factorsDoc.factors;
+  for (const id of Object.keys(RECOMPUTE)) if (!f[id]) errors.push(`factors.json: missing factor "${id}"`);
+  for (const [id, x] of Object.entries(f)) {
+    const ferr = (msg) => errors.push(`factors.json: ${id}: ${msg}`);
+    const fn = RECOMPUTE[id];
+    if (fn) {
+      if (!x.inputs) ferr("needs inputs so the value can be checked");
+      else {
+        const expect = fn(x.inputs);
+        if (Math.abs(expect - x.value) > 0.0005 * Math.max(1, Math.abs(expect))) {
+          ferr(`value ${x.value} does not match its inputs (${expect})`);
+        }
+      }
+    }
+    if (x.display !== undefined && Math.abs(Number(x.display) - x.value) > 0.01) ferr(`display "${x.display}" does not round from ${x.value}`);
+    if (!UNSOURCED_OK.has(id) && !x.sources.some((s) => EVIDENCE_KINDS.has(s.kind))) {
+      ferr("needs at least one primary or news source");
+    }
+    const ids = new Set();
+    for (const s of x.sources) {
+      if (ids.has(s.id)) ferr(`duplicate source id "${s.id}"`);
+      ids.add(s.id);
+    }
+  }
+}
+
 const count = seenSlugs.size;
 if (warnings.length && process.argv.includes("--verbose")) console.log(warnings.join("\n") + "\n");
 if (errors.length) {
@@ -102,4 +148,4 @@ if (errors.length) {
   console.error(`\n✗ ${errors.length} error(s) in ${count} record(s).`);
   process.exit(1);
 }
-console.log(`✓ ${count} records valid. ${warnings.length} with open review notes (run with --verbose to list).`);
+console.log(`✓ ${count} records and ${Object.keys(factorsDoc.factors).length} conversion factors valid. ${warnings.length} with open review notes (run with --verbose to list).`);
