@@ -30,7 +30,7 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape home`.
 
 ## Counting rules (confirmed)
 - The headline total **includes paused projects** (e.g. Fermi Project Matador). They keep Paused Slate and their own grey legend row, and are never shown as active construction.
-- **Under-construction projects use `high` capacity, labelled "up to".** Planned uses `high`; operational uses `low`. The methodology page states these rules.
+- **Column height: `low` only for fully operational sites; every other status uses `high`, labelled "up to"** (owner decisions 2026-11-25: under construction, partially operational and paused all use `high`). The methodology page states these rules.
 - Where low and high differ, the headline shows the column-basis total, and the line under it gives the low–high range.
 - **No published construction start** (owner decision 2026-11-25): an under-construction project turns amber at its first sourced evidence of construction (`dates.construction_start.basis: "first_evidence"`). The site card then says "construction start date not published".
 - Projects with no capacity figure count toward the project total, not toward GW, and are drawn as dots.
