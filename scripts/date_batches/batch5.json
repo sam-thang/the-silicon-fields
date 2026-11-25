@@ -1,0 +1,105 @@
+{
+  "_note": "Batch 5 (final) of the timeline date research, approved by the owner 2026-11-25, incl. status changes for Reliance Jamnagar and HUMAIN Riyadh (under_construction -> announced).",
+  "accessed": "2026-11-25",
+  "projects": {
+    "google-visakhapatnam": {
+      "add_sources": [
+        { "id": "g_viz_blog", "title": "Google AI Hub – Scaling India's AI Infrastructure and Community Impact", "publisher": "Google", "url": "https://blog.google/intl/en-in/google-ai-hub-scaling-indias-ai-infrastructure-and-community-impact/", "kind": "primary" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-10", "precision": "month", "source_ids": ["g_viz_blog"] },
+        "construction_start": { "value": "2026-04", "precision": "month", "source_ids": ["g_viz"], "note": "Groundbreaking 28 Apr 2026 at Tarluvada." }
+      }
+    },
+    "stargate-uae": {
+      "add_sources": [
+        { "id": "bw_uae", "title": "Global Tech Alliance Launches Stargate UAE", "publisher": "Business Wire", "url": "https://www.businesswire.com/news/home/20250522084566/en", "kind": "primary" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-05", "precision": "month", "source_ids": ["bw_uae", "oai_uae"] },
+        "construction_start": { "value": "2025-06", "precision": "month", "source_ids": ["ep_uae"], "note": "Epoch satellite imagery: land clearing for Buildings 1-2 begins 9 Jun 2025." }
+      },
+      "status_note": "First 200 MW under construction; Epoch projects it online by Dec 2026 (G42 targeted Q3 2026). Part of a 5 GW UAE-US AI campus; 1 GW cluster est. Jan 2028."
+    },
+    "stargate-norway-narvik": {
+      "add_sources": [
+        { "id": "reg_no", "title": "Altman embraces inner Viking, raids Europe with 100K GPU supercluster in Norway", "publisher": "The Register", "url": "https://www.theregister.com/2025/07/31/norway_stargate_openai/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-07", "precision": "month", "source_ids": ["reg_no", "tr_no"], "note": "Launched as Stargate Norway 31 Jul 2025." },
+        "construction_start": { "value": "2023-07", "precision": "month", "source_ids": ["ep_nar"], "note": "Epoch satellite imagery: site prep 'at least as early as July 2023' (Nscale, before the Stargate name); Building 1 going up Aug 2025." }
+      },
+      "status_note": "Under construction; Epoch saw no buildings operating as of Jul 2026 and projects Buildings 1-2 online by end of 2026. Tenant reported as OpenAI (Stargate) and as Microsoft (Epoch: 'likely')."
+    },
+    "humain-datavolt-oxagon": {
+      "add_sources": [
+        { "id": "neom_dv_2025", "title": "DataVolt signs agreement with NEOM", "publisher": "NEOM", "url": "https://www.neom.com/en-us/newsroom/datavolt-signs-agreement-with-neom", "kind": "primary" },
+        { "id": "dcd_oxagon_gb", "title": "HUMAIN breaks ground on NEOM's Oxagon data center", "publisher": "DatacenterDynamics", "url": "https://datacenterdynamics.com/en/news/humain-breaks-ground-on-neoms-oxagon-data-center", "kind": "news" },
+        { "id": "agbi_oxagon", "title": "Neom to start constructing Oxagon AI data centre in months", "publisher": "AGBI", "url": "https://www.agbi.com/ai/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-02", "precision": "month", "source_ids": ["neom_dv_2025"] },
+        "construction_start": { "value": "2026-02", "precision": "month", "source_ids": ["dcd_oxagon_gb", "neom"], "note": "Groundbreaking at LEAP 2026." }
+      },
+      "status_note": "Groundbroken Feb 2026: 100 MW of a 360 MW first phase (wider 1.5 GW campus), operational target 2028. AGBI (Aug 2026) reported main construction would start 'in months'.",
+      "review_append": "Dates batch 5: recheck whether main construction has begun (AGBI Aug 2026)."
+    },
+    "atnorth-haugaland": {
+      "add_sources": [
+        { "id": "atnorth_nor01", "title": "atNorth expands to Norway with new mega site in Haugaland", "publisher": "atNorth", "url": "https://www.atnorth.com/news/atnorth-expands-to-norway-with-new-mega-site-in-haugaland/", "kind": "primary" }
+      ],
+      "dates": {
+        "announced": { "value": "2026-06", "precision": "month", "source_ids": ["atnorth_nor01"] }
+      },
+      "set": {
+        "locality": "Haugaland Business Park, Gismarvik (Tysvær)",
+        "verification": "primary",
+        "review_notes": "Dates batch 5: site identified (NOR01, 36 ha at Haugaland Business Park, Gismarvik, Tysvær). Keep region precision until coordinates come from a source."
+      },
+      "status_note": "Announced Jun 2026 (land acquired): 120 MW first phase growing to 350 MW; power expected 2028."
+    },
+    "reliance-vizag": {
+      "add_sources": [
+        { "id": "bs_rel_ap", "title": "Reliance signs deal with Andhra Pradesh for 1 GW AI data centre", "publisher": "Business Standard", "url": "https://www.business-standard.com/companies/news/reliance-andhra-pradesh-1gw-ai-data-centre-investment-125111401010_1.html", "kind": "news" },
+        { "id": "bt_rel_ap", "title": "Reliance set to invest nearly Rs 2 lakh crore to set up India's largest data centre cluster in Andhra", "publisher": "Business Today", "url": "https://www.businesstoday.in/latest/corporate/story/reliance-set-to-invest-nearly-rs-2-lakh-crore-to-set-up-indias-largest-data-centre-cluster-in-andhra-report-527700-2026-04-28", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-11", "precision": "month", "source_ids": ["bs_rel_ap"], "note": "1 GW agreement with the state Nov 2025; plan raised to 1.5 GW (reported Apr 2026)." }
+      }
+    },
+    "france-mgx-paris-campus": {
+      "add_sources": [
+        { "id": "x_mgx_fr", "title": "MGX, Bpifrance, Mistral AI and NVIDIA launch joint venture to build Europe's largest AI campus in France", "publisher": "École Polytechnique (partners' press release)", "url": "https://polytechnique.edu/en/press-room/press-releases/mgx-bpifrance-mistral-ai-and-nvidia-launch-joint-venture-build-europes-largest-ai-campus-france", "kind": "primary" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-05", "precision": "month", "source_ids": ["x_mgx_fr", "reg_fr"] }
+      },
+      "review_append": "Dates batch 5: no evidence the planned H2 2026 construction start has happened; site still undisclosed."
+    },
+    "reliance-jamnagar": {
+      "add_sources": [
+        { "id": "tc_rel_jam", "title": "Reliance plans world's biggest AI data centre in India, report says", "publisher": "TechCrunch", "url": "https://techcrunch.com/2025/01/23/reliance-plans-world-biggest-ai-data-centre-in-india-report-says", "kind": "news" },
+        { "id": "pvm_rel_meta", "title": "Reliance, Meta to develop 168 MW AI data centre powered by renewable energy in Jamnagar", "publisher": "pv magazine India", "url": "https://www.pv-magazine-india.com/2026/06/10/reliance-meta-to-develop-168-mw-ai-data-centre-powered-by-renewable-energy-in-jamnagar/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2025-01", "precision": "month", "source_ids": ["tc_rel_jam"] }
+      },
+      "status": "announced",
+      "status_note": "3 GW plan reported Jan 2025 (Bloomberg via TechCrunch); no dated evidence of construction found. A 168 MW building for Meta was agreed Jun 2026, delivery targeted within two years.",
+      "review_append": "Dates batch 5: status changed from under_construction to announced (no dated construction evidence)."
+    },
+    "humain-riyadh-6gw": {
+      "add_sources": [
+        { "id": "meed_ry_tender", "title": "Humain tenders infrastructure for 6GW data centre campus", "publisher": "MEED", "url": "https://guest.meed.com/humain-tenders-6gw-data-centre-campus-infrastructure/", "kind": "news" },
+        { "id": "eam_ry", "title": "Al Yamama takes the infrastructure contract for Humain's 6 GW Riyadh AI campus", "publisher": "Enterprise AM", "url": "https://enterpriseam.com/ksa/2026/09/27/al-yamama-takes-the-infrastructure-contract-for-humains-6-gw-riyadh-ai-campus/", "kind": "news" }
+      ],
+      "dates": {
+        "announced": { "value": "2026-05", "precision": "month", "source_ids": ["meed_ry_tender"], "note": "Infrastructure tender issued May 2026." }
+      },
+      "status": "announced",
+      "status_note": "Enabling-works contract (roads, power distribution, water, fibre) awarded Sep 2026 for a 24 km² site in Al Saad, east Riyadh; main construction contract not yet awarded. Six 1 GW plots in two phases.",
+      "set": { "locality": "Al Saad (east Riyadh)" },
+      "review_append": "Dates batch 5: status changed from under_construction to announced (only enabling works awarded)."
+    }
+  }
+}
