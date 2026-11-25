@@ -24,12 +24,10 @@ Confirmed with the owner 2026-11-25 via `/impeccable shape globe`.
 - **Dotted land, as in `mockups/desktop-globe-home.html`** (owner decision 2026-11-25, after seeing filled land shapes): an evenly spaced dot grid (~1.4°) on land from Natural Earth 1:50m, dots in Land Dot #4A6290 on the ocean navy. Built by `prototypes/globe/build-dots.mjs`.
 - Comparison screenshots of filled navy land, dimmed NASA night lights and muted NASA satellite were shown to the owner (`?earth=night|satellite` on the deck.gl page; NASA public-domain images via Wikimedia Commons).
 
-## Context layer: existing data centers (owner decisions 2026-11-25, `/impeccable shape globe` round 2)
-- Why: 41 megaprojects alone did not deliver the "wow"; the owner wants the scale of the existing data center world visible.
-- ~4,600 data centers mapped in OpenStreetMap (`telecom=data_center` or `building=data_center`), drawn as **pale specks**: #B5C2DA (Text Secondary used as a graphic) at ~60%, slightly larger and brighter than land dots. Static through the timeline (no dates), labelled "Existing data centers (OpenStreetMap)".
-- Context only: never counted in GW, project or homes totals, no capacity claims, never a record. Curated projects stay the only columns.
-- Data: `scripts/build_osm_context.mjs` -> `data/context/osm-datacenters.json`, committed under ODbL with a notice; the globe credits "© OpenStreetMap contributors".
-- The prototypes gain the counter (top left, as in the mockup): GW total and project count following the timeline, the homes line (draft wording, est., from `data/factors.json`), and a legend with status totals plus the context row. No eyebrow/dateline label (the date goes in the sentence).
+## Scale: more projects, not context dots (owner decisions 2026-11-25)
+- 41 megaprojects alone did not deliver the "wow". An OpenStreetMap layer of ~3,500 existing data centers as pale specks was tried and **rejected by the owner as messy**. Do not reintroduce it.
+- Instead the curated set grows to every sourced **100 MW+** project (research batches 6+, owner-approved). Columns stay the only marks on the globe besides land dots.
+- The prototypes gain the counter (top left, as in the mockup): GW total and project count following the timeline, the homes line (draft wording, est., from `data/factors.json`), and a legend with status totals. No eyebrow/dateline label (the date goes in the sentence).
 
 ## Delivery
 - `prototypes/globe/`: index (scorecard), maplibre, deckgl pages reading `data/projects.geojson`.

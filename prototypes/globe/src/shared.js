@@ -8,11 +8,6 @@ import raw from "../../../data/projects.geojson?raw";
 // Dotted land, as in the mockup (built by build-dots.mjs from Natural Earth 1:50m).
 import landDots from "./land-dots.json";
 export { landDots };
-// Existing data centers (OpenStreetMap, ODbL): context only, never counted in totals.
-import osm from "../../../data/context/osm-datacenters.json";
-export const contextDots = osm.points.map(([lon, lat]) => [lon, lat]);
-export const CONTEXT_COUNT = osm.count;
-export const OSM_CREDIT = `<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>`;
 import factors from "../../../data/factors.json";
 
 export const params = new URLSearchParams(location.search);
@@ -26,9 +21,7 @@ export const COLOR = {
   paused: "#6B7280",
   ocean: "#16294A",
   landDot: "#4A6290", // DESIGN.md Land Dot
-  context: "#B5C2DA", // DESIGN.md Text Secondary, used as a graphic for the OSM context specks
 };
-export const CONTEXT_OPACITY = 0.6;
 export const LAND_DOT_RADIUS_M = 26000;
 export const STAGE_LABEL = {
   planned: "Planned",
@@ -310,7 +303,6 @@ export function mountCounter() {
     <p class="lead"></p>
     <ul class="legend">
       ${LEGEND.map(([k, label]) => `<li data-k="${k}"><span class="sw sw-${k}"></span><span class="lg-label">${label}</span><span class="lg-val"></span></li>`).join("")}
-      <li data-k="context"><span class="sw sw-context"></span><span class="lg-label">Existing data centers<span class="lg-src"> (OpenStreetMap)</span></span><span class="lg-val">${fmt.format(CONTEXT_COUNT)}</span></li>
     </ul>
     <p class="foot">Column height: capacity, “up to” unless fully operational. Homes: est., at full power, ${fmt.format(F.us_home_kwh_per_year.value)} kWh a year per average US home (EIA 2024).</p>`;
   document.body.append(el);

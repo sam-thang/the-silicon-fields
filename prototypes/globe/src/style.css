@@ -110,7 +110,6 @@ a:hover { text-decoration-color: currentColor; }
 .sw-planned { background: rgb(111 180 255 / 0.35); border: 1.5px solid var(--planned); }
 .sw-operational { background: var(--operational); }
 .sw-paused { background: #6b7280; }
-.sw-context { width: 6px; height: 6px; border-radius: 50%; margin-left: 2px; background: rgb(181 194 218 / 0.6); }
 .foot { font-size: 12px; line-height: 1.45; color: var(--text-faint); max-width: 40ch; }
 @media (min-width: 900px) {
   #counter { top: 120px; gap: 18px; }
@@ -124,10 +123,7 @@ a:hover { text-decoration-color: currentColor; }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; }
   .legend li { grid-template-columns: 8px auto auto; gap: 6px; font-size: 12px; }
   .legend .lg-label { display: none; }
-  .legend li[data-k="context"] .lg-label { display: inline; order: 2; }
-  .legend .lg-src { display: none; }
   .legend .sw { width: 8px; height: 16px; }
-  .sw-context { width: 5px !important; height: 5px !important; }
   .lg-val { font-size: 12px; }
   .foot { display: none; }
 }

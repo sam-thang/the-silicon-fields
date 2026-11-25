@@ -178,7 +178,7 @@ Keep in `data/factors.json`, each with source and date, shown on the methodology
 - **Data Center Index**, **Electric Choice US data center tracker**, **Baxtel**: discovery and cross-checking.
 - Company announcements, utility filings, county/municipal permits, local news: primary sources for each record.
 - Rule: a project needs at least one primary or reputable news source; trackers alone are not enough.
-- **Context layer (owner decision, Nov 2026):** existing data centers mapped in **OpenStreetMap** (`telecom=data_center` / `building=data_center`, ~3,500 sites) are drawn as faint specks under the project columns, to show the scale of the existing data center world. They are context only: no capacity, status or dates, never counted in totals, never project records. Built by `npm run context:osm` into `data/context/osm-datacenters.json` (ODbL; notice in `data/context/README.md`); every view that shows them credits "© OpenStreetMap contributors".
+- **Tried and rejected (owner decision, Nov 2026):** an OpenStreetMap layer of ~3,500 existing data centers as faint specks under the columns. It looked messy on the globe. Scale comes from more curated projects instead (inclusion bar: 100 MW+).
 - Exception (owner decision, Nov 2026): **Epoch AI satellite observation** counts as news-level evidence for status and construction dates. Cite it as "Epoch AI (satellite imagery, <date>)" with `kind: "satellite"`. Other trackers (Baxtel, Cleanview, Data Center Map, Electric Choice) still never count on their own.
 
 ### Imagery
