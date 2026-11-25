@@ -66,6 +66,7 @@ A curated, sourced, project-level view of the AI data center build-out, at plane
 - Records with no capacity figure appear as a small dot labelled "capacity not disclosed".
 - Paused projects (e.g. Fermi Project Matador) show their status note and are never presented as active construction.
 - Approximate locations (`location_precision` of region, state, county or town) say so on the card. Region- or state-level points get a soft circle instead of a sharp column base.
+- Existing data centers from OpenStreetMap appear as a faint context layer (pale specks, labelled "Existing data centers (OpenStreetMap)", credited under ODbL). They are never counted in GW, project or homes totals and are never presented as projects.
 - Only `approved: true` records are published. `tracker_only` records are never published.
 - Water use appears only where a source gives a figure for that site. Estimates are marked "est.".
 
