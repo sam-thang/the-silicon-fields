@@ -1,0 +1,43 @@
+{
+  "slug": "digital-edge-bekasi",
+  "name": "CGK Campus",
+  "owner": "Digital Edge",
+  "country": "ID",
+  "region": "West Java",
+  "locality": "GIIC Industrial Estate, Bekasi",
+  "lat": -6.36,
+  "lon": 107.17,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 500,
+    "high": 500,
+    "type": "planned_campus"
+  },
+  "status": "announced",
+  "status_note": "US$4.5bn, 500 MW AI-ready hyperscale campus announced Jan 2026 (one of Indonesia's largest). No construction confirmed by a source yet.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2026-01",
+      "precision": "month",
+      "source_ids": [
+        "de_bekasi_pr"
+      ],
+      "note": "Digital Edge press release, Jan 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "de_bekasi_pr",
+      "title": "Digital Edge announces landmark US$4.5 billion investment to build Indonesia's largest 500MW AI-ready hyperscale campus",
+      "publisher": "Digital Edge (press release)",
+      "url": "https://www.thailand-business-news.com/pr-news/digital-edge-announces-landmark-us4-5-billion-investment-to-build-indonesias-largest-500mw-ai-ready-hyperscale-campus",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Confirm the month on Digital Edge's own newsroom; add news coverage. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}

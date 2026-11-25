@@ -1,0 +1,353 @@
+{
+  "_note": "Batch 10 (owner pre-approved 2026-11-25): news research, Europe/Asia-Pacific/US. Held back: Blackstone Calatorao (no dated announcement found), BDx Jatiluhur (halted by West Java governor; dates unclear), Khazna/UAE-US 5 GW campus (overlaps stargate-uae), Digital Connexion and L&T India 1 GW plans (MoU stage, undated), Microsoft Aragon (no MW).",
+  "accessed": "2026-11-25",
+  "projects": [
+    {
+      "slug": "schwarz-digits-luebbenau",
+      "name": "Lübbenau AI data center (STACKIT)",
+      "owner": "Schwarz Digits (Schwarz Group)",
+      "tenant": "STACKIT",
+      "country": "DE",
+      "region": "Brandenburg",
+      "locality": "Lübbenau/Spreewald (former power plant site)",
+      "lat": 51.87,
+      "lon": 13.95,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 200,
+        "high": 200,
+        "type": "planned_campus"
+      },
+      "status": "under_construction",
+      "status_note": "~200 MW initial connected load on a 13 ha former coal plant site, expandable in two phases (up to 100,000 GPUs); part of an €11bn investment; first phase (three modules) due end-2027.",
+      "expected_completion": "2027",
+      "dates": {
+        "construction_start": {
+          "value": "2025-11",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "schwarz_ground",
+            "silsax_ground"
+          ],
+          "note": "Groundbreaking ceremony mid-Nov 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "schwarz_ground",
+          "title": "Ground-breaking ceremony in Lübbenau: Schwarz Digits invests 11 billion euros in Europe's digital sovereignty",
+          "publisher": "Schwarz Digits",
+          "url": "https://schwarz-digits.de/en/presse/archive/2025/ground-breaking-ceremony-in-luebbenau-schwarz-digits-invests-11-billion-euros-in-europe-s-digital-sovereignty",
+          "kind": "primary"
+        },
+        {
+          "id": "silsax_ground",
+          "title": "Schwarz Digits groundbreaking ceremony in Lübbenau",
+          "publisher": "Silicon Saxony",
+          "url": "https://www.silicon-saxony.de/en/schwarz-digits-groundbreaking-ceremony-in-luebbenau-schwarz-digits-invests-11-billion-euros-in-europes-digital-sovereignty/",
+          "kind": "news"
+        },
+        {
+          "id": "gtai_luebbenau",
+          "title": "Construction underway on huge German data center",
+          "publisher": "Germany Trade & Invest",
+          "url": "https://www.gtai.de/en/invest/industries/digital-economy/construction-underway-on-huge-german-data-center-1945878",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "A Euronews headline (Aug 2026) suggests opening, which conflicts with the end-2027 first phase: check. Announcement date (2025) to add. Refine coordinates."
+    },
+    {
+      "slug": "airtrunk-syd3",
+      "name": "SYD3 campus",
+      "owner": "AirTrunk (Blackstone)",
+      "country": "AU",
+      "region": "New South Wales",
+      "locality": "Western Sydney",
+      "lat": -33.85,
+      "lon": 150.82,
+      "location_precision": "region",
+      "capacity_mw": {
+        "low": 400,
+        "high": 400,
+        "type": "planned_campus"
+      },
+      "status": "under_construction",
+      "status_note": "400 MW+ campus; Bouygues (A W Edwards) won the next-phase contract in Jul 2026 and AirTrunk secured an A$4.25bn green loan in Oct 2026; completion targeted mid-2028.",
+      "expected_completion": "2028",
+      "dates": {
+        "construction_start": {
+          "value": "2026-07",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "wcn_syd3",
+            "itbrief_syd3"
+          ],
+          "note": "Next-phase works scheduled to commence Jul 2026; construction reported under way Oct 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "wcn_syd3",
+          "title": "Bouygues wins AirTrunk SYD3 data centre contract",
+          "publisher": "World Construction Network",
+          "url": "https://www.worldconstructionnetwork.com/news/bouygues-airtrunk-data-centre-syd3/",
+          "kind": "news"
+        },
+        {
+          "id": "itbrief_syd3",
+          "title": "AirTrunk secures AUD 4.25bn green loan for SYD3",
+          "publisher": "IT Brief Australia",
+          "url": "https://itbrief.com.au/story/airtrunk-secures-aud-4-25-billion-green-loan-for-syd3",
+          "kind": "news"
+        },
+        {
+          "id": "airtrunk_syd3",
+          "title": "AirTrunk SYD3 is expanding",
+          "publisher": "AirTrunk",
+          "url": "https://airtrunk.com/?p=14142",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Check whether earlier SYD3 phases were already built (then construction_start is earlier and status may be partially operational). Exact site in Western Sydney to confirm; approximate location."
+    },
+    {
+      "slug": "am-group-yeida",
+      "name": "AM Group AI data centre (YEIDA)",
+      "owner": "AM Group",
+      "country": "IN",
+      "region": "Uttar Pradesh",
+      "locality": "Yamuna Expressway (YEIDA) area",
+      "lat": 28.17,
+      "lon": 77.6,
+      "location_precision": "region",
+      "capacity_mw": {
+        "low": 1000,
+        "high": 1000,
+        "type": "planned_campus"
+      },
+      "status": "under_construction",
+      "status_note": "1 GW AI data centre project in Uttar Pradesh (~$25bn); Business Standard reports work has begun (Feb 2026).",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2026-02",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "bs_amgroup"
+          ],
+          "note": "Business Standard, 17 Feb 2026: AM Group begins work on 1 GW AI data centre."
+        }
+      },
+      "sources": [
+        {
+          "id": "bs_amgroup",
+          "title": "AM Group AI data centre in Uttar Pradesh: $25bn investment, YEIDA",
+          "publisher": "Business Standard",
+          "url": "https://www.business-standard.com/industry/news/am-group-ai-data-centre-uttar-pradesh-25bn-investment-yeida-126021700514_1.html",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Single source so far; add a second (company or state) and the exact plot. Approximate location (YEIDA region)."
+    },
+    {
+      "slug": "google-west-memphis",
+      "name": "West Memphis data center",
+      "owner": "Google",
+      "tenant": "Google",
+      "country": "US",
+      "region": "Arkansas",
+      "locality": "West Memphis, Crittenden County",
+      "lat": 35.15,
+      "lon": -90.19,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": null,
+        "high": null,
+        "type": "unknown"
+      },
+      "status": "under_construction",
+      "status_note": "$4bn through 2027 (Google) on ~1,000 acres with a substation; start of construction marked Oct 2025; build expected to take up to two years. Google has not published a capacity.",
+      "expected_completion": "2027",
+      "dates": {
+        "announced": {
+          "value": "2025-10",
+          "precision": "month",
+          "source_ids": [
+            "aedc_google"
+          ],
+          "note": "Arkansas Economic Development Commission, 2 Oct 2025."
+        },
+        "construction_start": {
+          "value": "2025-10",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "routefifty_google"
+          ],
+          "note": "Officials mark the start of the $4bn AI data center (Route Fifty, Oct 2025)."
+        }
+      },
+      "sources": [
+        {
+          "id": "aedc_google",
+          "title": "Google locating new data center in West Memphis, Arkansas with multi-billion dollar investment",
+          "publisher": "Arkansas Economic Development Commission",
+          "url": "https://www.arkansasedc.com/news-events/newsroom/detail/2025/10/02/google-locating-new-data-center-in-west-memphis--arkansas-with-multi-billion-dollar-investment",
+          "kind": "primary"
+        },
+        {
+          "id": "routefifty_google",
+          "title": "Google, state and local officials mark start of $4 billion AI data center in West Memphis",
+          "publisher": "Route Fifty",
+          "url": "https://www.route-fifty.com/artificial-intelligence/2025/10/google-state-and-local-officials-mark-start-4-billion-ai-data-center-west-memphis/408587/",
+          "kind": "news"
+        },
+        {
+          "id": "google_ar_blog",
+          "title": "Google's investment in American innovation in Arkansas",
+          "publisher": "Google",
+          "url": "https://blog.google/inside-google/company-announcements/google-american-innovation-arkansas/",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Capacity not disclosed (tracker estimates ~108–118 MW per building are not evidence): dot until sourced. A later $10bn figure tied to a 1,178-acre land sale to check. Refine coordinates."
+    },
+    {
+      "slug": "aws-richmond-county-nc",
+      "name": "Richmond County AI campus",
+      "owner": "Amazon (AWS)",
+      "tenant": "AWS",
+      "country": "US",
+      "region": "North Carolina",
+      "locality": "Energy Way Industrial Park, Richmond County",
+      "lat": 34.9,
+      "lon": -79.75,
+      "location_precision": "county",
+      "capacity_mw": {
+        "low": null,
+        "high": null,
+        "type": "unknown"
+      },
+      "status": "announced",
+      "status_note": "~$10bn cloud and AI campus announced Jun 2025 with at least 500 jobs; county incentives approved. No construction confirmed by a source yet; capacity not published.",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2025-06",
+          "precision": "month",
+          "source_ids": [
+            "nc_gov_aws"
+          ],
+          "note": "Governor Stein announces Amazon's $10bn plan, 4 Jun 2025."
+        }
+      },
+      "sources": [
+        {
+          "id": "nc_gov_aws",
+          "title": "Governor Stein announces Amazon plans to invest $10 billion in North Carolina AI infrastructure",
+          "publisher": "Office of the Governor of North Carolina",
+          "url": "https://governor.nc.gov/news/press-releases/2025/06/04/governor-stein-announces-amazon-plans-invest-10-billion-north-carolina-ai-infrastructure",
+          "kind": "primary"
+        },
+        {
+          "id": "aws_nc",
+          "title": "AWS investment in North Carolina AI and cloud infrastructure",
+          "publisher": "Amazon",
+          "url": "https://www.aboutamazon.com/news/aws/aws-investment-north-carolina-ai-cloud-infrastructure",
+          "kind": "primary"
+        },
+        {
+          "id": "axios_aws_nc",
+          "title": "Amazon to invest $10 billion into AI data centers in North Carolina",
+          "publisher": "Axios Raleigh",
+          "url": "https://www.axios.com/local/raleigh/2025/06/04/amazon-ai-data-centers-in-north-carolina-richmond-county",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Capacity and construction start to find (local news/permits). Approximate location (county)."
+    },
+    {
+      "slug": "digital-edge-bekasi",
+      "name": "CGK Campus",
+      "owner": "Digital Edge",
+      "country": "ID",
+      "region": "West Java",
+      "locality": "GIIC Industrial Estate, Bekasi",
+      "lat": -6.36,
+      "lon": 107.17,
+      "location_precision": "town",
+      "capacity_mw": {
+        "low": 500,
+        "high": 500,
+        "type": "planned_campus"
+      },
+      "status": "announced",
+      "status_note": "US$4.5bn, 500 MW AI-ready hyperscale campus announced Jan 2026 (one of Indonesia's largest). No construction confirmed by a source yet.",
+      "expected_completion": null,
+      "dates": {
+        "announced": {
+          "value": "2026-01",
+          "precision": "month",
+          "source_ids": [
+            "de_bekasi_pr"
+          ],
+          "note": "Digital Edge press release, Jan 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "de_bekasi_pr",
+          "title": "Digital Edge announces landmark US$4.5 billion investment to build Indonesia's largest 500MW AI-ready hyperscale campus",
+          "publisher": "Digital Edge (press release)",
+          "url": "https://www.thailand-business-news.com/pr-news/digital-edge-announces-landmark-us4-5-billion-investment-to-build-indonesias-largest-500mw-ai-ready-hyperscale-campus",
+          "kind": "primary"
+        }
+      ],
+      "review_notes": "Confirm the month on Digital Edge's own newsroom; add news coverage. Refine coordinates."
+    },
+    {
+      "slug": "true-idc-eec",
+      "name": "True IDC AI hyperscale data center (EEC)",
+      "owner": "True IDC",
+      "country": "TH",
+      "region": "Eastern Economic Corridor",
+      "locality": "Eastern Economic Corridor (Chonburi / Rayong)",
+      "lat": 13.2,
+      "lon": 101,
+      "location_precision": "region",
+      "capacity_mw": {
+        "low": 250,
+        "high": 250,
+        "type": "planned_campus"
+      },
+      "status": "under_construction",
+      "status_note": "250 MW AI hyperscale data center (77bn THB, ~US$2.4bn) in the Eastern Economic Corridor; ground broken Apr 2026.",
+      "expected_completion": null,
+      "dates": {
+        "construction_start": {
+          "value": "2026-04",
+          "precision": "month",
+          "basis": "reported_start",
+          "source_ids": [
+            "wmedia_trueidc"
+          ],
+          "note": "W.Media: True IDC breaks ground, Apr 2026."
+        }
+      },
+      "sources": [
+        {
+          "id": "wmedia_trueidc",
+          "title": "True IDC breaks ground on US$2.4 billion data center in Thailand",
+          "publisher": "W.Media",
+          "url": "https://w.media/?p=38974",
+          "kind": "news"
+        }
+      ],
+      "review_notes": "Single source; add True IDC's own release and the exact site. Thailand paused work at 49 data center sites in 2026 (reported): check this one is not among them. Approximate location."
+    }
+  ]
+}

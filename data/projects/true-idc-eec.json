@@ -1,0 +1,44 @@
+{
+  "slug": "true-idc-eec",
+  "name": "True IDC AI hyperscale data center (EEC)",
+  "owner": "True IDC",
+  "country": "TH",
+  "region": "Eastern Economic Corridor",
+  "locality": "Eastern Economic Corridor (Chonburi / Rayong)",
+  "lat": 13.2,
+  "lon": 101,
+  "location_precision": "region",
+  "capacity_mw": {
+    "low": 250,
+    "high": 250,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "250 MW AI hyperscale data center (77bn THB, ~US$2.4bn) in the Eastern Economic Corridor; ground broken Apr 2026.",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2026-04",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "wmedia_trueidc"
+      ],
+      "note": "W.Media: True IDC breaks ground, Apr 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "wmedia_trueidc",
+      "title": "True IDC breaks ground on US$2.4 billion data center in Thailand",
+      "publisher": "W.Media",
+      "url": "https://w.media/?p=38974",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Single source; add True IDC's own release and the exact site. Thailand paused work at 49 data center sites in 2026 (reported): check this one is not among them. Approximate location.",
+  "last_verified": "2026-11-25"
+}

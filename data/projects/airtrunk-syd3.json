@@ -1,0 +1,61 @@
+{
+  "slug": "airtrunk-syd3",
+  "name": "SYD3 campus",
+  "owner": "AirTrunk (Blackstone)",
+  "country": "AU",
+  "region": "New South Wales",
+  "locality": "Western Sydney",
+  "lat": -33.85,
+  "lon": 150.82,
+  "location_precision": "region",
+  "capacity_mw": {
+    "low": 400,
+    "high": 400,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "400 MW+ campus; Bouygues (A W Edwards) won the next-phase contract in Jul 2026 and AirTrunk secured an A$4.25bn green loan in Oct 2026; completion targeted mid-2028.",
+  "expected_completion": "2028",
+  "dates": {
+    "construction_start": {
+      "value": "2026-07",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "wcn_syd3",
+        "itbrief_syd3"
+      ],
+      "note": "Next-phase works scheduled to commence Jul 2026; construction reported under way Oct 2026."
+    }
+  },
+  "sources": [
+    {
+      "id": "wcn_syd3",
+      "title": "Bouygues wins AirTrunk SYD3 data centre contract",
+      "publisher": "World Construction Network",
+      "url": "https://www.worldconstructionnetwork.com/news/bouygues-airtrunk-data-centre-syd3/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "itbrief_syd3",
+      "title": "AirTrunk secures AUD 4.25bn green loan for SYD3",
+      "publisher": "IT Brief Australia",
+      "url": "https://itbrief.com.au/story/airtrunk-secures-aud-4-25-billion-green-loan-for-syd3",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "airtrunk_syd3",
+      "title": "AirTrunk SYD3 is expanding",
+      "publisher": "AirTrunk",
+      "url": "https://airtrunk.com/?p=14142",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Check whether earlier SYD3 phases were already built (then construction_start is earlier and status may be partially operational). Exact site in Western Sydney to confirm; approximate location.",
+  "last_verified": "2026-11-25"
+}

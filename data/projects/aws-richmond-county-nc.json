@@ -1,0 +1,60 @@
+{
+  "slug": "aws-richmond-county-nc",
+  "name": "Richmond County AI campus",
+  "owner": "Amazon (AWS)",
+  "tenant": "AWS",
+  "country": "US",
+  "region": "North Carolina",
+  "locality": "Energy Way Industrial Park, Richmond County",
+  "lat": 34.9,
+  "lon": -79.75,
+  "location_precision": "county",
+  "capacity_mw": {
+    "low": null,
+    "high": null,
+    "type": "unknown"
+  },
+  "status": "announced",
+  "status_note": "~$10bn cloud and AI campus announced Jun 2025 with at least 500 jobs; county incentives approved. No construction confirmed by a source yet; capacity not published.",
+  "expected_completion": null,
+  "dates": {
+    "announced": {
+      "value": "2025-06",
+      "precision": "month",
+      "source_ids": [
+        "nc_gov_aws"
+      ],
+      "note": "Governor Stein announces Amazon's $10bn plan, 4 Jun 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "nc_gov_aws",
+      "title": "Governor Stein announces Amazon plans to invest $10 billion in North Carolina AI infrastructure",
+      "publisher": "Office of the Governor of North Carolina",
+      "url": "https://governor.nc.gov/news/press-releases/2025/06/04/governor-stein-announces-amazon-plans-invest-10-billion-north-carolina-ai-infrastructure",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "aws_nc",
+      "title": "AWS investment in North Carolina AI and cloud infrastructure",
+      "publisher": "Amazon",
+      "url": "https://www.aboutamazon.com/news/aws/aws-investment-north-carolina-ai-cloud-infrastructure",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "axios_aws_nc",
+      "title": "Amazon to invest $10 billion into AI data centers in North Carolina",
+      "publisher": "Axios Raleigh",
+      "url": "https://www.axios.com/local/raleigh/2025/06/04/amazon-ai-data-centers-in-north-carolina-richmond-county",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Capacity and construction start to find (local news/permits). Approximate location (county).",
+  "last_verified": "2026-11-25"
+}

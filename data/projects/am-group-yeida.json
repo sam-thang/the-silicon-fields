@@ -1,0 +1,44 @@
+{
+  "slug": "am-group-yeida",
+  "name": "AM Group AI data centre (YEIDA)",
+  "owner": "AM Group",
+  "country": "IN",
+  "region": "Uttar Pradesh",
+  "locality": "Yamuna Expressway (YEIDA) area",
+  "lat": 28.17,
+  "lon": 77.6,
+  "location_precision": "region",
+  "capacity_mw": {
+    "low": 1000,
+    "high": 1000,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "1 GW AI data centre project in Uttar Pradesh (~$25bn); Business Standard reports work has begun (Feb 2026).",
+  "expected_completion": null,
+  "dates": {
+    "construction_start": {
+      "value": "2026-02",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "bs_amgroup"
+      ],
+      "note": "Business Standard, 17 Feb 2026: AM Group begins work on 1 GW AI data centre."
+    }
+  },
+  "sources": [
+    {
+      "id": "bs_amgroup",
+      "title": "AM Group AI data centre in Uttar Pradesh: $25bn investment, YEIDA",
+      "publisher": "Business Standard",
+      "url": "https://www.business-standard.com/industry/news/am-group-ai-data-centre-uttar-pradesh-25bn-investment-yeida-126021700514_1.html",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "Single source so far; add a second (company or state) and the exact plot. Approximate location (YEIDA region).",
+  "last_verified": "2026-11-25"
+}

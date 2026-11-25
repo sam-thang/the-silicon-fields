@@ -1,0 +1,62 @@
+{
+  "slug": "schwarz-digits-luebbenau",
+  "name": "Lübbenau AI data center (STACKIT)",
+  "owner": "Schwarz Digits (Schwarz Group)",
+  "tenant": "STACKIT",
+  "country": "DE",
+  "region": "Brandenburg",
+  "locality": "Lübbenau/Spreewald (former power plant site)",
+  "lat": 51.87,
+  "lon": 13.95,
+  "location_precision": "town",
+  "capacity_mw": {
+    "low": 200,
+    "high": 200,
+    "type": "planned_campus"
+  },
+  "status": "under_construction",
+  "status_note": "~200 MW initial connected load on a 13 ha former coal plant site, expandable in two phases (up to 100,000 GPUs); part of an €11bn investment; first phase (three modules) due end-2027.",
+  "expected_completion": "2027",
+  "dates": {
+    "construction_start": {
+      "value": "2025-11",
+      "precision": "month",
+      "basis": "reported_start",
+      "source_ids": [
+        "schwarz_ground",
+        "silsax_ground"
+      ],
+      "note": "Groundbreaking ceremony mid-Nov 2025."
+    }
+  },
+  "sources": [
+    {
+      "id": "schwarz_ground",
+      "title": "Ground-breaking ceremony in Lübbenau: Schwarz Digits invests 11 billion euros in Europe's digital sovereignty",
+      "publisher": "Schwarz Digits",
+      "url": "https://schwarz-digits.de/en/presse/archive/2025/ground-breaking-ceremony-in-luebbenau-schwarz-digits-invests-11-billion-euros-in-europe-s-digital-sovereignty",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "silsax_ground",
+      "title": "Schwarz Digits groundbreaking ceremony in Lübbenau",
+      "publisher": "Silicon Saxony",
+      "url": "https://www.silicon-saxony.de/en/schwarz-digits-groundbreaking-ceremony-in-luebbenau-schwarz-digits-invests-11-billion-euros-in-europes-digital-sovereignty/",
+      "kind": "news",
+      "accessed": "2026-11-25"
+    },
+    {
+      "id": "gtai_luebbenau",
+      "title": "Construction underway on huge German data center",
+      "publisher": "Germany Trade & Invest",
+      "url": "https://www.gtai.de/en/invest/industries/digital-economy/construction-underway-on-huge-german-data-center-1945878",
+      "kind": "primary",
+      "accessed": "2026-11-25"
+    }
+  ],
+  "verification": "news",
+  "approved": true,
+  "review_notes": "A Euronews headline (Aug 2026) suggests opening, which conflicts with the end-2027 first phase: check. Announcement date (2025) to add. Refine coordinates.",
+  "last_verified": "2026-11-25"
+}
