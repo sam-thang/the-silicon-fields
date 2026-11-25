@@ -1320,9 +1320,34 @@
       "high": 1000,
       "type": "planned_campus"
     },
-    "status": "operational",
-    "status_note": "Reported as running",
+    "status": "partially_operational",
+    "status_note": "Running since Oct 2025 (Epoch est. ~700 MW IT); further buildings projected through 2028. Meta: 1 GW cluster 'coming online in 2026'.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-07",
+        "precision": "month",
+        "source_ids": [
+          "tc_prometheus"
+        ],
+        "note": "Named 'Prometheus' by Zuckerberg 14 Jul 2025; site work began earlier."
+      },
+      "construction_start": {
+        "value": "2022-04",
+        "precision": "month",
+        "source_ids": [
+          "epoch_prom_sat"
+        ]
+      },
+      "operational": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "epoch_prom_sat"
+        ],
+        "note": "Epoch: Building 1 observed operational 14 Oct 2025."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -1334,12 +1359,28 @@
         "publisher": "LLM Pulse",
         "url": "https://llmpulse.ai/blog/ai-data-centers-under-construction/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "tc_prometheus",
+        "title": "Mark Zuckerberg says Meta is building a 5GW AI data center",
+        "publisher": "TechCrunch",
+        "url": "https://techcrunch.com/2025/07/14/mark-zuckerberg-says-meta-is-building-a-5gw-ai-data-center",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "epoch_prom_sat",
+        "title": "Meta Prometheus, New Albany – satellite explorer (land clearing 14 Apr 2022; updated 2 Oct 2026)",
+        "publisher": "Epoch AI (satellite imagery)",
+        "url": "https://epoch.ai/data/data-centers/satellite-explorer/MetaPrometheusNewAlbanyOhio",
+        "kind": "satellite",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "Confirm capacity with primary source.",
+    "review_notes": "Confirm capacity with primary source. Dates batch 3: status changed from operational to partially_operational; added TechCrunch and Epoch satellite sources.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "xai-colossus-2",
@@ -1360,6 +1401,33 @@
     "status": "partially_operational",
     "status_note": "Epoch: 946 MW IT operational; Cleanview: ~1.3 GW; expansion toward 2 GW",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-03",
+        "precision": "month",
+        "source_ids": [
+          "dcd_xai_site"
+        ],
+        "note": "Site purchased 7 Mar 2025."
+      },
+      "construction_start": {
+        "value": "2025-02",
+        "precision": "month",
+        "source_ids": [
+          "ep_col2"
+        ],
+        "note": "Epoch satellite imagery: land clearing begins 28 Feb 2025."
+      },
+      "operational": {
+        "value": "2026-Q1",
+        "precision": "quarter",
+        "source_ids": [
+          "dcd_xai_ms",
+          "ep_col2"
+        ],
+        "note": "DCD: came online in January (year inferred as 2026); Epoch observed cooling array operational by 6 Apr 2026."
+      }
+    },
     "investment_usd": {
       "value": 35800000000,
       "est": true
@@ -1385,12 +1453,28 @@
         "publisher": "Data Center Frontier",
         "url": "https://www.datacenterfrontier.com/machine-learning/article/55343403/xais-ai-factories-from-colossus-to-macrohardrr-in-the-gigawatt-era",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "dcd_xai_site",
+        "title": "Elon Musk's xAI buys one million sq ft site for second Memphis data center",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/elon-musks-xai-buys-one-million-sq-ft-site-for-second-memphis-data-center/",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_xai_ms",
+        "title": "SpaceXAI launching two additional data center campuses in Mississippi to further expand Colossus 2",
+        "publisher": "DatacenterDynamics",
+        "url": "https://datacenterdynamics.com/en/news/spacexai-launching-two-additional-data-center-campuses-in-mississippi-to-further-expand-colossus-2",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "Low = Epoch IT power; high = announced 2 GW expansion.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "microsoft-fairwater-wisconsin",
@@ -1408,9 +1492,35 @@
       "high": 450,
       "type": "estimate"
     },
-    "status": "operational",
-    "status_note": "Second datacenter of similar scale announced ($4B)",
-    "expected_completion": null,
+    "status": "partially_operational",
+    "status_note": "Building 1 complete and operational (Apr 2026); Building 2 under construction, completion scheduled 2028.",
+    "expected_completion": "2028",
+    "dates": {
+      "announced": {
+        "value": "2024-05",
+        "precision": "month",
+        "source_ids": [
+          "ms_wi_complete"
+        ],
+        "note": "Microsoft: project first announced May 2024."
+      },
+      "construction_start": {
+        "value": "2023-07",
+        "precision": "month",
+        "source_ids": [
+          "epoch_fw_sat"
+        ]
+      },
+      "operational": {
+        "value": "2026-04",
+        "precision": "month",
+        "source_ids": [
+          "ms_wi_complete",
+          "epoch_fw_sat"
+        ],
+        "note": "Building 1 online 16 Apr 2026."
+      }
+    },
     "investment_usd": {
       "value": 7000000000,
       "est": true
@@ -1436,12 +1546,28 @@
         "publisher": "Glenn K. Lockwood",
         "url": "https://glennklockwood.com/garden/systems/fairwater",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "ms_wi_complete",
+        "title": "Microsoft completes construction on first datacenter facility in Mount Pleasant, Wisconsin",
+        "publisher": "Microsoft",
+        "url": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "epoch_fw_sat",
+        "title": "Microsoft Fairwater Wisconsin – satellite explorer (land clearing 14 Jul 2023; updated 25 Jul 2026)",
+        "publisher": "Epoch AI (satellite imagery)",
+        "url": "https://epoch.ai/data/data-centers/satellite-explorer/MicrosoftFairwaterWisconsin",
+        "kind": "satellite",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "primary",
-    "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft.",
+    "review_notes": "450 MW is a third-party estimate; total WI investment >$7B per Microsoft. Dates batch 3: status changed from operational to partially_operational. Epoch projects ~2.3 GW IT by 2028 vs 450 MW estimate here; review capacity later.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "microsoft-fairwater-atlanta",
@@ -1450,18 +1576,35 @@
     "users": "Microsoft",
     "country": "US",
     "region": "Georgia",
-    "locality": "Atlanta",
-    "lat": 33.75,
-    "lon": -84.39,
-    "location_precision": "city",
+    "locality": "Fayetteville (QTS campus)",
+    "lat": 33.45,
+    "lon": -84.45,
+    "location_precision": "town",
     "capacity_mw": {
       "low": null,
       "high": null,
       "type": "unknown"
     },
     "status": "operational",
-    "status_note": "Began operation Oct 2025",
+    "status_note": "Began operation Oct 2025 on QTS's campus in Fayetteville, south of Atlanta. Capacity not disclosed.",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-11",
+        "precision": "month",
+        "source_ids": [
+          "ms_atl"
+        ]
+      },
+      "operational": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "ms_atl"
+        ],
+        "note": "Began operations Oct 2025; unveiled 12 Nov 2025."
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -1473,12 +1616,20 @@
         "publisher": "Microsoft",
         "url": "https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-datacenters-to-build-its-first-ai-superfactory/",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "ajc_fairwater",
+        "title": "Microsoft's newest AI superfactory opens at sprawling Fayetteville campus",
+        "publisher": "The Atlanta Journal-Constitution",
+        "url": "https://www.ajc.com/business/2025/11/microsofts-newest-ai-superfactory-opens-at-sprawling-fayetteville-campus",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "primary",
-    "review_notes": "Capacity and exact site missing.",
+    "review_notes": "Capacity and exact site missing. Dates batch 3: relocated from Atlanta city centre to Fayetteville (town precision) per AJC; refine to the QTS site from imagery.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "amazon-rainier-new-carlisle",
@@ -1499,6 +1650,32 @@
     "status": "partially_operational",
     "status_note": "18 buildings operating, 14 under construction; permits suggest 2.3 GW total",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2024-04",
+        "precision": "month",
+        "source_ids": [
+          "iedc_aws"
+        ]
+      },
+      "construction_start": {
+        "value": "2024-02",
+        "precision": "month",
+        "source_ids": [
+          "epoch_nc_sat"
+        ],
+        "note": "Land clearing observed 9 Feb 2024, before the public announcement."
+      },
+      "operational": {
+        "value": "2025-10",
+        "precision": "month",
+        "source_ids": [
+          "cd_rainier",
+          "epoch_nc_sat"
+        ],
+        "note": "Project Rainier brought online Oct 2025 (~500k Trainium2 chips)."
+      }
+    },
     "investment_usd": {
       "value": 11000000000,
       "est": true
@@ -1517,12 +1694,36 @@
         "publisher": "Measured AI",
         "url": "https://measuredai.substack.com/p/aws-new-carlisle-data-center-campus",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "iedc_aws",
+        "title": "Gov. Holcomb announces Amazon Web Services plans to invest $11B to create a new data center campus in Northern Indiana",
+        "publisher": "Indiana Economic Development Corporation",
+        "url": "https://www.iedc.in.gov/events/news/details/2024/04/25/gov.-holcomb-announces-amazon-web-services-plans-to-invest-11b-to-create-a-new-data-center-campus-in-northern-indiana",
+        "kind": "primary",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "epoch_nc_sat",
+        "title": "Anthropic-Amazon Project Rainier, New Carlisle – satellite explorer (land clearing 9 Feb 2024; updated 19 Oct 2026)",
+        "publisher": "Epoch AI (satellite imagery)",
+        "url": "https://epoch.ai/data/data-centers/satellite-explorer/AnthropicAmazonProjectRainierNewCarlisleIndiana",
+        "kind": "satellite",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "cd_rainier",
+        "title": "AWS activates Project Rainier data center campus",
+        "publisher": "Converge Digest",
+        "url": "https://convergedigest.com/aws-activates-project-rainier-data-center-campus/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
-    "review_notes": "",
+    "review_notes": "Dates batch 3: Epoch projects ~1.9 GW IT by 2028 vs 2.3 GW permit figure; review capacity later.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "amazon-northern-indiana-2-4gw",
@@ -1543,6 +1744,15 @@
     "status": "announced",
     "status_note": "$15B for new campuses adding 2.4 GW",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2025-11",
+        "precision": "month",
+        "source_ids": [
+          "amz_in"
+        ]
+      }
+    },
     "investment_usd": {
       "value": 15000000000,
       "est": true
@@ -1559,7 +1769,7 @@
     "verification": "primary",
     "review_notes": "Location only regional – do not pin a precise point.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "aligned-project-phoenix",
@@ -1580,6 +1790,24 @@
     "status": "under_construction",
     "status_note": "Groundbreaking Sept 2026; state Notice of Commencement filed Oct 8, 2026; ~$10B",
     "expected_completion": "2028-2029",
+    "dates": {
+      "announced": {
+        "value": "2026-02",
+        "precision": "month",
+        "source_ids": [
+          "trib_phoenix"
+        ],
+        "note": "Earliest found public report (zoning approval); a proposal may have been reported earlier."
+      },
+      "construction_start": {
+        "value": "2026-09",
+        "precision": "month",
+        "source_ids": [
+          "dcd_phoenix",
+          "pa_dgs"
+        ]
+      }
+    },
     "investment_usd": {
       "value": 10000000000,
       "est": true
@@ -1598,12 +1826,28 @@
         "publisher": "Data Center Frontier",
         "url": "https://www.datacenterfrontier.com/energy/article/55404954/from-coal-to-compute-how-pennsylvania-is-rebuilding-power-for-ai-data-centers",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "trib_phoenix",
+        "title": "Sprawling data center campus proposed next to old Bruce Mansfield power plant in Shippingport",
+        "publisher": "TribLive",
+        "url": "https://triblive.com/local/regional/sprawling-data-center-campus-proposed-next-to-old-bruce-mansfield-power-plant-in-shippingport",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "dcd_phoenix",
+        "title": "Aligned breaks ground on gigawatt-scale data center campus in Pennsylvania",
+        "publisher": "DatacenterDynamics",
+        "url": "https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/",
+        "kind": "news",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "primary",
     "review_notes": "",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "tract-tric",
@@ -1624,6 +1868,23 @@
     "status": "under_construction",
     "status_note": "Peru Shelf Technology Park (810 MW) under construction since 2024; 2 GW across the 2,200-acre TRIC holdings",
     "expected_completion": null,
+    "dates": {
+      "announced": {
+        "value": "2023-10",
+        "precision": "month",
+        "source_ids": [
+          "nnbw_tract"
+        ]
+      },
+      "construction_start": {
+        "value": "2024-04",
+        "precision": "month",
+        "source_ids": [
+          "tract_gb",
+          "dcd_tract"
+        ]
+      }
+    },
     "investment_usd": {
       "value": null,
       "est": null
@@ -1635,12 +1896,28 @@
         "publisher": "DatacenterDynamics",
         "url": "https://datacenterdynamics.com/en/news/tract-breaks-ground-on-810mw-data-center-park-in-reno-nevada",
         "accessed": "2026-11-23"
+      },
+      {
+        "id": "nnbw_tract",
+        "title": "Tract purchases 2,200 acres at TRIC",
+        "publisher": "Northern Nevada Business Weekly",
+        "url": "https://nnbw.com/news/2023/oct/18/tract-purchases-2200-acres-at-tric",
+        "kind": "news",
+        "accessed": "2026-11-25"
+      },
+      {
+        "id": "tract_gb",
+        "title": "Tract Breaks Ground on Peru Shelf Technology Park in Storey County, Nevada",
+        "publisher": "Tract (GlobeNewswire)",
+        "url": "https://globenewswire.com/news-release/2024/04/30/2872517/0/en/Tract-Breaks-Ground-on-Peru-Shelf-Technology-Park-in-Storey-County-Nevada.html",
+        "kind": "primary",
+        "accessed": "2026-11-25"
       }
     ],
     "verification": "news",
     "review_notes": "Tract sells powered land to other companies; it is a park, not one data center. Consider a park label.",
     "approved": true,
-    "last_verified": "2026-11-23"
+    "last_verified": "2026-11-25"
   },
   {
     "slug": "iren-sweetwater",
