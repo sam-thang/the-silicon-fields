@@ -1,0 +1,144 @@
+/* Tokens from DESIGN.md. Prototype chrome only: the globe is the content. */
+:root {
+  --space-navy: #0b1426;
+  --sheet-navy: #0f1d36;
+  --panel-navy: #0d1a32;
+  --tile-navy: #13264a;
+  --line-subtle: #1e3157;
+  --line-strong: #2a4170;
+  --amber: #ffc233;
+  --planned: #6fb4ff;
+  --operational: #dce3ee;
+  --text-primary: #f4f6fa;
+  --text-body: #c9d3e6;
+  --text-secondary: #b5c2da;
+  --text-muted: #93a3c2;
+  --text-faint: #7f90b0;
+  --font-num: "Space Grotesk", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --gutter: 20px;
+  color-scheme: dark;
+}
+@media (min-width: 900px) {
+  :root { --gutter: 48px; }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--space-navy);
+  color: var(--text-primary);
+  font: 400 14px/1.45 var(--font-text);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--amber); color: var(--space-navy); }
+a { color: var(--text-primary); text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--operational); outline-offset: 3px; border-radius: 4px; }
+
+#globe { position: fixed; inset: 0; background: var(--space-navy); }
+#globe canvas { outline: none; }
+
+/* Top-left chrome: engine, meter, load test */
+#chrome {
+  position: fixed;
+  top: 16px;
+  left: var(--gutter);
+  right: var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  pointer-events: none;
+}
+#chrome > * { pointer-events: auto; }
+.engine { display: flex; align-items: baseline; gap: 12px; }
+.engine-name { margin: 0; font: 700 20px/1 var(--font-num); }
+.engine-switch, .back { font-size: 13px; font-weight: 600; color: var(--text-secondary); }
+.meter { display: flex; gap: 16px; margin: 0; }
+.meter div { display: flex; flex-direction: column; gap: 2px; }
+.meter dt { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+.meter dd { margin: 0; font: 700 18px/1 var(--font-num); font-variant-numeric: tabular-nums; min-width: 3ch; }
+.load-toggle {
+  display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px;
+  border: 1px solid var(--line-strong); border-radius: 999px;
+  font-size: 13px; font-weight: 600; text-decoration: none; color: var(--text-primary);
+  background: rgb(13 26 50 / 0.8);
+}
+.load-toggle[aria-pressed="true"] { border-color: var(--amber); }
+
+/* Timeline */
+#timeline {
+  position: fixed;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: max(20px, env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+@media (min-width: 900px) { #timeline { gap: 24px; bottom: 36px; } }
+.play {
+  width: 52px; height: 52px; border-radius: 999px; border: 0;
+  background: var(--amber); color: var(--space-navy);
+  display: grid; place-items: center; cursor: pointer;
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.play:active { transform: scale(0.94); }
+.play svg { width: 22px; height: 22px; fill: currentColor; }
+.play:focus-visible { outline-color: var(--text-primary); }
+.scrub { position: relative; padding-bottom: 22px; }
+.scrub input {
+  --p: 0%;
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 28px; margin: 0; background: transparent; cursor: pointer;
+}
+.scrub input::-webkit-slider-runnable-track {
+  height: 6px; border-radius: 3px;
+  background: linear-gradient(to right, var(--amber) var(--p), var(--line-subtle) var(--p));
+}
+.scrub input::-moz-range-track { height: 6px; border-radius: 3px; background: var(--line-subtle); }
+.scrub input::-moz-range-progress { height: 6px; border-radius: 3px; background: var(--amber); }
+.scrub input::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 20px; height: 20px; margin-top: -7px;
+  border-radius: 999px; background: var(--text-primary); border: 0;
+}
+.scrub input::-moz-range-thumb { width: 20px; height: 20px; border-radius: 999px; background: var(--text-primary); border: 0; }
+.ticks { position: absolute; left: 10px; right: 10px; bottom: 0; height: 16px; }
+.ticks span {
+  position: absolute; transform: translateX(-50%);
+  font: 400 12px/1 var(--font-text); color: var(--text-faint); font-variant-numeric: tabular-nums;
+}
+.now { margin: 0 0 22px; font: 700 28px/1 var(--font-num); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.now-month { font-size: 15px; color: var(--text-muted); font-weight: 700; }
+#timeline.future .now-year::after { content: " expected"; font: 600 11px var(--font-text); letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+@media (max-width: 520px) {
+  .ticks span:nth-child(even) { display: none; }
+  .now { font-size: 22px; }
+}
+
+/* Hover card (DESIGN.md: globe hover card) */
+#card {
+  position: fixed; left: 0; top: 0; width: 236px;
+  padding: 14px 16px; display: grid; gap: 6px;
+  background: rgb(13 26 50 / 0.94);
+  border: 1px solid var(--line-strong); border-radius: 12px;
+  pointer-events: none;
+}
+#card[hidden] { display: none; }
+#card p { margin: 0; }
+.card-status { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+.swatch { width: 6px; height: 14px; border-radius: 3px; background: var(--c); flex: none; }
+.card-name { font: 700 20px/1.15 var(--font-num); }
+.card-meta { font-size: 13px; color: var(--text-secondary); }
+.card-figure { font: 700 14px var(--font-num); font-variant-numeric: tabular-nums; }
+
+.nowebgl { position: fixed; inset: 0; display: grid; place-items: center; padding: var(--gutter); text-align: center; color: var(--text-body); }
+
+/* MapLibre attribution, themed */
+.maplibregl-ctrl-attrib { background: rgb(11 20 38 / 0.7) !important; color: var(--text-faint) !important; font-size: 11px; }
+.maplibregl-ctrl-attrib a { color: var(--text-muted) !important; }
+.maplibregl-ctrl-attrib-button { filter: invert(0.85); }
+.maplibregl-ctrl-bottom-right { bottom: 96px !important; }

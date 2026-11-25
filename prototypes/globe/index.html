@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0B1426" />
+    <title>Globe engine test</title>
+    <style>
+      body { overflow: auto; }
+      main { max-width: 760px; margin: 0 auto; padding: 32px var(--gutter) 64px; }
+      h1 { font: 700 32px/1.1 var(--font-num); margin: 0 0 12px; letter-spacing: -0.5px; }
+      h2 { font: 700 20px/1.2 var(--font-num); margin: 40px 0 12px; }
+      p, li { color: var(--text-body); max-width: 65ch; }
+      .engines { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+      .engines a {
+        display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px;
+        font-weight: 600; font-size: 15px; text-decoration: none;
+        border: 1px solid var(--line-strong); color: var(--text-primary);
+      }
+      .engines a:first-child { background: var(--amber); border-color: var(--amber); color: var(--space-navy); }
+      ol { padding-left: 20px; }
+      li { margin: 6px 0; }
+      table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+      th, td { text-align: left; padding: 10px 8px 10px 0; border-bottom: 1px solid var(--line-subtle); vertical-align: middle; }
+      th { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+      td:first-child { color: var(--text-body); }
+      td input {
+        width: 100%; min-width: 70px; height: 36px; padding: 0 10px; border-radius: 8px;
+        background: var(--sheet-navy); border: 1px solid var(--line-strong); color: var(--text-primary);
+        font: 700 14px var(--font-num);
+      }
+      td input:focus { outline: 2px solid var(--operational); outline-offset: 1px; }
+      .fixed { font: 700 14px var(--font-num); }
+      .note { font-size: 13px; color: var(--text-muted); }
+      code { font-size: 13px; color: var(--text-secondary); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Which globe engine?</h1>
+      <p>Two throwaway prototypes draw the same 41 approved projects from <code>data/projects.geojson</code>. Open each on your iPhone and note how it feels and what the meter says.</p>
+      <div class="engines">
+        <a href="maplibre.html">Open MapLibre</a>
+        <a href="deckgl.html">Open deck.gl</a>
+      </div>
+      <p class="note">Each page plays the timeline once on load. Add <code>?play=0</code> to skip it.</p>
+
+      <h2>What to try on each</h2>
+      <ol>
+        <li>Watch the opening play from 2020 to today. Is it smooth, and do the colors change at the right moments?</li>
+        <li>Spin and pinch the globe. Note the fps and worst figures while you move it.</li>
+        <li>Drag the timeline back and forth quickly.</li>
+        <li>Tap columns in Texas and the US Midwest, where they sit close together. Does the right project come up?</li>
+        <li>Tap “Run load test” (10× the columns, to stand in for a weaker phone) and repeat steps 2 and 3.</li>
+      </ol>
+
+      <h2>Results</h2>
+      <p class="note">Your entries stay in this browser only. Send them to me in chat when you're done.</p>
+      <table>
+        <thead><tr><th scope="col">Measure</th><th scope="col">MapLibre</th><th scope="col">deck.gl</th></tr></thead>
+        <tbody id="results"></tbody>
+      </table>
+    </main>
+    <script type="module">
+      import "./src/style.css";
+      import "@fontsource/inter/400.css";
+      import "@fontsource/inter/600.css";
+      import "@fontsource/space-grotesk/700.css";
+      const WEIGHT = { maplibre: "538 KB", deckgl: "265 KB" };
+      const rows = [
+        ["fps while spinning", "spin"],
+        ["worst while spinning", "spinWorst"],
+        ["fps while scrubbing", "scrub"],
+        ["fps, load test", "load"],
+        ["First globe (s)", "first"],
+        ["Tap accuracy, Texas (of 5)", "taps"],
+        ["Looks closest to the mockup (1–5)", "look"],
+      ];
+      const KEY = "globe-proto-results";
+      let saved = {};
+      try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch {}
+      const tbody = document.querySelector("#results");
+      tbody.innerHTML =
+        `<tr><td>Download, gzipped</td><td class="fixed">${WEIGHT.maplibre}</td><td class="fixed">${WEIGHT.deckgl}</td></tr>` +
+        rows.map(([label, k]) => `<tr><td>${label}</td>${["maplibre", "deckgl"].map((e) =>
+          `<td><input inputmode="decimal" aria-label="${label}, ${e === "maplibre" ? "MapLibre" : "deck.gl"}" data-k="${e}.${k}" value="${saved[`${e}.${k}`] ?? ""}"></td>`).join("")}</tr>`).join("");
+      tbody.addEventListener("input", (e) => {
+        saved[e.target.dataset.k] = e.target.value;
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch {}
+      });
+    </script>
+  </body>
+</html>

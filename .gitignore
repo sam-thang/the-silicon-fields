@@ -25,3 +25,7 @@ Thumbs.db
 
 # Build output (compiled from data/projects/ by npm run build:geojson)
 data/projects.geojson
+
+# Globe prototypes
+dist-prototypes/
+prototypes/globe/public/earth/

@@ -9,10 +9,24 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "build:geojson": "node scripts/build_geojson.mjs",
-    "data": "npm run validate && npm run build:geojson"
+    "data": "npm run validate && npm run build:geojson",
+    "proto": "npm run data && vite --config prototypes/globe/vite.config.mjs",
+    "proto:build": "npm run data && vite build --config prototypes/globe/vite.config.mjs",
+    "proto:serve": "npm run proto:build && vite preview --config prototypes/globe/vite.config.mjs"
   },
   "devDependencies": {
+    "@deck.gl/core": "^9.4.2",
+    "@deck.gl/layers": "^9.4.2",
+    "@deck.gl/mesh-layers": "^9.4.2",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@luma.gl/engine": "^9.4.2",
     "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "^3.0.1",
+    "maplibre-gl": "^6.19.0",
+    "puppeteer-core": "^24.43.1",
+    "topojson-client": "^3.1.0",
+    "vite": "^8.3.8",
+    "world-atlas": "^2.0.2"
   }
 }
